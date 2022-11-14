@@ -2,6 +2,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css");
 html,
 body,
 div,
@@ -229,10 +230,18 @@ body {
   font-size: 16px;
 }
 
-h1 {
+h1, h2, h3, h4, h5, h6 {
   font-family: "Doctor Soos";
+}
+
+h1 {
   font-size: clamp(4rem, 10vw, 10rem);
   color: #0066CC;
+}
+
+h2 {
+  font-size: clamp(3rem, 5vw, 2rem);
+  color: #8d0801;
 }
 
 * {
@@ -244,18 +253,21 @@ body {
   box-sizing: border-box;
   overflow-x: hidden;
   scroll-behavior: smooth;
-  background-color: #fcf5ed;
+  background-color: #efdebe;
 }
 
 header {
   height: 20vh;
-  background: #fcf5ed;
+  background: #efdebe;
   filter: drop-shadow(0px -20px 25px rgba(0, 0, 0, 0.3));
   font-family: "Doctor Soos";
   font-size: 2rem;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  padding: 2vw;
+  position: sticky;
+  top: 0;
 }
 header a {
   text-decoration: none;
@@ -263,7 +275,10 @@ header a {
   transition: all 0.3s;
 }
 header a a:hover {
-  color: #da2c38;
+  color: #8d0801;
+}
+header img {
+  width: 10%;
 }
 
 footer {
@@ -273,7 +288,7 @@ footer {
   align-items: center;
   background: #226f54;
   font-family: "Doctor Soos";
-  color: #fcf5ed;
+  color: #efdebe;
   text-transform: uppercase;
   position: relative;
 }
@@ -285,6 +300,10 @@ footer .pere_noel {
   filter: drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.6));
 }
 
+:root {
+  --angle: calc(0.0436609313 * 100vw);
+}
+
 main {
   display: flex;
   justify-content: space-between;
@@ -294,7 +313,57 @@ main {
   margin-top: 20vh;
 }
 main .hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 5vw;
+}
+main .hero .divider {
+  clip-path: polygon(0% var(--angle), 100% 0%, 100% calc(100% - var(--angle)), 0% 100%);
+  background: #8d0801;
+  width: 100vw;
+  margin-block: 10vh;
+  padding-block: 5vh;
+}
+main .hero .divider h1 {
+  color: #efdebe;
+}
+main .hero .video {
+  position: relative;
+}
+main .hero .video video {
+  height: 60vh;
+  -webkit-border-top-left-radius: 50px;
+  -webkit-border-bottom-right-radius: 50px;
+  -moz-border-radius-topleft: 50px;
+  -moz-border-radius-bottomright: 50px;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  border: 10px solid #226f54;
+}
+main .hero .video .play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
   padding: 20px;
+  background: none;
+  border: 0;
+  color: #efdebe;
+  font-size: 5rem;
+  text-align: center;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+main .hero .video .play:hover {
+  color: #8d0801;
+}
+main .hero p {
+  color: #43291F;
+  text-align: center;
+  padding: 3vh 25vw;
 }
 main .hero .column {
   float: left;
@@ -315,9 +384,89 @@ main .hero .box {
 main .hero h1 {
   text-align: center;
 }
-main .hero p {
-  color: #43291F;
+main .hero h2 {
   text-align: center;
+}
+main .hero h3 {
+  text-align: center;
+}
+main .hero h4 {
+  text-align: center;
+}
+main .hero h5 {
+  text-align: center;
+}
+main .hero h6 {
+  text-align: center;
+}
+main .hero form {
+  width: 75%;
+  padding: 20px;
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+main .hero form .formDivGauche {
+  padding-inline-end: 10px;
+  width: 50%;
+}
+main .hero form .formDivDroite {
+  padding-inline-start: 10px;
+  width: 50%;
+}
+main .hero form .checkbox {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row-reverse;
+  text-align: right;
+}
+main .hero form .checkbox label {
+  font-size: 1.25rem;
+  padding-left: 10px;
+  padding-block: 5vh;
+}
+main .hero form label {
+  color: #8d0801;
+  font-family: "Doctor Soos";
+  padding-block: 10px;
+}
+main .hero form input:not([type=checkbox]) {
+  width: 100%;
+  font-family: "Doctor Soos";
+  border: none;
+  border-bottom: 1px solid #226f54;
+  background: transparent;
+  font-size: 1.5rem;
+  color: #226f54;
+}
+main .hero form input:not([type=checkbox]):focus {
+  outline: none;
+}
+main .hero form textarea {
+  resize: vertical;
+  font-family: "Doctor Soos";
+  font-size: 1.5rem;
+  background: transparent;
+  color: #226f54;
+  border: none;
+  border-bottom: 1px solid #226f54;
+}
+main .hero form textarea:focus {
+  outline: none;
+}
+main .hero form input[type=submit] {
+  background: #8d0801;
+  float: right;
+  width: auto;
+  border: none;
+  color: #efdebe;
+  padding: 1vh 2vh;
+  cursor: pointer;
+  font-size: 2rem;
+  transition: all 0.3s;
+}
+main .hero form input[type=submit]:hover {
+  background: #226f54;
 }
 
 /*# sourceMappingURL=style.css.map */

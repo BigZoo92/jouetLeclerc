@@ -6,7 +6,7 @@
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores sequi ex ullam atque in similique quasi
             dicta consectetur reprehenderit tempora neque, saepe incidunt natus labore eveniet perferendis, corrupti,
             doloribus ut.</p>
-        <div class="row">
+        <!-- <div class="row">
             <div class="column">
                 <div class="box">
 
@@ -17,7 +17,55 @@
 
                 </div>
             </div>
+        </div> -->
+        
+        <section class="divider">
+            <h1>Surprise</h1>
+        </section>
+
+        <h2>Comment déverouiller une surprise ?</h2>
+        <p>Il existe différentes façons pour vous et votre enfant de déverrouiller les surprises dans l'application,
+            alors suivez les étapes suivantes de la notice accompagnant le produit :</p>
+
+        <div class="video">
+            <video src="<?= get_template_directory_uri()?>./assets/videos/Lighted Christmas Tree.mp4" autoplay></video>
+            <button type="button" class="play"><i class="bi bi-play"></i></button>
         </div>
+
+        <section class="divider">
+            <h1>Formulaire</h1>
+        </section>
+
+        <form action="#">
+            <div class="row">
+                <div class="column formDivGauche">
+                    <label for="nom">Nom :</label><br>
+                    <input type="text" id="nom" name="nom">
+                    <label for="prenom">Adresse email :</label>
+                    <input type="mail" id="email" name="email">
+                </div>
+
+
+                <div class="column formDivDroite">
+                    <label for="nom">Nom de ton ami :</label><br>
+                    <input type="text" id="nomAmi" name="nomAmi">
+                    <label for="prenom">Adresse email de ton ami :</label>
+                    <input type="mail" id="emailAmi" name="emailAmi">
+                </div>
+            </div>
+
+            <label for="texte">Ecris ton message :</label>
+            <textarea id="texte" name="texte"></textarea>
+
+            <div class="checkbox">
+                <label for="checkbox">En cochant cette case, J'autorise ce site à conserver mes données transmises via
+                    ce formulaire.</label>
+                <input type="checkbox" id="rgpd" name="rgpd">
+            </div>
+
+
+            <input type="submit" value="Envoyer au père nöel">
+        </form>
     </section>
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path fill="#226f54" fill-opacity="1"

@@ -124,8 +124,16 @@ body{
     font-size: 16px;
 }
 
-h1{
+h1, h2, h3, h4, h5, h6{
     font-family: $font-title;
+}
+
+h1 {
     font-size: clamp(4rem, 10vw, 10rem);
     color: $leclerc-bleu;
+}
+
+h2 {
+    font-size: clamp(3rem, 5vw, 2rem);
+    color: $noel-rouge;
 }

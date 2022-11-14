@@ -5,8 +5,11 @@ header{
     font-family: $font-title;
     font-size: 2rem;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    padding: 2vw;
+    position: sticky;
+    top: 0;
     a{
         text-decoration: none;
         color: $noel-marron;
@@ -14,5 +17,8 @@ header{
         a:hover{
             color: $noel-rouge;
         }
+    }
+    img{
+        width: 10%;
     }
 }
