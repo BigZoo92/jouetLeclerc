@@ -1,3 +1,22 @@
+// Doctor Soos
+@font-face {
+    font-family: 'Doctor Soos';
+    src: url('../fonts/noel_font/DoctorSoosLight.woff2') format('woff2'),
+        url('../fonts/noel_font/DoctorSoosLight.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Doctor Soos';
+    src: url('../fonts/noel_font/DoctorSoosBold.woff2') format('woff2'),
+        url('../fonts/noel_font/DoctorSoosBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
 // Roboto
 @font-face {
     font-family: 'Roboto';
@@ -107,6 +126,6 @@ body{
 
 h1{
     font-family: $font-title;
-    font-size: 10rem;
+    font-size: clamp(4rem, 10vw, 10rem);
     color: $leclerc-bleu;
 }

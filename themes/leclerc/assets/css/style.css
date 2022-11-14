@@ -134,6 +134,20 @@ table {
 }
 
 @font-face {
+  font-family: "Doctor Soos";
+  src: url("../fonts/noel_font/DoctorSoosLight.woff2") format("woff2"), url("../fonts/noel_font/DoctorSoosLight.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Doctor Soos";
+  src: url("../fonts/noel_font/DoctorSoosBold.woff2") format("woff2"), url("../fonts/noel_font/DoctorSoosBold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
   font-family: "Roboto";
   src: url("../fonts/roboto/Roboto-Bold.woff2") format("woff2"), url("../fonts/roboto/Roboto-Bold.woff") format("woff");
   font-weight: bold;
@@ -216,8 +230,8 @@ body {
 }
 
 h1 {
-  font-family: "Ginger";
-  font-size: 10rem;
+  font-family: "Doctor Soos";
+  font-size: clamp(4rem, 10vw, 10rem);
   color: #0066CC;
 }
 
@@ -230,7 +244,54 @@ body {
   box-sizing: border-box;
   overflow-x: hidden;
   scroll-behavior: smooth;
-  background-color: #f4f0bb;
+  background-color: #fcf5ed;
+}
+
+header {
+  height: 20vh;
+  background: #fcf5ed;
+  filter: drop-shadow(0px -20px 25px rgba(0, 0, 0, 0.3));
+  font-family: "Doctor Soos";
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header a {
+  text-decoration: none;
+  color: #43291F;
+  transition: all 0.3s;
+}
+header a a:hover {
+  color: #da2c38;
+}
+
+footer {
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #226f54;
+  font-family: "Doctor Soos";
+  color: #fcf5ed;
+  text-transform: uppercase;
+  position: relative;
+}
+footer .pere_noel {
+  width: 8vw;
+  position: absolute;
+  bottom: 3vh;
+  right: 15vw;
+  filter: drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.6));
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  margin-top: 20vh;
 }
 
 /*# sourceMappingURL=style.css.map */
