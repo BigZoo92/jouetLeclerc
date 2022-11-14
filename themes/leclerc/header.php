@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
@@ -12,7 +12,7 @@
 
 <body>
     <header>
-        <img src="<?= get_template_directory_uri()?>./assets/images/png/leclerc.png" alt="Logo Leclerc">
+        <a href="http://jouetsleclerc.local/"><img src="<?= get_template_directory_uri()?>./assets/images/png/leclerc.png" alt="Logo Leclerc"></a>
         <?php wp_nav_menu([
                     'menu' => 'Menu 1',
                     'theme_location' => 'header',

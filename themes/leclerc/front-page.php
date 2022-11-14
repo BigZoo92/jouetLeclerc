@@ -18,7 +18,7 @@
                 </div>
             </div>
         </div> -->
-        
+
         <section class="divider">
             <h1>Surprise</h1>
         </section>
@@ -31,6 +31,61 @@
             <video src="<?= get_template_directory_uri()?>./assets/videos/Lighted Christmas Tree.mp4" autoplay></video>
             <button type="button" class="play"><i class="bi bi-play"></i></button>
         </div>
+
+        <section class="divider">
+            <h1>Calendrier de l'avent</h1>
+        </section>
+
+        <section class="calendrier">
+            <article class="present">
+                <div class="present__pane">
+                    <h2 class="present__date">1</h2>
+                </div>
+                <div class="present__content">
+                    <div class="present__bauble">🎁</div>
+                </div>
+            </article>
+            <article class="present">
+                <div class="present__pane">
+                    <h2 class="present__date">2</h2>
+                </div>
+                <div class="present__content">
+                    <div class="present__bauble">❤️</div>
+                </div>
+            </article>
+            <article class="present">
+                <div class="present__pane">
+                    <h2 class="present__date">3</h2>
+                </div>
+                <div class="present__content">
+                    <div class="present__bauble">💩</div>
+                </div>
+            </article><br>
+            <article class="present">
+                <div class="present__pane">
+                    <h2 class="present__date">4</h2>
+                </div>
+                <div class="present__content">
+                    <div class="present__bauble">🎅</div>
+                </div>
+            </article>
+            <article class="present">
+                <div class="present__pane">
+                    <h2 class="present__date">5</h2>
+                </div>
+                <div class="present__content">
+                    <div class="present__bauble">☠️</div>
+                </div>
+            </article>
+            <article class="present">
+                <div class="present__pane">
+                    <h2 class="present__date">6</h2>
+                </div>
+                <div class="present__content">
+                    <div class="present__bauble">🦉</div>
+                </div>
+            </article>
+        </section>
 
         <section class="divider">
             <h1>Formulaire</h1>
