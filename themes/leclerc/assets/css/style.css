@@ -290,8 +290,34 @@ main {
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
-  height: 100vh;
+  height: auto;
   margin-top: 20vh;
+}
+main .hero {
+  padding: 20px;
+}
+main .hero .column {
+  float: left;
+  width: 50%;
+}
+main .hero .row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+main .hero .box {
+  padding: 10vw;
+  margin: 2vw;
+  background: #43291F;
+  border-radius: 20px;
+  filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.6));
+}
+main .hero h1 {
+  text-align: center;
+}
+main .hero p {
+  color: #43291F;
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */
