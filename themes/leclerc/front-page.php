@@ -1,23 +1,21 @@
 <?php get_header(); ?>
 
 <main>
-    <section class="hero">
+    <section class="accueil">
+        <div class="custom-shape-divider-bottom-1669039579">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                preserveAspectRatio="none">
+                <path d="M741,116.23C291,117.43,0,27.57,0,6V120H1200V6C1200,27.93,1186.4,119.83,741,116.23Z"
+                    class="shape-fill"></path>
+            </svg>
+        </div>
         <h1>Jouets<i style="color: #ff6633">.</i>Leclerc</h1>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores sequi ex ullam atque in similique quasi
             dicta consectetur reprehenderit tempora neque, saepe incidunt natus labore eveniet perferendis, corrupti,
             doloribus ut.</p>
-        <!-- <div class="row">
-            <div class="column">
-                <div class="box">
-
-                </div>
-            </div>
-            <div class="column">
-                <div class="box">
-
-                </div>
-            </div>
-        </div> -->
+        <button>Découvrir</button>
+    </section>
+    <section class="hero">
 
         <section class="divider">
             <h1>Surprise</h1>
@@ -27,64 +25,25 @@
         <p>Il existe différentes façons pour vous et votre enfant de déverrouiller les surprises dans l'application,
             alors suivez les étapes suivantes de la notice accompagnant le produit :</p>
 
-        <div class="video">
-            <video src="<?= get_template_directory_uri()?>./assets/videos/Lighted Christmas Tree.mp4" autoplay></video>
-            <button type="button" class="play"><i class="bi bi-play"></i></button>
-        </div>
+        <section class="video">
+            <div class="custom-shape-divider-top-1669044367">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                    preserveAspectRatio="none">
+                    <path
+                        d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+                        class="shape-fill"></path>
+                </svg>
+            </div>
+            <p>Vidéo</p>
+            <div class="custom-shape-divider-bottom-1669044629">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+    </svg>
+</div>
+        </section>
 
         <section class="divider">
             <h1>Calendrier de l'avent</h1>
-        </section>
-
-        <section class="calendrier">
-            <article class="present">
-                <div class="present__pane">
-                    <h2 class="present__date">1</h2>
-                </div>
-                <div class="present__content">
-                    <div class="present__bauble">🎁</div>
-                </div>
-            </article>
-            <article class="present">
-                <div class="present__pane">
-                    <h2 class="present__date">2</h2>
-                </div>
-                <div class="present__content">
-                    <div class="present__bauble">❤️</div>
-                </div>
-            </article>
-            <article class="present">
-                <div class="present__pane">
-                    <h2 class="present__date">3</h2>
-                </div>
-                <div class="present__content">
-                    <div class="present__bauble">💩</div>
-                </div>
-            </article><br>
-            <article class="present">
-                <div class="present__pane">
-                    <h2 class="present__date">4</h2>
-                </div>
-                <div class="present__content">
-                    <div class="present__bauble">🎅</div>
-                </div>
-            </article>
-            <article class="present">
-                <div class="present__pane">
-                    <h2 class="present__date">5</h2>
-                </div>
-                <div class="present__content">
-                    <div class="present__bauble">☠️</div>
-                </div>
-            </article>
-            <article class="present">
-                <div class="present__pane">
-                    <h2 class="present__date">6</h2>
-                </div>
-                <div class="present__content">
-                    <div class="present__bauble">🦉</div>
-                </div>
-            </article>
         </section>
 
         <section class="divider">
