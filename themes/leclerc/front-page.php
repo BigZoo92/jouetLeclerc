@@ -109,7 +109,7 @@
                 </div>
             </div>
 
-            <label for="texte">Ecris ton message :</label>
+            <label for="texte">Écris ton message :</label>
             <textarea id="texte" name="texte"></textarea>
 
             <div class="checkbox">
