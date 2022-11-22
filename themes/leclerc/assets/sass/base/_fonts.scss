@@ -129,11 +129,11 @@ h1, h2, h3, h4, h5, h6{
 }
 
 h1 {
-    font-size: clamp(4rem, 10vw, 10rem);
+    font-size: clamp(3rem, 5vw, 2rem);
     color: $leclerc-bleu;
 }
 
 h2 {
-    font-size: clamp(3rem, 5vw, 2rem);
+    font-size: clamp(1.5rem, 2.5vw, 1rem);
     color: $noel-rouge;
 }

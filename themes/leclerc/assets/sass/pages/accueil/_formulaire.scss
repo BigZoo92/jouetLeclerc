@@ -1,0 +1,86 @@
+.formulaire {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .column {
+        float: left;
+        width: 50%;
+    }
+    .row {
+        &:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    }
+    form {
+        background: $noel-beige;
+        padding: 20px;
+        border-radius: 5px;
+        font-size: 2rem;
+        display: flex;
+        flex-direction: column;
+        .formDivGauche {
+            width: 100%;
+        }
+        .formDivDroite {
+            width: 100%;
+        }
+        .checkbox {
+            display: flex;
+            justify-content: flex-end;
+            flex-direction: row-reverse;
+            text-align: right;
+            label {
+                font-size: 1.25rem;
+                padding-left: 10px;
+            }
+        }
+        label {
+            color: $noel-rouge;
+            font-family: $font-title;
+            padding-block: 10px;
+        }
+        input:not([type="checkbox"]) {
+            width: 100%;
+            font-family: $font-title;
+            border: none;
+            border-bottom: 1px solid $noel-vert;
+            background: transparent;
+            font-size: 1.5rem;
+            color: $noel-vert;
+            &:focus {
+                outline: none;
+            }
+            margin-block: 4vh;
+        }
+
+        textarea {
+            resize: vertical;
+            font-family: $font-title;
+            font-size: 1.5rem;
+            background: transparent;
+            color: $noel-vert;
+            border: none;
+            border-bottom: 1px solid $noel-vert;
+            &:focus {
+                outline: none;
+            }
+        }
+
+        input[type="submit"] {
+            background: $noel-rouge;
+            float: right;
+            width: auto;
+            border: none;
+            color: $noel-beige;
+            padding: 1vh 2vh;
+            cursor: pointer;
+            font-size: 2rem;
+            transition: all 0.3s;
+            &:hover {
+                background: $noel-vert;
+            }
+        }
+    }
+}
