@@ -257,37 +257,153 @@ body {
 }
 
 header {
-  height: 100px;
-  background: #efdebe;
-  filter: drop-shadow(0px -20px 25px rgba(0, 0, 0, 0.3));
-  font-family: "Doctor Soos";
-  font-size: 2rem;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 50px;
+  font-family: "Roboto";
+  font-weight: 100;
+}
+header .overlay_header {
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  top: 100vh;
+  left: 0;
+  background-color: #efdebe;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+header .overlay_header nav ul {
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
   align-items: center;
-  padding: 2vw;
-  position: sticky;
-  top: 0;
+  gap: 30px;
+  margin-bottom: 10vh;
 }
-header ul {
-  display: flex;
-  flex-direction: row;
+header .overlay_header nav ul li {
+  list-style-type: none;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  transition: clip-path 0.5s ease-in-out;
+  clip-path: inset(0 100% 0 0);
 }
-header ul li {
-  padding: 10px;
+header .overlay_header nav ul li:nth-of-type(2n) {
+  clip-path: inset(0 0 0 100%);
 }
-header a {
+header .overlay_header nav ul li:nth-of-type(2n+1) {
+  clip-path: inset(0 100% 0 0);
+}
+header .overlay_header nav ul li a {
   text-decoration: none;
-  color: #0066CC;
-  transition: all 0.3s;
+  color: #226f54;
+  transition: color 0.3s ease;
 }
-header a:hover {
-  color: #ff6633;
-  border-bottom: 1px solid #ff6633;
+header .overlay_header nav ul li a:hover {
+  color: #8d0801;
 }
-header img {
-  width: 50%;
-  filter: drop-shadow(0px -20px 25px rgba(0, 0, 0, 0.3));
+header .overlay_header svg {
+  position: absolute;
+  bottom: -60px;
+  width: 105%;
+  margin-left: 5%;
+}
+header .sapin_toggle {
+  z-index: 11;
+  margin-top: 45px;
+  justify-content: flex-end;
+  align-self: flex-start;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+header .sapin_toggle .star {
+  --size: 20px;
+  --half-size: calc(var(--size) / 2);
+  position: relative;
+  display: block;
+  color: rgb(179, 188, 11);
+  width: 0px;
+  height: 0px;
+  border-right: var(--half-size) solid transparent;
+  border-bottom: calc(var(--half-size) * 0.7) solid rgb(179, 188, 11);
+  border-left: var(--half-size) solid transparent;
+  transform: rotate(35deg);
+}
+header .sapin_toggle .star:before {
+  border-bottom: calc(var(--half-size) * 0.8) solid rgb(179, 188, 11);
+  border-left: calc(var(--half-size) * 0.3) solid transparent;
+  border-right: calc(var(--half-size) * 0.3) solid transparent;
+  position: absolute;
+  height: 0;
+  width: 0;
+  top: calc(var(--half-size) * 0.45 * -1);
+  left: calc(var(--half-size) * 0.65 * -1);
+  display: block;
+  content: "";
+  transform: rotate(-35deg);
+}
+header .sapin_toggle .star:after {
+  position: absolute;
+  display: block;
+  color: rgb(179, 188, 11);
+  top: calc(var(--half-size) * 0.03);
+  left: calc(var(--half-size) * -1.05);
+  width: 0px;
+  height: 0px;
+  border-right: var(--half-size) solid transparent;
+  border-bottom: calc(var(--half-size) * 0.7) solid rgb(179, 188, 11);
+  border-left: var(--half-size) solid transparent;
+  transform: rotate(-70deg);
+  content: "";
+}
+header .sapin_toggle .branches {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  clip-path: inset(0 0 0 0);
+}
+header .sapin_toggle .branches .branche {
+  height: 3px;
+  background-color: #226f54;
+}
+header .sapin_toggle .branches .branche.arm1 {
+  margin-top: 5px;
+  width: 15px;
+}
+header .sapin_toggle .branches .branche.arm2 {
+  width: 25px;
+}
+header .sapin_toggle .branches .branche.arm3 {
+  width: 35px;
+}
+header .sapin_toggle .branches .branche.arm4 {
+  width: 45px;
+}
+header .sapin_toggle .menu_sapin {
+  font-family: "Roboto";
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: -2px;
+  position: relative;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .sapin_toggle .menu_sapin p:nth-of-type(2) {
+  background-color: #efdebe;
+  top: 0;
+  position: absolute;
+  clip-path: inset(50% 0 50% 0);
+  transition: clip-path 0.3s ease-in;
 }
 
 footer {

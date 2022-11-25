@@ -175,7 +175,7 @@ main {
         $present-dimension: 12em;
         $date-dimension: $present-dimension / 5;
         $bauble-dimension: $present-dimension / 4.5;
-        .present {
+        .present {  
             position: relative;
             display: inline-block;
             width: $present-dimension;
