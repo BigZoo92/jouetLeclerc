@@ -1,12 +1,13 @@
 * {
   box-sizing: border-box;
+  overflow: hidden;
+  scroll-behavior: smooth;
 }
 
-html,
 body {
-  box-sizing: border-box;
-  overflow-x: hidden;
-  scroll-behavior: smooth;
+  background-image: url("../../assets/images/jpg/background.jpg");
+  background-size: cover;
+  background-repeat: none;
 }
 
 a {

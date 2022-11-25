@@ -13,9 +13,14 @@
 @import "./components/header";
 @import "./components/footer";
 
-// Pages
-
+// Accueil
 @import "./pages/accueil/accueil";
 @import "./pages/accueil/hero";
 @import "./pages/accueil/formulaire";
 @import "./pages/accueil/video";
+
+// 404
+@import "./pages/404/404";
+
+// Recette*
+@import "./pages/recette/recette";

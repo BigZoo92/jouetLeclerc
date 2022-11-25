@@ -1,0 +1,36 @@
+.recette {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+        .titre_recette{
+            display: flex;
+            align-items: flex-start !important;
+            text-align: left;
+            width: 100%;
+            margin-inline: 30px;
+            color: red;
+        }
+    .box_grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 30px;
+        grid-row-gap: 30px;
+        font-family: $font-title;
+        color: $noel-marron;
+        font-size: 24px;
+        .recette_box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: rgba(255, 255, 255, 0.25);
+            backdrop-filter: blur(4px);
+            -webkit-backdrop-filter: blur(4px);
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            width: 30vw;
+            height: 30vh;
+        }
+    }
+}

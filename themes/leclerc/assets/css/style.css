@@ -227,7 +227,7 @@ table {
 }
 body {
   font-family: "Roboto";
-  font-size: 16px;
+  font-size: clamp(1rem, 2vw + 1rem, 1.125rem);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -235,24 +235,25 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: clamp(3rem, 5vw, 2rem);
+  font-size: clamp(1.333rem, 2vw + 1rem, 1.778rem);
   color: #0066cc;
 }
 
 h2 {
-  font-size: clamp(1.5rem, 2.5vw, 1rem);
+  font-size: clamp(1rem, 2vw + 1rem, 1.333rem);
   color: #8d0801;
 }
 
 * {
   box-sizing: border-box;
+  overflow: hidden;
+  scroll-behavior: smooth;
 }
 
-html,
 body {
-  box-sizing: border-box;
-  overflow-x: hidden;
-  scroll-behavior: smooth;
+  background-image: url("../../assets/images/jpg/background.jpg");
+  background-size: cover;
+  background-repeat: none;
 }
 
 a {
@@ -290,19 +291,14 @@ h6 {
 }
 
 header {
-  height: 65px;
-  background: #226f54;
-  filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.6));
+  height: auto;
+  background: transparent;
   font-family: "Doctor Soos";
-  font-size: 1.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2vw;
-  position: fixed;
   width: 100%;
-  top: 0;
-  z-index: 10;
+  padding: 10px;
 }
 header ul {
   display: flex;
@@ -311,6 +307,12 @@ header ul {
 header ul li {
   padding: 10px;
   text-transform: uppercase;
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(4px);
+  margin-block: 10px;
+  margin-inline: 20px;
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 50px;
 }
 header img {
   width: 25%;
@@ -323,16 +325,21 @@ footer {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background: #226f54;
+  background: transparent;
   font-family: "Doctor Soos";
   color: #efdebe;
   text-transform: uppercase;
-  position: relative;
 }
 footer a {
   padding: 10px;
   color: #efdebe;
   transition: all 0.3s;
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(4px);
+  margin: 5px;
+  padding: 10px;
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 50px;
   text-align: center;
 }
 footer a:hover {
@@ -340,129 +347,32 @@ footer a:hover {
 }
 footer p {
   padding-block: 10px;
-}
-footer .pere_noel {
-  width: 10%;
-  position: absolute;
-  bottom: 3vh;
-  right: 15vw;
-  display: none;
-  filter: drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.6));
-}
-@media screen and (min-width: 768px) {
-  footer .pere_noel {
-    display: block;
-  }
-}
-
-:root {
-  --angle: calc(0.0436609313 * 100vw);
-}
-
-main {
-  background: #efdebe;
-}
-main .divider {
-  clip-path: polygon(0% var(--angle), 100% 0%, 100% calc(100% - var(--angle)), 0% 100%);
-  background: #8d0801;
-  width: 100vw;
-  margin-block: 10vh;
-  padding-block: 5vh;
-}
-main .divider h1 {
-  color: #efdebe;
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(4px);
+  padding: 5px;
+  margin: 5px;
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 50px;
 }
 
 .hero {
-  height: 100vh;
-  background: #8d0801;
+  min-height: 70vh;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding-inline: 20px;
 }
-.hero h1 {
-  color: #efdebe;
-}
-.hero p {
-  text-align: center;
-  color: #efdebe;
-  padding: 2vh 2vw;
-}
-@media screen and (min-width: 1192px) {
-  .hero p {
-    padding: 2vh 25vw;
+
+@media (orientation: landscape) {
+  body {
+    flex-direction: row;
   }
 }
-.hero .btn_decouvrir {
-  margin: 20px;
-  padding: 10px 35px;
-  font-family: "Doctor Soos";
-  font-size: 1.5rem;
-  color: #f8f8f8;
-  background-color: #8d0801;
-  border: none;
-  border-radius: 45px;
-  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-  transition: all 0.5s ease 0s;
-  z-index: 9;
-  cursor: pointer;
-  outline: none;
-}
-.hero .btn_decouvrir:hover {
-  background-color: #f8f8f8;
-  box-shadow: 0px 15px 20px #f8f8f8;
-  color: #8d0801;
-  transform: translateY(-5px);
-}
-.hero .btn_decouvrir:active {
-  transform: translateY(-1px);
-}
-.hero .btn_scroll {
-  color: #efdebe;
-  padding: 5px;
-  border: none;
-  position: absolute;
-  bottom: 30px;
-  background: #8d0801;
-  border-radius: 50%;
-  filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.6));
-}
-.hero .btn_scroll i {
-  font-size: 1.5rem;
-  transition: all 0.3s;
-}
-.hero .btn_scroll i:hover {
-  transform: scale(2);
-}
-
-.custom-shape-divider-bottom-1669039579 {
-  position: absolute;
-  display: block;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-}
-
-.custom-shape-divider-bottom-1669039579 svg {
-  position: relative;
-  width: calc(100% + 100px);
-  height: 250px;
-  transform: rotateY(180deg);
-}
-@media screen and (max-width: 1192px) {
-  .custom-shape-divider-bottom-1669039579 svg {
-    display: none;
+@media (orientation: portrait) {
+  body {
+    flex-direction: column;
   }
 }
-
-.custom-shape-divider-bottom-1669039579 .shape-fill {
-  fill: #efdebe;
-}
-
 .formulaire {
   display: flex;
   justify-content: center;
@@ -566,6 +476,47 @@ main .divider h1 {
   .video p {
     padding: 2vh 25vw;
   }
+}
+
+main {
+  height: 100vh;
+}
+
+.recette {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+.recette .titre_recette {
+  display: flex;
+  align-items: flex-start !important;
+  text-align: left;
+  width: 100%;
+  margin-inline: 30px;
+  color: red;
+}
+.recette .box_grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+  font-family: "Doctor Soos";
+  color: #43291f;
+  font-size: 24px;
+}
+.recette .box_grid .recette_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  width: 30vw;
+  height: 30vh;
 }
 
 /*# sourceMappingURL=style.css.map */

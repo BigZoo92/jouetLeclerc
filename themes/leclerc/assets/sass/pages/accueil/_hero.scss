@@ -1,89 +1,19 @@
 .hero {
-    height: 100vh;
-    background: $noel-rouge;
+    min-height: 70vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding-inline: 20px;
+}
 
-    h1 {
-        color: $noel-beige;
-    }
-    
-    p {
-        text-align: center;
-        color: $noel-beige;
-        padding: 2vh 2vw;
-        @media screen and (min-width: $desktop) {
-            padding: 2vh 25vw;
-        }
-    }
-    
-    .btn_decouvrir {
-        margin: 20px;
-        padding: 10px 35px;
-        font-family: $font-title;
-        font-size: 1.5rem;
-        color: $background;
-        background-color: $noel-rouge;
-        border: none;
-        border-radius: 45px;
-        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-        transition: all 0.5s ease 0s;
-        z-index: 9;
-        cursor: pointer;
-        outline: none;
-        &:hover {
-            background-color: $background;
-            box-shadow: 0px 15px 20px $background;
-            color: $noel-rouge;
-            transform: translateY(-5px);
-        }
-        &:active {
-            transform: translateY(-1px);
-        }
-    }
-
-    .btn_scroll {
-        color: $noel-beige;
-        padding: 5px;
-        border: none;
-        position: absolute;
-        bottom: 30px;
-        background: $noel-rouge;
-        border-radius: 50%;
-        filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.6));
-        i {
-            font-size: 1.5rem;
-            transition: all 0.3s;
-            &:hover {
-                transform: scale(2);
-            }
-        }
+@media (orientation: landscape) {
+    body {
+        flex-direction: row;
     }
 }
 
-.custom-shape-divider-bottom-1669039579 {
-    position: absolute;
-    display: block;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-}
-
-.custom-shape-divider-bottom-1669039579 svg {
-    position: relative;
-    width: calc(100% + 100px);
-    height: 250px;
-    transform: rotateY(180deg);
-    @media screen and (max-width: $desktop) {
-        display: none;
+@media (orientation: portrait) {
+    body {
+        flex-direction: column;
     }
-}
-
-.custom-shape-divider-bottom-1669039579 .shape-fill {
-    fill: $noel-beige;
 }
