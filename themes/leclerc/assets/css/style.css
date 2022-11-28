@@ -253,6 +253,7 @@ body {
   background-image: url("../../assets/images/jpg/background.jpg");
   background-size: cover;
   background-repeat: none;
+  overflow: hidden;
 }
 
 a {
@@ -295,16 +296,15 @@ header {
   justify-content: space-between;
   font-family: "Doctor Soos";
   font-weight: 100;
-  overflow: hidden;
 }
 header .overlay_header {
   height: 100vh;
   width: 100%;
   position: absolute;
-  top: 150vh;
+  top: 100vh;
   left: 0;
   background-color: #efdebe;
-  display: none;
+  display: flex;
   justify-content: center;
   align-items: center;
   z-index: 10;
@@ -357,9 +357,45 @@ header .sapin_toggle {
   gap: 5px;
   cursor: pointer;
 }
-header .sapin_toggle img {
-  width: 15px;
-  margin-bottom: -5px;
+header .sapin_toggle .star {
+  --size: 20px;
+  --half-size: calc(var(--size) / 2);
+  position: relative;
+  display: block;
+  color: rgb(179, 188, 11);
+  width: 0px;
+  height: 0px;
+  border-right: var(--half-size) solid transparent;
+  border-bottom: calc(var(--half-size) * 0.7) solid rgb(179, 188, 11);
+  border-left: var(--half-size) solid transparent;
+  transform: rotate(35deg);
+}
+header .sapin_toggle .star:before {
+  border-bottom: calc(var(--half-size) * 0.8) solid rgb(179, 188, 11);
+  border-left: calc(var(--half-size) * 0.3) solid transparent;
+  border-right: calc(var(--half-size) * 0.3) solid transparent;
+  position: absolute;
+  height: 0;
+  width: 0;
+  top: calc(var(--half-size) * 0.45 * -1);
+  left: calc(var(--half-size) * 0.65 * -1);
+  display: block;
+  content: "";
+  transform: rotate(-35deg);
+}
+header .sapin_toggle .star:after {
+  position: absolute;
+  display: block;
+  color: rgb(179, 188, 11);
+  top: calc(var(--half-size) * 0.03);
+  left: calc(var(--half-size) * -1.05);
+  width: 0px;
+  height: 0px;
+  border-right: var(--half-size) solid transparent;
+  border-bottom: calc(var(--half-size) * 0.7) solid rgb(179, 188, 11);
+  border-left: var(--half-size) solid transparent;
+  transform: rotate(-70deg);
+  content: "";
 }
 header .sapin_toggle .branches {
   display: flex;
@@ -395,74 +431,13 @@ header .sapin_toggle .menu_sapin {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-inline: 13px;
 }
 header .sapin_toggle .menu_sapin p:nth-of-type(2) {
   background-color: #efdebe;
   top: 0;
   position: absolute;
   clip-path: inset(50% 0 50% 0);
-  transition: clip-path 0.3s ease-in, background-color 1s ease-in;
-}
-header .modal {
-  background: transparent;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-inline: 20px;
-}
-header .modal ul {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-header .modal ul li {
-  padding: 10px;
-  margin-inline: 20px;
-  position: relative;
-  background: #8d0801;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-header .modal ul li i {
-  padding-inline-end: 5px;
-}
-header .modal ul li a {
-  color: white;
-  text-align: center;
-}
-header .modal ul li a:hover {
-  color: black;
-}
-header .modal ul li:hover {
-  color: black;
-}
-header .modal ul li::before {
-  content: "";
-  width: 15px;
-  height: 38px;
-  left: -6px;
-  background-image: url("../../assets/images/svg/Tickets_bord.svg");
-  background-repeat: no-repeat;
-  background-size: contain;
-  right: 150px;
-  top: 50%;
-  position: absolute;
-  transform: translateY(-50%);
-}
-header .modal ul li::after {
-  content: "";
-  width: 15px;
-  height: 38px;
-  background-image: url("../../assets/images/svg/Tickets_bord.svg");
-  background-repeat: no-repeat;
-  background-size: contain;
-  transform: rotateY(180deg) translateY(-50%);
-  top: 50%;
-  right: -6px;
-  position: absolute;
+  transition: clip-path 0.3s ease-in;
 }
 
 .hero {
