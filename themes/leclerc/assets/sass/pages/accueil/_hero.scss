@@ -4,6 +4,14 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    position: relative;
+    #boite_lettre{
+        width: 4.5%;
+        left: 35vw;
+        bottom: 15vh;
+        position: absolute;
+        transform: rotateY(180deg);
+    }
 }
 
 @media (orientation: landscape) {
