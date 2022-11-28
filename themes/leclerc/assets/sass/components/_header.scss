@@ -2,7 +2,7 @@ header {
     width: 100%;
     display: flex;
     justify-content: flex-start;
-    font-family: "Roboto";
+    font-family: $font-title;
     font-weight: 100;
     .overlay_header {
       height: 100vh;

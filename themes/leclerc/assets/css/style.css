@@ -246,7 +246,6 @@ h2 {
 
 * {
   box-sizing: border-box;
-  overflow: hidden;
   scroll-behavior: smooth;
 }
 
@@ -294,7 +293,7 @@ header {
   width: 100%;
   display: flex;
   justify-content: flex-start;
-  font-family: "Roboto";
+  font-family: "Doctor Soos";
   font-weight: 100;
 }
 header .overlay_header {
@@ -440,48 +439,20 @@ header .sapin_toggle .menu_sapin p:nth-of-type(2) {
   transition: clip-path 0.3s ease-in;
 }
 
-footer {
-  height: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  background: transparent;
-  font-family: "Doctor Soos";
-  color: #efdebe;
-  text-transform: uppercase;
-}
-footer a {
-  padding: 10px;
-  color: #efdebe;
-  transition: all 0.3s;
-  background: rgba(255, 255, 255, 0.25);
-  backdrop-filter: blur(4px);
-  margin: 5px;
-  padding: 10px;
-  -webkit-backdrop-filter: blur(4px);
-  border-radius: 50px;
-  text-align: center;
-}
-footer a:hover {
-  color: #8d0801;
-}
-footer p {
-  padding-block: 10px;
-  background: rgba(255, 255, 255, 0.25);
-  backdrop-filter: blur(4px);
-  padding: 5px;
-  margin: 5px;
-  -webkit-backdrop-filter: blur(4px);
-  border-radius: 50px;
-}
-
 .hero {
   min-height: 70vh;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  position: relative;
+}
+.hero #boite_lettre {
+  width: 4.5%;
+  left: 35vw;
+  bottom: 15vh;
+  position: absolute;
+  transform: rotateY(180deg);
 }
 
 @media (orientation: landscape) {
@@ -599,10 +570,6 @@ footer p {
   }
 }
 
-main {
-  height: 100vh;
-}
-
 .recette {
   display: flex;
   align-items: center;
@@ -611,33 +578,56 @@ main {
 }
 .recette .titre_recette {
   display: flex;
-  align-items: flex-start !important;
-  text-align: left;
+  align-items: center;
+  justify-content: flex-end;
   width: 100%;
-  margin-inline: 30px;
-  color: red;
+  margin-inline-end: 30px;
+  color: #8d0801;
 }
 .recette .box_grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: repeat(9, 1fr);
   grid-column-gap: 30px;
   grid-row-gap: 30px;
-  font-family: "Doctor Soos";
-  color: #43291f;
-  font-size: 24px;
 }
 .recette .box_grid .recette_box {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: rgba(255, 255, 255, 0.25);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
   border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
   width: 30vw;
   height: 30vh;
+  background-image: url("../../assets/images/jpg/pexels-tim-douglas-6210864.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.recette .box_grid .recette_box img {
+  object-fit: cover;
+}
+.recette .box_grid .texte {
+  display: flex;
+  flex-direction: column;
+  background: #efdebe;
+  padding: 5px;
+  font-family: "Doctor Soos";
+  color: #8d0801;
+  font-size: 24px;
+  height: 20vh;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+}
+.recette .box_grid .texte i {
+  color: #8d0801;
+  font-size: 18px;
+}
+.recette .box_grid .texte a {
+  background: #f8f8f8;
+  width: 80%;
+  padding: 5px;
+  border-radius: 20px;
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */

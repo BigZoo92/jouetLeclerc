@@ -3,34 +3,57 @@
     align-items: center;
     flex-direction: column;
     width: 100%;
-        .titre_recette{
-            display: flex;
-            align-items: flex-start !important;
-            text-align: left;
-            width: 100%;
-            margin-inline: 30px;
-            color: red;
-        }
+    .titre_recette {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        width: 100%;
+        margin-inline-end: 30px;
+        color: $noel-rouge;
+    }
     .box_grid {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(2, 1fr);
+        grid-template-rows: repeat(9, 1fr);
         grid-column-gap: 30px;
         grid-row-gap: 30px;
-        font-family: $font-title;
-        color: $noel-marron;
-        font-size: 24px;
         .recette_box {
             display: flex;
             justify-content: center;
             align-items: center;
-            background: rgba(255, 255, 255, 0.25);
-            backdrop-filter: blur(4px);
-            -webkit-backdrop-filter: blur(4px);
             border-radius: 10px;
-            border: 1px solid rgba(255, 255, 255, 0.18);
             width: 30vw;
             height: 30vh;
+            background-image: url("../../assets/images/jpg/pexels-tim-douglas-6210864.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            img {
+                object-fit: cover;
+            }
+        }
+        .texte {
+            display: flex;
+            flex-direction: column;
+            background: #efdebe;
+            padding: 5px;
+            font-family: "Doctor Soos";
+            color: #8d0801;
+            font-size: 24px;
+            height: 20vh;
+            border-radius: 10px;
+            align-items: center;
+            justify-content: center;
+            i {
+                color: $noel-rouge;
+                font-size: 18px;
+            }
+            a {
+                background: #f8f8f8;
+                width: 80%;
+                padding: 5px;
+                border-radius: 20px;
+                text-align: center;
+            }
         }
     }
 }
