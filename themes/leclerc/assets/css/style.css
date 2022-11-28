@@ -258,11 +258,11 @@ body {
 
 a {
   text-decoration: none;
-  color: #efdebe;
+  color: #8d0801;
   transition: all 0.3s;
 }
 a:hover {
-  color: #8d0801;
+  color: #43291f;
 }
 
 h1 {
