@@ -1,0 +1,278 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css");
+
+:root {
+    --angle: calc(0.0436609313 * 100vw);
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    height: auto;
+    margin-top: 20vh;
+    .hero {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 5vw;
+        .divider {
+            clip-path: polygon(0% var(--angle), 100% 0%, 100% calc(100% - var(--angle)), 0% 100%);
+            background: $noel-rouge;
+            width: 100vw;
+            margin-block: 10vh;
+            padding-block: 5vh;
+            h1 {
+                color: $noel-beige;
+            }
+        }
+        .video {
+            position: relative;
+            video {
+                height: 60vh;
+                -webkit-border-top-left-radius: 50px;
+                -webkit-border-bottom-right-radius: 50px;
+                -moz-border-radius-topleft: 50px;
+                -moz-border-radius-bottomright: 50px;
+                border-top-left-radius: 50px;
+                border-bottom-right-radius: 50px;
+                border: 10px solid $noel-vert;
+            }
+            .play {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                -webkit-transform: translate(-50%, -50%);
+                padding: 20px;
+                background: none;
+                border: 0;
+                color: $noel-beige;
+                font-size: 5rem;
+                text-align: center;
+                transition: all 0.3s;
+                cursor: pointer;
+                &:hover {
+                    color: $noel-rouge;
+                }
+            }
+        }
+        p {
+            color: $noel-marron;
+            text-align: center;
+            padding: 3vh 25vw;
+        }
+        .column {
+            float: left;
+            width: 50%;
+        }
+        .row {
+            &:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+        }
+        .box {
+            padding: 10vw;
+            margin: 2vw;
+            background: $noel-marron;
+            border-radius: 20px;
+            filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.6));
+        }
+        h1 {
+            text-align: center;
+        }
+        h2 {
+            text-align: center;
+        }
+        h3 {
+            text-align: center;
+        }
+        h4 {
+            text-align: center;
+        }
+        h5 {
+            text-align: center;
+        }
+        h6 {
+            text-align: center;
+        }
+        form {
+            // background: $noel-rouge;
+            width: 75%;
+            padding: 20px;
+            font-size: 2rem;
+            display: flex;
+            flex-direction: column;
+            .formDivGauche {
+                padding-inline-end: 10px;
+                width: 50%;
+            }
+            .formDivDroite {
+                padding-inline-start: 10px;
+                width: 50%;
+            }
+            .checkbox {
+                display: flex;
+                justify-content: flex-end;
+                flex-direction: row-reverse;
+                text-align: right;
+                label {
+                    font-size: 1.25rem;
+                    padding-left: 10px;
+                    padding-block: 5vh;
+                }
+            }
+            label {
+                color: $noel-rouge;
+                font-family: $font-title;
+                padding-block: 10px;
+            }
+            input:not([type="checkbox"]) {
+                width: 100%;
+                font-family: $font-title;
+                border: none;
+                border-bottom: 1px solid $noel-vert;
+                background: transparent;
+                font-size: 1.5rem;
+                color: $noel-vert;
+                &:focus {
+                    outline: none;
+                }
+            }
+
+            textarea {
+                resize: vertical;
+                font-family: $font-title;
+                font-size: 1.5rem;
+                background: transparent;
+                color: $noel-vert;
+                border: none;
+                border-bottom: 1px solid $noel-vert;
+                &:focus {
+                    outline: none;
+                }
+            }
+
+            input[type="submit"] {
+                background: $noel-rouge;
+                float: right;
+                width: auto;
+                border: none;
+                color: $noel-beige;
+                padding: 1vh 2vh;
+                cursor: pointer;
+                font-size: 2rem;
+                transition: all 0.3s;
+                &:hover {
+                    background: $noel-vert;
+                }
+            }
+        }
+        $perspective: 850px;
+        $present-dimension: 12em;
+        $date-dimension: $present-dimension / 5;
+        $bauble-dimension: $present-dimension / 4.5;
+        .present {  
+            position: relative;
+            display: inline-block;
+            width: $present-dimension;
+            height: $present-dimension;
+            margin: 0.5em;
+            perspective: $perspective;
+            z-index: 666;
+        }
+        .present__pane,
+        .present__content {
+            width: inherit;
+            height: inherit;
+        }
+        .present__pane {
+            position: relative;
+            background: linear-gradient(135deg, lighten($noel-rouge, 7%) 50%, $noel-vert 50%);
+            transform-style: preserve-3d;
+            transform-origin: 0;
+            perspective: $perspective;
+            text-align: center;
+            box-shadow: 0 0 40px 0 rgba(black, 0.15);
+            cursor: pointer;
+            transition: all 0.2s ease-out;
+        }
+        .present__date {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: $date-dimension;
+            height: $date-dimension;
+            margin: 0;
+            font-size: 2em;
+            line-height: $date-dimension;
+            background: SlateBlue;
+            color: white;
+            border-radius: 50%;
+            box-shadow: inset 0 0 10px 5px rgba(black, 0.15);
+        }
+        // hover styles
+        .present:hover {
+            z-index: 999;
+        }
+        .present:hover .present__pane {
+            background: linear-gradient(135deg, lighten(Tomato, 10%) 50%, lighten(Tomato, 5%) 50%);
+            transform: rotateY(-97deg);
+            perspective-origin: 0;
+            transition: all 0.25s ease-in;
+        }
+        .present:hover .present__date {
+            backface-visibility: hidden; // hide date
+        }
+        .present:hover .present__bauble {
+            display: inline-block;
+            transform-origin: 50% 0;
+            animation: shake 0.7s;
+        }
+        .present__content {
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: SlateBlue;
+            box-shadow: 0 0 40px 0 rgba(black, 0.15), inset 0 0 30px 20px rgba(black, 0.15);
+            z-index: -1;
+        }
+        .present__bauble {
+            position: relative;
+            width: $bauble-dimension;
+            height: $bauble-dimension;
+            background: Violet;
+            margin: 25% auto 0 auto;
+            font-size: $bauble-dimension;
+            line-height: $bauble-dimension;
+            border-radius: 50%;
+        }
+        // rectangle that has pin
+        .present__bauble::after {
+            content: "";
+            position: absolute;
+            top: -5%;
+            left: 50%;
+            width: 30%;
+            height: 10%;
+            margin-left: -15%;
+            background: inherit;
+        }
+        .present__bauble::before {
+            content: "";
+            position: absolute;
+            top: -15%;
+            left: 50%;
+            width: 12%;
+            height: 20%;
+            margin-left: -12%;
+            border: 0.35rem solid Violet;
+            border-radius: 50%;
+            z-index: 0;
+        }
+    }
+}
