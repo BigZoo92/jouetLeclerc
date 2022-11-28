@@ -6,12 +6,53 @@
     flex-direction: column;
     position: relative;
     #boite_lettre{
-        width: 4.5%;
-        left: 35vw;
+        width: 4vw;
+        left: 36vw;
         bottom: 15vh;
         position: absolute;
         transform: rotateY(180deg);
+        transition: all 0.3s;
+        border-radius: 30px;
+        box-shadow: 0px 15px 10px -15px rgb(155, 155, 155);
+        cursor: pointer;
+        &:hover{
+            transform: scale(0.9) rotateY(180deg);
+        }
     }
+
+    #sapin{
+        width: 5vw;
+        left: 47.8%;
+        top: 29.5vh;
+        position: absolute;
+        transform: rotateY(180deg) translateX(-50%);
+    }
+    
+    #lutin{
+        width: 6vw;
+        left: 23vw;
+        bottom: 0;
+        position: absolute;
+        transform: rotateY(180deg);
+        transition: all 0.3s;
+        cursor: pointer;
+        &:hover{
+            transform: scale(0.9) rotateY(180deg);
+        }
+    }
+
+    #lutin2{
+        width: 6vw;
+        right: 22vw;
+        bottom: 0;
+        position: absolute;
+        transition: all 0.3s;
+        cursor: pointer;
+        &:hover{
+            transform: scale(0.9);
+        }
+    }
+
 }
 
 @media (orientation: landscape) {
