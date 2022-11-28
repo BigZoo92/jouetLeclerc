@@ -5,7 +5,8 @@ function recettes_register_post_types() {
         'name' => 'Recettes',
         'all_items' => 'Toutes les recettes',  // affiché dans le sous menu
         'singular_name' => 'Recette',
-        'add_new_item' => 'Ajouter un projet',
+        'add_new' => 'Ajouter une recette',
+        'add_new_item' => 'Ajouter une recette',
         'edit_item' => 'Modifier la recette',
         'menu_name' => 'Recettes'
     );
@@ -15,7 +16,7 @@ function recettes_register_post_types() {
         'public' => true,
         'show_in_rest' => true,
         'has_archive' => true,
-        'supports' => array( 'title', 'editor','thumbnail' ),
+        'supports' => array( 'title','thumbnail' ),
         'menu_position' => 5, 
         'menu_icon' => get_template_directory_uri() . '/assets/images/png/recipe_icon.png',
 	);
@@ -29,6 +30,7 @@ function cadeaux_register_post_types() {
         'name' => 'Cadeaux',
         'all_items' => 'Tous les cadeaux',  // affiché dans le sous menu
         'singular_name' => 'Cadeau',
+        'add_new' => 'Ajouter un cadeau',
         'add_new_item' => 'Ajouter un cadeau',
         'edit_item' => 'Modifier le cadeau',
         'menu_name' => 'Cadeaux'
@@ -39,7 +41,7 @@ function cadeaux_register_post_types() {
         'public' => true,
         'show_in_rest' => true,
         'has_archive' => true,
-        'supports' => array( 'title', 'editor','thumbnail' ),
+        'supports' => array( 'title','thumbnail' ),
         'menu_position' => 5, 
         'menu_icon' => get_template_directory_uri() . '/assets/images/png/gift_icon.png',
 	);

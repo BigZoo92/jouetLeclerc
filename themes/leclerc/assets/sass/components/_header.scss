@@ -4,14 +4,15 @@ header {
     justify-content: flex-start;
     font-family: "Roboto";
     font-weight: 100;
+    overflow: hidden;
     .overlay_header {
       height: 100vh;
       width: 100%;
       position: absolute;
-      top: 100vh;
+      top: 150vh;
       left: 0;
       background-color: $noel-beige;
-      display: flex;
+      display: none;
       justify-content: center;
       align-items: center;
       z-index: 10;
@@ -65,45 +66,9 @@ header {
       align-items: center;
       gap: 5px;
       cursor: pointer;
-      .star {
-        --size: 20px;
-        --half-size: calc(var(--size) / 2);
-        position: relative;
-        display: block;
-        color: rgb(179, 188, 11);
-        width: 0px;
-        height: 0px;
-        border-right: var(--half-size) solid transparent;
-        border-bottom: calc(var(--half-size) * 0.7) solid rgb(179, 188, 11);
-        border-left: var(--half-size) solid transparent;
-        transform: rotate(35deg);
-        &:before {
-          border-bottom: calc(var(--half-size) * 0.8) solid rgb(179, 188, 11);
-          border-left: calc(var(--half-size) * 0.3) solid transparent;
-          border-right: calc(var(--half-size) * 0.3) solid transparent;
-          position: absolute;
-          height: 0;
-          width: 0;
-          top: calc(var(--half-size) * 0.45 * -1);
-          left: calc(var(--half-size) * 0.65 * -1);
-          display: block;
-          content: "";
-          transform: rotate(-35deg);
-        }
-        &:after {
-          position: absolute;
-          display: block;
-          color: rgb(179, 188, 11);
-          top: calc(var(--half-size) * 0.03);
-          left: calc(var(--half-size) * -1.05);
-          width: 0px;
-          height: 0px;
-          border-right: var(--half-size) solid transparent;
-          border-bottom: calc(var(--half-size) * 0.7) solid rgb(179, 188, 11);
-          border-left: var(--half-size) solid transparent;
-          transform: rotate(-70deg);
-          content: "";
-        }
+      img{
+        width: 15px;
+        margin-bottom: -5px;
       }
       .branches {
         display: flex;
@@ -139,12 +104,14 @@ header {
         display: flex;
         justify-content: center;
         align-items: center;
+        padding-inline: 13px;
         p:nth-of-type(2) {
           background-color: $noel-beige;
           top: 0;
           position: absolute;
           clip-path: inset(50% 0 50% 0);
-          transition: clip-path 0.3s ease-in;
+          transition: clip-path 0.3s ease-in,
+                      background-color 1s ease-in;
         }
       }
     }
