@@ -293,7 +293,7 @@ h6 {
 header {
   width: 100%;
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   font-family: "Doctor Soos";
   font-weight: 100;
   overflow: hidden;
@@ -328,7 +328,7 @@ header .overlay_header nav ul li {
 header .overlay_header nav ul li:nth-of-type(2n) {
   clip-path: inset(0 0 0 100%);
 }
-header .overlay_header nav ul li:nth-of-type(2n+1) {
+header .overlay_header nav ul li:nth-of-type(2n + 1) {
   clip-path: inset(0 100% 0 0);
 }
 header .overlay_header nav ul li a {
@@ -405,6 +405,66 @@ header .sapin_toggle .menu_sapin p:nth-of-type(2) {
   clip-path: inset(50% 0 50% 0);
   transition: clip-path 0.3s ease-in, background-color 1s ease-in;
 }
+header .modal {
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-inline: 20px;
+}
+header .modal ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .modal ul li {
+  padding: 10px;
+  margin-inline: 20px;
+  position: relative;
+  background: #8d0801;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .modal ul li i {
+  padding-inline-end: 5px;
+}
+header .modal ul li a {
+  color: white;
+  text-align: center;
+}
+header .modal ul li a:hover {
+  color: black;
+}
+header .modal ul li:hover {
+  color: black;
+}
+header .modal ul li::before {
+  content: "";
+  width: 15px;
+  height: 38px;
+  left: -6px;
+  background-image: url("../../assets/images/svg/Tickets_bord.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  right: 150px;
+  top: 50%;
+  position: absolute;
+  transform: translateY(-50%);
+}
+header .modal ul li::after {
+  content: "";
+  width: 15px;
+  height: 38px;
+  background-image: url("../../assets/images/svg/Tickets_bord.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  transform: rotateY(180deg) translateY(-50%);
+  top: 50%;
+  right: -6px;
+  position: absolute;
+}
 
 .hero {
   min-height: 70vh;
@@ -415,11 +475,48 @@ header .sapin_toggle .menu_sapin p:nth-of-type(2) {
   position: relative;
 }
 .hero #boite_lettre {
-  width: 4.5%;
-  left: 35vw;
+  width: 4vw;
+  left: 36vw;
   bottom: 15vh;
   position: absolute;
   transform: rotateY(180deg);
+  transition: all 0.3s;
+  border-radius: 30px;
+  box-shadow: 0px 15px 10px -15px rgb(155, 155, 155);
+  cursor: pointer;
+}
+.hero #boite_lettre:hover {
+  transform: scale(0.9) rotateY(180deg);
+}
+.hero #sapin {
+  width: 5vw;
+  left: 47.8%;
+  top: 29.5vh;
+  position: absolute;
+  transform: rotateY(180deg) translateX(-50%);
+}
+.hero #lutin {
+  width: 6vw;
+  left: 23vw;
+  bottom: 0;
+  position: absolute;
+  transform: rotateY(180deg);
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.hero #lutin:hover {
+  transform: scale(0.9) rotateY(180deg);
+}
+.hero #lutin2 {
+  width: 6vw;
+  right: 22vw;
+  bottom: 0;
+  position: absolute;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.hero #lutin2:hover {
+  transform: scale(0.9);
 }
 
 @media (orientation: landscape) {

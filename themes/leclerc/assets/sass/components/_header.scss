@@ -1,118 +1,177 @@
 header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-family: $font-title;
+  font-weight: 100;
+  overflow: hidden;
+  .overlay_header {
+    height: 100vh;
     width: 100%;
-    display: flex;
-    justify-content: flex-start;
-    font-family: $font-title;
-    font-weight: 100;
-    overflow: hidden;
-    .overlay_header {
-      height: 100vh;
-      width: 100%;
-      position: absolute;
-      top: 150vh;
-      left: 0;
-      background-color: $noel-beige;
-      display: none;
-      justify-content: center;
-      align-items: center;
-      z-index: 10;
-      nav{
-          ul{
-              display: flex;
-              justify-content: space-between;
-              flex-direction: column;
-              align-items: center;
-              gap: 3vw;
-              margin-bottom: 10vh;
-              li{
-                  list-style-type: none;
-                  text-transform: uppercase;
-                  transition: clip-path 0.5s ease-in-out;
-                  clip-path: inset(0 100% 0 0);
-                  font-size: clamp(1em, 1.75vw, 1.75em);
-                  &:nth-of-type(2n){
-                      clip-path: inset(0 0 0 100%);
-                  }
-                  &:nth-of-type(2n+1){
-                      clip-path: inset(0 100% 0 0);
-                  }
-                  a{
-                      text-decoration: none;
-                      color: $noel-vert;
-                      transition: color 0.3s ease;
-                      &:hover{
-                          color: $noel-rouge;
-                      }
-                  }
-              }
+    position: absolute;
+    top: 150vh;
+    left: 0;
+    background-color: $noel-beige;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    nav {
+      ul {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+        gap: 3vw;
+        margin-bottom: 10vh;
+        li {
+          list-style-type: none;
+          text-transform: uppercase;
+          transition: clip-path 0.5s ease-in-out;
+          clip-path: inset(0 100% 0 0);
+          font-size: clamp(1em, 1.75vw, 1.75em);
+          &:nth-of-type(2n) {
+            clip-path: inset(0 0 0 100%);
           }
-      }
-      svg{
-          position: absolute;
-          bottom: -60px;
-          width: 105%;
-          margin-left: 5%;
+          &:nth-of-type(2n + 1) {
+            clip-path: inset(0 100% 0 0);
+          }
+          a {
+            text-decoration: none;
+            color: $noel-vert;
+            transition: color 0.3s ease;
+            &:hover {
+              color: $noel-rouge;
+            }
+          }
+        }
       }
     }
-    .sapin_toggle {
-        z-index: 11;
-        margin-left: 5vw;
-      margin-top: 20px;
-      justify-content: flex-end;
-      align-self: flex-start;
-      position: relative;
+    svg {
+      position: absolute;
+      bottom: -60px;
+      width: 105%;
+      margin-left: 5%;
+    }
+  }
+  .sapin_toggle {
+    z-index: 11;
+    margin-left: 5vw;
+    margin-top: 20px;
+    justify-content: flex-end;
+    align-self: flex-start;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    img {
+      width: 15px;
+      margin-bottom: -5px;
+    }
+    .branches {
       display: flex;
       flex-direction: column;
       align-items: center;
       gap: 5px;
-      cursor: pointer;
-      img{
-        width: 15px;
-        margin-bottom: -5px;
-      }
-      .branches {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 5px;
-        clip-path: inset(0 0 0 0);
-        .branche {
-          height: 3px;
-          background-color: $noel-vert;
-          &.arm1 {
-            margin-top: 5px;
-            width: 15px;
-          }
-          &.arm2 {
-            width: 25px;
-          }
-          &.arm3 {
-            width: 35px;
-          }
-          &.arm4 {
-            width: 45px;
-          }
+      clip-path: inset(0 0 0 0);
+      .branche {
+        height: 3px;
+        background-color: $noel-vert;
+        &.arm1 {
+          margin-top: 5px;
+          width: 15px;
+        }
+        &.arm2 {
+          width: 25px;
+        }
+        &.arm3 {
+          width: 35px;
+        }
+        &.arm4 {
+          width: 45px;
         }
       }
-      .menu_sapin {
-        font-family: "Roboto";
-        text-transform: uppercase;
-        letter-spacing: 2px;
-        margin-top: -2px;
+    }
+    .menu_sapin {
+      font-family: "Roboto";
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-top: -2px;
+      position: relative;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-inline: 13px;
+      p:nth-of-type(2) {
+        background-color: $noel-beige;
+        top: 0;
+        position: absolute;
+        clip-path: inset(50% 0 50% 0);
+        transition: clip-path 0.3s ease-in, background-color 1s ease-in;
+      }
+    }
+  }
+  .modal {
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-inline: 20px;
+    ul {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      li {
+        padding: 10px;
+        margin-inline: 20px;
         position: relative;
-        text-align: center;
+        background: $noel-rouge;
+        color: white;
         display: flex;
         justify-content: center;
         align-items: center;
-        padding-inline: 13px;
-        p:nth-of-type(2) {
-          background-color: $noel-beige;
-          top: 0;
+        i {
+          padding-inline-end: 5px;
+        }
+        a {
+          color: white;
+          text-align: center;
+          &:hover {
+            color: black;
+          }
+        }
+        &:hover {
+          color: black;
+        }
+        &::before {
+          content: "";
+          width: 15px;
+          height: 38px;
+          left: -6px;
+          background-image: url("../../assets/images/svg/Tickets_bord.svg");
+          background-repeat: no-repeat;
+          background-size: contain;
+          right: 150px;
+          top: 50%;
           position: absolute;
-          clip-path: inset(50% 0 50% 0);
-          transition: clip-path 0.3s ease-in,
-                      background-color 1s ease-in;
+          transform: translateY(-50%);
+        }
+        &::after {
+          content: "";
+          width: 15px;
+          height: 38px;
+          background-image: url("../../assets/images/svg/Tickets_bord.svg");
+          background-repeat: no-repeat;
+          background-size: contain;
+          transform: rotateY(180deg) translateY(-50%);
+          top: 50%;
+          right: -6px;
+          position: absolute;
         }
       }
     }
   }
+}
