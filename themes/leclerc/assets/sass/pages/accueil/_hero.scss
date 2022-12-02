@@ -6,9 +6,9 @@
     flex-direction: column;
     position: relative;
     #boite_lettre{
-        width: 4vw;
-        left: 36vw;
-        bottom: 10vh;
+        width: 3.5vw;
+        left: 40vw;
+        bottom: 15vh;
         position: absolute;
         transform: rotateY(180deg);
         transition: all 0.3s;
@@ -29,9 +29,9 @@
     }
     
     #lutin{
-        width: 5vw;
-        left: 23vw;
-        bottom: 0;
+        width: 4.5vw;
+        left: 30vw;
+        bottom: 20px;
         position: absolute;
         transform: rotateY(180deg);
         transition: all 0.3s;
@@ -42,9 +42,9 @@
     }
 
     #lutin2{
-        width: 5vw;
-        right: 22vw;
-        bottom: 0;
+        width: 4.5vw;
+        right: 25vw;
+        bottom: 20px;
         position: absolute;
         transition: all 0.3s;
         cursor: pointer;

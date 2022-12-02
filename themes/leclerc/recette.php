@@ -40,17 +40,35 @@ get_header()
 
             </div>
 
-
             <div class="recette_box">
-                <p>Test</p>
             </div>
 
             <div class="recette_box">
-                <p>Test</p>
             </div>
 
             <div class="recette_box">
-                <p>Test</p>
+            </div>
+
+            <div class="texte">
+
+                <p>Foie gras sur son lit de canard</p>
+                <i class="bi bi-star-half"></i>
+
+            </div>
+
+            <div class="texte">
+
+                <p>Foie gras sur son lit de canard</p>
+                <i class="bi bi-star-half"></i>
+                <a href="#" target="_blank" rel="noopener noreferrer">En savoir plus</a>
+
+            </div>
+
+            <div class="texte">
+
+                <p>Foie gras sur son lit de canard</p>
+                <i class="bi bi-star-half"></i>
+
             </div>
         </div>
     </section>
