@@ -1,5 +1,11 @@
+#bg_hero{
+    background-image: url("../../assets/images/jpg/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 .hero {
-    min-height: 70vh;
+    height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -8,7 +14,7 @@
     #boite_lettre{
         width: 4vw;
         left: 36vw;
-        bottom: 15vh;
+        bottom: 10vh;
         position: absolute;
         transform: rotateY(180deg);
         transition: all 0.3s;
@@ -22,14 +28,14 @@
 
     #sapin{
         width: 5vw;
-        left: 47.8%;
-        top: 29.5vh;
+        left: 47.6%;
+        top: 44vh;
         position: absolute;
         transform: rotateY(180deg) translateX(-50%);
     }
     
     #lutin{
-        width: 6vw;
+        width: 5vw;
         left: 23vw;
         bottom: 0;
         position: absolute;
@@ -42,7 +48,7 @@
     }
 
     #lutin2{
-        width: 6vw;
+        width: 5vw;
         right: 22vw;
         bottom: 0;
         position: absolute;
