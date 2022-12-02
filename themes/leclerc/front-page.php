@@ -16,6 +16,7 @@
             <i></i>
             <i></i>
         </div>
+        <div class="sun"></div>
     </div>
 
     <section class="hero">
