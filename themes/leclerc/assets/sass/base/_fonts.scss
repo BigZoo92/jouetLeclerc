@@ -118,6 +118,28 @@
     font-display: swap;
 }
 
+// Adigiana
+
+@font-face {
+    font-family: 'Adigiana Toybox';
+    src: url('../fonts/noel_font/AdigianaToybox.woff2') format('woff2'),
+        url('../fonts/noel_font/AdigianaToybox.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+// Lemonada
+
+@font-face {
+    font-family: 'Lemonada';
+    src: url('../fonts/noel_font/Lemonada-Regular.woff2') format('woff2'),
+        url('../fonts/noel_font/Lemonada-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 body{
     font-family: $font-normal;
     font-size: clamp(1rem, 2vw + 1rem, 1.125rem);;

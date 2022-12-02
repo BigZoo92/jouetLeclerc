@@ -225,13 +225,27 @@ table {
   font-style: normal;
   font-display: swap;
 }
+@font-face {
+  font-family: "Adigiana Toybox";
+  src: url("../fonts/noel_font/AdigianaToybox.woff2") format("woff2"), url("../fonts/noel_font/AdigianaToybox.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lemonada";
+  src: url("../fonts/noel_font/Lemonada-Regular.woff2") format("woff2"), url("../fonts/noel_font/Lemonada-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 body {
-  font-family: "Roboto";
+  font-family: "Lemonada";
   font-size: clamp(1rem, 2vw + 1rem, 1.125rem);
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Doctor Soos";
+  font-family: "Adigiana Toybox";
 }
 
 h1 {
@@ -247,13 +261,6 @@ h2 {
 * {
   box-sizing: border-box;
   scroll-behavior: smooth;
-}
-
-body {
-  background-image: url("../../assets/images/jpg/background.jpg");
-  background-size: cover;
-  background-repeat: none;
-  overflow: hidden;
 }
 
 a {
@@ -294,9 +301,8 @@ header {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  font-family: "Doctor Soos";
-  font-weight: 100;
-  overflow: hidden;
+  font-family: "Lemonada";
+  font-size: 14px;
 }
 header .overlay_header {
   height: 100vh;
@@ -304,6 +310,7 @@ header .overlay_header {
   position: absolute;
   top: 150vh;
   left: 0;
+  overflow: hidden;
   background-color: #efdebe;
   display: none;
   justify-content: center;
@@ -341,14 +348,13 @@ header .overlay_header nav ul li a:hover {
 }
 header .overlay_header svg {
   position: absolute;
-  bottom: -60px;
-  width: 105%;
-  margin-left: 5%;
+  bottom: 0px;
+  width: 100%;
 }
 header .sapin_toggle {
   z-index: 11;
-  margin-left: 5vw;
-  margin-top: 20px;
+  padding-left: 5vw;
+  padding-top: 20px;
   justify-content: flex-end;
   align-self: flex-start;
   position: relative;
@@ -387,7 +393,7 @@ header .sapin_toggle .branches .branche.arm4 {
   width: 45px;
 }
 header .sapin_toggle .menu_sapin {
-  font-family: "Roboto";
+  font-family: "Lemonada";
   text-transform: uppercase;
   letter-spacing: 2px;
   margin-top: -2px;
@@ -404,6 +410,9 @@ header .sapin_toggle .menu_sapin p:nth-of-type(2) {
   position: absolute;
   clip-path: inset(50% 0 50% 0);
   transition: clip-path 0.3s ease-in, background-color 1s ease-in;
+}
+header .logo_leclerc img {
+  width: 20%;
 }
 header .modal {
   background: transparent;
@@ -466,8 +475,14 @@ header .modal ul li::after {
   position: absolute;
 }
 
+#bg_hero {
+  background-image: url("../../assets/images/jpg/background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .hero {
-  min-height: 70vh;
+  height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -477,7 +492,7 @@ header .modal ul li::after {
 .hero #boite_lettre {
   width: 4vw;
   left: 36vw;
-  bottom: 15vh;
+  bottom: 10vh;
   position: absolute;
   transform: rotateY(180deg);
   transition: all 0.3s;
@@ -490,13 +505,13 @@ header .modal ul li::after {
 }
 .hero #sapin {
   width: 5vw;
-  left: 47.8%;
-  top: 29.5vh;
+  left: 47.6%;
+  top: 44vh;
   position: absolute;
   transform: rotateY(180deg) translateX(-50%);
 }
 .hero #lutin {
-  width: 6vw;
+  width: 5vw;
   left: 23vw;
   bottom: 0;
   position: absolute;
@@ -508,7 +523,7 @@ header .modal ul li::after {
   transform: scale(0.9) rotateY(180deg);
 }
 .hero #lutin2 {
-  width: 6vw;
+  width: 5vw;
   right: 22vw;
   bottom: 0;
   position: absolute;
@@ -569,12 +584,12 @@ header .modal ul li::after {
 }
 .formulaire form label {
   color: #8d0801;
-  font-family: "Doctor Soos";
+  font-family: "Adigiana Toybox";
   padding-block: 10px;
 }
 .formulaire form input:not([type=checkbox]) {
   width: 100%;
-  font-family: "Doctor Soos";
+  font-family: "Adigiana Toybox";
   border: none;
   border-bottom: 1px solid #226f54;
   background: transparent;
@@ -587,7 +602,7 @@ header .modal ul li::after {
 }
 .formulaire form textarea {
   resize: vertical;
-  font-family: "Doctor Soos";
+  font-family: "Adigiana Toybox";
   font-size: 1.5rem;
   background: transparent;
   color: #226f54;
@@ -639,6 +654,7 @@ header .modal ul li::after {
   align-items: center;
   flex-direction: column;
   width: 100%;
+  height: 200vh;
 }
 .recette .titre_recette {
   display: flex;
