@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<main>
+<main id="bg_hero">
     <div class="cd_cometes">
         <div class="comets">
             <i></i>

@@ -1,11 +1,5 @@
-#bg_hero{
-    background-image: url("../../assets/images/jpg/background.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
 .hero {
-    height: 80vh;
+    height: calc(100vh - 100px);
     display: flex;
     justify-content: center;
     align-items: center;

@@ -2,6 +2,19 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
+
+body{
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+}
+
+#bg_hero{
+  background-image: url("../../assets/images/jpg/background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 a {
   text-decoration: none;
   color: $noel-rouge;
