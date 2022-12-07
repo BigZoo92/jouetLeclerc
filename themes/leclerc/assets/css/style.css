@@ -270,7 +270,7 @@ body {
 }
 
 #bg_hero {
-  background-image: url("../../assets/images/jpg/background.jpg");
+  background-image: url("../../assets/images/png/bg2.png");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -441,7 +441,6 @@ header .modal ul {
 }
 header .modal ul li {
   padding: 10px;
-  margin-inline: 20px;
   position: relative;
   background: #8d0801;
   color: white;
@@ -705,33 +704,33 @@ header .modal ul li::after {
 }
 .cd_cometes .comets i:nth-of-type(1) {
   width: 5px;
-  left: 57vw;
-  height: 42px;
+  left: 23vw;
+  height: 21px;
 }
 .cd_cometes .comets i:nth-of-type(2) {
   width: 5px;
-  left: 41vw;
-  height: 4px;
+  left: 32vw;
+  height: 70px;
 }
 .cd_cometes .comets i:nth-of-type(3) {
   width: 5px;
-  left: 37vw;
-  height: 36px;
+  left: 32vw;
+  height: 22px;
 }
 .cd_cometes .comets i:nth-of-type(4) {
   width: 5px;
-  left: 48vw;
-  height: 76px;
+  left: 36vw;
+  height: 48px;
 }
 .cd_cometes .comets i:nth-of-type(5) {
   width: 5px;
-  left: 16vw;
-  height: 52px;
+  left: 38vw;
+  height: 22px;
 }
 .cd_cometes .comets i:nth-of-type(6) {
   width: 5px;
-  left: 16vw;
-  height: 33px;
+  left: 30vw;
+  height: 47px;
 }
 
 @keyframes falling {
@@ -790,16 +789,18 @@ header .modal ul li::after {
 }
 .recette .box_grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  width: 100%;
+  padding: 30px;
   grid-column-gap: 30px;
 }
 .recette .box_grid .recette_box {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 30vw;
-  height: 200px;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 45vh;
+  border-radius: 0 0 5px 5px;
+  margin-bottom: 30px;
   background-image: url("../../assets/images/jpg/pexels-tim-douglas-6210864.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -809,28 +810,43 @@ header .modal ul li::after {
 }
 .recette .box_grid .texte {
   display: flex;
-  margin-bottom: 20px;
-  flex-direction: column;
-  background: #f8f8f8;
-  padding: 5px;
+  bottom: 0;
+  width: 100%;
+  flex-direction: row;
+  background: #efdebe;
+  padding: 20px;
   font-family: "Doctor Soos";
   color: #8d0801;
   border-radius: 0 0 5px 5px;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 .recette .box_grid .texte i {
-  color: #8d0801;
-  font-size: 18px;
+  color: white;
+  font-size: 1rem;
 }
 .recette .box_grid .texte a {
   background: #8d0801;
   color: white;
-  width: 30%;
-  margin: 20px;
-  padding: 5px;
-  border-radius: 20px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.recette .box_grid .texte .titre {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.recette .box_grid .texte .etoile {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 /*# sourceMappingURL=style.css.map */

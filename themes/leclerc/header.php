@@ -55,9 +55,9 @@
         <div class="modal">
             <nav>
                 <ul>
-                    <li><a href="">Accueil</a></li>
-                    <li><a href="">Lettre au père nöel</a></li>
-                    <li><a href="">Calendrier de l'avent</a></li>
+                    <li><a id="modal_accueil" href="#">Accueil</a></li>
+                    <li><a id="modal_lettre" href="">Lettre au père nöel</a></li>
+                    <li><a id="modal_calendrier" href="">Calendrier de l'avent</a></li>
                 </ul>
             </nav>
         </div>

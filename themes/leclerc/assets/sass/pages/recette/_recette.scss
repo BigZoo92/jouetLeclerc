@@ -14,15 +14,17 @@
     }
     .box_grid {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(4, 1fr);
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        width: 100%;
+        padding: 30px;
         grid-column-gap: 30px;
         .recette_box {
             display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 30vw;
-            height: 200px;
+            justify-content: space-between;
+            align-items: flex-end;
+            height: 45vh;
+            border-radius: 0 0 5px 5px;
+            margin-bottom: 30px;
             background-image: url("../../assets/images/jpg/pexels-tim-douglas-6210864.jpg");
             background-size: cover;
             background-repeat: no-repeat;
@@ -32,27 +34,42 @@
         }
         .texte {
             display: flex;
-            margin-bottom: 20px;
-            flex-direction: column;
-            background: #f8f8f8;
-            padding: 5px;
+            bottom: 0;
+            width: 100%;
+            flex-direction: row;
+            background: $noel-beige;
+            padding: 20px;
             font-family: "Doctor Soos";
             color: #8d0801;
             border-radius: 0 0 5px 5px;
             align-items: center;
-            justify-content: space-evenly;
+            justify-content: space-between;
             i {
-                color: $noel-rouge;
-                font-size: 18px;
+                color: white;
+                font-size: 1rem;
             }
             a {
                 background: $noel-rouge;
                 color: white;
-                width: 30%;
-                margin: 20px;
-                padding: 5px;
-                border-radius: 20px;
+                width: 32px;
+                height: 32px;
+                border-radius: 50%;
                 text-align: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .titre {
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: center;
+            }
+            .etoile {
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: center;
             }
         }
     }
