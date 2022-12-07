@@ -12,40 +12,52 @@ get_header()
             <div class="recette_box">
                 <div class="texte">
                     <p>Foie gras sur son lit de canard</p>
-                    <a href="#" target="_blank" rel="noopener noreferrer"><i class="bi bi-plus-circle"></i></a>
                     <div class="etoile">
                         <i class="bi bi-star-half"></i>
+                        <i class="bi bi-star-half"></i>
+                        <i class="bi bi-star-half"></i>
+                        <i class="bi bi-star-half"></i>
                     </div>
+                    <a href="#" target="_blank" rel="noopener noreferrer"><i class="bi bi-plus-circle"></i></a>
                 </div>
             </div>
 
             <div class="recette_box">
                 <div class="texte">
                     <p>Foie gras sur son lit de canard</p>
-                    <a href="#" target="_blank" rel="noopener noreferrer"><i class="bi bi-plus-circle"></i></a>
                     <div class="etoile">
                         <i class="bi bi-star-half"></i>
+                        <i class="bi bi-star-half"></i>
+                        <i class="bi bi-star-half"></i>
+                        <i class="bi bi-star-half"></i>
                     </div>
+                    <a href="#" target="_blank" rel="noopener noreferrer"><i class="bi bi-plus-circle"></i></a>
                 </div>
             </div>
 
             <div class="recette_box">
                 <div class="texte">
                     <p>Foie gras sur son lit de canard</p>
-                    <a href="#" target="_blank" rel="noopener noreferrer"><i class="bi bi-plus-circle"></i></a>
                     <div class="etoile">
                         <i class="bi bi-star-half"></i>
+                        <i class="bi bi-star-half"></i>
+                        <i class="bi bi-star-half"></i>
+                        <i class="bi bi-star-half"></i>
                     </div>
+                    <a href="#" target="_blank" rel="noopener noreferrer"><i class="bi bi-plus-circle"></i></a>
                 </div>
             </div>
 
             <div class="recette_box">
                 <div class="texte">
                     <p>Foie gras sur son lit de canard</p>
-                    <a href="#" target="_blank" rel="noopener noreferrer"><i class="bi bi-plus-circle"></i></a>
                     <div class="etoile">
                         <i class="bi bi-star-half"></i>
+                        <i class="bi bi-star-half"></i>
+                        <i class="bi bi-star-half"></i>
+                        <i class="bi bi-star-half"></i>
                     </div>
+                    <a href="#" target="_blank" rel="noopener noreferrer"><i class="bi bi-plus-circle"></i></a>
                 </div>
             </div>
 
@@ -67,10 +79,13 @@ get_header()
             <div class="recette_box">
                 <div class="texte">
                     <p>Foie gras sur son lit de canard</p>
-                    <a href="#" target="_blank" rel="noopener noreferrer"><i class="bi bi-plus-circle"></i></a>
                     <div class="etoile">
                         <i class="bi bi-star-half"></i>
+                        <i class="bi bi-star-half"></i>
+                        <i class="bi bi-star-half"></i>
+                        <i class="bi bi-star-half"></i>
                     </div>
+                    <a href="#" target="_blank" rel="noopener noreferrer"><i class="bi bi-plus-circle"></i></a>
                 </div>
             </div>
     </section>
