@@ -5,89 +5,312 @@
 get_header()
 ?>
 
-<main>
+<main id="bg_recette">
     <section class="recette">
-        <h1 class="titre_recette">Les recettes du père noël</h1>
+        <h1 class="titre_page">Les recettes du père noël</h1>
         <div class="box_grid">
-            <div class="recette_box">
-                <div class="texte">
-                    <p>Foie gras sur son lit de canard</p>
-                    <div class="etoile">
-                        <i class="bi bi-star-half"></i>
-                        <i class="bi bi-star-half"></i>
-                        <i class="bi bi-star-half"></i>
-                        <i class="bi bi-star-half"></i>
+            <div class="box_recette">
+                <div class="image_recette">
+                </div>
+                <div class="corps_recette">
+                    <h1 class="titre_recette">
+                    Verrine mousse de jambon
+                    </h1>
+
+                    <div class="difficulte_recette">
+                        <i class="bi bi-clock"> 15 minutes</i>
+                        <li>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </li>
                     </div>
-                    <a href="#" target="_blank" rel="noopener noreferrer"><i class="bi bi-plus-circle"></i></a>
+                    <p class="desc_recette">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, temporibus.
+                    </p>
+                </div>
+                <div class="btn_recette">
+                    <a href="#" class="bouton_recette">Cuisinez !</a>
                 </div>
             </div>
 
-            <div class="recette_box">
-                <div class="texte">
-                    <p>Foie gras sur son lit de canard</p>
-                    <div class="etoile">
-                        <i class="bi bi-star-half"></i>
-                        <i class="bi bi-star-half"></i>
-                        <i class="bi bi-star-half"></i>
-                        <i class="bi bi-star-half"></i>
+            <div class="box_recette">
+                <div class="image_recette">
+                </div>
+                <div class="corps_recette">
+                    <h1 class="titre_recette">
+                        Titre Recette
+                    </h1>
+                    <div class="difficulte_recette">
+                        <i class="bi bi-clock"> 15 minutes</i>
+                        <li>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </li>
                     </div>
-                    <a href="#" target="_blank" rel="noopener noreferrer"><i class="bi bi-plus-circle"></i></a>
+                    <p class="desc_recette">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, temporibus.
+                    </p>
+                </div>
+                <div class="btn_recette">
+                    <a href="#" class="bouton_recette">Cuisinez !</a>
                 </div>
             </div>
 
-            <div class="recette_box">
-                <div class="texte">
-                    <p>Foie gras sur son lit de canard</p>
-                    <div class="etoile">
-                        <i class="bi bi-star-half"></i>
-                        <i class="bi bi-star-half"></i>
-                        <i class="bi bi-star-half"></i>
-                        <i class="bi bi-star-half"></i>
+            <div class="box_recette">
+                <div class="image_recette">
+                </div>
+                <div class="corps_recette">
+                    <h1 class="titre_recette">
+                        Titre Recette
+                    </h1>
+                    <div class="difficulte_recette">
+                        <i class="bi bi-clock"> 15 minutes</i>
+                        <li>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </li>
                     </div>
-                    <a href="#" target="_blank" rel="noopener noreferrer"><i class="bi bi-plus-circle"></i></a>
+                    <p class="desc_recette">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, temporibus.
+                    </p>
+                </div>
+                <div class="btn_recette">
+                    <a href="#" class="bouton_recette">Cuisinez !</a>
                 </div>
             </div>
 
-            <div class="recette_box">
-                <div class="texte">
-                    <p>Foie gras sur son lit de canard</p>
-                    <div class="etoile">
-                        <i class="bi bi-star-half"></i>
-                        <i class="bi bi-star-half"></i>
-                        <i class="bi bi-star-half"></i>
-                        <i class="bi bi-star-half"></i>
+            <div class="box_recette">
+                <div class="image_recette">
+                </div>
+                <div class="corps_recette">
+                    <h1 class="titre_recette">
+                        Titre Recette
+                    </h1>
+                    <div class="difficulte_recette">
+                        <i class="bi bi-clock"> 15 minutes</i>
+                        <li>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </li>
                     </div>
-                    <a href="#" target="_blank" rel="noopener noreferrer"><i class="bi bi-plus-circle"></i></a>
+                    <p class="desc_recette">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, temporibus.
+                    </p>
+                </div>
+                <div class="btn_recette">
+                    <a href="#" class="bouton_recette">Cuisinez !</a>
                 </div>
             </div>
 
-            <div class="recette_box">
-                <div class="texte">
-                    <div class="titre">
-                        <p>Foie gras sur son lit de canard</p>
+            <div class="box_recette">
+                <div class="image_recette">
+                </div>
+                <div class="corps_recette">
+                    <h1 class="titre_recette">
+                        Titre Recette
+                    </h1>
+                    <div class="difficulte_recette">
+                        <i class="bi bi-clock"> 15 minutes</i>
+                        <li>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </li>
                     </div>
-                    <div class="etoile">
-                        <i class="bi bi-star-half"></i>
-                        <i class="bi bi-star-half"></i>
-                        <i class="bi bi-star-half"></i>
-                        <i class="bi bi-star-half"></i>
-                    </div>
-                    <a href="#" target="_blank" rel="noopener noreferrer"><i class="bi bi-plus-circle"></i></a>
+                    <p class="desc_recette">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, temporibus.
+                    </p>
+                </div>
+                <div class="btn_recette">
+                    <a href="#" class="bouton_recette">Cuisinez !</a>
                 </div>
             </div>
 
-            <div class="recette_box">
-                <div class="texte">
-                    <p>Foie gras sur son lit de canard</p>
-                    <div class="etoile">
-                        <i class="bi bi-star-half"></i>
-                        <i class="bi bi-star-half"></i>
-                        <i class="bi bi-star-half"></i>
-                        <i class="bi bi-star-half"></i>
+            <div class="box_recette">
+                <div class="image_recette">
+                </div>
+                <div class="corps_recette">
+                    <h1 class="titre_recette">
+                        Titre Recette
+                    </h1>
+                    <div class="difficulte_recette">
+                        <i class="bi bi-clock"> 15 minutes</i>
+                        <li>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </li>
                     </div>
-                    <a href="#" target="_blank" rel="noopener noreferrer"><i class="bi bi-plus-circle"></i></a>
+                    <p class="desc_recette">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, temporibus.
+                    </p>
+                </div>
+                <div class="btn_recette">
+                    <a href="#" class="bouton_recette">Cuisinez !</a>
                 </div>
             </div>
+
+            <div class="box_recette">
+                <div class="image_recette">
+                </div>
+                <div class="corps_recette">
+                    <h1 class="titre_recette">
+                        Titre Recette
+                    </h1>
+                    <div class="difficulte_recette">
+                        <i class="bi bi-clock"> 15 minutes</i>
+                        <li>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </li>
+                    </div>
+                    <p class="desc_recette">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, temporibus.
+                    </p>
+                </div>
+                <div class="btn_recette">
+                    <a href="#" class="bouton_recette">Cuisinez !</a>
+                </div>
+            </div>
+
+            <div class="box_recette">
+                <div class="image_recette">
+                </div>
+                <div class="corps_recette">
+                    <h1 class="titre_recette">
+                        Titre Recette
+                    </h1>
+                    <div class="difficulte_recette">
+                        <i class="bi bi-clock"> 15 minutes</i>
+                        <li>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </li>
+                    </div>
+                    <p class="desc_recette">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, temporibus.
+                    </p>
+                </div>
+                <div class="btn_recette">
+                    <a href="#" class="bouton_recette">Cuisinez !</a>
+                </div>
+            </div>
+
+            <div class="box_recette">
+                <div class="image_recette">
+                </div>
+                <div class="corps_recette">
+                    <h1 class="titre_recette">
+                        Titre Recette
+                    </h1>
+                    <div class="difficulte_recette">
+                        <i class="bi bi-clock"> 15 minutes</i>
+                        <li>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </li>
+                    </div>
+                    <p class="desc_recette">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, temporibus.
+                    </p>
+                </div>
+                <div class="btn_recette">
+                    <a href="#" class="bouton_recette">Cuisinez !</a>
+                </div>
+            </div>
+
+            <div class="box_recette">
+                <div class="image_recette">
+                </div>
+                <div class="corps_recette">
+                    <h1 class="titre_recette">
+                        Titre Recette
+                    </h1>
+                    <div class="difficulte_recette">
+                        <i class="bi bi-clock">15 minutes</i>
+                        <li>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </li>
+                    </div>
+                    <p class="desc_recette">Produit tah les fous
+                    </p>
+                </div>
+                <div class="btn_recette">
+                    <a href="#" class="bouton_recette">Cuisinez !</a>
+                </div>
+            </div>
+
+            <div class="box_recette">
+                <div class="image_recette">
+                </div>
+                <div class="corps_recette">
+                    <h1 class="titre_recette">
+                        Titre Recette
+                    </h1>
+                    <div class="difficulte_recette">
+                        <i class="bi bi-clock"> 15 minutes</i>
+                        <li>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </li>
+                    </div>
+                    <p class="desc_recette">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, temporibus.
+                    </p>
+                </div>
+                <div class="btn_recette">
+                    <a href="#" class="bouton_recette">Cuisinez !</a>
+                </div>
+            </div>
+
+            <div class="box_recette">
+                <div class="image_recette">
+                </div>
+                <div class="corps_recette">
+                    <h1 class="titre_recette">
+                        Titre Recette
+                    </h1>
+                    <div class="difficulte_recette">
+                        <i class="bi bi-clock"> 15 minutes</i>
+                        <li>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </li>
+                    </div>
+                    <p class="desc_recette">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, temporibus.
+                    </p>
+                </div>
+                <div class="btn_recette">
+                    <a href="#" class="bouton_recette">Cuisinez !</a>
+                </div>
+            </div>
+
+        </div>
     </section>
 </main>
 

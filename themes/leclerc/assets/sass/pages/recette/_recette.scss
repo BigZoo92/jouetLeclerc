@@ -3,73 +3,85 @@
     align-items: center;
     flex-direction: column;
     width: 100%;
-    height: calc(100vh - 100px);
-    .titre_recette {
+    height: calc(100% - 100px);
+    .titre_page {
         display: flex;
         align-items: center;
-        justify-content: flex-end;
-        width: 100%;
-        margin-inline-end: 30px;
+        justify-content: center;
+        margin-block-start: 20px;
+        border-radius: 20px 50px;
+        background: $background;
         color: $noel-rouge;
+        font-size: clamp(1.5rem, 1.0238rem + 2.381vw, 2.5rem);
     }
     .box_grid {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
         width: 100%;
         padding: 30px;
-        grid-column-gap: 30px;
-        .recette_box {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-end;
-            height: 45vh;
-            border-radius: 0 0 5px 5px;
-            margin-bottom: 30px;
-            background-image: url("../../assets/images/jpg/pexels-tim-douglas-6210864.jpg");
-            background-size: cover;
-            background-repeat: no-repeat;
-            img {
-                object-fit: cover;
+        grid-column-gap: 20px;
+        .box_recette {
+            background: $background;
+            margin: 40px auto;
+            border-radius: 0px 0px 20px 20px;
+            width: 350px;
+            .image_recette {
+                position: relative;
+                background-image: url("../../assets/images/jpg/pexels-tim-douglas-6210864.jpg");
+                background-size: cover;
+                min-height: 25vh;
+                img {
+                    max-width: 100%;
+                    object-fit: cover;
+                }
             }
-        }
-        .texte {
-            display: flex;
-            bottom: 0;
-            width: 100%;
-            flex-direction: row;
-            background: $noel-beige;
-            padding: 20px;
-            font-family: "Doctor Soos";
-            color: #8d0801;
-            border-radius: 0 0 5px 5px;
-            align-items: center;
-            justify-content: space-between;
-            i {
-                color: white;
+            .corps_recette {
+                .titre_recette {
+                    text-align: left;
+                    text-transform: uppercase;
+                    color: $noel-rouge;
+                    font-size: 1.125rem;
+                }
+            }
+            .difficulte_recette {
+                margin-inline: 20px;
+                margin-block-end: 3vh;
+                list-style: none;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
                 font-size: 1rem;
+                li > i {
+                    color: $noel-etoile;
+                }
             }
-            a {
-                background: $noel-rouge;
-                color: white;
-                width: 32px;
-                height: 32px;
-                border-radius: 50%;
-                text-align: center;
-                display: flex;
-                justify-content: center;
-                align-items: center;
+            .desc_recette {
+                margin-inline: 20px;
+                margin-block: 3rem;
+                font-size: 1rem;
+                width: 310px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
             }
-            .titre {
+            .btn_recette {
                 display: flex;
-                flex-direction: row;
-                justify-content: flex-start;
+                justify-content: flex-end;
                 align-items: center;
-            }
-            .etoile {
-                display: flex;
-                flex-direction: row;
-                justify-content: flex-start;
-                align-items: center;
+                .bouton_recette {
+                    display: block;
+                    color: $background;
+                    background: $noel-rouge;
+                    position: absolute;
+                    text-transform: uppercase;
+                    text-align: center;
+                    padding: 10px;
+                    transition: all 0.3s;
+                    border-radius: 20px 0 20px 20px;
+                    &:hover {
+                        background: $noel-vert;
+                    }
+                }
             }
         }
     }
