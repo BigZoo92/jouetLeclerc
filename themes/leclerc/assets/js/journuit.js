@@ -1,7 +1,7 @@
 let dateTab = new Date()
 let date = dateTab.getDate()
 let heure = dateTab.getHours()
-// let heure = 0;
+// let heure = 20;
 if (heure>18 || heure<9){
     console.log('wesh');
     document.querySelector('.sun').style.background = "white"

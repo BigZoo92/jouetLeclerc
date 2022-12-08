@@ -276,9 +276,9 @@ body {
 }
 
 #bg_recette {
-  background-image: url("../../assets/images/jpg/christmas-baubles-g7d8c1f204_1920.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-image: url("../../assets/images/jpg/pattern.jpg");
+  background-repeat: repeat;
+  background-size: 50vw;
 }
 
 a {
@@ -869,33 +869,33 @@ header .modal_container .modal .box_modal .btnModalLettre .btnLettre:hover {
 }
 .cd_cometes .comets i:nth-of-type(1) {
   width: 5px;
-  left: 61vw;
-  height: 72px;
+  left: 45vw;
+  height: 25px;
 }
 .cd_cometes .comets i:nth-of-type(2) {
   width: 5px;
-  left: 46vw;
-  height: 9px;
+  left: 15vw;
+  height: 30px;
 }
 .cd_cometes .comets i:nth-of-type(3) {
   width: 5px;
-  left: 23vw;
-  height: 18px;
+  left: 47vw;
+  height: 42px;
 }
 .cd_cometes .comets i:nth-of-type(4) {
   width: 5px;
-  left: 26vw;
-  height: 70px;
+  left: 43vw;
+  height: 64px;
 }
 .cd_cometes .comets i:nth-of-type(5) {
   width: 5px;
-  left: 43vw;
-  height: 1px;
+  left: 16vw;
+  height: 12px;
 }
 .cd_cometes .comets i:nth-of-type(6) {
   width: 5px;
-  left: 19vw;
-  height: 29px;
+  left: 33vw;
+  height: 45px;
 }
 .cd_cometes .sun {
   width: 25vh;
@@ -988,15 +988,11 @@ header .modal_container .modal .box_modal .btnModalLettre .btnLettre:hover {
   margin: 40px auto;
   border-radius: 0px 0px 20px 20px;
   width: 350px;
-}
-.recette .box_grid .box_recette .image_recette {
   position: relative;
-  background-image: url("../../assets/images/jpg/pexels-tim-douglas-6210864.jpg");
-  background-size: cover;
-  min-height: 25vh;
 }
-.recette .box_grid .box_recette .image_recette img {
-  max-width: 100%;
+.recette .box_grid .box_recette img {
+  width: 100%;
+  height: 55%;
   object-fit: cover;
 }
 .recette .box_grid .box_recette .corps_recette .titre_recette {
@@ -1026,22 +1022,19 @@ header .modal_container .modal .box_modal .btnModalLettre .btnLettre:hover {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.recette .box_grid .box_recette .btn_recette {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
-.recette .box_grid .box_recette .btn_recette .bouton_recette {
+.recette .box_grid .box_recette .bouton_recette {
   display: block;
   color: #f8f8f8;
   background: #8d0801;
   position: absolute;
+  right: 0;
+  bottom: -13.75px;
   text-transform: uppercase;
   text-align: center;
   transition: all 0.3s;
   border-radius: 20px 0 20px 20px;
 }
-.recette .box_grid .box_recette .btn_recette .bouton_recette:hover {
+.recette .box_grid .box_recette .bouton_recette:hover {
   background: #226f54;
 }
 .recette button {
