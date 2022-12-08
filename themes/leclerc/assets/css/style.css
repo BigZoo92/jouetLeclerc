@@ -701,89 +701,6 @@ header .modal_container .modal .box_modal .btnModalLettre .btnLettre:hover {
     flex-direction: column;
   }
 }
-.formulaire {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.formulaire .column {
-  float: left;
-  width: 50%;
-}
-.formulaire .row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-.formulaire form {
-  background: #efdebe;
-  padding: 20px;
-  border-radius: 5px;
-  font-size: 2rem;
-  display: flex;
-  flex-direction: column;
-}
-.formulaire form .formDivGauche {
-  width: 100%;
-}
-.formulaire form .formDivDroite {
-  width: 100%;
-}
-.formulaire form .checkbox {
-  display: flex;
-  justify-content: flex-end;
-  flex-direction: row-reverse;
-  text-align: right;
-}
-.formulaire form .checkbox label {
-  font-size: 1.25rem;
-  padding-left: 10px;
-}
-.formulaire form label {
-  color: #8d0801;
-  font-family: "Adigiana Toybox";
-  padding-block: 10px;
-}
-.formulaire form input:not([type=checkbox]) {
-  width: 100%;
-  font-family: "Adigiana Toybox";
-  border: none;
-  border-bottom: 1px solid #226f54;
-  background: transparent;
-  font-size: 1.5rem;
-  color: #226f54;
-  margin-block: 4vh;
-}
-.formulaire form input:not([type=checkbox]):focus {
-  outline: none;
-}
-.formulaire form textarea {
-  resize: vertical;
-  font-family: "Adigiana Toybox";
-  font-size: 1.5rem;
-  background: transparent;
-  color: #226f54;
-  border: none;
-  border-bottom: 1px solid #226f54;
-}
-.formulaire form textarea:focus {
-  outline: none;
-}
-.formulaire form input[type=submit] {
-  background: #8d0801;
-  float: right;
-  width: auto;
-  border: none;
-  color: #efdebe;
-  padding: 1vh 2vh;
-  cursor: pointer;
-  font-size: 2rem;
-  transition: all 0.3s;
-}
-.formulaire form input[type=submit]:hover {
-  background: #226f54;
-}
-
 .video {
   height: 100vh;
   background: #226f54;
@@ -869,33 +786,33 @@ header .modal_container .modal .box_modal .btnModalLettre .btnLettre:hover {
 }
 .cd_cometes .comets i:nth-of-type(1) {
   width: 5px;
-  left: 46vw;
-  height: 56px;
+  left: 61vw;
+  height: 72px;
 }
 .cd_cometes .comets i:nth-of-type(2) {
   width: 5px;
-  left: 19vw;
-  height: 54px;
+  left: 46vw;
+  height: 9px;
 }
 .cd_cometes .comets i:nth-of-type(3) {
   width: 5px;
-  left: 71vw;
-  height: 13px;
+  left: 23vw;
+  height: 18px;
 }
 .cd_cometes .comets i:nth-of-type(4) {
   width: 5px;
-  left: 23vw;
-  height: 66px;
+  left: 26vw;
+  height: 70px;
 }
 .cd_cometes .comets i:nth-of-type(5) {
   width: 5px;
-  left: 14vw;
-  height: 40px;
+  left: 43vw;
+  height: 1px;
 }
 .cd_cometes .comets i:nth-of-type(6) {
   width: 5px;
-  left: 13vw;
-  height: 54px;
+  left: 19vw;
+  height: 29px;
 }
 .cd_cometes .sun {
   width: 25vh;
@@ -1196,16 +1113,6 @@ header .modal_container .modal .box_modal .btnModalLettre .btnLettre:hover {
     opacity: 1;
   }
 }
-.formulaire {
-  height: 100vh;
-  width: 80vw;
-  background: rgba(255, 255, 255, 0.15);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border-radius: 10px;
-}
-
 .overlay_portrait {
   display: none;
   justify-content: center;

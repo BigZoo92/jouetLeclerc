@@ -1,6 +1,6 @@
 window.onload = function () {
 
-  // Modal recette
+  // Modal recette accueil
 
   var modal = document.getElementById("modal_lettre");
 
