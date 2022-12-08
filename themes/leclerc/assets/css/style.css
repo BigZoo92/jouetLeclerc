@@ -701,89 +701,6 @@ header .modal_container .modal .box_modal .btnModalLettre .btnLettre:hover {
     flex-direction: column;
   }
 }
-.formulaire {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.formulaire .column {
-  float: left;
-  width: 50%;
-}
-.formulaire .row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-.formulaire form {
-  background: #efdebe;
-  padding: 20px;
-  border-radius: 5px;
-  font-size: 2rem;
-  display: flex;
-  flex-direction: column;
-}
-.formulaire form .formDivGauche {
-  width: 100%;
-}
-.formulaire form .formDivDroite {
-  width: 100%;
-}
-.formulaire form .checkbox {
-  display: flex;
-  justify-content: flex-end;
-  flex-direction: row-reverse;
-  text-align: right;
-}
-.formulaire form .checkbox label {
-  font-size: 1.25rem;
-  padding-left: 10px;
-}
-.formulaire form label {
-  color: #8d0801;
-  font-family: "Adigiana Toybox";
-  padding-block: 10px;
-}
-.formulaire form input:not([type=checkbox]) {
-  width: 100%;
-  font-family: "Adigiana Toybox";
-  border: none;
-  border-bottom: 1px solid #226f54;
-  background: transparent;
-  font-size: 1.5rem;
-  color: #226f54;
-  margin-block: 4vh;
-}
-.formulaire form input:not([type=checkbox]):focus {
-  outline: none;
-}
-.formulaire form textarea {
-  resize: vertical;
-  font-family: "Adigiana Toybox";
-  font-size: 1.5rem;
-  background: transparent;
-  color: #226f54;
-  border: none;
-  border-bottom: 1px solid #226f54;
-}
-.formulaire form textarea:focus {
-  outline: none;
-}
-.formulaire form input[type=submit] {
-  background: #8d0801;
-  float: right;
-  width: auto;
-  border: none;
-  color: #efdebe;
-  padding: 1vh 2vh;
-  cursor: pointer;
-  font-size: 2rem;
-  transition: all 0.3s;
-}
-.formulaire form input[type=submit]:hover {
-  background: #226f54;
-}
-
 .video {
   height: 100vh;
   background: #226f54;
@@ -869,33 +786,33 @@ header .modal_container .modal .box_modal .btnModalLettre .btnLettre:hover {
 }
 .cd_cometes .comets i:nth-of-type(1) {
   width: 5px;
-  left: 61vw;
-  height: 72px;
+  left: 28vw;
+  height: 62px;
 }
 .cd_cometes .comets i:nth-of-type(2) {
   width: 5px;
-  left: 46vw;
-  height: 9px;
+  left: 20vw;
+  height: 22px;
 }
 .cd_cometes .comets i:nth-of-type(3) {
   width: 5px;
-  left: 23vw;
-  height: 18px;
+  left: 29vw;
+  height: 61px;
 }
 .cd_cometes .comets i:nth-of-type(4) {
   width: 5px;
-  left: 26vw;
-  height: 70px;
+  left: 69vw;
+  height: 46px;
 }
 .cd_cometes .comets i:nth-of-type(5) {
   width: 5px;
-  left: 43vw;
-  height: 1px;
+  left: 57vw;
+  height: 76px;
 }
 .cd_cometes .comets i:nth-of-type(6) {
   width: 5px;
-  left: 19vw;
-  height: 29px;
+  left: 45vw;
+  height: 23px;
 }
 .cd_cometes .sun {
   width: 25vh;
@@ -1196,6 +1113,84 @@ header .modal_container .modal .box_modal .btnModalLettre .btnLettre:hover {
     opacity: 1;
   }
 }
+#bg_formulaire {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 100px);
+}
+#bg_formulaire .formulaire form {
+  width: 45vw;
+  padding: 20px;
+  height: calc(90vh - 100px);
+  display: flex;
+  justify-content: flex-end;
+  align-items: stretch;
+  position: relative;
+  border: 5px solid;
+  border-style: dotted;
+  border-color: #226f54;
+  background: #efdebe;
+  flex-direction: column;
+  border-radius: 10px;
+}
+#bg_formulaire .formulaire form .form_header {
+  background: #8d0801;
+  height: 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: -30px;
+  border-radius: 25px 25px 0 0;
+  right: -5px;
+  position: absolute;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 70% 100%, 50% 75%, 0% 75%);
+}
+#bg_formulaire .formulaire form .form_header h1 {
+  color: #f8f8f8;
+  font-size: 1rem;
+}
+#bg_formulaire .formulaire form #houx {
+  width: 10vw;
+  left: -60px;
+  top: -60px;
+  position: absolute;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+#bg_formulaire .formulaire form label {
+  color: #8d0801;
+  font-family: "Adigiana Toybox";
+  padding-block: 10px;
+}
+#bg_formulaire .formulaire form input:not([type=checkbox]) {
+  width: 100%;
+  font-family: "Adigiana Toybox";
+  border: none;
+  border-bottom: 1px solid #226f54;
+  background: transparent;
+  font-size: 1rem;
+  margin-block: 10px;
+  color: #226f54;
+}
+#bg_formulaire .formulaire form input:not([type=checkbox]):focus {
+  outline: none;
+}
+#bg_formulaire .formulaire form input[type=submit] {
+  background: #8d0801;
+  float: right;
+  width: auto;
+  border: none;
+  color: #efdebe;
+  padding: 1vh 2vh;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.3s;
+}
+#bg_formulaire .formulaire form input[type=submit]:hover {
+  background: #226f54;
+}
+
 .overlay_portrait {
   display: none;
   justify-content: center;

@@ -16,14 +16,17 @@
 // Accueil
 @import "./pages/accueil/accueil";
 @import "./pages/accueil/hero";
-@import "./pages/accueil/formulaire";
 @import "./pages/accueil/video";
 @import "./pages/accueil/cometes";
 
 // 404
 @import "./pages/404/404";
 
-// Recette*
+// Recette
 @import "./pages/recette/recette";
 
-@import "./pages/portrait";
+// Formulaire
+@import "./pages/formulaire/formulaire";
+
+// Portrait
+@import "./pages/portrait/portrait";
