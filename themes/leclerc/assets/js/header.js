@@ -16,7 +16,6 @@ window.onload = function () {
         document.querySelector('.menu_sapin p:nth-of-type(2)').style.backgroundColor = '#efdebe'
         toggle = false;
     }
-
     function toggleSapinClose() {
         tlToggleSapin.reverse()
         document.querySelector('.menu_sapin p:nth-of-type(2)').style.backgroundColor = '#A3DEF4'
