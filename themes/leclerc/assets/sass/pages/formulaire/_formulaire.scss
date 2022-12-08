@@ -9,8 +9,8 @@
             padding: 20px;
             height: calc(90vh - 100px);
             display: flex;
-            justify-content: flex-end;
-            align-items: stretch;
+            justify-content: space-around;
+            align-items: flex-end;
             position: relative;
             border: 5px solid;
             border-style: dotted;
@@ -18,7 +18,35 @@
             background: $noel-beige;
             flex-direction: column;
             border-radius: 10px;
-            .form_header{
+            small {
+                color: $noel-rouge;
+                font-family: $font-title;
+                font-size: 0.8rem;
+            }
+            #houx {
+                width: 10vw;
+                left: -60px;
+                top: -60px;
+                position: absolute;
+                transition: all 0.3s;
+                cursor: pointer;
+            }
+            input[type="submit"] {
+                background: $noel-rouge;
+                width: fit-content;
+                border: none;
+                font-family: $font-title;
+                color: $noel-beige;
+                border-radius: 20px 0 20px 0;
+                padding: 1vh 2vh;
+                cursor: pointer;
+                font-size: 1rem;
+                transition: all 0.3s;
+                &:hover {
+                    background: $noel-vert;
+                }
+            }
+            .header_form {
                 background: $noel-rouge;
                 height: 65px;
                 display: flex;
@@ -29,50 +57,51 @@
                 right: -5px;
                 position: absolute;
                 clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 70% 100%, 50% 75%, 0% 75%);
-                h1{
+                h1 {
                     color: $background;
                     font-size: 1rem;
                 }
             }
-            #houx {
-                width: 10vw;
-                left: -60px;
-                top: -60px;
-                position: absolute;
-                transition: all 0.3s;
-                cursor: pointer;
-            }
-            label {
-                color: $noel-rouge;
-                font-family: $font-title;
-                padding-block: 10px;
-            }
-            input:not([type="checkbox"]) {
-                width: 100%;
-                font-family: $font-title;
-                border: none;
-                border-bottom: 1px solid $noel-vert;
-                background: transparent;
-                font-size: 1rem;
-                margin-block: 10px;
-                color: $noel-vert;
-                &:focus {
-                    outline: none;
-                }
-            }
 
-            input[type="submit"] {
-                background: $noel-rouge;
-                float: right;
-                width: auto;
-                border: none;
-                color: $noel-beige;
-                padding: 1vh 2vh;
-                cursor: pointer;
-                font-size: 1rem;
-                transition: all 0.3s;
-                &:hover {
-                    background: $noel-vert;
+            .corps_form {
+                label {
+                    color: $noel-rouge;
+                    font-family: $font-title;
+                    padding-block: 10px;
+                    i {
+                        padding-inline-end: 10px;
+                    }
+                }
+                input:not([type="checkbox"]) {
+                    width: 100%;
+                    font-family: $font-title;
+                    border: none;
+                    border-bottom: 1px solid $noel-vert;
+                    background: transparent;
+                    font-size: 1rem;
+                    margin-block: 10px;
+                    color: $noel-vert;
+                    &:focus {
+                        outline: none;
+                    }
+                }
+                .checkbox_form{
+                    display: flex;
+                    justify-content: flex-start;
+                    flex-direction: column;
+                    flex: 50%;
+                    .test{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        flex-direction: row;
+                    }
+                    .test2{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        flex-direction: row;
+                    }
                 }
             }
         }

@@ -2,7 +2,7 @@ let dateTab = new Date()
 let date = dateTab.getDate()
 let heure = dateTab.getHours()
 // let heure = 0;
-if (heure>18 || heure<9){
+if (heure>17 || heure<9){
     console.log('wesh');
     document.querySelector('.sun').style.background = "white"
     document.querySelector('.sun').style.width = "20vh"
@@ -10,7 +10,7 @@ if (heure>18 || heure<9){
     document.querySelectorAll('.nuages').forEach((item) => {
         item.src += "./assets/images/png/soir_nuages.png"
     })
-    heure = heure - 18
+    heure = heure - 17
     if (heure<0){
         heure = heure * (-1)
     }
