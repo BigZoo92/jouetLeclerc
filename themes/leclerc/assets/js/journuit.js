@@ -2,7 +2,7 @@ let dateTab = new Date()
 let date = dateTab.getDate()
 let heure = dateTab.getHours()
 // let heure = 0;
-if (heure>17 || heure<9){
+if (heure>18 || heure<9){
     console.log('wesh');
     document.querySelector('.sun').style.background = "white"
     document.querySelector('.sun').style.width = "20vh"

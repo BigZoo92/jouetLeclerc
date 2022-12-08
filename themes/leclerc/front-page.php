@@ -1,8 +1,4 @@
 <?php get_header(); ?>
-<div class="overlay_portrait">
-        <h1>Tourne ton écran</h1>
-        <i class="bi bi-phone-vibrate"></i>
-    </div>
 <main id="bg_hero">
     <div class="cd_cometes">
         <img src="<?= get_template_directory_uri() ?>" alt="nuages" class="nuages">

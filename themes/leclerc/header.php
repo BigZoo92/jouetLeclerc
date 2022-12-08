@@ -83,3 +83,8 @@
 
         </div>
     </header>
+
+    <div class="overlay_portrait">
+        <h1>Tourne ton écran</h1>
+        <i class="bi bi-phone-vibrate"></i>
+    </div>

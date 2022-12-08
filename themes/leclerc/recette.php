@@ -9,31 +9,45 @@ get_header()
     <section class="recette">
         <h1 class="titre_page">Les recettes du père noël</h1>
         <div class="box_grid">
-            <div class="box_recette">
-                <div class="image_recette">
-                </div>
+        <?php
+    $args = array(
+        'post_type' => 'recettes',
+    );
+    $custom_query = new WP_Query($args);
+    if ($custom_query->have_posts()) :
+    while ($custom_query->have_posts()) : $custom_query->the_post();
+    $ingredients = get_field('ingredients'); 
+    $temps = get_field('temps_preparation'); 
+    $difficulte = get_field('difficulte'); 
+    $description = get_field('description'); 
+    ?>
+    <div class="box_recette">
+                <?php the_post_thumbnail() ?>
+                </img>
                 <div class="corps_recette">
                     <h1 class="titre_recette">
-                        Verrine mousse de jambon
+                        <?php the_title() ?>
                     </h1>
-
                     <div class="difficulte_recette">
-                        <i class="bi bi-clock"> 15 minutes</i>
+                        <i class="bi bi-clock"> <?= $temps ?> minutes</i>
                         <li>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
+                            <?php
+                            for ($i=0; $i < $difficulte; $i++) { 
+                                ?>
+                                    <i class="bi bi-star-fill"></i>
+                                <?php
+                            }
+                            ?>
                         </li>
                     </div>
-                    <p class="desc_recette">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, temporibus.
-                    </p>
+                    <p class="desc_recette"><?= $description ?></p>
                 </div>
-                <div class="btn_recette">
-                    <button class="bouton_recette" id="btnAfficher">Recette de nöel</button>
-                </div>
+                    <button class="bouton_recette" id="btnAfficher">Cuisinez !</button>
             </div>
+            <?php
+    endwhile;
+endif;
+?>
 
             <div id="modal_recette" class="modal">
                 <div class="box_modal">
@@ -77,58 +91,9 @@ get_header()
                     </div>
                 </div>
             </div>
-
-            <div class="box_recette">
-                <div class="image_recette">
-                </div>
-                <div class="corps_recette">
-                    <h1 class="titre_recette">
-                        Titre Recette
-                    </h1>
-                    <div class="difficulte_recette">
-                        <i class="bi bi-clock"> 15 minutes</i>
-                        <li>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-half"></i>
-                        </li>
-                    </div>
-                    <p class="desc_recette">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, temporibus.
-                    </p>
-                </div>
-                <div class="btn_recette">
-                    <a href="#" class="bouton_recette">Cuisinez !</a>
-                </div>
-            </div>
-
-            <div class="box_recette">
-                <div class="image_recette">
-                </div>
-                <div class="corps_recette">
-                    <h1 class="titre_recette">
-                        Titre Recette
-                    </h1>
-                    <div class="difficulte_recette">
-                        <i class="bi bi-clock"> 15 minutes</i>
-                        <li>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                        </li>
-                    </div>
-                    <p class="desc_recette">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, temporibus.
-                    </p>
-                </div>
-                <div class="btn_recette">
-                    <a href="#" class="bouton_recette">Cuisinez !</a>
-                </div>
-            </div>
         </div>
     </section>
+
 </main>
 
 
