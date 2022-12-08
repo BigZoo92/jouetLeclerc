@@ -6,9 +6,6 @@ get_header()
 ?>
 
 <main id="bg_formulaire">
-<<<<<<< HEAD
-
-=======
     <section class="formulaire">
         <form action="">
             <img id="houx" src="<?= get_template_directory_uri() ?>./assets/images/png/holly-g5e5b9bd79_1280.png"
@@ -64,7 +61,6 @@ get_header()
             </div>
         </form>
     </section>
->>>>>>> formulaire
 </main>
 
 
