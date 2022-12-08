@@ -270,7 +270,13 @@ body {
 }
 
 #bg_hero {
-  background-image: url("../../assets/images/jpg/background.jpg");
+  background-image: url("../../assets/images/png/bg2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#bg_recette {
+  background-image: url("../../assets/images/jpg/christmas-baubles-g7d8c1f204_1920.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -287,10 +293,6 @@ a:hover {
 h1 {
   text-align: center;
   padding: 20px;
-}
-
-h2 {
-  text-align: center;
 }
 
 h3 {
@@ -313,9 +315,9 @@ header {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  font-family: "Lemonada";
-  font-size: 14px;
-  height: 100px;
+  font-family: "Adigiana Toybox";
+  font-weight: 100;
+  overflow: hidden;
 }
 header .overlay_header {
   height: 100vh;
@@ -323,7 +325,6 @@ header .overlay_header {
   position: absolute;
   top: 150vh;
   left: 0;
-  overflow: hidden;
   background-color: #efdebe;
   display: none;
   justify-content: center;
@@ -361,13 +362,14 @@ header .overlay_header nav ul li a:hover {
 }
 header .overlay_header svg {
   position: absolute;
-  bottom: 0px;
-  width: 100%;
+  bottom: -60px;
+  width: 105%;
+  margin-left: 5%;
 }
 header .sapin_toggle {
   z-index: 11;
-  padding-left: 5vw;
-  padding-top: 20px;
+  margin-left: 5vw;
+  margin-top: 20px;
   justify-content: flex-end;
   align-self: flex-start;
   position: relative;
@@ -406,7 +408,7 @@ header .sapin_toggle .branches .branche.arm4 {
   width: 45px;
 }
 header .sapin_toggle .menu_sapin {
-  font-family: "Lemonada";
+  font-family: "Roboto";
   text-transform: uppercase;
   letter-spacing: 2px;
   margin-top: -2px;
@@ -424,22 +426,19 @@ header .sapin_toggle .menu_sapin p:nth-of-type(2) {
   clip-path: inset(50% 0 50% 0);
   transition: clip-path 0.3s ease-in, background-color 1s ease-in;
 }
-header .logo_leclerc img {
-  width: 20%;
-}
-header .modal {
+header .modal_container {
   background: transparent;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-inline: 20px;
 }
-header .modal ul {
+header .modal_container ul {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-header .modal ul li {
+header .modal_container ul li {
   padding: 10px;
   margin-inline: 20px;
   position: relative;
@@ -449,20 +448,23 @@ header .modal ul li {
   justify-content: center;
   align-items: center;
 }
-header .modal ul li i {
+header .modal_container ul li i {
   padding-inline-end: 5px;
 }
-header .modal ul li a {
+header .modal_container ul li a {
   color: white;
   text-align: center;
+  font-size: 14px;
+  font-family: "Lemonada";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
 }
-header .modal ul li a:hover {
+header .modal_container ul li a:hover {
   color: black;
 }
-header .modal ul li:hover {
-  color: black;
-}
-header .modal ul li::before {
+header .modal_container ul li a::before {
   content: "";
   width: 15px;
   height: 38px;
@@ -475,7 +477,7 @@ header .modal ul li::before {
   position: absolute;
   transform: translateY(-50%);
 }
-header .modal ul li::after {
+header .modal_container ul li a::after {
   content: "";
   width: 15px;
   height: 38px;
@@ -487,7 +489,155 @@ header .modal ul li::after {
   right: -6px;
   position: absolute;
 }
+header .modal_container ul li button {
+  color: white;
+  text-align: center;
+  background: none;
+  border: none;
+  font-size: 14px;
+  font-family: "Lemonada";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+header .modal_container ul li button:hover {
+  color: black;
+}
+header .modal_container ul li button::before {
+  content: "";
+  width: 15px;
+  height: 38px;
+  left: -6px;
+  background-image: url("../../assets/images/svg/Tickets_bord.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  right: 150px;
+  top: 50%;
+  position: absolute;
+  transform: translateY(-50%);
+}
+header .modal_container ul li button::after {
+  content: "";
+  width: 15px;
+  height: 38px;
+  background-image: url("../../assets/images/svg/Tickets_bord.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  transform: rotateY(180deg) translateY(-50%);
+  top: 50%;
+  right: -6px;
+  position: absolute;
+}
+header .modal_container .modal {
+  display: none;
+  position: fixed;
+  z-index: 12;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+}
+header .modal_container .modal .box_modal {
+  position: relative;
+  background-color: #efdebe;
+  margin: auto;
+  padding: 0;
+  border-radius: 20px;
+  width: 900px;
+  max-width: calc(100% - 40px);
+  filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.6));
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+}
+header .modal_container .modal .box_modal #lutin_recette {
+  width: 9.5vw;
+  z-index: 3;
+  left: -100px;
+  bottom: 0;
+  position: absolute;
+  transform: rotateY(180deg);
+}
+header .modal_container .modal .box_modal .header_modal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row-reverse;
+  padding: 20px;
+  height: 65px;
+  background-color: #226f54;
+  text-transform: uppercase;
+}
+header .modal_container .modal .box_modal .header_modal h1 {
+  font-size: clamp(0.5rem, 0.7619rem + 1.1905vw, 1.5rem);
+  padding-inline: 55px;
+  color: #f8f8f8;
+}
+header .modal_container .modal .box_modal .header_modal .btnFermer {
+  color: #8d0801;
+  float: right;
+  font-weight: bold;
+  transition: all 0.3s;
+  font-size: 2rem;
+}
+header .modal_container .modal .box_modal .header_modal .btnFermer:hover {
+  color: #efdebe;
+  text-decoration: none;
+  cursor: pointer;
+}
+header .modal_container .modal .box_modal .corps_modal {
+  height: 50vh;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: flex-end;
+}
+header .modal_container .modal .box_modal .corps_modal p {
+  padding: 20px;
+  text-align: right;
+  color: #43291f;
+  font-size: clamp(1rem, 0.7619rem + 1.1905vw, 1.15rem);
+  font-family: "Lemonada";
+}
+header .modal_container .modal .box_modal .btnModalLettre {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+header .modal_container .modal .box_modal .btnModalLettre .btnLettre {
+  display: block;
+  color: #f8f8f8;
+  background: #8d0801;
+  position: absolute;
+  text-transform: uppercase;
+  text-align: center;
+  bottom: auto;
+  padding: 10px;
+  transition: all 0.3s;
+  border-radius: 20px 0 20px 20px;
+}
+header .modal_container .modal .box_modal .btnModalLettre .btnLettre:hover {
+  background: #226f54;
+}
 
+@keyframes animatetop {
+  from {
+    top: -50vh;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
 .hero {
   height: calc(100vh - 100px);
   display: flex;
@@ -497,9 +647,9 @@ header .modal ul li::after {
   position: relative;
 }
 .hero #boite_lettre {
-  width: 4vw;
-  left: 36vw;
-  bottom: 10vh;
+  width: 3.5vw;
+  left: 40vw;
+  bottom: 15vh;
   position: absolute;
   transform: rotateY(180deg);
   transition: all 0.3s;
@@ -518,9 +668,9 @@ header .modal ul li::after {
   transform: rotateY(180deg) translateX(-50%);
 }
 .hero #lutin {
-  width: 5vw;
-  left: 23vw;
-  bottom: 0;
+  width: 4.5vw;
+  left: 30vw;
+  bottom: 20px;
   position: absolute;
   transform: rotateY(180deg);
   transition: all 0.3s;
@@ -530,9 +680,9 @@ header .modal ul li::after {
   transform: scale(0.9) rotateY(180deg);
 }
 .hero #lutin2 {
-  width: 5vw;
-  right: 22vw;
-  bottom: 0;
+  width: 4.5vw;
+  right: 25vw;
+  bottom: 20px;
   position: absolute;
   transition: all 0.3s;
   cursor: pointer;
@@ -719,33 +869,33 @@ header .modal ul li::after {
 }
 .cd_cometes .comets i:nth-of-type(1) {
   width: 5px;
-  left: 45vw;
-  height: 69px;
+  left: 61vw;
+  height: 72px;
 }
 .cd_cometes .comets i:nth-of-type(2) {
   width: 5px;
-  left: 33vw;
-  height: 46px;
+  left: 46vw;
+  height: 9px;
 }
 .cd_cometes .comets i:nth-of-type(3) {
   width: 5px;
-  left: 8vw;
-  height: 4px;
+  left: 23vw;
+  height: 18px;
 }
 .cd_cometes .comets i:nth-of-type(4) {
   width: 5px;
-  left: 50vw;
-  height: 57px;
+  left: 26vw;
+  height: 70px;
 }
 .cd_cometes .comets i:nth-of-type(5) {
   width: 5px;
-  left: 59vw;
-  height: 10px;
+  left: 43vw;
+  height: 1px;
 }
 .cd_cometes .comets i:nth-of-type(6) {
   width: 5px;
-  left: 14vw;
-  height: 72px;
+  left: 19vw;
+  height: 29px;
 }
 .cd_cometes .sun {
   width: 25vh;
@@ -814,62 +964,238 @@ header .modal ul li::after {
   align-items: center;
   flex-direction: column;
   width: 100%;
-  height: 200vh;
+  height: calc(100% - 100px);
 }
-.recette .titre_recette {
+.recette .titre_page {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
-  width: 100%;
-  margin-inline-end: 30px;
+  justify-content: center;
+  margin-block-start: 20px;
+  border-radius: 20px 50px;
+  background: #f8f8f8;
   color: #8d0801;
+  font-size: clamp(1.5rem, 1.0238rem + 2.381vw, 2.5rem);
 }
 .recette .box_grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(9, 1fr);
-  grid-column-gap: 30px;
-  grid-row-gap: 30px;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  width: 100%;
+  padding: 30px;
+  grid-column-gap: 20px;
 }
-.recette .box_grid .recette_box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 10px;
-  width: 30vw;
-  height: 30vh;
+.recette .box_grid .box_recette {
+  background: #f8f8f8;
+  margin: 40px auto;
+  border-radius: 0px 0px 20px 20px;
+  width: 350px;
+}
+.recette .box_grid .box_recette .image_recette {
+  position: relative;
   background-image: url("../../assets/images/jpg/pexels-tim-douglas-6210864.jpg");
   background-size: cover;
-  background-repeat: no-repeat;
+  min-height: 25vh;
 }
-.recette .box_grid .recette_box img {
+.recette .box_grid .box_recette .image_recette img {
+  max-width: 100%;
   object-fit: cover;
 }
-.recette .box_grid .texte {
+.recette .box_grid .box_recette .corps_recette .titre_recette {
+  text-align: left;
+  text-transform: uppercase;
+  color: #8d0801;
+  font-size: 1.125rem;
+}
+.recette .box_grid .box_recette .difficulte_recette {
+  margin-inline: 20px;
+  margin-block-end: 3vh;
+  list-style: none;
   display: flex;
-  flex-direction: column;
-  background: #efdebe;
-  padding: 5px;
-  font-family: "Doctor Soos";
-  color: #8d0801;
-  font-size: 24px;
-  height: 20vh;
-  border-radius: 10px;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
+  font-size: 1rem;
 }
-.recette .box_grid .texte i {
-  color: #8d0801;
-  font-size: 18px;
+.recette .box_grid .box_recette .difficulte_recette li > i {
+  color: #FFD700;
 }
-.recette .box_grid .texte a {
-  background: #f8f8f8;
-  width: 80%;
-  padding: 5px;
-  border-radius: 20px;
+.recette .box_grid .box_recette .desc_recette {
+  margin-inline: 20px;
+  margin-block: 3rem;
+  font-size: 1rem;
+  width: 310px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.recette .box_grid .box_recette .btn_recette {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.recette .box_grid .box_recette .btn_recette .bouton_recette {
+  display: block;
+  color: #f8f8f8;
+  background: #8d0801;
+  position: absolute;
+  text-transform: uppercase;
   text-align: center;
+  transition: all 0.3s;
+  border-radius: 20px 0 20px 20px;
+}
+.recette .box_grid .box_recette .btn_recette .bouton_recette:hover {
+  background: #226f54;
+}
+.recette button {
+  color: white;
+  text-align: center;
+  background: none;
+  border: none;
+  font-size: 14px;
+  font-family: "Lemonada";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.recette button:hover {
+  color: black;
+}
+.recette .modal {
+  display: none;
+  position: fixed;
+  z-index: 12;
+  padding-top: 50px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+}
+.recette .modal .box_modal {
+  position: relative;
+  background-color: #efdebe;
+  margin: auto;
+  padding: 0;
+  overflow-y: scroll;
+  border-radius: 20px;
+  width: 45vw;
+  max-width: calc(100% - 40px);
+  filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.6));
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+}
+.recette .modal .box_modal .header_modal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row-reverse;
+  padding: 20px;
+  height: 65px;
+  background-color: #226f54;
+  text-transform: uppercase;
+}
+.recette .modal .box_modal .header_modal h1 {
+  font-size: clamp(0.5rem, 0.7619rem + 1.1905vw, 1.5rem);
+  color: #f8f8f8;
+}
+.recette .modal .box_modal .header_modal .btnFermerRecette {
+  color: #8d0801;
+  float: right;
+  font-weight: bold;
+  transition: all 0.3s;
+  font-size: 2rem;
+}
+.recette .modal .box_modal .header_modal .btnFermerRecette:hover {
+  color: #efdebe;
+  text-decoration: none;
+  cursor: pointer;
+}
+.recette .modal .box_modal .corps_modal {
+  height: 70vh;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+.recette .modal .box_modal .corps_modal #image_plat {
+  max-width: 100%;
+  border-radius: 0 20px 0 20px;
+}
+.recette .modal .box_modal .corps_modal hr {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgb(141, 41, 31), rgba(0, 0, 0, 0));
+  width: 100%;
+}
+.recette .modal .box_modal .corps_modal .row {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  flex: 50%;
+}
+.recette .modal .box_modal .corps_modal .row h2 {
+  padding-block: 10px;
+}
+.recette .modal .box_modal .corps_modal .row .column_gauche {
+  text-align: left;
+  flex: 50%;
+}
+.recette .modal .box_modal .corps_modal .row .column_droite {
+  text-align: right;
+  flex: 50%;
+}
+.recette .modal .box_modal .corps_modal .row ul > li {
+  margin-block: 10px;
+  margin-inline: 2.5vw;
+  color: #43291f;
+  font-size: clamp(1rem, 0.7619rem + 1.1905vw, 1rem);
+  font-family: "Lemonada";
+  list-style-type: disc;
+}
+.recette .modal .box_modal .corps_modal .row i {
+  font-size: 1rem;
+}
+.recette .modal .box_modal .corps_modal .row .modal_difficulte {
+  color: #FFD700;
+  font-size: 1rem;
+}
+.recette .modal .box_modal .corps_modal .row p {
+  font-size: 1rem;
+}
+.recette .modal .box_modal .btnModalLettre {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.recette .modal .box_modal .btnModalLettre .btnLettre {
+  display: block;
+  color: #f8f8f8;
+  background: #8d0801;
+  position: absolute;
+  text-transform: uppercase;
+  text-align: center;
+  bottom: auto;
+  transition: all 0.3s;
+  border-radius: 20px 0 20px 20px;
+}
+.recette .modal .box_modal .btnModalLettre .btnLettre:hover {
+  background: #226f54;
 }
 
+@keyframes animatetop {
+  from {
+    top: -50vh;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
 .overlay_portrait {
   display: none;
   justify-content: center;
