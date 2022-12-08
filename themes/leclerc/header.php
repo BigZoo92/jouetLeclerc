@@ -64,9 +64,7 @@
 
             <div id="modal_lettre" class="modal">
                 <div class="box_modal">
-                    <img id="lutin_recette"
-                        src="<?= get_template_directory_uri() ?>./assets/images/png/Lutin_Recette.png" title="Afficher"
-                        alt="Sapin">
+                    <img id="lutin_recette" src="<?= get_template_directory_uri() ?>./assets/images/png/Lutin_Recette.png" title="Afficher"alt="Sapin">
                     <div class="header_modal">
                         <span class="btnFermer">&times;</span>
                         <h1>Bienvenue dans la maison des recettes de nöel !</h1>

@@ -294,10 +294,6 @@ h1 {
   padding: 20px;
 }
 
-h2 {
-  text-align: center;
-}
-
 h3 {
   text-align: center;
 }
@@ -563,11 +559,11 @@ header .modal_container .modal .box_modal {
 }
 header .modal_container .modal .box_modal #lutin_recette {
   width: 9.5vw;
+  z-index: 3;
   left: -100px;
   bottom: 0;
   position: absolute;
   transform: rotateY(180deg);
-  filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.6));
 }
 header .modal_container .modal .box_modal .header_modal {
   display: flex;
@@ -858,33 +854,33 @@ header .modal_container .modal .box_modal .btnModalLettre .btnLettre:hover {
 }
 .cd_cometes .comets i:nth-of-type(1) {
   width: 5px;
-  left: 22vw;
-  height: 12px;
+  left: 38vw;
+  height: 39px;
 }
 .cd_cometes .comets i:nth-of-type(2) {
   width: 5px;
-  left: 12vw;
-  height: 75px;
+  left: 35vw;
+  height: 49px;
 }
 .cd_cometes .comets i:nth-of-type(3) {
   width: 5px;
-  left: 31vw;
-  height: 67px;
+  left: 61vw;
+  height: 11px;
 }
 .cd_cometes .comets i:nth-of-type(4) {
   width: 5px;
-  left: 18vw;
-  height: 21px;
+  left: 60vw;
+  height: 34px;
 }
 .cd_cometes .comets i:nth-of-type(5) {
   width: 5px;
-  left: 58vw;
-  height: 2px;
+  left: 12vw;
+  height: 56px;
 }
 .cd_cometes .comets i:nth-of-type(6) {
   width: 5px;
-  left: 36vw;
-  height: 7px;
+  left: 69vw;
+  height: 69px;
 }
 
 @keyframes falling {
@@ -1005,12 +1001,163 @@ header .modal_container .modal .box_modal .btnModalLettre .btnLettre:hover {
   position: absolute;
   text-transform: uppercase;
   text-align: center;
-  padding: 10px;
   transition: all 0.3s;
   border-radius: 20px 0 20px 20px;
 }
 .recette .box_grid .box_recette .btn_recette .bouton_recette:hover {
   background: #226f54;
+}
+.recette button {
+  color: white;
+  text-align: center;
+  background: none;
+  border: none;
+  font-size: 14px;
+  font-family: "Lemonada";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.recette button:hover {
+  color: black;
+}
+.recette .modal {
+  display: none;
+  position: fixed;
+  z-index: 12;
+  padding-top: 50px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+}
+.recette .modal .box_modal {
+  position: relative;
+  background-color: #efdebe;
+  margin: auto;
+  padding: 0;
+  overflow-y: scroll;
+  border-radius: 20px;
+  width: 45vw;
+  max-width: calc(100% - 40px);
+  filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.6));
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+}
+.recette .modal .box_modal .header_modal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row-reverse;
+  padding: 20px;
+  height: 65px;
+  background-color: #226f54;
+  text-transform: uppercase;
+}
+.recette .modal .box_modal .header_modal h1 {
+  font-size: clamp(0.5rem, 0.7619rem + 1.1905vw, 1.5rem);
+  color: #f8f8f8;
+}
+.recette .modal .box_modal .header_modal .btnFermerRecette {
+  color: #8d0801;
+  float: right;
+  font-weight: bold;
+  transition: all 0.3s;
+  font-size: 2rem;
+}
+.recette .modal .box_modal .header_modal .btnFermerRecette:hover {
+  color: #efdebe;
+  text-decoration: none;
+  cursor: pointer;
+}
+.recette .modal .box_modal .corps_modal {
+  height: 70vh;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+.recette .modal .box_modal .corps_modal #image_plat {
+  max-width: 100%;
+  border-radius: 0 20px 0 20px;
+}
+.recette .modal .box_modal .corps_modal hr {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgb(141, 41, 31), rgba(0, 0, 0, 0));
+  width: 100%;
+}
+.recette .modal .box_modal .corps_modal .row {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  flex: 50%;
+}
+.recette .modal .box_modal .corps_modal .row h2 {
+  padding-block: 10px;
+}
+.recette .modal .box_modal .corps_modal .row .column_gauche {
+  text-align: left;
+  flex: 50%;
+}
+.recette .modal .box_modal .corps_modal .row .column_droite {
+  text-align: right;
+  flex: 50%;
+}
+.recette .modal .box_modal .corps_modal .row ul > li {
+  margin-block: 10px;
+  margin-inline: 2.5vw;
+  color: #43291f;
+  font-size: clamp(1rem, 0.7619rem + 1.1905vw, 1rem);
+  font-family: "Lemonada";
+  list-style-type: disc;
+}
+.recette .modal .box_modal .corps_modal .row i {
+  font-size: 1rem;
+}
+.recette .modal .box_modal .corps_modal .row .modal_difficulte {
+  color: #FFD700;
+  font-size: 1rem;
+}
+.recette .modal .box_modal .corps_modal .row p {
+  font-size: 1rem;
+}
+.recette .modal .box_modal .btnModalLettre {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.recette .modal .box_modal .btnModalLettre .btnLettre {
+  display: block;
+  color: #f8f8f8;
+  background: #8d0801;
+  position: absolute;
+  text-transform: uppercase;
+  text-align: center;
+  bottom: auto;
+  transition: all 0.3s;
+  border-radius: 20px 0 20px 20px;
+}
+.recette .modal .box_modal .btnModalLettre .btnLettre:hover {
+  background: #226f54;
+}
+
+@keyframes animatetop {
+  from {
+    top: -50vh;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

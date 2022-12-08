@@ -75,7 +75,6 @@
                     position: absolute;
                     text-transform: uppercase;
                     text-align: center;
-                    padding: 10px;
                     transition: all 0.3s;
                     border-radius: 20px 0 20px 20px;
                     &:hover {
@@ -84,5 +83,159 @@
                 }
             }
         }
+    }
+
+    button {
+        color: white;
+        text-align: center;
+        background: none;
+        border: none;
+        font-size: 14px;
+        font-family: $font-normal;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 30px;
+        transition: all 0.3s;
+        cursor: pointer;
+        &:hover {
+            color: black;
+        }
+    }
+
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 12;
+        padding-top: 50px;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.4);
+        overflow: hidden;
+        .box_modal {
+            position: relative;
+            background-color: $noel-beige;
+            margin: auto;
+            padding: 0;
+            overflow-y: scroll;
+            border-radius: 20px;
+            width: 45vw;
+            max-width: calc(100% - 40px);
+            filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.6));
+            -webkit-animation-name: animatetop;
+            -webkit-animation-duration: 0.4s;
+            animation-name: animatetop;
+            animation-duration: 0.4s;
+            .header_modal {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-direction: row-reverse;
+                padding: 20px;
+                height: 65px;
+                background-color: $noel-vert;
+                text-transform: uppercase;
+                h1 {
+                    font-size: clamp(0.5rem, 0.7619rem + 1.1905vw, 1.5rem);
+                    color: $background;
+                }
+                .btnFermerRecette {
+                    color: $noel-rouge;
+                    float: right;
+                    font-weight: bold;
+                    transition: all 0.3s;
+                    font-size: 2rem;
+                    &:hover {
+                        color: $noel-beige;
+                        text-decoration: none;
+                        cursor: pointer;
+                    }
+                }
+            }
+            .corps_modal {
+                height: 70vh;
+                display: flex;
+                justify-content: flex-start;
+                flex-direction: column;
+                align-items: center;
+                padding: 20px;
+                #image_plat {
+                    max-width: 100%;
+                    border-radius: 0 20px 0 20px;
+                }
+                hr {
+                    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgb(141, 41, 31, 1), rgba(0, 0, 0, 0));
+                    width: 100%;
+                }
+                .row {
+                    display: flex;
+                    width: 100%;
+                    justify-content: space-between;
+                    flex: 50%;
+                    h2 {
+                        padding-block: 10px;
+                    }
+                    .column_gauche {
+                        text-align: left;
+                        flex: 50%;
+                    }
+                    .column_droite {
+                        text-align: right;
+                        flex: 50%;
+                    }
+                    ul > li {
+                        margin-block: 10px;
+                        margin-inline: 2.5vw;
+                        color: $noel-marron;
+                        font-size: clamp(1rem, 0.7619rem + 1.1905vw, 1rem);
+                        font-family: $font-normal;
+                        list-style-type: disc;
+                    }
+                    i {
+                        font-size: 1rem;
+                    }
+                    .modal_difficulte {
+                        color: $noel-etoile;
+                        font-size: 1rem;
+                    }
+                    p {
+                        font-size: 1rem;
+                    }
+                }
+            }
+            .btnModalLettre {
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                .btnLettre {
+                    display: block;
+                    color: $background;
+                    background: $noel-rouge;
+                    position: absolute;
+                    text-transform: uppercase;
+                    text-align: center;
+                    bottom: auto;
+                    transition: all 0.3s;
+                    border-radius: 20px 0 20px 20px;
+                    &:hover {
+                        background: $noel-vert;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@keyframes animatetop {
+    from {
+        top: -50vh;
+        opacity: 0;
+    }
+    to {
+        top: 0;
+        opacity: 1;
     }
 }
