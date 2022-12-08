@@ -665,6 +665,18 @@ header .modal ul li::after {
   z-index: -1;
   overflow: hidden;
 }
+.cd_cometes .nuages {
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
+.cd_cometes .nuages:nth-of-type(1) {
+  animation: nuages 330s linear infinite;
+}
+.cd_cometes .nuages:nth-of-type(2) {
+  left: 100vw;
+  animation: nuages 330s linear infinite;
+}
 .cd_cometes .comets {
   position: relative;
   top: -150px;
@@ -694,43 +706,46 @@ header .modal ul li::after {
   animation: falling2 6s 1s infinite;
 }
 .cd_cometes .comets i:nth-child(4) {
-  animation: falling3 10s 3s infinite;
+  animation: falling3 10s 4s infinite;
 }
-.cd_cometes .comets i:nth-child(2) {
-  animation: falling2 12s 1s infinite;
+.cd_cometes .comets i:nth-child(5) {
+  animation: falling2 12s 5s infinite;
 }
-.cd_cometes .comets i:nth-child(3) {
-  animation: falling3 14s 3s infinite;
+.cd_cometes .comets i:nth-child(6) {
+  animation: falling3 14s 6s infinite;
+}
+.cd_cometes .comets i:nth-child(1) {
+  animation: falling3 14s 8s infinite;
 }
 .cd_cometes .comets i:nth-of-type(1) {
   width: 5px;
-  left: 5vw;
-  height: 80px;
+  left: 45vw;
+  height: 69px;
 }
 .cd_cometes .comets i:nth-of-type(2) {
   width: 5px;
-  left: 57vw;
-  height: 39px;
+  left: 33vw;
+  height: 46px;
 }
 .cd_cometes .comets i:nth-of-type(3) {
   width: 5px;
-  left: 42vw;
-  height: 45px;
+  left: 8vw;
+  height: 4px;
 }
 .cd_cometes .comets i:nth-of-type(4) {
   width: 5px;
-  left: 52vw;
-  height: 39px;
+  left: 50vw;
+  height: 57px;
 }
 .cd_cometes .comets i:nth-of-type(5) {
   width: 5px;
-  left: 70vw;
-  height: 79px;
+  left: 59vw;
+  height: 10px;
 }
 .cd_cometes .comets i:nth-of-type(6) {
   width: 5px;
-  left: 58vw;
-  height: 79px;
+  left: 14vw;
+  height: 72px;
 }
 .cd_cometes .sun {
   width: 25vh;
@@ -784,6 +799,14 @@ header .modal ul li::after {
   100% {
     transform: translate3d(800px, 680px, 0) rotate(180deg);
     opacity: 0;
+  }
+}
+@keyframes nuages {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
   }
 }
 .recette {
@@ -845,6 +868,34 @@ header .modal ul li::after {
   padding: 5px;
   border-radius: 20px;
   text-align: center;
+}
+
+.overlay_portrait {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  flex-direction: column;
+  height: 100vh;
+  z-index: 10;
+  background-color: #efdebe;
+}
+.overlay_portrait h1 {
+  font-size: 3em;
+}
+.overlay_portrait i {
+  transform: rotate(75deg);
+  font-size: 2em;
+  color: #0066cc;
+}
+
+@media (orientation: portrait) {
+  main, header, footer {
+    display: none;
+  }
+  .overlay_portrait {
+    display: flex;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

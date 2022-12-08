@@ -1,0 +1,27 @@
+.overlay_portrait{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    flex-direction: column;
+    height: 100vh;
+    z-index: 10;
+    background-color: $noel-beige;
+    h1{
+      font-size: 3em;
+    }
+    i{
+      transform: rotate(75deg);
+      font-size: 2em;
+      color:$leclerc-bleu;
+    }
+  }
+
+@media (orientation: portrait) {
+    main, header, footer {
+      display: none;
+    }
+    .overlay_portrait{
+      display: flex;
+    }
+  }
