@@ -869,33 +869,33 @@ header .modal_container .modal .box_modal .btnModalLettre .btnLettre:hover {
 }
 .cd_cometes .comets i:nth-of-type(1) {
   width: 5px;
-  left: 61vw;
-  height: 72px;
+  left: 46vw;
+  height: 56px;
 }
 .cd_cometes .comets i:nth-of-type(2) {
   width: 5px;
-  left: 46vw;
-  height: 9px;
+  left: 19vw;
+  height: 54px;
 }
 .cd_cometes .comets i:nth-of-type(3) {
   width: 5px;
-  left: 23vw;
-  height: 18px;
+  left: 71vw;
+  height: 13px;
 }
 .cd_cometes .comets i:nth-of-type(4) {
   width: 5px;
-  left: 26vw;
-  height: 70px;
+  left: 23vw;
+  height: 66px;
 }
 .cd_cometes .comets i:nth-of-type(5) {
   width: 5px;
-  left: 43vw;
-  height: 1px;
+  left: 14vw;
+  height: 40px;
 }
 .cd_cometes .comets i:nth-of-type(6) {
   width: 5px;
-  left: 19vw;
-  height: 29px;
+  left: 13vw;
+  height: 54px;
 }
 .cd_cometes .sun {
   width: 25vh;
@@ -1196,6 +1196,16 @@ header .modal_container .modal .box_modal .btnModalLettre .btnLettre:hover {
     opacity: 1;
   }
 }
+.formulaire {
+  height: 100vh;
+  width: 80vw;
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 10px;
+}
+
 .overlay_portrait {
   display: none;
   justify-content: center;

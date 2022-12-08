@@ -22,28 +22,6 @@ window.onload = function () {
     }
   };
 
-  // Modal recette
-
-  var recette = document.getElementById("modal_recette");
-
-  var btnRecette = document.getElementById("btnAfficher");
-
-  var fermerRecette = document.getElementsByClassName("btnFermerRecette")[0];
-
-  btnRecette.onclick = function () {
-    recette.style.display = "block";
-  };
-
-  fermerRecette.onclick = function () {
-    recette.style.display = "none";
-  };
-
-  window.onclick = function (event) {
-    if (event.target == recette) {
-      recette.style.display = "none";
-    }
-  };
-
   // Récupération de la date
 
   let d = new Date();
