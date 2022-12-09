@@ -314,6 +314,7 @@ h6 {
 header {
   width: 100%;
   display: flex;
+  height: 100px;
   justify-content: space-between;
   font-family: "Adigiana Toybox";
   font-weight: 100;
@@ -368,8 +369,8 @@ header .overlay_header svg {
 }
 header .sapin_toggle {
   z-index: 11;
-  margin-left: 5vw;
-  margin-top: 20px;
+  left: 20px;
+  top: 20px;
   justify-content: flex-end;
   align-self: flex-start;
   position: relative;
@@ -785,33 +786,33 @@ header .modal_container .modal .box_modal .btnModalLettre .btnLettre:hover {
 }
 .cd_cometes .comets i:nth-of-type(1) {
   width: 5px;
-  left: 35vw;
-  height: 74px;
+  left: 57vw;
+  height: 15px;
 }
 .cd_cometes .comets i:nth-of-type(2) {
   width: 5px;
-  left: 49vw;
-  height: 47px;
+  left: 2vw;
+  height: 14px;
 }
 .cd_cometes .comets i:nth-of-type(3) {
   width: 5px;
-  left: 47vw;
-  height: 15px;
+  left: 28vw;
+  height: 40px;
 }
 .cd_cometes .comets i:nth-of-type(4) {
   width: 5px;
-  left: 52vw;
-  height: 30px;
+  left: 68vw;
+  height: 15px;
 }
 .cd_cometes .comets i:nth-of-type(5) {
   width: 5px;
-  left: 15vw;
-  height: 59px;
+  left: 11vw;
+  height: 5px;
 }
 .cd_cometes .comets i:nth-of-type(6) {
   width: 5px;
-  left: 46vw;
-  height: 22px;
+  left: 62vw;
+  height: 65px;
 }
 .cd_cometes .sun {
   width: 25vh;
