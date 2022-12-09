@@ -37,13 +37,8 @@ get_header()
                 
                 <div class="checkbox_form">
 
-                    <div class="test">
-                        <input id="id_option1" required="required" aria-required="true"value="option-1" type="checkbox">
-                    </div>
-                
-                    <div class="test2">
-                        <label for="id_option1">Oui</label>
-                    </div>
+                    <input id="id_option1" required="required" aria-required="true"value="option-1" type="checkbox">
+                    <label for="id_option1">Oui</label>
 
                     <input id="id_option2" required="required" aria-required="true" value="option-2" type="checkbox">
                     <label for="id_option2">Non</label>

@@ -9,7 +9,7 @@
             padding: 20px;
             height: calc(90vh - 100px);
             display: flex;
-            justify-content: space-around;
+            justify-content: center;
             align-items: flex-end;
             position: relative;
             border: 5px solid;
@@ -25,11 +25,12 @@
             }
             #houx {
                 width: 10vw;
-                left: -60px;
+                right: -60px;
                 top: -60px;
                 position: absolute;
                 transition: all 0.3s;
                 cursor: pointer;
+                transform: rotate(90deg);
             }
             input[type="submit"] {
                 background: $noel-rouge;
@@ -37,10 +38,13 @@
                 border: none;
                 font-family: $font-title;
                 color: $noel-beige;
-                border-radius: 20px 0 20px 0;
+                border-radius: 20px 0 10px 0;
                 padding: 1vh 2vh;
                 cursor: pointer;
                 font-size: 1rem;
+                position: absolute;
+                bottom: -15px;
+                right: -5px;
                 transition: all 0.3s;
                 &:hover {
                     background: $noel-vert;
@@ -48,15 +52,14 @@
             }
             .header_form {
                 background: $noel-rouge;
-                height: 65px;
+                height: auto;
                 display: flex;
                 justify-content: center;
-                align-items: center;
-                top: -30px;
-                border-radius: 25px 25px 0 0;
-                right: -5px;
+                align-items: flex-start;
+                top: -5px;
+                border-radius: 5px 0 0 0;
+                left: -5px;
                 position: absolute;
-                clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 70% 100%, 50% 75%, 0% 75%);
                 h1 {
                     color: $background;
                     font-size: 1rem;
@@ -84,23 +87,18 @@
                     &:focus {
                         outline: none;
                     }
+                    input[type='checkbox']{
+                        vertical-align: bottom;
+                        position: relative;
+                    }
                 }
                 .checkbox_form{
+                    padding-block: 10px;
                     display: flex;
                     justify-content: flex-start;
-                    flex-direction: column;
-                    flex: 50%;
-                    .test{
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        flex-direction: row;
-                    }
-                    .test2{
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        flex-direction: row;
+                    flex-direction: row;
+                    label{
+                        padding-inline: 10px;
                     }
                 }
             }

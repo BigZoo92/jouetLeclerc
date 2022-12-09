@@ -318,7 +318,7 @@ header {
   justify-content: space-between;
   font-family: "Adigiana Toybox";
   font-weight: 100;
-  overflow: hidden;
+  overflow-y: hidden;
 }
 header .overlay_header {
   height: 100vh;
@@ -331,6 +331,7 @@ header .overlay_header {
   justify-content: center;
   align-items: center;
   z-index: 10;
+  overflow-y: hidden;
 }
 header .overlay_header nav ul {
   display: flex;
@@ -363,9 +364,48 @@ header .overlay_header nav ul li a:hover {
 }
 header .overlay_header svg {
   position: absolute;
-  bottom: -60px;
-  width: 105%;
-  margin-left: 5%;
+  width: 100%;
+}
+header .overlay_header .custom-shape-divider-bottom-1670590214 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+header .overlay_header .custom-shape-divider-bottom-1670590214 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 130px;
+  transform: rotateY(180deg);
+}
+header .overlay_header .custom-shape-divider-bottom-1670590214 .shape-fill {
+  fill: #226f54;
+}
+header .overlay_header .copyright_footer a {
+  color: #efdebe;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  bottom: 60px;
+  font-family: "Lemonada";
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+header .overlay_header .copyright_footer a:hover {
+  color: #8d0801;
+}
+header .overlay_header .copyright_footer p {
+  color: #efdebe;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  bottom: 30px;
+  font-family: "Lemonada";
+  font-size: 0.8rem;
+  text-transform: uppercase;
 }
 header .sapin_toggle {
   z-index: 11;
@@ -409,7 +449,7 @@ header .sapin_toggle .branches .branche.arm4 {
   width: 45px;
 }
 header .sapin_toggle .menu_sapin {
-  font-family: "Roboto";
+  font-family: "Lemonada";
   text-transform: uppercase;
   letter-spacing: 2px;
   margin-top: -2px;
@@ -786,33 +826,33 @@ header .modal_container .modal .box_modal .btnModalLettre .btnLettre:hover {
 }
 .cd_cometes .comets i:nth-of-type(1) {
   width: 5px;
-  left: 30vw;
-  height: 11px;
+  left: 57vw;
+  height: 15px;
 }
 .cd_cometes .comets i:nth-of-type(2) {
   width: 5px;
-  left: 32vw;
-  height: 51px;
+  left: 2vw;
+  height: 14px;
 }
 .cd_cometes .comets i:nth-of-type(3) {
   width: 5px;
-  left: 10vw;
-  height: 1px;
+  left: 28vw;
+  height: 40px;
 }
 .cd_cometes .comets i:nth-of-type(4) {
   width: 5px;
-  left: 24vw;
-  height: 57px;
+  left: 68vw;
+  height: 15px;
 }
 .cd_cometes .comets i:nth-of-type(5) {
   width: 5px;
-  left: 25vw;
-  height: 78px;
+  left: 11vw;
+  height: 5px;
 }
 .cd_cometes .comets i:nth-of-type(6) {
   width: 5px;
-  left: 19vw;
-  height: 15px;
+  left: 62vw;
+  height: 65px;
 }
 .cd_cometes .sun {
   width: 25vh;
@@ -1117,7 +1157,7 @@ header .modal_container .modal .box_modal .btnModalLettre .btnLettre:hover {
   padding: 20px;
   height: calc(90vh - 100px);
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: flex-end;
   position: relative;
   border: 5px solid;
@@ -1134,11 +1174,12 @@ header .modal_container .modal .box_modal .btnModalLettre .btnLettre:hover {
 }
 #bg_formulaire .formulaire form #houx {
   width: 10vw;
-  left: -60px;
+  right: -60px;
   top: -60px;
   position: absolute;
   transition: all 0.3s;
   cursor: pointer;
+  transform: rotate(90deg);
 }
 #bg_formulaire .formulaire form input[type=submit] {
   background: #8d0801;
@@ -1146,10 +1187,13 @@ header .modal_container .modal .box_modal .btnModalLettre .btnLettre:hover {
   border: none;
   font-family: "Adigiana Toybox";
   color: #efdebe;
-  border-radius: 20px 0 20px 0;
+  border-radius: 20px 0 10px 0;
   padding: 1vh 2vh;
   cursor: pointer;
   font-size: 1rem;
+  position: absolute;
+  bottom: -15px;
+  right: -5px;
   transition: all 0.3s;
 }
 #bg_formulaire .formulaire form input[type=submit]:hover {
@@ -1157,15 +1201,14 @@ header .modal_container .modal .box_modal .btnModalLettre .btnLettre:hover {
 }
 #bg_formulaire .formulaire form .header_form {
   background: #8d0801;
-  height: 65px;
+  height: auto;
   display: flex;
   justify-content: center;
-  align-items: center;
-  top: -30px;
-  border-radius: 25px 25px 0 0;
-  right: -5px;
+  align-items: flex-start;
+  top: -5px;
+  border-radius: 5px 0 0 0;
+  left: -5px;
   position: absolute;
-  clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 70% 100%, 50% 75%, 0% 75%);
 }
 #bg_formulaire .formulaire form .header_form h1 {
   color: #f8f8f8;
@@ -1192,23 +1235,18 @@ header .modal_container .modal .box_modal .btnModalLettre .btnLettre:hover {
 #bg_formulaire .formulaire form .corps_form input:not([type=checkbox]):focus {
   outline: none;
 }
+#bg_formulaire .formulaire form .corps_form input:not([type=checkbox]) input[type=checkbox] {
+  vertical-align: bottom;
+  position: relative;
+}
 #bg_formulaire .formulaire form .corps_form .checkbox_form {
+  padding-block: 10px;
   display: flex;
   justify-content: flex-start;
-  flex-direction: column;
-  flex: 50%;
-}
-#bg_formulaire .formulaire form .corps_form .checkbox_form .test {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: row;
 }
-#bg_formulaire .formulaire form .corps_form .checkbox_form .test2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
+#bg_formulaire .formulaire form .corps_form .checkbox_form label {
+  padding-inline: 10px;
 }
 
 .overlay_portrait {
