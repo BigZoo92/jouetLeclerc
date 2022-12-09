@@ -1,8 +1,8 @@
-window.onload = function () {
+
 let dateTab = new Date()
 let date = dateTab.getDate()
 let heure = dateTab.getHours()
-// let heure = 0;
+// let heure = 23;
 if (heure>17 || heure<9){
     console.log('wesh');
     document.querySelector('.sun').style.background = "white"
@@ -28,4 +28,3 @@ else{
 }
 
 document.querySelector('.sun').style.bottom = heure * 1.5 + "vw"
-}
