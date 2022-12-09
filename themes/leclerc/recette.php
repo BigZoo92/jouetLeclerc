@@ -21,14 +21,14 @@ get_header()
     $difficulte = get_field('difficulte'); 
     $description = get_field('description'); 
     ?>
-    <div class="box_recette">
+    <div class="box_recette <?= "box".$post->ID ?>">
                 <?php the_post_thumbnail() ?>
                 </img>
                 <div class="corps_recette">
                     <h1 class="titre_recette">
                         <?php the_title() ?>
                     </h1>
-                    <div class="difficulte_recette">
+                    <div class="difficulte_recette" data-difficulte="<?= $difficulte ?>">
                         <i class="bi bi-clock"> <?= $temps ?> minutes</i>
                         <li>
                             <?php
@@ -40,9 +40,9 @@ get_header()
                             ?>
                         </li>
                     </div>
-                    <p class="desc_recette"><?= $description ?></p>
+                    <p class="desc_recette" data-ingredient="<?= $ingredients ?>"><?= $description ?></p>
                 </div>
-                    <button class="bouton_recette" id="btnAfficher">Cuisinez !</button>
+                    <button class="bouton_recette <?= "box".$post->ID ?>">Cuisinez !</button>
             </div>
             <?php
     endwhile;
@@ -76,11 +76,7 @@ endif;
                             <div class="column_gauche">
                                 <h2>Difficulté</h2>
                                 <div class="modal_difficulte">
-                                    <i class="bi bi-star-fill"></i>
-                                    <i class="bi bi-star-fill"></i>
-                                    <i class="bi bi-star-fill"></i>
-                                    <i class="bi bi-star-fill"></i>
-                                    <i class="bi bi-star-fill"></i>
+
                                 </div>
                             </div>
                             <div class="column_droite">
