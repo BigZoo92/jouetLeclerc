@@ -28,11 +28,18 @@
                     <li><a href="#">lettre au père noël</a></li>
                 </ul>
             </nav>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-                <path fill="#226f54" fill-opacity="1"
-                    d="M0,192L60,181.3C120,171,240,149,360,122.7C480,96,600,64,720,53.3C840,43,960,53,1080,48C1200,43,1320,21,1380,10.7L1440,0L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z">
-                </path>
-            </svg>
+            <div class="custom-shape-divider-bottom-1670590214">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                    preserveAspectRatio="none">
+                    <path
+                        d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+                        class="shape-fill"></path>
+                </svg>
+                <div class="copyright_footer">
+                    <a href="mentions">Mentions Légales</a>
+                    <p>Copyright © 2022 Jouets Leclerc</p>
+                </div>
+            </div>
         </div>
         <div class="sapin_toggle">
             <img src="<?= get_template_directory_uri()?>./assets/images/svg/star.svg" alt="Etoile sapin">
@@ -64,13 +71,16 @@
 
             <div id="modal_lettre" class="modal">
                 <div class="box_modal">
-                    <img id="lutin_recette" src="<?= get_template_directory_uri() ?>./assets/images/png/Lutin_Recette.png" title="Afficher"alt="Sapin">
+                    <img id="lutin_recette"
+                        src="<?= get_template_directory_uri() ?>./assets/images/png/Lutin_Recette.png" title="Afficher"
+                        alt="Sapin">
                     <div class="header_modal">
                         <span class="btnFermer">&times;</span>
                         <h1>Bienvenue dans la maison des recettes de nöel !</h1>
                     </div>
                     <div class="corps_modal">
-                        <p>C'est encore moi <b style="font-weight: bold">Lutintin</b> ! Toi aussi tu aimes les recettes de Nöel ?</p>
+                        <p>C'est encore moi <b style="font-weight: bold">Lutintin</b> ! Toi aussi tu aimes les recettes
+                            de Nöel ?</p>
                         <p>Alors prépare tes meilleures recettes de Nöel avec moi !</p>
                         <p>Invite tes amis à les préparer avec toi, et régalez-vous ensemble !</p>
                         <p>N'oublie pas d'inviter ta maman et ton papounet !</p>

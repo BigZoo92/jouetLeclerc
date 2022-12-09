@@ -50,9 +50,52 @@ header {
     }
     svg {
       position: absolute;
-      bottom: -60px;
-      width: 105%;
-      margin-left: 5%;
+      width: 100%;
+    }
+    .custom-shape-divider-bottom-1670590214 {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      overflow: hidden;
+      line-height: 0;
+    }
+
+    .custom-shape-divider-bottom-1670590214 svg {
+      position: relative;
+      display: block;
+      width: calc(100% + 1.3px);
+      height: 130px;
+      transform: rotateY(180deg);
+    }
+
+    .custom-shape-divider-bottom-1670590214 .shape-fill {
+      fill: $noel-vert;
+    }
+    .copyright_footer {
+      a{
+        color: $noel-beige;
+        position: absolute;
+        text-align: center;
+        width: 100%;
+        bottom: 60px;
+        font-family: $font-normal;
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        &:hover{
+          color: $noel-rouge;
+        }
+      }
+      p {
+        color: $noel-beige;
+        position: absolute;
+        text-align: center;
+        width: 100%;
+        bottom: 30px;
+        font-family: $font-normal;
+        font-size: 0.8rem;
+        text-transform: uppercase;
+      }
     }
   }
   .sapin_toggle {
@@ -96,7 +139,7 @@ header {
       }
     }
     .menu_sapin {
-      font-family: "Roboto";
+      font-family: $font-normal;
       text-transform: uppercase;
       letter-spacing: 2px;
       margin-top: -2px;
@@ -242,7 +285,7 @@ header {
         border-radius: 20px;
         width: 900px;
         max-width: calc(100% - 40px);
-        filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, .6));
+        filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.6));
         -webkit-animation-name: animatetop;
         -webkit-animation-duration: 0.4s;
         animation-name: animatetop;
