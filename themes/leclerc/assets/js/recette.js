@@ -1,5 +1,5 @@
   // Modal recette
-  window.onload = function () {
+
   var recette = document.getElementById("modal_recette");
 
   var btnR = document.getElementById("btnAfficher");
@@ -19,4 +19,3 @@
       recette.style.display = "none";
     }
   };
-}
