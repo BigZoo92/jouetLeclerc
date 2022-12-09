@@ -1,0 +1,63 @@
+.serie {
+    height: calc(100vh - 100px);
+    background: black;
+    .header_serie {
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        h1 {
+            color: $noel-rouge;
+        }
+    }
+    .corps_serie {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+        padding: 30px;
+        grid-column-gap: 30px;
+        position: relative;
+        .box_serie {
+            background: $noel-rouge;
+            border-radius: 5px;
+            padding: 20px;
+            width: 100%;
+            h2 {
+                padding-block: 10px;
+                color: $noel-vert;
+            }
+            video {
+                width: 100%;
+                border-radius: 5px;
+            }
+            #houx_gauche {
+                width: 7vw;
+                top: 10px;
+                left: 15px;
+                position: absolute;
+            }
+
+            #houx_droite {
+                width: 7vw;
+                bottom: 10px;
+                left: 375px;
+                position: absolute;
+                transform: rotate(180deg);
+            }
+
+            #neige_haut {
+                width: 7vw;
+                top: 10px;
+                right: 15px;
+                position: absolute;
+            }
+
+            #neige_bas {
+                width: 7vw;
+                bottom: 10px;
+                left: 0;
+                position: absolute;
+                transform: rotate(180deg);
+            }
+        }
+    }
+}

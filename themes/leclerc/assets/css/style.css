@@ -826,33 +826,33 @@ header .modal_container .modal .box_modal .btnModalLettre .btnLettre:hover {
 }
 .cd_cometes .comets i:nth-of-type(1) {
   width: 5px;
-  left: 41vw;
-  height: 73px;
+  left: 25vw;
+  height: 77px;
 }
 .cd_cometes .comets i:nth-of-type(2) {
   width: 5px;
-  left: 10vw;
-  height: 30px;
+  left: 70vw;
+  height: 14px;
 }
 .cd_cometes .comets i:nth-of-type(3) {
   width: 5px;
-  left: 13vw;
-  height: 72px;
+  left: 49vw;
+  height: 18px;
 }
 .cd_cometes .comets i:nth-of-type(4) {
   width: 5px;
-  left: 58vw;
-  height: 47px;
+  left: 39vw;
+  height: 9px;
 }
 .cd_cometes .comets i:nth-of-type(5) {
   width: 5px;
-  left: 45vw;
-  height: 37px;
+  left: 11vw;
+  height: 11px;
 }
 .cd_cometes .comets i:nth-of-type(6) {
   width: 5px;
-  left: 36vw;
-  height: 48px;
+  left: 20vw;
+  height: 57px;
 }
 .cd_cometes .sun {
   width: 25vh;
@@ -1247,6 +1247,67 @@ header .modal_container .modal .box_modal .btnModalLettre .btnLettre:hover {
 }
 #bg_formulaire .formulaire form .corps_form .checkbox_form label {
   padding-inline: 10px;
+}
+
+.serie {
+  height: calc(100vh - 100px);
+  background: black;
+}
+.serie .header_serie {
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.serie .header_serie h1 {
+  color: #8d0801;
+}
+.serie .corps_serie {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  padding: 30px;
+  grid-column-gap: 30px;
+  position: relative;
+}
+.serie .corps_serie .box_serie {
+  background: #8d0801;
+  border-radius: 5px;
+  padding: 20px;
+  width: 100%;
+}
+.serie .corps_serie .box_serie h2 {
+  padding-block: 10px;
+  color: #226f54;
+}
+.serie .corps_serie .box_serie video {
+  width: 100%;
+  border-radius: 5px;
+}
+.serie .corps_serie .box_serie #houx_gauche {
+  width: 7vw;
+  top: 10px;
+  left: 15px;
+  position: absolute;
+}
+.serie .corps_serie .box_serie #houx_droite {
+  width: 7vw;
+  bottom: 10px;
+  left: 375px;
+  position: absolute;
+  transform: rotate(180deg);
+}
+.serie .corps_serie .box_serie #neige_haut {
+  width: 7vw;
+  top: 10px;
+  right: 15px;
+  position: absolute;
+}
+.serie .corps_serie .box_serie #neige_bas {
+  width: 7vw;
+  bottom: 10px;
+  left: 0;
+  position: absolute;
+  transform: rotate(180deg);
 }
 
 .overlay_portrait {
