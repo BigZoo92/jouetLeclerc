@@ -319,6 +319,8 @@ header {
   font-family: "Adigiana Toybox";
   font-weight: 100;
   overflow-y: hidden;
+  background: #f8f8f8;
+  position: relative;
 }
 header .overlay_header {
   height: 100vh;
@@ -679,8 +681,28 @@ header .modal_container .modal .box_modal .btnModalLettre .btnLettre:hover {
     opacity: 1;
   }
 }
+.custom-shape-divider-top-1670883178 {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1670883178 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 50px;
+}
+
+.custom-shape-divider-top-1670883178 .shape-fill {
+  fill: #F8F8F8;
+}
+
 .hero {
-  height: calc(100vh - 100px);
+  height: calc(100vh - 150px);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -826,33 +848,33 @@ header .modal_container .modal .box_modal .btnModalLettre .btnLettre:hover {
 }
 .cd_cometes .comets i:nth-of-type(1) {
   width: 5px;
-  left: 57vw;
-  height: 15px;
+  left: 8vw;
+  height: 5px;
 }
 .cd_cometes .comets i:nth-of-type(2) {
   width: 5px;
-  left: 2vw;
-  height: 14px;
+  left: 64vw;
+  height: 45px;
 }
 .cd_cometes .comets i:nth-of-type(3) {
   width: 5px;
-  left: 28vw;
-  height: 40px;
+  left: 22vw;
+  height: 48px;
 }
 .cd_cometes .comets i:nth-of-type(4) {
   width: 5px;
-  left: 68vw;
-  height: 15px;
+  left: 32vw;
+  height: 68px;
 }
 .cd_cometes .comets i:nth-of-type(5) {
   width: 5px;
-  left: 11vw;
+  left: 32vw;
   height: 5px;
 }
 .cd_cometes .comets i:nth-of-type(6) {
   width: 5px;
-  left: 62vw;
-  height: 65px;
+  left: 57vw;
+  height: 55px;
 }
 .cd_cometes .sun {
   width: 25vh;
