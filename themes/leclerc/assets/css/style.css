@@ -255,7 +255,7 @@ h1 {
 
 h2 {
   font-size: clamp(1rem, 2vw + 1rem, 1.333rem);
-  color: #8d0801;
+  color: #bf0603;
 }
 
 * {
@@ -267,6 +267,7 @@ body {
   width: 100%;
   height: 100vh;
   background-color: rgb(140, 209, 243);
+  overflow-y: hidden;
 }
 
 #bg_hero {
@@ -283,7 +284,7 @@ body {
 
 a {
   text-decoration: none;
-  color: #8d0801;
+  color: #bf0603;
   transition: all 0.3s;
 }
 a:hover {
@@ -314,11 +315,16 @@ h6 {
 header {
   width: 100%;
   display: flex;
-  height: 100px;
+  height: 200px;
+  position: fixed;
+  align-items: flex-start;
+  inset: 0;
   justify-content: space-between;
   font-family: "Adigiana Toybox";
   font-weight: 100;
-  overflow-y: hidden;
+  background-image: url("../../assets/images/png/header.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 header .overlay_header {
   height: 100vh;
@@ -332,6 +338,9 @@ header .overlay_header {
   align-items: center;
   z-index: 10;
   overflow-y: hidden;
+}
+header .overlay_header nav {
+  height: 100px;
 }
 header .overlay_header nav ul {
   display: flex;
@@ -360,7 +369,7 @@ header .overlay_header nav ul li a {
   transition: color 0.3s ease;
 }
 header .overlay_header nav ul li a:hover {
-  color: #8d0801;
+  color: #bf0603;
 }
 header .overlay_header svg {
   position: absolute;
@@ -395,7 +404,7 @@ header .overlay_header .copyright_footer a {
   text-transform: uppercase;
 }
 header .overlay_header .copyright_footer a:hover {
-  color: #8d0801;
+  color: #bf0603;
 }
 header .overlay_header .copyright_footer p {
   color: #efdebe;
@@ -409,7 +418,7 @@ header .overlay_header .copyright_footer p {
 }
 header .sapin_toggle {
   z-index: 11;
-  left: 20px;
+  left: 50px;
   top: 20px;
   justify-content: flex-end;
   align-self: flex-start;
@@ -467,12 +476,20 @@ header .sapin_toggle .menu_sapin p:nth-of-type(2) {
   clip-path: inset(50% 0 50% 0);
   transition: clip-path 0.3s ease-in, background-color 1s ease-in;
 }
+header .leclerc_link {
+  width: 12.5vw;
+  margin-top: 17.5px;
+}
+header .leclerc_link img {
+  width: 100%;
+}
 header .modal_container {
   background: transparent;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-inline: 20px;
+  margin-top: 15px;
 }
 header .modal_container ul {
   display: flex;
@@ -483,7 +500,6 @@ header .modal_container ul li {
   padding: 10px;
   margin-inline: 20px;
   position: relative;
-  background: #8d0801;
   color: white;
   display: flex;
   justify-content: center;
@@ -493,7 +509,7 @@ header .modal_container ul li i {
   padding-inline-end: 5px;
 }
 header .modal_container ul li a {
-  color: white;
+  color: black;
   text-align: center;
   font-size: 14px;
   font-family: "Lemonada";
@@ -505,33 +521,8 @@ header .modal_container ul li a {
 header .modal_container ul li a:hover {
   color: black;
 }
-header .modal_container ul li a::before {
-  content: "";
-  width: 15px;
-  height: 38px;
-  left: -6px;
-  background-image: url("../../assets/images/svg/Tickets_bord.svg");
-  background-repeat: no-repeat;
-  background-size: contain;
-  right: 150px;
-  top: 50%;
-  position: absolute;
-  transform: translateY(-50%);
-}
-header .modal_container ul li a::after {
-  content: "";
-  width: 15px;
-  height: 38px;
-  background-image: url("../../assets/images/svg/Tickets_bord.svg");
-  background-repeat: no-repeat;
-  background-size: contain;
-  transform: rotateY(180deg) translateY(-50%);
-  top: 50%;
-  right: -6px;
-  position: absolute;
-}
 header .modal_container ul li button {
-  color: white;
+  color: black;
   text-align: center;
   background: none;
   border: none;
@@ -546,31 +537,6 @@ header .modal_container ul li button {
 }
 header .modal_container ul li button:hover {
   color: black;
-}
-header .modal_container ul li button::before {
-  content: "";
-  width: 15px;
-  height: 38px;
-  left: -6px;
-  background-image: url("../../assets/images/svg/Tickets_bord.svg");
-  background-repeat: no-repeat;
-  background-size: contain;
-  right: 150px;
-  top: 50%;
-  position: absolute;
-  transform: translateY(-50%);
-}
-header .modal_container ul li button::after {
-  content: "";
-  width: 15px;
-  height: 38px;
-  background-image: url("../../assets/images/svg/Tickets_bord.svg");
-  background-repeat: no-repeat;
-  background-size: contain;
-  transform: rotateY(180deg) translateY(-50%);
-  top: 50%;
-  right: -6px;
-  position: absolute;
 }
 header .modal_container .modal {
   display: none;
@@ -623,7 +589,7 @@ header .modal_container .modal .box_modal .header_modal h1 {
   color: #f8f8f8;
 }
 header .modal_container .modal .box_modal .header_modal .btnFermer {
-  color: #8d0801;
+  color: #bf0603;
   float: right;
   font-weight: bold;
   transition: all 0.3s;
@@ -656,7 +622,7 @@ header .modal_container .modal .box_modal .btnModalLettre {
 header .modal_container .modal .box_modal .btnModalLettre .btnLettre {
   display: block;
   color: #f8f8f8;
-  background: #8d0801;
+  background: #bf0603;
   position: absolute;
   text-transform: uppercase;
   text-align: center;
@@ -680,12 +646,15 @@ header .modal_container .modal .box_modal .btnModalLettre .btnLettre:hover {
   }
 }
 .hero {
-  height: calc(100vh - 100px);
+  height: calc(100vh - 125px);
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   position: relative;
+  align-self: flex-end;
+  margin-top: 125px;
+  z-index: 0;
 }
 .hero #boite_lettre {
   width: 3.5vw;
@@ -826,33 +795,33 @@ header .modal_container .modal .box_modal .btnModalLettre .btnLettre:hover {
 }
 .cd_cometes .comets i:nth-of-type(1) {
   width: 5px;
-  left: 41vw;
-  height: 41px;
+  left: 20vw;
+  height: 1px;
 }
 .cd_cometes .comets i:nth-of-type(2) {
   width: 5px;
-  left: 66vw;
-  height: 46px;
+  left: 13vw;
+  height: 69px;
 }
 .cd_cometes .comets i:nth-of-type(3) {
   width: 5px;
-  left: 63vw;
-  height: 78px;
+  left: 75vw;
+  height: 62px;
 }
 .cd_cometes .comets i:nth-of-type(4) {
   width: 5px;
-  left: 16vw;
-  height: 36px;
+  left: 72vw;
+  height: 78px;
 }
 .cd_cometes .comets i:nth-of-type(5) {
   width: 5px;
-  left: 38vw;
-  height: 51px;
+  left: 39vw;
+  height: 70px;
 }
 .cd_cometes .comets i:nth-of-type(6) {
   width: 5px;
-  left: 26vw;
-  height: 63px;
+  left: 14vw;
+  height: 37px;
 }
 .cd_cometes .sun {
   width: 25vh;
@@ -930,7 +899,7 @@ header .modal_container .modal .box_modal .btnModalLettre .btnLettre:hover {
   margin-block-start: 20px;
   border-radius: 20px 50px;
   background: #f8f8f8;
-  color: #8d0801;
+  color: #bf0603;
   font-size: clamp(1.5rem, 1.0238rem + 2.381vw, 2.5rem);
 }
 .recette .box_grid {
@@ -955,7 +924,7 @@ header .modal_container .modal .box_modal .btnModalLettre .btnLettre:hover {
 .recette .box_grid .box_recette .corps_recette .titre_recette {
   text-align: left;
   text-transform: uppercase;
-  color: #8d0801;
+  color: #bf0603;
   font-size: 1.125rem;
 }
 .recette .box_grid .box_recette .difficulte_recette {
@@ -982,7 +951,7 @@ header .modal_container .modal .box_modal .btnModalLettre .btnLettre:hover {
 .recette .box_grid .box_recette .bouton_recette {
   display: block;
   color: #f8f8f8;
-  background: #8d0801;
+  background: #bf0603;
   position: absolute;
   right: 0;
   bottom: -13.75px;
@@ -1054,7 +1023,7 @@ header .modal_container .modal .box_modal .btnModalLettre .btnLettre:hover {
   color: #f8f8f8;
 }
 .recette .modal .box_modal .header_modal .btnFermerRecette {
-  color: #8d0801;
+  color: #bf0603;
   float: right;
   font-weight: bold;
   transition: all 0.3s;
@@ -1124,7 +1093,7 @@ header .modal_container .modal .box_modal .btnModalLettre .btnLettre:hover {
 .recette .modal .box_modal .btnModalLettre .btnLettre {
   display: block;
   color: #f8f8f8;
-  background: #8d0801;
+  background: #bf0603;
   position: absolute;
   text-transform: uppercase;
   text-align: center;
@@ -1168,7 +1137,7 @@ header .modal_container .modal .box_modal .btnModalLettre .btnLettre:hover {
   border-radius: 10px;
 }
 #bg_formulaire .formulaire form small {
-  color: #8d0801;
+  color: #bf0603;
   font-family: "Adigiana Toybox";
   font-size: 0.8rem;
 }
@@ -1182,7 +1151,7 @@ header .modal_container .modal .box_modal .btnModalLettre .btnLettre:hover {
   transform: rotate(90deg);
 }
 #bg_formulaire .formulaire form input[type=submit] {
-  background: #8d0801;
+  background: #bf0603;
   width: fit-content;
   border: none;
   font-family: "Adigiana Toybox";
@@ -1200,7 +1169,7 @@ header .modal_container .modal .box_modal .btnModalLettre .btnLettre:hover {
   background: #226f54;
 }
 #bg_formulaire .formulaire form .header_form {
-  background: #8d0801;
+  background: #bf0603;
   height: auto;
   display: flex;
   justify-content: center;
@@ -1215,7 +1184,7 @@ header .modal_container .modal .box_modal .btnModalLettre .btnLettre:hover {
   font-size: 1rem;
 }
 #bg_formulaire .formulaire form .corps_form label {
-  color: #8d0801;
+  color: #bf0603;
   font-family: "Adigiana Toybox";
   padding-block: 10px;
 }
@@ -1247,6 +1216,168 @@ header .modal_container .modal .box_modal .btnModalLettre .btnLettre:hover {
 }
 #bg_formulaire .formulaire form .corps_form .checkbox_form label {
   padding-inline: 10px;
+}
+
+.wrap_sapin_calendrier {
+  width: 100%;
+  height: calc(100vh - 100px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrap_sapin_calendrier .sapin_calendrier {
+  display: grid;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 40px 0;
+  grid-auto-flow: row;
+  grid-template-areas: ". . . . . . c24 c24 . . . . . ." ". . . . . c22 c22 c23 c23 . . . . ." ". . . . c19 c19 c20 c20 c21 c21 . . . ." ". . . c15 c15 c16 c16 c17 c17 c18 c18 . . ." ". . C10 C10 c11 c11 c12 c12 c13 c13 c14 c14 . ." ". c4 c4 c5 c5 c6 c6 c7 c7 c8 c8 c9 c9 ." ". . . . c1 c1 c2 c2 c3 c3 . . . .";
+}
+.wrap_sapin_calendrier .sapin_calendrier .c2 {
+  grid-area: c2;
+}
+.wrap_sapin_calendrier .sapin_calendrier .c1 {
+  grid-area: c1;
+}
+.wrap_sapin_calendrier .sapin_calendrier .c3 {
+  grid-area: c3;
+}
+.wrap_sapin_calendrier .sapin_calendrier .c4 {
+  grid-area: c4;
+}
+.wrap_sapin_calendrier .sapin_calendrier .c5 {
+  grid-area: c5;
+}
+.wrap_sapin_calendrier .sapin_calendrier .c6 {
+  grid-area: c6;
+}
+.wrap_sapin_calendrier .sapin_calendrier .c7 {
+  grid-area: c7;
+}
+.wrap_sapin_calendrier .sapin_calendrier .c8 {
+  grid-area: c8;
+}
+.wrap_sapin_calendrier .sapin_calendrier .c9 {
+  grid-area: c9;
+}
+.wrap_sapin_calendrier .sapin_calendrier .C10 {
+  grid-area: C10;
+}
+.wrap_sapin_calendrier .sapin_calendrier .c11 {
+  grid-area: c11;
+}
+.wrap_sapin_calendrier .sapin_calendrier .c12 {
+  grid-area: c12;
+}
+.wrap_sapin_calendrier .sapin_calendrier .c13 {
+  grid-area: c13;
+}
+.wrap_sapin_calendrier .sapin_calendrier .c14 {
+  grid-area: c14;
+}
+.wrap_sapin_calendrier .sapin_calendrier .c15 {
+  grid-area: c15;
+}
+.wrap_sapin_calendrier .sapin_calendrier .c16 {
+  grid-area: c16;
+}
+.wrap_sapin_calendrier .sapin_calendrier .c17 {
+  grid-area: c17;
+}
+.wrap_sapin_calendrier .sapin_calendrier .c18 {
+  grid-area: c18;
+}
+.wrap_sapin_calendrier .sapin_calendrier .c19 {
+  grid-area: c19;
+}
+.wrap_sapin_calendrier .sapin_calendrier .c20 {
+  grid-area: c20;
+}
+.wrap_sapin_calendrier .sapin_calendrier .c21 {
+  grid-area: c21;
+}
+.wrap_sapin_calendrier .sapin_calendrier .c22 {
+  grid-area: c22;
+}
+.wrap_sapin_calendrier .sapin_calendrier .c23 {
+  grid-area: c23;
+}
+.wrap_sapin_calendrier .sapin_calendrier .c24 {
+  grid-area: c24;
+}
+.wrap_sapin_calendrier .sapin_calendrier .cadeau {
+  --tailleCadeau: 75px;
+  width: var(--tailleCadeau);
+  aspect-ratio: 10/7;
+  background-color: #87c38f;
+  border-radius: 0 0 10px 10px;
+  position: relative;
+  margin-inline: -11.75px;
+  transition: all ease-in-out 1s;
+}
+.wrap_sapin_calendrier .sapin_calendrier .cadeau::before {
+  content: "";
+  position: absolute;
+  height: calc(var(--tailleCadeau) / 5);
+  width: 100%;
+  background-color: #73a67a;
+  top: 0;
+  transition: all ease-in-out 1s;
+}
+.wrap_sapin_calendrier .sapin_calendrier .cadeau::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: calc(var(--tailleCadeau) / 5);
+  background-color: #bf0603;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: all ease-in-out 1s;
+}
+.wrap_sapin_calendrier .sapin_calendrier .cadeau div {
+  width: 112.5%;
+  height: calc(var(--tailleCadeau) / 5);
+  background-color: #87c38f;
+  border-radius: 50px;
+  position: absolute;
+  top: calc(var(--tailleCadeau) / 5 * -1);
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  transform-style: preserve-3d;
+  transition: all ease-in-out 1s;
+}
+.wrap_sapin_calendrier .sapin_calendrier .cadeau div::after {
+  content: "";
+  position: absolute;
+  height: 145%;
+  width: calc(var(--tailleCadeau) / 3);
+  border-radius: 10px 10px 0 0;
+  background-color: #bf0603;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  transition: all ease-in-out 1s;
+}
+.wrap_sapin_calendrier .sapin_calendrier .cadeau div::before {
+  content: "";
+  position: absolute;
+  height: 150%;
+  width: 85%;
+  background-color: #bf0603;
+  left: 50%;
+  top: -140%;
+  border-radius: 20px 20px 0 0;
+  clip-path: polygon(50% 90%, 95% 0, 100% 0, 100% 100%, 0 100%, 0 0, 5% 0);
+  transform: translateX(-50%) translateZ(-1px);
+  transition: all ease-in-out 1s;
+}
+
+.tonperetang {
+  background-color: #efdebe;
 }
 
 .overlay_portrait {

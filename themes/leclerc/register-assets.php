@@ -10,6 +10,9 @@ function montheme_register_js()
     if(is_page(34)){ //15
         wp_enqueue_script('recette', get_stylesheet_directory_uri() . '/assets/js/recette.js');
     }
+    if(is_page(44)){
+        wp_enqueue_script('calendrier', get_stylesheet_directory_uri() . '/assets/js/calendrier.js');
+    }
 }
 
 add_action('wp_footer', 'montheme_register_js');

@@ -8,7 +8,6 @@ if (heure>17 || heure<9){
     document.querySelector('.sun').style.background = "white"
     document.querySelector('.sun').style.width = "20vh"
     document.querySelector('body').style.background = "black"
-    document.querySelector('.menu_sapin p').style.color = "#efdebe"
     document.querySelectorAll('.nuages').forEach((item) => {
         item.src += "./assets/images/png/soir_nuages.png"
     })
@@ -28,4 +27,4 @@ else{
 
 }
 
-document.querySelector('.sun').style.bottom = heure * 1.5 + "vw"
+document.querySelector('.sun').style.bottom = heure * 1.25 + "vw";

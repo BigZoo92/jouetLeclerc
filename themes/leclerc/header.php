@@ -58,11 +58,10 @@
         <!-- <div class="logo_leclerc">
             <img src="<?= get_template_directory_uri()?>./assets/images/png/leclerc.png" alt="Logo Leclerc">
         </div> -->
-
+        <a href="<?= get_home_url() ?>" class="leclerc_link"><img src="<?= get_template_directory_uri()?>./assets/images/png/leclerc.png" alt="Logo Leclerc"></a>
         <div class="modal_container">
             <nav>
                 <ul>
-                    <li><a id="btnAccueil" href="https://jouetsleclerc.local">Accueil</a></li>
                     <li><button id="btnRecette">Recette de nöel</button></li>
                     <li><button id="btnLettre">Lettre au père nöel</button></li>
                     <li><button id="btnCalendrier"></button></li>
