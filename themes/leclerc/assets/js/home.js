@@ -27,4 +27,4 @@ else{
 
 }
 
-document.querySelector('.sun').style.bottom = heure * 1.5 + "vw"
+document.querySelector('.sun').style.bottom = heure * 1.25 + "vw";
