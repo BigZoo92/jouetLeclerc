@@ -58,7 +58,7 @@
         <!-- <div class="logo_leclerc">
             <img src="<?= get_template_directory_uri() ?>./assets/images/png/leclerc.png" alt="Logo Leclerc">
         </div> -->
-        <a href="<?= get_home_url() ?>" class="leclerc_link"><img src="<?= get_template_directory_uri()?>./assets/images/png/leclerc.png" alt="Logo Leclerc"></a>
+        <a href="<?= get_home_url() ?>" class="leclerc_link"><img src="<?= get_template_directory_uri()?>./assets/images/png/Logo.png" alt="Logo Leclerc"></a>
         <div class="modal_container">
             <nav>
                 <ul>

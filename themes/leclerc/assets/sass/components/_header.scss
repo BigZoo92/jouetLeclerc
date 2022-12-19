@@ -8,7 +8,7 @@ header {
   justify-content: space-between;
   font-family: $font-title;
   font-weight: 100;
-  background-image: url("../../assets/images/png/header.png");
+  background-image: url("../../assets/images/png/headerv2.png");
   background-repeat: no-repeat;
   background-size: cover;
   .overlay_header {
@@ -128,7 +128,7 @@ header {
       gap: 5px;
       clip-path: inset(0 0 0 0);
       .branche {
-        height: 3px;
+        height: 4px;
         background-color: $noel-vert;
         &.arm1 {
           margin-top: 5px;
@@ -140,16 +140,13 @@ header {
         &.arm3 {
           width: 35px;
         }
-        &.arm4 {
-          width: 45px;
-        }
       }
     }
     .menu_sapin {
       font-family: $font-normal;
       text-transform: uppercase;
       letter-spacing: 2px;
-      margin-top: -2px;
+      margin-top: -5px;
       position: relative;
       text-align: center;
       display: flex;
@@ -165,10 +162,13 @@ header {
       }
     }
   }
-  .leclerc_link{
-    width: 12.5vw;
-    margin-top: 17.5px;
-    img{
+  .leclerc_link {
+    z-index: 11;
+    left: -18vw;
+    top: 30px;
+    position: relative;
+    cursor: pointer;
+    img {
       width: 100%;
     }
   }
@@ -187,7 +187,6 @@ header {
         padding: 10px;
         margin-inline: 20px;
         position: relative;
-        color: white;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -195,22 +194,8 @@ header {
           padding-inline-end: 5px;
         }
 
-        a {
-          color: black;
-          text-align: center;
-          font-size: 14px;
-          font-family: $font-normal;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          height: 30px;
-          &:hover {
-            color: black;
-          }
-        }
-
         button {
-          color: black;
+          color: $noel-rouge;
           text-align: center;
           background: none;
           border: none;
@@ -219,7 +204,6 @@ header {
           display: flex;
           justify-content: center;
           align-items: center;
-          height: 30px;
           transition: all 0.3s;
           cursor: pointer;
           &:hover {
@@ -232,7 +216,7 @@ header {
     .modal {
       display: none;
       position: fixed;
-      z-index: 12;
+      z-index: 99;
       padding-top: 100px;
       left: 0;
       top: 0;
