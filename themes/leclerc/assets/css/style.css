@@ -322,7 +322,9 @@ header {
   justify-content: space-between;
   font-family: "Adigiana Toybox";
   font-weight: 100;
-  overflow-y: hidden;
+  background-image: url("../../assets/images/png/header.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 header .overlay_header {
   height: 100vh;
@@ -643,28 +645,8 @@ header .modal_container .modal .box_modal .btnModalLettre .btnLettre:hover {
     opacity: 1;
   }
 }
-.custom-shape-divider-top-1670883178 {
-  position: relative;
-  top: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-}
-
-.custom-shape-divider-top-1670883178 svg {
-  position: relative;
-  display: block;
-  width: calc(100% + 1.3px);
-  height: 50px;
-}
-
-.custom-shape-divider-top-1670883178 .shape-fill {
-  fill: #F8F8F8;
-}
-
 .hero {
-  height: calc(100vh - 100px);
+  height: calc(100vh - 125px);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -813,33 +795,33 @@ header .modal_container .modal .box_modal .btnModalLettre .btnLettre:hover {
 }
 .cd_cometes .comets i:nth-of-type(1) {
   width: 5px;
-  left: 57vw;
-  height: 15px;
+  left: 5vw;
+  height: 35px;
 }
 .cd_cometes .comets i:nth-of-type(2) {
   width: 5px;
-  left: 2vw;
-  height: 14px;
+  left: 44vw;
+  height: 46px;
 }
 .cd_cometes .comets i:nth-of-type(3) {
   width: 5px;
   left: 28vw;
-  height: 40px;
+  height: 22px;
 }
 .cd_cometes .comets i:nth-of-type(4) {
   width: 5px;
-  left: 68vw;
-  height: 15px;
+  left: 12vw;
+  height: 52px;
 }
 .cd_cometes .comets i:nth-of-type(5) {
   width: 5px;
-  left: 11vw;
-  height: 5px;
+  left: 67vw;
+  height: 60px;
 }
 .cd_cometes .comets i:nth-of-type(6) {
   width: 5px;
-  left: 62vw;
-  height: 65px;
+  left: 51vw;
+  height: 74px;
 }
 .cd_cometes .sun {
   width: 25vh;
