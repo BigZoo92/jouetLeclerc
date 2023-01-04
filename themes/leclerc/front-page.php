@@ -21,10 +21,10 @@
     </div>
 
     <section class="hero">
-        <img id="boite_lettre" src="<?= get_template_directory_uri() ?>./assets/images/svg/boite_aux_lettres.svg" title="Envoyer une lettre au père noël" alt="Boite aux lettres">
-        <img id="sapin" src="<?= get_template_directory_uri() ?>./assets/images/png/sapin.png" title="Afficher" alt="Sapin">
+        <img id="boite_lettre" src="<?= get_template_directory_uri() ?>./assets/images/png/Home_BoiteLettre.png" title="Envoyer une lettre au père noël" alt="Boite aux lettres">
+        <img id="sapin" src="<?= get_template_directory_uri() ?>./assets/images/png/Home_Sapin.png" title="Afficher" alt="Sapin">
         <img id="lutin" src="<?= get_template_directory_uri() ?>./assets/images/png/lutin.png" title="Accéder au lutin" alt="Lutin">
-        <img id="lutin2" src="<?= get_template_directory_uri() ?>./assets/images/png/lutin.png" title="Afficher" alt="Lutin n2">
+        <img id="maison" src="<?= get_template_directory_uri() ?>./assets/images/png/Home_MaisonRecette.png" title="Accéder aux recettes" alt="Maison">
     </section>
 </main>
 

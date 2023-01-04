@@ -58,7 +58,8 @@
         <!-- <div class="logo_leclerc">
             <img src="<?= get_template_directory_uri() ?>./assets/images/png/leclerc.png" alt="Logo Leclerc">
         </div> -->
-        <a href="<?= get_home_url() ?>" class="leclerc_link"><img src="<?= get_template_directory_uri()?>./assets/images/png/Logo.png" alt="Logo Leclerc"></a>
+        <a href="<?= get_home_url() ?>" class="leclerc_link"><img
+                src="<?= get_template_directory_uri()?>./assets/images/png/Logo.png" alt="Logo Leclerc"></a>
         <div class="modal_container">
             <nav>
                 <ul>
@@ -73,11 +74,12 @@
                     <img id="lutin_recette"
                         src="<?= get_template_directory_uri() ?>./assets/images/png/Lutin_Recette.png" title="Afficher"
                         alt="Sapin">
-                    <div class="header_modal">
+                    <img id="modal_chocolat"
+                        src="<?= get_template_directory_uri() ?>./assets/images/png/RecetteChocolat.png"
+                        alt="ModalChocolat">
+                    <div class="corps_modal">
                         <span class="btnFermer">&times;</span>
                         <h1>Bienvenue dans la maison des recettes de nöel !</h1>
-                    </div>
-                    <div class="corps_modal">
                         <p>C'est encore moi <b style="font-weight: bold">Lutintin</b> ! Toi aussi tu aimes les recettes
                             de Nöel ?</p>
                         <p>Alors prépare tes meilleures recettes de Nöel avec moi !</p>

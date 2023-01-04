@@ -330,6 +330,7 @@ header .overlay_header {
   height: 100vh;
   width: 100%;
   position: absolute;
+  z-index: 99;
   top: 150vh;
   left: 0;
   background-color: #efdebe;
@@ -475,13 +476,14 @@ header .sapin_toggle .menu_sapin p:nth-of-type(2) {
 }
 header .leclerc_link {
   z-index: 11;
-  left: -18vw;
-  top: 30px;
+  left: -7.5vw;
+  top: 25px;
   position: relative;
   cursor: pointer;
 }
 header .leclerc_link img {
   width: 100%;
+  object-fit: cover;
 }
 header .modal_container {
   background: transparent;
@@ -504,11 +506,14 @@ header .modal_container ul li {
   justify-content: center;
   align-items: center;
 }
+header .modal_container ul li::before {
+  content: url("../../assets/images/png/Gui.png");
+}
 header .modal_container ul li i {
   padding-inline-end: 5px;
 }
 header .modal_container ul li button {
-  color: #bf0603;
+  color: #43291f;
   text-align: center;
   background: none;
   border: none;
@@ -521,23 +526,22 @@ header .modal_container ul li button {
   cursor: pointer;
 }
 header .modal_container ul li button:hover {
-  color: black;
+  color: #226f54;
 }
 header .modal_container .modal {
   display: none;
   position: fixed;
-  z-index: 99;
   padding-top: 100px;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: rgb(0, 0, 0);
   background-color: rgba(0, 0, 0, 0.4);
   overflow: hidden;
 }
 header .modal_container .modal .box_modal {
   position: relative;
+  z-index: 3;
   background-color: #efdebe;
   margin: auto;
   padding: 0;
@@ -558,43 +562,48 @@ header .modal_container .modal .box_modal #lutin_recette {
   position: absolute;
   transform: rotateY(180deg);
 }
-header .modal_container .modal .box_modal .header_modal {
+header .modal_container .modal .box_modal #modal_chocolat {
+  width: 83vw;
+  z-index: 2;
+  left: -50px;
+  top: -200px;
+  position: absolute;
+}
+header .modal_container .modal .box_modal .corps_modal {
+  height: auto;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: row-reverse;
-  padding: 20px;
-  height: 65px;
-  background-color: #226f54;
-  text-transform: uppercase;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: flex-start;
+  background: url("../../assets/images/png/BackgroundRecetteModal.png");
+  background-size: cover;
+  border-radius: 5px;
 }
-header .modal_container .modal .box_modal .header_modal h1 {
+header .modal_container .modal .box_modal .corps_modal h1 {
   font-size: clamp(0.5rem, 0.7619rem + 1.1905vw, 1.5rem);
-  padding-inline: 55px;
-  color: #f8f8f8;
+  padding-inline: 40px;
+  color: #43291f;
 }
-header .modal_container .modal .box_modal .header_modal .btnFermer {
+header .modal_container .modal .box_modal .corps_modal .btnFermer {
   color: #bf0603;
   float: right;
   font-weight: bold;
   transition: all 0.3s;
   font-size: 2rem;
+  background: #efdebe;
+  border-radius: 50%;
+  padding: 10px;
+  z-index: 99;
 }
-header .modal_container .modal .box_modal .header_modal .btnFermer:hover {
+header .modal_container .modal .box_modal .corps_modal .btnFermer:hover {
   color: #efdebe;
   text-decoration: none;
   cursor: pointer;
 }
-header .modal_container .modal .box_modal .corps_modal {
-  height: 50vh;
-  display: flex;
-  justify-content: space-evenly;
-  flex-direction: column;
-  align-items: flex-end;
-}
 header .modal_container .modal .box_modal .corps_modal p {
-  padding: 20px;
-  text-align: right;
+  padding-block: 20px;
+  padding-inline: 40px;
+  text-align: left;
   color: #43291f;
   font-size: clamp(1rem, 0.7619rem + 1.1905vw, 1.15rem);
   font-family: "Lemonada";
@@ -639,27 +648,29 @@ header .modal_container .modal .box_modal .btnModalLettre .btnLettre:hover {
   position: relative;
   align-self: flex-end;
   margin-top: 125px;
-  z-index: 0;
 }
 .hero #boite_lettre {
-  width: 3.5vw;
+  width: 6vw;
   left: 40vw;
-  bottom: 15vh;
+  bottom: 10vh;
   position: absolute;
   transform: rotateY(180deg);
   transition: all 0.3s;
-  border-radius: 30px;
-  box-shadow: 0px 15px 10px -15px rgb(155, 155, 155);
   cursor: pointer;
 }
 .hero #boite_lettre:hover {
-  transform: scale(0.9) rotateY(180deg);
+  transform: scale(1.05) rotateY(180deg);
 }
 .hero #sapin {
   width: 5vw;
-  top: 39vh;
+  top: 40vh;
   position: absolute;
+  transition: all 0.3s;
+  cursor: pointer;
   transform: rotateY(180deg) translateX(-50%);
+}
+.hero #sapin:hover {
+  transform: scale(1.05) rotateY(180deg) translateX(-50%);
 }
 .hero #lutin {
   width: 4.5vw;
@@ -671,18 +682,18 @@ header .modal_container .modal .box_modal .btnModalLettre .btnLettre:hover {
   cursor: pointer;
 }
 .hero #lutin:hover {
-  transform: scale(0.9) rotateY(180deg);
+  transform: scale(1.05) rotateY(180deg);
 }
-.hero #lutin2 {
-  width: 4.5vw;
-  right: 25vw;
-  bottom: 20px;
+.hero #maison {
+  width: 25vw;
+  right: 15vw;
+  bottom: 25px;
   position: absolute;
   transition: all 0.3s;
   cursor: pointer;
 }
-.hero #lutin2:hover {
-  transform: scale(0.9);
+.hero #maison:hover {
+  transform: scale(1.05);
 }
 
 @media (orientation: landscape) {
@@ -780,33 +791,33 @@ header .modal_container .modal .box_modal .btnModalLettre .btnLettre:hover {
 }
 .cd_cometes .comets i:nth-of-type(1) {
   width: 5px;
-  left: 14vw;
-  height: 24px;
+  left: 5vw;
+  height: 50px;
 }
 .cd_cometes .comets i:nth-of-type(2) {
   width: 5px;
-  left: 52vw;
-  height: 50px;
+  left: 12vw;
+  height: 69px;
 }
 .cd_cometes .comets i:nth-of-type(3) {
   width: 5px;
-  left: 45vw;
+  left: 11vw;
   height: 1px;
 }
 .cd_cometes .comets i:nth-of-type(4) {
   width: 5px;
-  left: 37vw;
-  height: 64px;
+  left: 59vw;
+  height: 46px;
 }
 .cd_cometes .comets i:nth-of-type(5) {
   width: 5px;
-  left: 57vw;
-  height: 41px;
+  left: 43vw;
+  height: 79px;
 }
 .cd_cometes .comets i:nth-of-type(6) {
   width: 5px;
-  left: 6vw;
-  height: 74px;
+  left: 48vw;
+  height: 42px;
 }
 .cd_cometes .sun {
   width: 25vh;
