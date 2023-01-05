@@ -37,7 +37,7 @@
                 </svg>
                 <div class="copyright_footer">
                     <a href="mentions">Mentions Légales</a>
-                    <p>Copyright © 2022 Jouets Leclerc</p>
+                    <p>Copyright © <script>document.write(new Date().getFullYear())</script> Jouets Leclerc</p>
                 </div>
             </div>
         </div>
@@ -50,8 +50,8 @@
                 <div class="branche arm4"></div>
             </div>
             <div class="menu_sapin">
-                <p>menu</p>
-                <p>fermer</p>
+                <p>Menu</p>
+                <p>Fermer</p>
             </div>
         </div>
 
@@ -81,7 +81,7 @@
                         src="<?= get_template_directory_uri() ?>./assets/images/png/RecetteChocolat.png"
                         alt="ModalChocolat">
                     <div class="corps_modal">
-                        <span class="btnFermer">&times;</span>
+                        <span class="btnFermer">Fermer</span>
                         <h1>Bienvenue dans la maison des recettes de nöel !</h1>
                         <p>C'est encore moi <b>Lutintin</b> ! Toi aussi tu aimes les recettes
                             de Nöel ?</p>

@@ -38,8 +38,10 @@
 
     <div class="info_maison">
         <img id="maison" src="<?= get_template_directory_uri() ?>./assets/images/png/Home_MaisonRecette.png" alt="Maison">
-        <span>Accéder à la maison <i class="bi bi-house-fill"></i></span>
+        <span>Recette de nöel <i class="bi bi-book-fill"></i></span>
     </div>
+
+    <img id="bonhomme" src="<?= get_template_directory_uri() ?>./assets/images/png/bonhomme.png" alt="Bonhomme de neige">
     </section>
 </main>
 
