@@ -21,10 +21,25 @@
     </div>
 
     <section class="hero">
-        <img id="boite_lettre" src="<?= get_template_directory_uri() ?>./assets/images/png/Home_BoiteLettre.png" title="Envoyer une lettre au père noël" alt="Boite aux lettres">
-        <img id="sapin" src="<?= get_template_directory_uri() ?>./assets/images/png/Home_Sapin.png" title="Afficher" alt="Sapin">
-        <img id="lutin" src="<?= get_template_directory_uri() ?>./assets/images/png/lutin.png" title="Accéder au lutin" alt="Lutin">
-        <img id="maison" src="<?= get_template_directory_uri() ?>./assets/images/png/Home_MaisonRecette.png" title="Accéder aux recettes" alt="Maison">
+    <div class="info_boite">
+        <img id="boite_lettre" src="<?= get_template_directory_uri() ?>./assets/images/png/Home_BoiteLettre.png" alt="Boite aux lettres">
+        <span><i class="bi bi-envelope-fill"></i> Envoyer une lettre au père nöel</span>
+    </div>
+
+    <div class="info_sapin">
+        <img id="sapin" src="<?= get_template_directory_uri() ?>./assets/images/png/Home_Sapin.png" alt="Sapin">
+        <span><i class="bi bi-gift-fill"></i> Accéder aux cadeaux de nöel</span>
+    </div>
+
+    <div class="info_lutin">
+        <img id="lutin" src="<?= get_template_directory_uri() ?>./assets/images/png/lutin.png" alt="Lutin">
+        <span><i class="bi bi-youtube"></i> Voir les vidéos</span>    
+    </div>
+
+    <div class="info_maison">
+        <img id="maison" src="<?= get_template_directory_uri() ?>./assets/images/png/Home_MaisonRecette.png" alt="Maison">
+        <span>Accéder à la maison <i class="bi bi-house-fill"></i></span>
+    </div>
     </section>
 </main>
 

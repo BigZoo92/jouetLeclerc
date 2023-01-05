@@ -267,7 +267,6 @@ body {
   width: 100%;
   height: 100vh;
   background-color: rgb(140, 209, 243);
-  overflow-y: hidden;
 }
 
 #bg_hero {
@@ -316,7 +315,6 @@ header {
   width: 100%;
   display: flex;
   height: 200px;
-  position: fixed;
   align-items: flex-start;
   inset: 0;
   justify-content: space-between;
@@ -325,6 +323,7 @@ header {
   background-image: url("../../assets/images/png/headerv2.png");
   background-repeat: no-repeat;
   background-size: cover;
+  position: absolute;
 }
 header .overlay_header {
   height: 100vh;
@@ -341,7 +340,7 @@ header .overlay_header {
   overflow-y: hidden;
 }
 header .overlay_header nav {
-  height: 100px;
+  height: calc(100vh - 250px);
 }
 header .overlay_header nav ul {
   display: flex;
@@ -349,7 +348,6 @@ header .overlay_header nav ul {
   flex-direction: column;
   align-items: center;
   gap: 3vw;
-  margin-bottom: 10vh;
 }
 header .overlay_header nav ul li {
   list-style-type: none;
@@ -388,7 +386,7 @@ header .overlay_header .custom-shape-divider-bottom-1670590214 svg {
   position: relative;
   display: block;
   width: calc(100% + 1.3px);
-  height: 130px;
+  height: 100px;
   transform: rotateY(180deg);
 }
 header .overlay_header .custom-shape-divider-bottom-1670590214 .shape-fill {
@@ -442,18 +440,18 @@ header .sapin_toggle .branches {
   clip-path: inset(0 0 0 0);
 }
 header .sapin_toggle .branches .branche {
-  height: 4px;
+  height: 6px;
   background-color: #226f54;
 }
 header .sapin_toggle .branches .branche.arm1 {
   margin-top: 5px;
-  width: 15px;
+  width: 20px;
 }
 header .sapin_toggle .branches .branche.arm2 {
-  width: 25px;
+  width: 30px;
 }
 header .sapin_toggle .branches .branche.arm3 {
-  width: 35px;
+  width: 40px;
 }
 header .sapin_toggle .menu_sapin {
   font-family: "Lemonada";
@@ -475,15 +473,29 @@ header .sapin_toggle .menu_sapin p:nth-of-type(2) {
   transition: clip-path 0.3s ease-in, background-color 1s ease-in;
 }
 header .leclerc_link {
-  z-index: 11;
-  left: -7.5vw;
+  left: -3vw;
   top: 25px;
+  z-index: 99;
   position: relative;
   cursor: pointer;
 }
 header .leclerc_link img {
   width: 100%;
   object-fit: cover;
+}
+header #flocon_header {
+  width: 5vw;
+  left: -9vw;
+  top: 7.5vh;
+  position: relative;
+  transform: rotate(15deg);
+}
+header #flocon_header_2 {
+  width: 5vw;
+  right: 1.5vw;
+  top: 15vh;
+  position: absolute;
+  transform: rotate(15deg);
 }
 header .modal_container {
   background: transparent;
@@ -492,6 +504,7 @@ header .modal_container {
   align-items: center;
   margin-inline: 20px;
   margin-top: 15px;
+  z-index: 99;
 }
 header .modal_container ul {
   display: flex;
@@ -581,24 +594,28 @@ header .modal_container .modal .box_modal .corps_modal {
 }
 header .modal_container .modal .box_modal .corps_modal h1 {
   font-size: clamp(0.5rem, 0.7619rem + 1.1905vw, 1.5rem);
-  padding-inline: 40px;
-  color: #43291f;
+  margin-inline: 40px;
+  padding-inline: 10px;
+  border-radius: 20px;
+  color: #efdebe;
+  background: #43291f;
+  z-index: 99;
 }
 header .modal_container .modal .box_modal .corps_modal .btnFermer {
-  color: #bf0603;
-  float: right;
+  color: #efdebe;
   font-weight: bold;
   transition: all 0.3s;
   font-size: 2rem;
-  background: #efdebe;
+  background: #226f54;
+  filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.6));
   border-radius: 50%;
   padding: 10px;
   z-index: 99;
+  cursor: pointer;
 }
 header .modal_container .modal .box_modal .corps_modal .btnFermer:hover {
-  color: #efdebe;
+  color: #bf0603;
   text-decoration: none;
-  cursor: pointer;
 }
 header .modal_container .modal .box_modal .corps_modal p {
   padding-block: 20px;
@@ -614,6 +631,7 @@ header .modal_container .modal .box_modal .btnModalLettre {
   align-items: center;
 }
 header .modal_container .modal .box_modal .btnModalLettre .btnLettre {
+  filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.6));
   display: block;
   color: #f8f8f8;
   background: #bf0603;
@@ -624,6 +642,7 @@ header .modal_container .modal .box_modal .btnModalLettre .btnLettre {
   padding: 10px;
   transition: all 0.3s;
   border-radius: 20px 0 20px 20px;
+  z-index: 99;
 }
 header .modal_container .modal .box_modal .btnModalLettre .btnLettre:hover {
   background: #226f54;
@@ -639,6 +658,10 @@ header .modal_container .modal .box_modal .btnModalLettre .btnLettre:hover {
     opacity: 1;
   }
 }
+#bg_hero {
+  overflow-y: hidden;
+}
+
 .hero {
   height: calc(100vh - 125px);
   display: flex;
@@ -652,7 +675,7 @@ header .modal_container .modal .box_modal .btnModalLettre .btnLettre:hover {
 .hero #boite_lettre {
   width: 6vw;
   left: 40vw;
-  bottom: 10vh;
+  bottom: 30vh;
   position: absolute;
   transform: rotateY(180deg);
   transition: all 0.3s;
@@ -661,21 +684,57 @@ header .modal_container .modal .box_modal .btnModalLettre .btnLettre:hover {
 .hero #boite_lettre:hover {
   transform: scale(1.05) rotateY(180deg);
 }
+.hero .info_boite span {
+  opacity: 0;
+  position: absolute;
+  background: #226f54;
+  left: 20vw;
+  bottom: 50vh;
+  padding: 10px;
+  color: #efdebe;
+  border-radius: 10px;
+  font-size: 1rem;
+  transition: all 0.5s;
+}
+.hero .info_boite span i {
+  padding-inline: 5px;
+}
+.hero .info_boite:hover span {
+  opacity: 1;
+}
 .hero #sapin {
   width: 5vw;
-  top: 40vh;
+  top: 19vh;
   position: absolute;
   transition: all 0.3s;
   cursor: pointer;
-  transform: rotateY(180deg) translateX(-50%);
+  transform: rotateY(180deg);
 }
 .hero #sapin:hover {
-  transform: scale(1.05) rotateY(180deg) translateX(-50%);
+  transform: scale(1.05) rotateY(180deg);
+}
+.hero .info_sapin span {
+  opacity: 0;
+  position: absolute;
+  background: #226f54;
+  right: 20vw;
+  bottom: 45vh;
+  padding: 10px;
+  color: #efdebe;
+  border-radius: 10px;
+  font-size: 1rem;
+  transition: all 0.5s;
+}
+.hero .info_sapin span i {
+  padding-inline: 5px;
+}
+.hero .info_sapin:hover span {
+  opacity: 1;
 }
 .hero #lutin {
   width: 4.5vw;
   left: 30vw;
-  bottom: 20px;
+  bottom: 20vh;
   position: absolute;
   transform: rotateY(180deg);
   transition: all 0.3s;
@@ -684,16 +743,50 @@ header .modal_container .modal .box_modal .btnModalLettre .btnLettre:hover {
 .hero #lutin:hover {
   transform: scale(1.05) rotateY(180deg);
 }
+.hero .info_lutin span {
+  opacity: 0;
+  position: absolute;
+  background: #226f54;
+  left: 15vw;
+  bottom: 30vh;
+  padding: 10px;
+  color: #efdebe;
+  border-radius: 10px;
+  font-size: 1rem;
+  transition: all 0.5s;
+}
+.hero .info_lutin span i {
+  padding-inline: 5px;
+}
+.hero .info_lutin:hover span {
+  opacity: 1;
+}
 .hero #maison {
   width: 25vw;
-  right: 15vw;
-  bottom: 25px;
+  right: 10vw;
+  bottom: 20vh;
   position: absolute;
   transition: all 0.3s;
   cursor: pointer;
 }
 .hero #maison:hover {
   transform: scale(1.05);
+}
+.hero .info_maison span {
+  opacity: 0;
+  position: absolute;
+  background: #226f54;
+  padding: 10px;
+  color: #efdebe;
+  border-radius: 10px;
+  font-size: 1rem;
+  transition: all 0.5s;
+}
+.hero .info_maison span i {
+  padding-inline: 5px;
+}
+.hero .info_maison:hover span {
+  opacity: 1;
 }
 
 @media (orientation: landscape) {
@@ -791,33 +884,33 @@ header .modal_container .modal .box_modal .btnModalLettre .btnLettre:hover {
 }
 .cd_cometes .comets i:nth-of-type(1) {
   width: 5px;
-  left: 5vw;
-  height: 50px;
+  left: 32vw;
+  height: 71px;
 }
 .cd_cometes .comets i:nth-of-type(2) {
   width: 5px;
-  left: 12vw;
-  height: 69px;
+  left: 48vw;
+  height: 12px;
 }
 .cd_cometes .comets i:nth-of-type(3) {
   width: 5px;
-  left: 11vw;
-  height: 1px;
+  left: 71vw;
+  height: 47px;
 }
 .cd_cometes .comets i:nth-of-type(4) {
   width: 5px;
-  left: 59vw;
-  height: 46px;
+  left: 55vw;
+  height: 23px;
 }
 .cd_cometes .comets i:nth-of-type(5) {
   width: 5px;
-  left: 43vw;
-  height: 79px;
+  left: 48vw;
+  height: 38px;
 }
 .cd_cometes .comets i:nth-of-type(6) {
   width: 5px;
-  left: 48vw;
-  height: 42px;
+  left: 3vw;
+  height: 15px;
 }
 .cd_cometes .sun {
   width: 25vh;
@@ -886,13 +979,13 @@ header .modal_container .modal .box_modal .btnModalLettre .btnLettre:hover {
   align-items: center;
   flex-direction: column;
   width: 100%;
-  height: calc(100% - 100px);
+  height: calc(100% - 200px);
 }
 .recette .titre_page {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-block-start: 20px;
+  margin-block-start: 30vh;
   border-radius: 20px 50px;
   background: #f8f8f8;
   color: #bf0603;
@@ -1112,13 +1205,18 @@ header .modal_container .modal .box_modal .btnModalLettre .btnLettre:hover {
   }
 }
 #bg_formulaire {
+  overflow: hidden;
+}
+#bg_formulaire .formulaire {
   display: flex;
-  justify-content: center;
   align-items: center;
-  height: calc(100vh - 100px);
+  flex-direction: column;
+  width: 100%;
+  margin-top: 20vh;
+  height: 100vh;
 }
 #bg_formulaire .formulaire form {
-  width: 45vw;
+  width: 60vw;
   padding: 20px;
   height: calc(90vh - 100px);
   display: flex;

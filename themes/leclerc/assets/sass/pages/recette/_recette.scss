@@ -3,12 +3,12 @@
     align-items: center;
     flex-direction: column;
     width: 100%;
-    height: calc(100% - 100px);
+    height: calc(100% - 200px);
     .titre_page {
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-block-start: 20px;
+        margin-block-start: 30vh;
         border-radius: 20px 50px;
         background: $background;
         color: $noel-rouge;
