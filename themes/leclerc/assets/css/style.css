@@ -692,6 +692,7 @@ header .modal_container .modal .box_modal .btnModalLettre .btnLettre:hover {
   bottom: 50vh;
   padding: 10px;
   color: #efdebe;
+  z-index: 5;
   border-radius: 10px;
   font-size: 1rem;
   transition: all 0.5s;
@@ -721,6 +722,7 @@ header .modal_container .modal .box_modal .btnModalLettre .btnLettre:hover {
   bottom: 45vh;
   padding: 10px;
   color: #efdebe;
+  z-index: 5;
   border-radius: 10px;
   font-size: 1rem;
   transition: all 0.5s;
@@ -751,6 +753,7 @@ header .modal_container .modal .box_modal .btnModalLettre .btnLettre:hover {
   bottom: 30vh;
   padding: 10px;
   color: #efdebe;
+  z-index: 5;
   border-radius: 10px;
   font-size: 1rem;
   transition: all 0.5s;
@@ -776,11 +779,15 @@ header .modal_container .modal .box_modal .btnModalLettre .btnLettre:hover {
   opacity: 0;
   position: absolute;
   background: #226f54;
+  right: 5vw;
+  bottom: 10vh;
   padding: 10px;
   color: #efdebe;
+  z-index: 5;
   border-radius: 10px;
   font-size: 1rem;
   transition: all 0.5s;
+  transform: rotate(-11deg);
 }
 .hero .info_maison span i {
   padding-inline: 5px;
@@ -884,33 +891,33 @@ header .modal_container .modal .box_modal .btnModalLettre .btnLettre:hover {
 }
 .cd_cometes .comets i:nth-of-type(1) {
   width: 5px;
-  left: 32vw;
-  height: 71px;
+  left: 17vw;
+  height: 66px;
 }
 .cd_cometes .comets i:nth-of-type(2) {
   width: 5px;
-  left: 48vw;
-  height: 12px;
+  left: 70vw;
+  height: 35px;
 }
 .cd_cometes .comets i:nth-of-type(3) {
   width: 5px;
-  left: 71vw;
-  height: 47px;
+  left: 49vw;
+  height: 35px;
 }
 .cd_cometes .comets i:nth-of-type(4) {
   width: 5px;
-  left: 55vw;
-  height: 23px;
+  left: 17vw;
+  height: 7px;
 }
 .cd_cometes .comets i:nth-of-type(5) {
   width: 5px;
-  left: 48vw;
-  height: 38px;
+  left: 23vw;
+  height: 18px;
 }
 .cd_cometes .comets i:nth-of-type(6) {
   width: 5px;
-  left: 3vw;
-  height: 15px;
+  left: 18vw;
+  height: 60px;
 }
 .cd_cometes .sun {
   width: 25vh;
