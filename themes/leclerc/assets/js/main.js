@@ -1,59 +1,81 @@
 
-  // HEADER
+// HEADER
 
-  let toggle = true;
-  document.querySelector('.sapin_toggle').addEventListener('click', toggleSapin);
-  let tlToggleSapin = gsap.timeline({ paused: true, duration: 0.1, ease: "expo" })
-      .to(".menu_sapin", { y: -33 }, "<0.1")
-      .to(".overlay_header", { "display": "flex" }, "<")
-      .to('.branches', { 'clip-path': 'inset(0 0 100% 0)' }, "<")
-      .to('.menu_sapin p:nth-of-type(2)', { 'clip-path': 'inset(0 0 0 0)' }, "<0.1")
-      .to('.overlay_header', { 'top': '0' }, "<0.1")
-      .to('.overlay_header nav ul li', { 'clip-path': 'inset(0 0 0 0)', stagger: 0.05 }, "<0.1")
-  function toggleSapin() {
-      toggle ? toggleSapinOpen() : toggleSapinClose()
-  }
-  function toggleSapinOpen() {
-      tlToggleSapin.play()
-      document.querySelector('.menu_sapin p:nth-of-type(2)').style.backgroundColor = '#efdebe'
-      toggle = false;
-  }
-  function toggleSapinClose() {
-      tlToggleSapin.reverse()
-      document.querySelector('.menu_sapin p:nth-of-type(2)').style.backgroundColor = '#A3DEF4'
-      toggle = true;
-  }
+let toggle = true;
+document.querySelector('.sapin_toggle').addEventListener('click', toggleSapin);
+let tlToggleSapin = gsap.timeline({ paused: true, duration: 0.1, ease: "expo" })
+  .to(".menu_sapin", { y: -33 }, "<0.1")
+  .to(".overlay_header", { "display": "flex" }, "<")
+  .to('.branches', { 'clip-path': 'inset(0 0 100% 0)' }, "<")
+  .to('.menu_sapin p:nth-of-type(2)', { 'clip-path': 'inset(0 0 0 0)' }, "<0.1")
+  .to('.overlay_header', { 'top': '0' }, "<0.1")
+  .to('.overlay_header nav ul li', { 'clip-path': 'inset(0 0 0 0)', stagger: 0.05 }, "<0.1")
+function toggleSapin() {
+  toggle ? toggleSapinOpen() : toggleSapinClose()
+}
+function toggleSapinOpen() {
+  tlToggleSapin.play()
+  document.querySelector('.menu_sapin p:nth-of-type(2)').style.backgroundColor = '#efdebe'
+  toggle = false;
+}
+function toggleSapinClose() {
+  tlToggleSapin.reverse()
+  document.querySelector('.menu_sapin p:nth-of-type(2)').style.backgroundColor = '#A3DEF4'
+  toggle = true;
+}
 
-  // Modal recette accueil
+// Modal recette accueil
 
-  var modal = document.getElementById("modal_lettre");
+var modal = document.getElementById("modal_recette");
 
-  var btn = document.getElementById("btnRecette");
+var btn = document.getElementById("btnRecette");
 
-  var fermer = document.getElementsByClassName("btnFermer")[0];
+var fermer = document.getElementsByClassName("btnFermerRecette")[0];
 
-  btn.onclick = function () {
-    modal.style.display = "block";
-  };
+btn.onclick = function () {
+  modal.style.display = "block";
+};
 
-  fermer.onclick = function () {
+fermer.onclick = function () {
+  modal.style.display = "none";
+};
+
+window.onclick = function (event) {
+  if (event.target == modal) {
     modal.style.display = "none";
-  };
+  }
+};
 
-  window.onclick = function (event) {
-    if (event.target == modal) {
-      modal.style.display = "none";
-    }
-  };
+// Modal catalogue
 
-  // Récupération de la date
+var modal2 = document.getElementById("modal_catalogue");
 
-  let d = new Date();
+var btn2 = document.getElementById("sapin");
 
-  let dateLocale = d.toLocaleString("fr-FR", {
-    year: "numeric",
-    month: "long",
-    day: "numeric",
-  });
+var fermer2 = document.getElementsByClassName("btnFermerCatalogue")[0];
 
-  document.getElementById("btnCalendrier").innerHTML = dateLocale;
+btn2.onclick = function () {
+  modal2.style.display = "block";
+};
+
+fermer2.onclick = function () {
+  modal2.style.display = "none";
+};
+
+window.onclick = function (event) {
+  if (event.target == modal2) {
+    modal2.style.display = "none";
+  }
+};
+
+// Récupération de la date
+
+let d = new Date();
+
+let dateLocale = d.toLocaleString("fr-FR", {
+  year: "numeric",
+  month: "long",
+  day: "numeric",
+});
+
+document.getElementById("btnCalendrier").innerHTML = dateLocale;

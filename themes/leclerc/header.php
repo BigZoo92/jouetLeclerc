@@ -66,13 +66,12 @@
         <div class="modal_container">
             <nav>
                 <ul>
-                    <li><button id="btnRecette">Invitation</button></li>
-                    <li><button id="btnLettre">Liste père nöel</button></li>
-                    <li><button id="btnCalendrier"></button></li>
+                    <li><img src="<?= get_template_directory_uri() ?>./assets/images/svg/Connexion.svg" alt="Flocon Header 2"><a href=""></li>
+                    <li><img src="<?= get_template_directory_uri() ?>./assets/images/svg/Point-de-Vente.svg" alt="Flocon Header 2"><a href=""></li>
                 </ul>
             </nav>
 
-            <div id="modal_lettre" class="modal">
+            <div id="modal_recette" class="modal">
                 <div class="box_modal">
                     <img id="lutin_recette"
                         src="<?= get_template_directory_uri() ?>./assets/images/png/Lutin_Recette.png" title="Afficher"
@@ -81,7 +80,7 @@
                         src="<?= get_template_directory_uri() ?>./assets/images/png/RecetteChocolat.png"
                         alt="ModalChocolat">
                     <div class="corps_modal">
-                        <span class="btnFermer">Fermer</span>
+                        <span class="btnFermerRecette">Fermer</span>
                         <h1>Bienvenue dans la maison des recettes de nöel !</h1>
                         <p>C'est encore moi <b>Lutintin</b> ! Toi aussi tu aimes les recettes
                             de Nöel ?</p>
@@ -89,8 +88,8 @@
                         <p>Invite tes amis à les préparer avec toi, et régalez-vous ensemble !</p>
                         <p>N'oublie pas d'inviter ta maman et ton papounet !</p>
                     </div>
-                    <div class="btnModalLettre">
-                        <a href="recette" class="btnLettre">Allons-y !</a>
+                    <div class="divModalRecette">
+                        <a href="recette" class="btnRecetteRedir">Allons-y !</a>
                     </div>
                 </div>
             </div>
