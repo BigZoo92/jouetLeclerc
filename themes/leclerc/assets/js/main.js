@@ -26,25 +26,25 @@ function toggleSapinClose() {
 
 // Modal recette accueil
 
-var modal = document.getElementById("modal_recette");
+// var modal = document.getElementById("modal_recette");
 
-var btn = document.getElementById("btnRecette");
+// var btn = document.getElementById("btnRecette");
 
-var fermer = document.getElementsByClassName("btnFermerRecette")[0];
+// var fermer = document.getElementsByClassName("btnFermerRecette")[0];
 
-btn.onclick = function () {
-  modal.style.display = "block";
-};
+// btn.onclick = function () {
+//   modal.style.display = "block";
+// };
 
-fermer.onclick = function () {
-  modal.style.display = "none";
-};
+// fermer.onclick = function () {
+//   modal.style.display = "none";
+// };
 
-window.onclick = function (event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-};
+// window.onclick = function (event) {
+//   if (event.target == modal) {
+//     modal.style.display = "none";
+//   }
+// };
 
 // Modal catalogue
 
@@ -52,7 +52,7 @@ var modal2 = document.getElementById("modal_catalogue");
 
 var btn2 = document.getElementById("sapin");
 
-var fermer2 = document.getElementsByClassName("btnFermerCatalogue")[0];
+var fermer2 = document.getElementsByClassName("btnCatalogueAfter")[0];
 
 btn2.onclick = function () {
   modal2.style.display = "block";
@@ -65,6 +65,28 @@ fermer2.onclick = function () {
 window.onclick = function (event) {
   if (event.target == modal2) {
     modal2.style.display = "none";
+  }
+};
+
+// Modal Lettre
+
+var modal3 = document.getElementById("modal_lettre");
+
+var btn3 = document.getElementById("boite_lettre");
+
+var fermer3 = document.getElementsByClassName("btnFermerLettre")[0];
+
+btn3.onclick = function () {
+  modal3.style.display = "block";
+};
+
+fermer3.onclick = function () {
+  modal3.style.display = "none";
+};
+
+window.onclick = function (event) {
+  if (event.target == modal3) {
+    modal3.style.display = "none";
   }
 };
 

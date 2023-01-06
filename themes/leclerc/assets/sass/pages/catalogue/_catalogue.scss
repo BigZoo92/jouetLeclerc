@@ -1,0 +1,29 @@
+body {
+    background-color: $noel-beige;
+    #bg_catalogue {
+        .catalogue {
+            height: 100vh;
+            margin-top: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            iframe {
+                width: 90vw;
+                border-radius: 5px;
+                height: 90%;
+                border: 10px solid $noel-vert;
+            }
+            a{
+                background: $noel-vert;
+                padding: 10px;
+                margin: 10px;
+                border-radius: 5px;
+                color: $noel-beige;
+                &:hover{
+                    color: $noel-rouge;
+                }
+            }
+        }
+    }
+}

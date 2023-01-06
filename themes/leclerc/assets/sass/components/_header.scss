@@ -80,7 +80,7 @@ header {
       fill: $noel-vert;
     }
     .copyright_footer {
-      a{
+      a {
         color: $noel-beige;
         position: absolute;
         text-align: center;
@@ -89,7 +89,7 @@ header {
         font-family: $font-normal;
         font-size: 0.8rem;
         text-transform: uppercase;
-        &:hover{
+        &:hover {
           color: $noel-rouge;
         }
       }
@@ -164,20 +164,17 @@ header {
     }
   }
   .leclerc_link {
-    left: -17.5vw;
+    left: -22vw;
     top: 25px;
     z-index: 99;
     position: relative;
     cursor: pointer;
-    img {
-      width: 100%;
-      object-fit: cover;
-    }
+    width: 3vw;
   }
 
   #flocon_header {
     width: 5vw;
-    left: -9vw;
+    left: -35vw;
     top: 7.5vh;
     position: relative;
     transform: rotate(15deg);
@@ -198,18 +195,21 @@ header {
     margin-top: 10px;
     margin-inline: 20px;
     z-index: 99;
-    ul {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      li {
-        padding: 10px;
-        position: relative;
+    nav {
+      ul {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        img{
-          width: 3vw;
+        li {
+          padding: 10px;
+          position: relative;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          img {
+            width: 3vw;
+            filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.6));
+          }
         }
       }
     }
@@ -254,7 +254,7 @@ header {
           top: -200px;
           position: absolute;
         }
-        
+
         .corps_modal {
           height: auto;
           display: flex;

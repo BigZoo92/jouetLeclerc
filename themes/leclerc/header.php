@@ -66,8 +66,8 @@
         <div class="modal_container">
             <nav>
                 <ul>
-                    <li><img src="<?= get_template_directory_uri() ?>./assets/images/svg/Connexion.svg" alt="Flocon Header 2"><a href=""></li>
-                    <li><img src="<?= get_template_directory_uri() ?>./assets/images/svg/Point-de-Vente.svg" alt="Flocon Header 2"><a href=""></li>
+                    <li><a href="ou-nous-trouver"><img id="pdv" src="<?= get_template_directory_uri() ?>./assets/images/svg/Point-de-Vente.svg" alt="Point de vente" title="Point de vente Leclerc"></a></li>
+                    <li><a href=""><img id="connexion" src="<?= get_template_directory_uri() ?>./assets/images/svg/Connexion.svg" alt="Connexion"></a></li>
                 </ul>
             </nav>
 
