@@ -71,7 +71,7 @@
                 </ul>
             </nav>
 
-            <div id="modal_recette" class="modal">
+            <!-- <div id="modal_recette" class="modal">
                 <div class="box_modal">
                     <img id="lutin_recette"
                         src="<?= get_template_directory_uri() ?>./assets/images/png/Lutin_Recette.png" title="Afficher"
@@ -92,7 +92,7 @@
                         <a href="recette" class="btnRecetteRedir">Allons-y !</a>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
         </div>
     </header>

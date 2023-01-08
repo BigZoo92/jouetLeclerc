@@ -81,7 +81,7 @@ endif;
                             </div>
                             <div class="column_droite">
                                 <h2>Description</h2>
-                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                <p class="desc_recette" data-ingredient="<?= $ingredients ?>"><?= $description ?></p>
                             </div>
                         </div>
                     </div>

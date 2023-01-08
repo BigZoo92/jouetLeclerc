@@ -7,7 +7,7 @@ function montheme_register_js()
     if( is_front_page()) { 
         wp_enqueue_script('home', get_stylesheet_directory_uri() . '/assets/js/home.js', array('gsap','main'), true); 
     }
-    if(is_page(34)){ //15
+    if(is_page(9)){ //15
         wp_enqueue_script('recette', get_stylesheet_directory_uri() . '/assets/js/recette.js');
     }
     if(is_page(44)){
