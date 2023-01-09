@@ -36,7 +36,7 @@
                         class="shape-fill"></path>
                 </svg>
                 <div class="copyright_footer">
-                    <a href="mentions">Mentions Légales</a>
+                    <a href="mentions-legales">Mentions Légales</a>
                     <p>Copyright © <script>document.write(new Date().getFullYear())</script> Jouets Leclerc</p>
                 </div>
             </div>
@@ -67,7 +67,7 @@
             <nav>
                 <ul>
                     <li><a href="ou-nous-trouver"><img id="pdv" src="<?= get_template_directory_uri() ?>./assets/images/svg/Point-de-Vente.svg" alt="Point de vente" title="Point de vente Leclerc"></a></li>
-                    <li><a href=""><img id="connexion" src="<?= get_template_directory_uri() ?>./assets/images/svg/Connexion.svg" alt="Connexion"></a></li>
+                    <li><a href="http://jouets-leclerc.local/wp-login.php"><img id="connexion" src="<?= get_template_directory_uri() ?>./assets/images/svg/Connexion.svg" alt="Connexion"></a></li>
                 </ul>
             </nav>
 

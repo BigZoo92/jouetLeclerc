@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Formulaire
+ * Template Name: Mentions
  */
 get_header()
 ?>
