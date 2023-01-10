@@ -1162,33 +1162,33 @@ header .modal_container .modal .box_modal .divModalRecette .btnRecetteRedir:hove
 }
 .cd_cometes .comets i:nth-of-type(1) {
   width: 5px;
-  left: 63vw;
-  height: 35px;
+  left: 61vw;
+  height: 18px;
 }
 .cd_cometes .comets i:nth-of-type(2) {
   width: 5px;
-  left: 21vw;
-  height: 76px;
+  left: 20vw;
+  height: 11px;
 }
 .cd_cometes .comets i:nth-of-type(3) {
   width: 5px;
-  left: 45vw;
-  height: 70px;
+  left: 17vw;
+  height: 7px;
 }
 .cd_cometes .comets i:nth-of-type(4) {
   width: 5px;
-  left: 36vw;
-  height: 8px;
+  left: 19vw;
+  height: 53px;
 }
 .cd_cometes .comets i:nth-of-type(5) {
   width: 5px;
-  left: 13vw;
-  height: 67px;
+  left: 22vw;
+  height: 19px;
 }
 .cd_cometes .comets i:nth-of-type(6) {
   width: 5px;
-  left: 47vw;
-  height: 27px;
+  left: 12vw;
+  height: 45px;
 }
 .cd_cometes .sun {
   width: 25vh;
@@ -1592,96 +1592,581 @@ header .modal_container .modal .box_modal .divModalRecette .btnRecetteRedir:hove
 
 .wrap_sapin_calendrier {
   width: 100%;
-  height: calc(100vh - 100px);
+  height: calc(100vh - 200px);
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 100px;
+  margin-top: 250px;
+}
+.wrap_sapin_calendrier h1 {
+  font-size: 4em;
 }
 .wrap_sapin_calendrier .sapin_calendrier {
-  display: grid;
+  display: flex;
   position: relative;
   align-items: center;
   justify-content: center;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  gap: 40px 0;
-  grid-auto-flow: row;
-  grid-template-areas: ". . . . . . c24 c24 . . . . . ." ". . . . . c22 c22 c23 c23 . . . . ." ". . . . c19 c19 c20 c20 c21 c21 . . . ." ". . . c15 c15 c16 c16 c17 c17 c18 c18 . . ." ". . C10 C10 c11 c11 c12 c12 c13 c13 c14 c14 . ." ". c4 c4 c5 c5 c6 c6 c7 c7 c8 c8 c9 c9 ." ". . . . c1 c1 c2 c2 c3 c3 . . . .";
-}
-.wrap_sapin_calendrier .sapin_calendrier .c2 {
-  grid-area: c2;
+  flex-wrap: wrap;
+  gap: 100px;
+  width: 70%;
 }
 .wrap_sapin_calendrier .sapin_calendrier .c1 {
-  grid-area: c1;
+  position: relative;
+}
+.wrap_sapin_calendrier .sapin_calendrier .c1 .num {
+  position: absolute;
+  border-radius: 50%;
+  color: white;
+  background-color: #43291f;
+  padding: 2.25vh;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 0.8em;
+  z-index: 2;
+}
+.wrap_sapin_calendrier .sapin_calendrier .c1 .num::after {
+  content: "1";
+  position: absolute;
+  color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.wrap_sapin_calendrier .sapin_calendrier .c2 {
+  position: relative;
+}
+.wrap_sapin_calendrier .sapin_calendrier .c2 .num {
+  position: absolute;
+  border-radius: 50%;
+  color: white;
+  background-color: #43291f;
+  padding: 2.25vh;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 0.8em;
+  z-index: 2;
+}
+.wrap_sapin_calendrier .sapin_calendrier .c2 .num::after {
+  content: "2";
+  position: absolute;
+  color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .wrap_sapin_calendrier .sapin_calendrier .c3 {
-  grid-area: c3;
+  position: relative;
+}
+.wrap_sapin_calendrier .sapin_calendrier .c3 .num {
+  position: absolute;
+  border-radius: 50%;
+  color: white;
+  background-color: #43291f;
+  padding: 2.25vh;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 0.8em;
+  z-index: 2;
+}
+.wrap_sapin_calendrier .sapin_calendrier .c3 .num::after {
+  content: "3";
+  position: absolute;
+  color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .wrap_sapin_calendrier .sapin_calendrier .c4 {
-  grid-area: c4;
+  position: relative;
+}
+.wrap_sapin_calendrier .sapin_calendrier .c4 .num {
+  position: absolute;
+  border-radius: 50%;
+  color: white;
+  background-color: #43291f;
+  padding: 2.25vh;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 0.8em;
+  z-index: 2;
+}
+.wrap_sapin_calendrier .sapin_calendrier .c4 .num::after {
+  content: "4";
+  position: absolute;
+  color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .wrap_sapin_calendrier .sapin_calendrier .c5 {
-  grid-area: c5;
+  position: relative;
+}
+.wrap_sapin_calendrier .sapin_calendrier .c5 .num {
+  position: absolute;
+  border-radius: 50%;
+  color: white;
+  background-color: #43291f;
+  padding: 2.25vh;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 0.8em;
+  z-index: 2;
+}
+.wrap_sapin_calendrier .sapin_calendrier .c5 .num::after {
+  content: "5";
+  position: absolute;
+  color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .wrap_sapin_calendrier .sapin_calendrier .c6 {
-  grid-area: c6;
+  position: relative;
+}
+.wrap_sapin_calendrier .sapin_calendrier .c6 .num {
+  position: absolute;
+  border-radius: 50%;
+  color: white;
+  background-color: #43291f;
+  padding: 2.25vh;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 0.8em;
+  z-index: 2;
+}
+.wrap_sapin_calendrier .sapin_calendrier .c6 .num::after {
+  content: "6";
+  position: absolute;
+  color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .wrap_sapin_calendrier .sapin_calendrier .c7 {
-  grid-area: c7;
+  position: relative;
+}
+.wrap_sapin_calendrier .sapin_calendrier .c7 .num {
+  position: absolute;
+  border-radius: 50%;
+  color: white;
+  background-color: #43291f;
+  padding: 2.25vh;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 0.8em;
+  z-index: 2;
+}
+.wrap_sapin_calendrier .sapin_calendrier .c7 .num::after {
+  content: "7";
+  position: absolute;
+  color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .wrap_sapin_calendrier .sapin_calendrier .c8 {
-  grid-area: c8;
+  position: relative;
+}
+.wrap_sapin_calendrier .sapin_calendrier .c8 .num {
+  position: absolute;
+  border-radius: 50%;
+  color: white;
+  background-color: #43291f;
+  padding: 2.25vh;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 0.8em;
+  z-index: 2;
+}
+.wrap_sapin_calendrier .sapin_calendrier .c8 .num::after {
+  content: "8";
+  position: absolute;
+  color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .wrap_sapin_calendrier .sapin_calendrier .c9 {
-  grid-area: c9;
+  position: relative;
 }
-.wrap_sapin_calendrier .sapin_calendrier .C10 {
-  grid-area: C10;
+.wrap_sapin_calendrier .sapin_calendrier .c9 .num {
+  position: absolute;
+  border-radius: 50%;
+  color: white;
+  background-color: #43291f;
+  padding: 2.25vh;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 0.8em;
+  z-index: 2;
+}
+.wrap_sapin_calendrier .sapin_calendrier .c9 .num::after {
+  content: "9";
+  position: absolute;
+  color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.wrap_sapin_calendrier .sapin_calendrier .c10 {
+  position: relative;
+}
+.wrap_sapin_calendrier .sapin_calendrier .c10 .num {
+  position: absolute;
+  border-radius: 50%;
+  color: white;
+  background-color: #43291f;
+  padding: 2.25vh;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 0.8em;
+  z-index: 2;
+}
+.wrap_sapin_calendrier .sapin_calendrier .c10 .num::after {
+  content: "10";
+  position: absolute;
+  color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .wrap_sapin_calendrier .sapin_calendrier .c11 {
-  grid-area: c11;
+  position: relative;
+}
+.wrap_sapin_calendrier .sapin_calendrier .c11 .num {
+  position: absolute;
+  border-radius: 50%;
+  color: white;
+  background-color: #43291f;
+  padding: 2.25vh;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 0.8em;
+  z-index: 2;
+}
+.wrap_sapin_calendrier .sapin_calendrier .c11 .num::after {
+  content: "11";
+  position: absolute;
+  color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .wrap_sapin_calendrier .sapin_calendrier .c12 {
-  grid-area: c12;
+  position: relative;
+}
+.wrap_sapin_calendrier .sapin_calendrier .c12 .num {
+  position: absolute;
+  border-radius: 50%;
+  color: white;
+  background-color: #43291f;
+  padding: 2.25vh;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 0.8em;
+  z-index: 2;
+}
+.wrap_sapin_calendrier .sapin_calendrier .c12 .num::after {
+  content: "12";
+  position: absolute;
+  color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .wrap_sapin_calendrier .sapin_calendrier .c13 {
-  grid-area: c13;
+  position: relative;
+}
+.wrap_sapin_calendrier .sapin_calendrier .c13 .num {
+  position: absolute;
+  border-radius: 50%;
+  color: white;
+  background-color: #43291f;
+  padding: 2.25vh;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 0.8em;
+  z-index: 2;
+}
+.wrap_sapin_calendrier .sapin_calendrier .c13 .num::after {
+  content: "13";
+  position: absolute;
+  color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .wrap_sapin_calendrier .sapin_calendrier .c14 {
-  grid-area: c14;
+  position: relative;
+}
+.wrap_sapin_calendrier .sapin_calendrier .c14 .num {
+  position: absolute;
+  border-radius: 50%;
+  color: white;
+  background-color: #43291f;
+  padding: 2.25vh;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 0.8em;
+  z-index: 2;
+}
+.wrap_sapin_calendrier .sapin_calendrier .c14 .num::after {
+  content: "14";
+  position: absolute;
+  color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .wrap_sapin_calendrier .sapin_calendrier .c15 {
-  grid-area: c15;
+  position: relative;
+}
+.wrap_sapin_calendrier .sapin_calendrier .c15 .num {
+  position: absolute;
+  border-radius: 50%;
+  color: white;
+  background-color: #43291f;
+  padding: 2.25vh;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 0.8em;
+  z-index: 2;
+}
+.wrap_sapin_calendrier .sapin_calendrier .c15 .num::after {
+  content: "15";
+  position: absolute;
+  color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .wrap_sapin_calendrier .sapin_calendrier .c16 {
-  grid-area: c16;
+  position: relative;
+}
+.wrap_sapin_calendrier .sapin_calendrier .c16 .num {
+  position: absolute;
+  border-radius: 50%;
+  color: white;
+  background-color: #43291f;
+  padding: 2.25vh;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 0.8em;
+  z-index: 2;
+}
+.wrap_sapin_calendrier .sapin_calendrier .c16 .num::after {
+  content: "16";
+  position: absolute;
+  color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .wrap_sapin_calendrier .sapin_calendrier .c17 {
-  grid-area: c17;
+  position: relative;
+}
+.wrap_sapin_calendrier .sapin_calendrier .c17 .num {
+  position: absolute;
+  border-radius: 50%;
+  color: white;
+  background-color: #43291f;
+  padding: 2.25vh;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 0.8em;
+  z-index: 2;
+}
+.wrap_sapin_calendrier .sapin_calendrier .c17 .num::after {
+  content: "17";
+  position: absolute;
+  color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .wrap_sapin_calendrier .sapin_calendrier .c18 {
-  grid-area: c18;
+  position: relative;
+}
+.wrap_sapin_calendrier .sapin_calendrier .c18 .num {
+  position: absolute;
+  border-radius: 50%;
+  color: white;
+  background-color: #43291f;
+  padding: 2.25vh;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 0.8em;
+  z-index: 2;
+}
+.wrap_sapin_calendrier .sapin_calendrier .c18 .num::after {
+  content: "18";
+  position: absolute;
+  color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .wrap_sapin_calendrier .sapin_calendrier .c19 {
-  grid-area: c19;
+  position: relative;
+}
+.wrap_sapin_calendrier .sapin_calendrier .c19 .num {
+  position: absolute;
+  border-radius: 50%;
+  color: white;
+  background-color: #43291f;
+  padding: 2.25vh;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 0.8em;
+  z-index: 2;
+}
+.wrap_sapin_calendrier .sapin_calendrier .c19 .num::after {
+  content: "19";
+  position: absolute;
+  color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .wrap_sapin_calendrier .sapin_calendrier .c20 {
-  grid-area: c20;
+  position: relative;
+}
+.wrap_sapin_calendrier .sapin_calendrier .c20 .num {
+  position: absolute;
+  border-radius: 50%;
+  color: white;
+  background-color: #43291f;
+  padding: 2.25vh;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 0.8em;
+  z-index: 2;
+}
+.wrap_sapin_calendrier .sapin_calendrier .c20 .num::after {
+  content: "20";
+  position: absolute;
+  color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .wrap_sapin_calendrier .sapin_calendrier .c21 {
-  grid-area: c21;
+  position: relative;
+}
+.wrap_sapin_calendrier .sapin_calendrier .c21 .num {
+  position: absolute;
+  border-radius: 50%;
+  color: white;
+  background-color: #43291f;
+  padding: 2.25vh;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 0.8em;
+  z-index: 2;
+}
+.wrap_sapin_calendrier .sapin_calendrier .c21 .num::after {
+  content: "21";
+  position: absolute;
+  color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .wrap_sapin_calendrier .sapin_calendrier .c22 {
-  grid-area: c22;
+  position: relative;
+}
+.wrap_sapin_calendrier .sapin_calendrier .c22 .num {
+  position: absolute;
+  border-radius: 50%;
+  color: white;
+  background-color: #43291f;
+  padding: 2.25vh;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 0.8em;
+  z-index: 2;
+}
+.wrap_sapin_calendrier .sapin_calendrier .c22 .num::after {
+  content: "22";
+  position: absolute;
+  color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .wrap_sapin_calendrier .sapin_calendrier .c23 {
-  grid-area: c23;
+  position: relative;
+}
+.wrap_sapin_calendrier .sapin_calendrier .c23 .num {
+  position: absolute;
+  border-radius: 50%;
+  color: white;
+  background-color: #43291f;
+  padding: 2.25vh;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 0.8em;
+  z-index: 2;
+}
+.wrap_sapin_calendrier .sapin_calendrier .c23 .num::after {
+  content: "23";
+  position: absolute;
+  color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .wrap_sapin_calendrier .sapin_calendrier .c24 {
-  grid-area: c24;
+  position: relative;
+}
+.wrap_sapin_calendrier .sapin_calendrier .c24 .num {
+  position: absolute;
+  border-radius: 50%;
+  color: white;
+  background-color: #43291f;
+  padding: 2.25vh;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 0.8em;
+  z-index: 2;
+}
+.wrap_sapin_calendrier .sapin_calendrier .c24 .num::after {
+  content: "24";
+  position: absolute;
+  color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .wrap_sapin_calendrier .sapin_calendrier .cadeau {
-  --tailleCadeau: 75px;
+  --tailleCadeau: 10vh;
+  cursor: pointer;
   width: var(--tailleCadeau);
   aspect-ratio: 10/7;
   background-color: #87c38f;
@@ -1689,6 +2174,9 @@ header .modal_container .modal .box_modal .divModalRecette .btnRecetteRedir:hove
   position: relative;
   margin-inline: -11.75px;
   transition: all ease-in-out 1s;
+}
+.wrap_sapin_calendrier .sapin_calendrier .cadeau:nth-child(1) {
+  filter: grayscale(1);
 }
 .wrap_sapin_calendrier .sapin_calendrier .cadeau::before {
   content: "";
@@ -1709,7 +2197,7 @@ header .modal_container .modal .box_modal .divModalRecette .btnRecetteRedir:hove
   transform: translateX(-50%);
   transition: all ease-in-out 1s;
 }
-.wrap_sapin_calendrier .sapin_calendrier .cadeau div {
+.wrap_sapin_calendrier .sapin_calendrier .cadeau .couvercle {
   width: 112.5%;
   height: calc(var(--tailleCadeau) / 5);
   background-color: #87c38f;
@@ -1720,9 +2208,10 @@ header .modal_container .modal .box_modal .divModalRecette .btnRecetteRedir:hove
   transform: translateX(-50%);
   z-index: 2;
   transform-style: preserve-3d;
+  transform-origin: left bottom;
   transition: all ease-in-out 1s;
 }
-.wrap_sapin_calendrier .sapin_calendrier .cadeau div::after {
+.wrap_sapin_calendrier .sapin_calendrier .cadeau .couvercle::after {
   content: "";
   position: absolute;
   height: 145%;
@@ -1734,7 +2223,7 @@ header .modal_container .modal .box_modal .divModalRecette .btnRecetteRedir:hove
   transform: translateX(-50%);
   transition: all ease-in-out 1s;
 }
-.wrap_sapin_calendrier .sapin_calendrier .cadeau div::before {
+.wrap_sapin_calendrier .sapin_calendrier .cadeau .couvercle::before {
   content: "";
   position: absolute;
   height: 150%;

@@ -1,74 +1,52 @@
 .wrap_sapin_calendrier{
     width: 100%;
-    height: calc(100vh - 100px);
+    height: calc(100vh - 200px);
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    .sapin_calendrier {  display: grid;
+    gap: 100px;
+    margin-top: 250px;
+    h1{
+        font-size: 4em;
+    }
+    .sapin_calendrier {  
+        display: flex;
         position: relative;
         align-items: center;
         justify-content: center;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-        gap: 40px 0;
-        grid-auto-flow: row;
-        grid-template-areas:
-          ". . . . . . c24 c24 . . . . . ."
-          ". . . . . c22 c22 c23 c23 . . . . ."
-          ". . . . c19 c19 c20 c20 c21 c21 . . . ."
-          ". . . c15 c15 c16 c16 c17 c17 c18 c18 . . ."
-          ". . C10 C10 c11 c11 c12 c12 c13 c13 c14 c14 . ."
-          ". c4 c4 c5 c5 c6 c6 c7 c7 c8 c8 c9 c9 ."
-          ". . . . c1 c1 c2 c2 c3 c3 . . . .";
-          .c2 { grid-area: c2; }
-      
-          .c1 { grid-area: c1; }
-          
-          .c3 { grid-area: c3; }
-          
-          .c4 { grid-area: c4; }
-          
-          .c5 { grid-area: c5; }
-          
-          .c6 { grid-area: c6; }
-          
-          .c7 { grid-area: c7; }
-          
-          .c8 { grid-area: c8; }
-          
-          .c9 { grid-area: c9; }
-          
-          .C10 { grid-area: C10; }
-          
-          .c11 { grid-area: c11; }
-          
-          .c12 { grid-area: c12; }
-          
-          .c13 { grid-area: c13; }
-          
-          .c14 { grid-area: c14; }
-          
-          .c15 { grid-area: c15; }
-          
-          .c16 { grid-area: c16; }
-          
-          .c17 { grid-area: c17; }
-          
-          .c18 { grid-area: c18; }
-          
-          .c19 { grid-area: c19; }
-          
-          .c20 { grid-area: c20; }
-          
-          .c21 { grid-area: c21; }
-          
-          .c22 { grid-area: c22; }
-          
-          .c23 { grid-area: c23; }
-          
-          .c24 { grid-area: c24; }
+        flex-wrap: wrap;
+        gap: 100px;
+        width: 70%;
+        @for $i from 1 through 24 {
+            .c#{$i} {
+                position: relative;
+                .num{
+                    position: absolute;
+                    border-radius: 50%;
+                    color: white;
+                    background-color: $noel-marron;
+                    padding: 2.25vh;
+                    top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                    font-size: 0.8em;
+                    z-index: 2;
+                    &::after{
+                        content: "#{$i}";
+                        position: absolute;
+                        color: white;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                    }
+                   
+                }
+            }
+        }
         .cadeau{
-            --tailleCadeau: 75px;
+            --tailleCadeau: 10vh;
+            cursor: pointer;
             width: var(--tailleCadeau);
             aspect-ratio: 10/7;
             background-color: $noel-vert-pastel;
@@ -76,6 +54,9 @@
             position: relative;
             margin-inline: -11.75px;
             transition: all ease-in-out 1s;
+            &:nth-child(1){
+                filter: grayscale(1);
+            }
             &::before{
                 content: "";
                 position: absolute;
@@ -95,7 +76,7 @@
                 transform: translateX(-50%);
                 transition: all ease-in-out 1s;
             }
-            div{
+            .couvercle{
                 width: 112.5%;
                 height: calc(var(--tailleCadeau) / 5);
                 background-color: $noel-vert-pastel;
@@ -106,6 +87,7 @@
                 transform: translateX(-50%);
                 z-index: 2;
                 transform-style: preserve-3d;
+                transform-origin: left bottom;
                 transition: all ease-in-out 1s;
                 &::after{
                     content: "";
@@ -133,6 +115,7 @@
                     transition: all ease-in-out 1s;
                 }
             }
+           
         }
     }
 }
