@@ -1,0 +1,34 @@
+body{
+    background: $noel-rouge;
+    .mentions{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        z-index: 99;
+        position: absolute;
+        margin-top: 20vh;
+        h1{
+            color: $noel-beige;
+            text-transform: uppercase;
+        }
+        .texte_legales{
+            width: 90vw;
+            color: $noel-beige;
+            padding: 20px;
+            border-radius: 5px;
+            margin-bottom: 10vh;
+            h2{
+                padding-block: 20px;
+                text-transform: uppercase;
+                color: $noel-beige;
+            }
+            p{
+                font-size: 1rem;
+                text-align: justify;
+                padding-block: 5px;
+            }
+        }
+    }
+}

@@ -74,7 +74,7 @@ var modal3 = document.getElementById("modal_lettre");
 
 var btn3 = document.getElementById("boite_lettre");
 
-var fermer3 = document.getElementsByClassName("btnFermerLettre")[0];
+var fermer3 = document.getElementsByClassName("btnLettreAfter")[0];
 
 btn3.onclick = function () {
   modal3.style.display = "block";

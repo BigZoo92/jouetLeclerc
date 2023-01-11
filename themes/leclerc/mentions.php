@@ -5,56 +5,31 @@
 get_header()
 ?>
 
-<main id="bg_formulaire">
-    <section class="formulaire">
-        <form action="">
-            <img id="houx" src="<?= get_template_directory_uri() ?>./assets/images/png/holly-g5e5b9bd79_1280.png"
-                title="Afficher" alt="Sapin">
-            <div class="header_form">
-                <h1>Envoie ta lettre au père noël</h1>
-            </div>
-            <small>* champs obligatoires</small>
-            <div class="corps_form">
+<main id="bg_mentions">
+    <section class="mentions">
+        <h1>Mentions Légales</h1>
+        <div class="texte_legales">
 
-                <!-- Formulaire prenom -->
+            <h2>Qui sommes-nous ?</h2>
+            <p>L'adresse de notre site est : http://jouets-leclerc.local.</p>
 
-                <label for="id_prenom"><i class="bi bi-person-circle"></i>Prénom *</label>
-                <input type="text" placeholder="Santa" id="id_prenom" required="required"aria-required="true" name="">
-                
-                <!-- Formulaire nom -->
-                
-                <label for="id_nom"><i class="bi bi-person-circle"></i>Nom *</label>
-                <input type="text" placeholder="Claus" id="id_nom" required="required"aria-required="true" name="">
-                
-                <!-- Formulaire adresse email -->
-                
-                <label for="id_email"><i class="bi bi-envelope-at-fill"></i>Adresse email *</label>
-                <input type="email" placeholder="santaclaus@mail.fr" id="id_email"name="">
-                
-                <!-- Formulaire checkbox -->
-                
-                <label for="titre_checkbox"><i class="bi bi-emoji-smile-fill"></i>Est-ce que tu as été sage *</label>
-                
-                <div class="checkbox_form">
+            <h2>Commentaires</h2>
+            <p>Quand vous laissez un commentaire sur notre site, les données inscrites dans le formulaire de commentaire, ainsi que votre adresse IP et l'agent utilisateur de votre navigateur sont collectés pour nous aider à la détection des commentaires indésirables.</p>
+            <p>Une chaîne anonymisée créée à partir de votre adresse e-mail (également appelée hash) peut être envoyée au service Gravatar pour vérifier si vous utilisez ce dernier. Les clauses de confidentialité du service Gravatar sont disponibles ici : https://automattic.com/privacy/. Après validation de votre commentaire, votre photo de profil sera visible publiquement à coté de votre commentaire.</p>
+            
+            <h2>Médias</h2>
+            <p>Si vous téléversez des images sur le site, nous vous conseillons d'éviter de téléverser des images contenant des données EXIF de coordonnées GPS. Les personnes visitant votre site peuvent télécharger et extraire des données de localisation depuis ces images.</p>
 
-                    <input id="id_option1" required="required" aria-required="true"value="option-1" type="checkbox">
-                    <label for="id_option1">Oui</label>
+            <h2>Cookies</h2>
+            <p>Si vous déposez un commentaire sur notre site, il vous sera proposé d'enregistrer votre nom, adresse e-mail et site dans des cookies. C'est uniquement pour votre confort afin de ne pas avoir à saisir ces informations si vous déposez un autre commentaire plus tard. Ces cookies expirent au bout d'un an.</p>
+            <p>Si vous vous rendez sur la page de connexion, un cookie temporaire sera créé afin de déterminer si votre navigateur accepte les cookies. Il ne contient pas de données personnelles et sera supprimé automatiquement à la fermeture de votre navigateur.</p>
+            <p>Lorsque vous vous connecterez, nous mettrons en place un certain nombre de cookies pour enregistrer vos informations de connexion et vos préférences d'écran. La durée de vie d'un cookie de connexion est de deux jours, celle d'un cookie d'option d'écran est d'un an. Si vous cochez « Se souvenir de moi », votre cookie de connexion sera conservé pendant deux semaines. Si vous vous déconnectez de votre compte, le cookie de connexion sera effacé.</p>
+            <p>En modifiant ou en publiant une publication, un cookie supplémentaire sera enregistré dans votre navigateur. Ce cookie ne comprend aucune donnée personnelle. Il indique simplement l'ID de la publication que vous venez de modifier. Il expire au bout d'un jour.</p>
 
-                    <input id="id_option2" required="required" aria-required="true" value="option-2" type="checkbox">
-                    <label for="id_option2">Non</label>
-
-                    <input id="id_option3" required="required" aria-required="true" value="option-3" type="checkbox">
-                    <label for="id_option3">Je ne sais pas</label>
-                    
-                </div>
-
-            </div>
-
-            <!-- Formulaire bouton submit -->
-
-            <input type="submit" value="Envoyer la lettre">
-            </div>
-        </form>
+            <h2>Durées de stockage de vos données</h2>
+            <p>Si vous laissez un commentaire, le commentaire et ses métadonnées sont conservés indéfiniment. Cela permet de reconnaître et approuver automatiquement les commentaires suivants au lieu de les laisser dans la file de modération.</p>
+            <p>Pour les comptes qui s'inscrivent sur notre site (le cas échéant), nous stockons également les données personnelles indiquées dans leur profil. Tous les comptes peuvent voir, modifier ou supprimer leurs informations personnelles à tout moment (à l'exception de leur identifiant). Les gestionnaires du site peuvent aussi voir et modifier ces informations.</p>
+        </div>
     </section>
 </main>
 

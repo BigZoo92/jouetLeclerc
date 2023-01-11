@@ -41,7 +41,7 @@
                     <h2>Es-tu prêt ?</h2>
                 </div>
                 <div class="divModalLettre">
-                    <a href="#" class="btnLettreAfter">Fermer</a>
+                    <button class="btnLettreAfter">Fermer</button>
                     <a href="formulaire" class="btnLettreRedir">Allons-y !</a>
                 </div>
             </div>
