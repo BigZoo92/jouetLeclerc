@@ -1162,33 +1162,33 @@ header .modal_container .modal .box_modal .divModalRecette .btnRecetteRedir:hove
 }
 .cd_cometes .comets i:nth-of-type(1) {
   width: 5px;
-  left: 63vw;
-  height: 35px;
+  left: 71vw;
+  height: 25px;
 }
 .cd_cometes .comets i:nth-of-type(2) {
   width: 5px;
-  left: 21vw;
-  height: 76px;
+  left: 64vw;
+  height: 65px;
 }
 .cd_cometes .comets i:nth-of-type(3) {
   width: 5px;
-  left: 45vw;
-  height: 70px;
+  left: 27vw;
+  height: 17px;
 }
 .cd_cometes .comets i:nth-of-type(4) {
   width: 5px;
-  left: 36vw;
-  height: 8px;
+  left: 26vw;
+  height: 26px;
 }
 .cd_cometes .comets i:nth-of-type(5) {
   width: 5px;
-  left: 13vw;
-  height: 67px;
+  left: 66vw;
+  height: 56px;
 }
 .cd_cometes .comets i:nth-of-type(6) {
   width: 5px;
-  left: 47vw;
-  height: 27px;
+  left: 49vw;
+  height: 47px;
 }
 .cd_cometes .sun {
   width: 25vh;
@@ -1818,24 +1818,30 @@ body #bg_trouver .trouver {
   flex-direction: column;
 }
 
-.login h1 a {
+#login {
+  height: 100vh;
+  width: 600px;
+  position: absolute;
+}
+#login h1 a {
   background-image: url("../../assets/images/png/Logo.png");
   background-size: 15vw;
   overflow: visible;
   width: 100%;
 }
-.login form {
+#login form {
   border-radius: 5px;
   border: none;
   box-shadow: none;
   position: relative;
   height: 50vh;
+  width: 90vw;
   display: flex;
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
 }
-.login #backtoblog {
+#login #backtoblog {
   display: none;
 }
 
