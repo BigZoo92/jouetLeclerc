@@ -49,7 +49,7 @@
 
         <div class="info_sapin">
             <img id="sapin" src="<?= get_template_directory_uri() ?>./assets/images/png/Home_Sapin.png" alt="Sapin">
-            <span><i class="bi bi-gift-fill"></i> Accéder aux cadeaux de nöel</span>
+            <span><i class="bi bi-book-fill"></i> Voir le catalogue</span>
         </div>
 
         <div id="modal_catalogue" class="modal">
@@ -83,6 +83,29 @@
                 alt="Maison">
             <span>Recette de nöel <i class="bi bi-book-fill"></i></span>
         </div>
+
+            <div id="modal_recette_front" class="modal">
+                <div class="box_modal_recette">
+                    <img id="lutin_recette"
+                        src="<?= get_template_directory_uri() ?>./assets/images/png/Lutin_Recette.png" title="Afficher"
+                        alt="Lutin Recette">
+                    <img id="modal_chocolat"
+                        src="<?= get_template_directory_uri() ?>./assets/images/png/RecetteChocolat.png"
+                        alt="ModalChocolat">
+                    <div class="corps_modal">
+                        <h1>Bienvenue dans la maison des recettes de nöel !</h1>
+                        <p>C'est encore moi <b>Lutintin</b> ! Toi aussi tu aimes les recettes
+                            de Nöel ?</p>
+                        <p>Alors prépare tes meilleures recettes de Nöel avec moi !</p>
+                        <p>Invite tes amis à les préparer avec toi, et régalez-vous ensemble !</p>
+                        <p>N'oublie pas d'inviter ta maman et ton papounet !</p>
+                    </div>
+                    <div class="divModalRecette">
+                        <button class="btnRecetteAfter">Fermer</button>
+                        <a href="recette" class="btnRecetteRedir">Allons-y !</a>
+                    </div>
+                </div>
+            </div>
 
         <img id="bonhomme" src="<?= get_template_directory_uri() ?>./assets/images/png/bonhomme.png"
             alt="Bonhomme de neige">

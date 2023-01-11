@@ -1,12 +1,12 @@
-body{
-    background: $noel-rouge;
+#bg_mentions{
+    background: $noel-vert;
     .mentions{
         display: flex;
         align-items: center;
         flex-direction: column;
         width: 100%;
         height: auto;
-        z-index: 99;
+        z-index: 9;
         position: absolute;
         margin-top: 20vh;
         h1{

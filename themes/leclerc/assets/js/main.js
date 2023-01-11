@@ -26,25 +26,25 @@ function toggleSapinClose() {
 
 // Modal recette accueil
 
-// var modal = document.getElementById("modal_recette");
+var modal = document.getElementById("modal_recette_front");
 
-// var btn = document.getElementById("btnRecette");
+var btn = document.getElementById("maison");
 
-// var fermer = document.getElementsByClassName("btnFermerRecette")[0];
+var fermer = document.getElementsByClassName("btnRecetteAfter")[0];
 
-// btn.onclick = function () {
-//   modal.style.display = "block";
-// };
+btn.onclick = function () {
+  modal.style.display = "block";
+};
 
-// fermer.onclick = function () {
-//   modal.style.display = "none";
-// };
+fermer.onclick = function () {
+  modal.style.display = "none";
+};
 
-// window.onclick = function (event) {
-//   if (event.target == modal) {
-//     modal.style.display = "none";
-//   }
-// };
+window.onclick = function (event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+};
 
 // Modal catalogue
 
