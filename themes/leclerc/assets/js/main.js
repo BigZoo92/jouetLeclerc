@@ -26,25 +26,29 @@ function toggleSapinClose() {
 
 // Modal recette accueil
 
-// var modal = document.getElementById("modal_recette");
+var modal = document.getElementById("modal_recette_front");
 
-// var btn = document.getElementById("btnRecette");
+var btn = document.getElementById("maison");
 
-// var fermer = document.getElementsByClassName("btnFermerRecette")[0];
+var fermer = document.getElementsByClassName("btnRecetteAfter")[0];
 
-// btn.onclick = function () {
-//   modal.style.display = "block";
-// };
+btn.onclick = function () {
+  modal.style.display = "block";
+};
 
-// fermer.onclick = function () {
-//   modal.style.display = "none";
-// };
+fermer.onclick = function () {
+  modal.style.display = "none";
+};
 
-// window.onclick = function (event) {
-//   if (event.target == modal) {
-//     modal.style.display = "none";
-//   }
-// };
+window.onclick = function (event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+    modal2.style.display = "none";
+    modal3.style.display = "none";
+    modal4.style.display = "none";
+
+  }
+};
 
 // Modal catalogue
 
@@ -62,19 +66,13 @@ fermer2.onclick = function () {
   modal2.style.display = "none";
 };
 
-window.onclick = function (event) {
-  if (event.target == modal2) {
-    modal2.style.display = "none";
-  }
-};
-
 // Modal Lettre
 
 var modal3 = document.getElementById("modal_lettre");
 
 var btn3 = document.getElementById("boite_lettre");
 
-var fermer3 = document.getElementsByClassName("btnFermerLettre")[0];
+var fermer3 = document.getElementsByClassName("btnLettreAfter")[0];
 
 btn3.onclick = function () {
   modal3.style.display = "block";
@@ -84,10 +82,20 @@ fermer3.onclick = function () {
   modal3.style.display = "none";
 };
 
-window.onclick = function (event) {
-  if (event.target == modal3) {
-    modal3.style.display = "none";
-  }
+// Modal Serie
+
+var modal4 = document.getElementById("modal_serie");
+
+var btn4 = document.getElementById("serie");
+
+var fermer4 = document.getElementsByClassName("btnSerieAfter")[0];
+
+btn4.onclick = function () {
+  modal4.style.display = "block";
+};
+
+fermer4.onclick = function () {
+  modal4.style.display = "none";
 };
 
 // Récupération de la date

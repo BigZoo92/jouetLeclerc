@@ -520,112 +520,6 @@ header .modal_container nav ul li img {
   width: 3vw;
   filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.6));
 }
-header .modal_container .modal {
-  display: none;
-  position: fixed;
-  padding-top: 100px;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.4);
-  overflow: hidden;
-}
-header .modal_container .modal .box_modal {
-  position: relative;
-  z-index: 3;
-  background: url("../../assets/images/png/BackgroundRecetteModal.png");
-  background-size: cover;
-  margin: auto;
-  padding: 0;
-  border-radius: 20px;
-  width: calc(90vw - 200px);
-  height: calc(100vh - 200px);
-  filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.6));
-  -webkit-animation-name: animatetop;
-  -webkit-animation-duration: 0.4s;
-  animation-name: animatetop;
-  animation-duration: 0.4s;
-}
-header .modal_container .modal .box_modal #lutin_recette {
-  width: 9.5vw;
-  z-index: 3;
-  left: -100px;
-  bottom: 0;
-  position: absolute;
-  transform: rotateY(180deg);
-}
-header .modal_container .modal .box_modal #modal_chocolat {
-  width: 83vw;
-  z-index: 2;
-  left: -50px;
-  top: -200px;
-  position: absolute;
-}
-header .modal_container .modal .box_modal .corps_modal {
-  height: auto;
-  display: flex;
-  justify-content: space-evenly;
-  flex-direction: column;
-  align-items: flex-start;
-  border-radius: 5px;
-}
-header .modal_container .modal .box_modal .corps_modal h1 {
-  font-size: clamp(0.5rem, 0.7619rem + 1.1905vw, 1.5rem);
-  margin-inline: 40px;
-  padding-inline: 10px;
-  border-radius: 20px;
-  color: #efdebe;
-  background: #43291f;
-  z-index: 99;
-}
-header .modal_container .modal .box_modal .corps_modal .btnFermerRecette {
-  color: #efdebe;
-  font-weight: bold;
-  transition: all 0.3s;
-  background: #226f54;
-  filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.6));
-  border-radius: 20px;
-  padding: 10px;
-  margin-inline: 40px;
-  margin-block: 10px;
-  z-index: 99;
-  cursor: pointer;
-}
-header .modal_container .modal .box_modal .corps_modal .btnFermerRecette:hover {
-  color: #bf0603;
-  text-decoration: none;
-}
-header .modal_container .modal .box_modal .corps_modal p {
-  padding-block: 20px;
-  padding-inline: 40px;
-  text-align: left;
-  color: #43291f;
-  font-size: clamp(1rem, 0.7619rem + 1.1905vw, 1.15rem);
-  font-family: "Lemonada";
-}
-header .modal_container .modal .box_modal .divModalRecette {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
-header .modal_container .modal .box_modal .divModalRecette .btnRecetteRedir {
-  filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.6));
-  display: block;
-  color: #f8f8f8;
-  background: #bf0603;
-  position: absolute;
-  text-transform: uppercase;
-  text-align: center;
-  bottom: -15px;
-  padding: 10px;
-  transition: all 0.3s;
-  border-radius: 20px 0 20px 20px;
-  z-index: 99;
-}
-header .modal_container .modal .box_modal .divModalRecette .btnRecetteRedir:hover {
-  background: #226f54;
-}
 
 @keyframes animatetop {
   from {
@@ -683,8 +577,8 @@ header .modal_container .modal .box_modal .divModalRecette .btnRecetteRedir:hove
   opacity: 1;
 }
 .hero #sapin {
-  width: 5vw;
-  top: 19vh;
+  width: 6vw;
+  top: 12vw;
   position: absolute;
   transition: all 0.3s;
   cursor: pointer;
@@ -697,7 +591,7 @@ header .modal_container .modal .box_modal .divModalRecette .btnRecetteRedir:hove
   opacity: 0;
   position: absolute;
   background: #226f54;
-  left: 40vw;
+  left: 44.5vw;
   bottom: 62vh;
   padding: 10px;
   color: #efdebe;
@@ -737,8 +631,8 @@ header .modal_container .modal .box_modal .divModalRecette .btnRecetteRedir:hove
   flex-direction: column;
   padding: 0;
   border-radius: 20px;
-  width: calc(90vw - 200px);
-  height: calc(100vh - 150px);
+  width: 60vw;
+  height: 70vh;
   filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.6));
   -webkit-animation-name: animatetop;
   -webkit-animation-duration: 0.4s;
@@ -803,7 +697,7 @@ header .modal_container .modal .box_modal .divModalRecette .btnRecetteRedir:hove
 .hero .modal .box_modal_catalogue .corps_modal h2 {
   font-size: clamp(0.5rem, 0.7619rem + 1.1905vw, 1.5rem);
   filter: drop-shadow(0px 0px 10px rgb(0, 0, 0));
-  width: 70%;
+  width: 75%;
   text-align: left;
   padding-block: 10px;
   border-radius: 20px;
@@ -828,7 +722,7 @@ header .modal_container .modal .box_modal .divModalRecette .btnRecetteRedir:hove
   text-decoration: none;
 }
 .hero .modal .box_modal_catalogue .corps_modal p {
-  width: 70%;
+  width: 75%;
   text-align: left;
   line-height: 2;
   color: #efdebe;
@@ -844,29 +738,29 @@ header .modal_container .modal .box_modal .divModalRecette .btnRecetteRedir:hove
 .hero .modal .box_modal_catalogue .divModalCatalogue .btnCatalogueAfter {
   filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.6));
   display: block;
-  color: #f8f8f8;
+  color: #efdebe;
   font-size: 1rem;
   font-family: "Lemonada";
-  background: #492d20;
-  border: 2px solid rgb(39, 20, 20);
+  background: #43291f;
+  border: 1px solid #43291f;
   position: absolute;
   text-align: center;
   right: 10vw;
+  cursor: pointer;
   bottom: -15px;
-  padding: 8px;
   transition: all 0.3s;
   border-radius: 20px;
   z-index: 99;
 }
 .hero .modal .box_modal_catalogue .divModalCatalogue .btnCatalogueAfter:hover {
-  background: #efdebe;
-  border: 2px solid #efdebe;
-  color: #43291f;
+  background: #226f54;
+  border: 1px solid #226f54;
+  color: #efdebe;
 }
 .hero .modal .box_modal_catalogue .divModalCatalogue .btnCatalogueRedir {
   filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.6));
   display: block;
-  color: #f8f8f8;
+  color: #efdebe;
   font-size: 1rem;
   background: #bf0603;
   position: absolute;
@@ -886,6 +780,8 @@ header .modal_container .modal .box_modal .divModalRecette .btnRecetteRedir:hove
   background: url("../../assets/images/png/BackgroundLettreModal.png");
   background-size: cover;
   margin: auto;
+  outline: 10px dashed #bf0603;
+  outline-offset: -10px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -911,9 +807,9 @@ header .modal_container .modal .box_modal .divModalRecette .btnRecetteRedir:hove
 }
 .hero .modal .box_modal_lettre #lettre_timbre {
   width: 22.5vw;
-  right: 2vw;
+  right: 1.5vw;
   z-index: 2;
-  top: 2vh;
+  top: 1.5vh;
   position: absolute;
 }
 .hero .modal .box_modal_lettre .corps_modal {
@@ -926,7 +822,7 @@ header .modal_container .modal .box_modal .divModalRecette .btnRecetteRedir:hove
 }
 .hero .modal .box_modal_lettre .corps_modal h1 {
   font-size: clamp(0.5rem, 0.7619rem + 1.1905vw, 2rem);
-  width: 80%;
+  width: 75%;
   text-align: center;
   border-radius: 20px;
   color: #43291f;
@@ -935,7 +831,7 @@ header .modal_container .modal .box_modal .divModalRecette .btnRecetteRedir:hove
 }
 .hero .modal .box_modal_lettre .corps_modal h2 {
   font-size: clamp(0.5rem, 0.7619rem + 1.1905vw, 1.5rem);
-  width: 80%;
+  width: 75%;
   text-align: left;
   padding-block: 10px;
   border-radius: 20px;
@@ -943,7 +839,7 @@ header .modal_container .modal .box_modal .divModalRecette .btnRecetteRedir:hove
   z-index: 99;
 }
 .hero .modal .box_modal_lettre .corps_modal p {
-  width: 80%;
+  width: 75%;
   z-index: 3;
   text-align: left;
   line-height: 1.5;
@@ -960,29 +856,29 @@ header .modal_container .modal .box_modal .divModalRecette .btnRecetteRedir:hove
 .hero .modal .box_modal_lettre .divModalLettre .btnLettreAfter {
   filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.6));
   display: block;
-  color: #f8f8f8;
+  color: #efdebe;
   font-size: 1rem;
   font-family: "Lemonada";
-  background: #492d20;
-  border: 2px solid rgb(39, 20, 20);
+  background: #43291f;
+  border: 1px solid #43291f;
   position: absolute;
   text-align: center;
   right: 10vw;
+  cursor: pointer;
   bottom: -15px;
-  padding: 8px;
   transition: all 0.3s;
   border-radius: 20px;
   z-index: 99;
 }
 .hero .modal .box_modal_lettre .divModalLettre .btnLettreAfter:hover {
-  background: #efdebe;
-  border: 2px solid #efdebe;
-  color: #43291f;
+  background: #226f54;
+  border: 1px solid #226f54;
+  color: #efdebe;
 }
 .hero .modal .box_modal_lettre .divModalLettre .btnLettreRedir {
   filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.6));
   display: block;
-  color: #f8f8f8;
+  color: #efdebe;
   font-size: 1rem;
   background: #bf0603;
   position: absolute;
@@ -996,24 +892,148 @@ header .modal_container .modal .box_modal .divModalRecette .btnRecetteRedir:hove
 .hero .modal .box_modal_lettre .divModalLettre .btnLettreRedir:hover {
   background: #226f54;
 }
-.hero #lutin {
-  width: 4.5vw;
-  left: 30vw;
-  bottom: 20vh;
+.hero .modal .box_modal_recette {
+  position: relative;
+  z-index: 3;
+  background: #efdebe;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0;
+  border-radius: 20px;
+  width: 60vw;
+  height: 70vh;
+  filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.6));
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+}
+.hero .modal .box_modal_recette #lutin_recette {
+  width: 9.5vw;
+  z-index: 3;
+  left: -100px;
+  bottom: 0;
   position: absolute;
   transform: rotateY(180deg);
+}
+.hero .modal .box_modal_recette #modal_chocolat {
+  width: 83vw;
+  z-index: 2;
+  left: -50px;
+  top: -200px;
+  position: absolute;
+}
+.hero .modal .box_modal_recette .corps_modal {
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 5px;
+}
+.hero .modal .box_modal_recette .corps_modal h1 {
+  font-size: clamp(0.5rem, 0.7619rem + 1.1905vw, 2rem);
+  width: 75%;
+  text-align: center;
+  border-radius: 20px;
+  color: #43291f;
+  z-index: 99;
+  text-transform: uppercase;
+}
+.hero .modal .box_modal_recette .corps_modal h2 {
+  font-size: clamp(0.5rem, 0.7619rem + 1.1905vw, 1.5rem);
+  width: 75%;
+  text-align: left;
+  padding-block: 10px;
+  border-radius: 20px;
+  color: #43291f;
+  z-index: 99;
+}
+.hero .modal .box_modal_recette .corps_modal p {
+  width: 75%;
+  z-index: 3;
+  text-align: left;
+  line-height: 1.5;
+  color: #43291f;
+  font-size: 1rem;
+  font-family: "Lemonada";
+}
+.hero .modal .box_modal_recette .divModalRecette {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+}
+.hero .modal .box_modal_recette .divModalRecette .btnRecetteAfter {
+  filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.6));
+  display: block;
+  color: #efdebe;
+  font-size: 1rem;
+  font-family: "Lemonada";
+  background: #43291f;
+  border: 1px solid #43291f;
+  position: absolute;
+  text-align: center;
+  right: 10vw;
+  cursor: pointer;
+  bottom: -15px;
+  transition: all 0.3s;
+  border-radius: 20px;
+  z-index: 99;
+}
+.hero .modal .box_modal_recette .divModalRecette .btnRecetteAfter:hover {
+  background: #226f54;
+  border: 1px solid #226f54;
+  color: #efdebe;
+}
+.hero .modal .box_modal_recette .divModalRecette .btnRecetteRedir {
+  filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.6));
+  display: block;
+  color: #efdebe;
+  font-size: 1rem;
+  background: #bf0603;
+  position: absolute;
+  text-align: center;
+  bottom: -15px;
+  padding: 10px;
+  transition: all 0.3s;
+  border-radius: 20px 0 20px 20px;
+  z-index: 99;
+}
+.hero .modal .box_modal_recette .divModalRecette .btnRecetteRedir:hover {
+  background: #226f54;
+}
+.hero #serie {
+  width: 15vw;
+  left: 24vw;
+  bottom: 12vw;
+  position: absolute;
   transition: all 0.3s;
   cursor: pointer;
 }
-.hero #lutin:hover {
-  transform: scale(1.05) rotateY(180deg);
+.hero #serie:hover {
+  transform: scale(1.05);
+}
+.hero #lutin_serie {
+  width: 3.5vw;
+  left: 30vw;
+  bottom: 15vw;
+  position: absolute;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.hero #lutin_serie:hover {
+  transform: scale(1.05);
 }
 .hero .info_lutin span {
   opacity: 0;
   position: absolute;
   background: #226f54;
-  left: 25vw;
-  bottom: 52vh;
+  left: 26vw;
+  bottom: 35vw;
   padding: 10px;
   color: #efdebe;
   z-index: 5;
@@ -1026,6 +1046,120 @@ header .modal_container .modal .box_modal .divModalRecette .btnRecetteRedir:hove
 }
 .hero .info_lutin:hover span {
   opacity: 1;
+}
+.hero .box_modal_serie {
+  position: relative;
+  z-index: 3;
+  background: #efdebe;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0;
+  border-radius: 20px;
+  width: 60vw;
+  height: 70vh;
+  filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.6));
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+}
+.hero .box_modal_serie #lutin_recette {
+  width: 9.5vw;
+  z-index: 3;
+  left: -100px;
+  bottom: 0;
+  position: absolute;
+  transform: rotateY(180deg);
+}
+.hero .box_modal_serie #modal_chocolat {
+  width: 83vw;
+  z-index: 2;
+  left: -50px;
+  top: -200px;
+  position: absolute;
+}
+.hero .box_modal_serie .corps_modal {
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 5px;
+}
+.hero .box_modal_serie .corps_modal h1 {
+  font-size: clamp(0.5rem, 0.7619rem + 1.1905vw, 2rem);
+  width: 75%;
+  text-align: center;
+  border-radius: 20px;
+  color: #43291f;
+  z-index: 99;
+  text-transform: uppercase;
+}
+.hero .box_modal_serie .corps_modal h2 {
+  font-size: clamp(0.5rem, 0.7619rem + 1.1905vw, 1.5rem);
+  width: 75%;
+  text-align: left;
+  padding-block: 10px;
+  border-radius: 20px;
+  color: #43291f;
+  z-index: 99;
+}
+.hero .box_modal_serie .corps_modal p {
+  width: 75%;
+  z-index: 3;
+  text-align: left;
+  line-height: 1.5;
+  color: #43291f;
+  font-size: 1rem;
+  font-family: "Lemonada";
+}
+.hero .box_modal_serie .divModalSerie {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+}
+.hero .box_modal_serie .divModalSerie .btnSerieAfter {
+  filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.6));
+  display: block;
+  color: #efdebe;
+  font-size: 1rem;
+  font-family: "Lemonada";
+  background: #43291f;
+  border: 1px solid #43291f;
+  position: absolute;
+  text-align: center;
+  right: 10vw;
+  cursor: pointer;
+  bottom: -15px;
+  transition: all 0.3s;
+  border-radius: 20px;
+  z-index: 99;
+}
+.hero .box_modal_serie .divModalSerie .btnSerieAfter:hover {
+  background: #226f54;
+  border: 1px solid #226f54;
+  color: #efdebe;
+}
+.hero .box_modal_serie .divModalSerie .btnSerieRedir {
+  filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.6));
+  display: block;
+  color: #efdebe;
+  font-size: 1rem;
+  background: #bf0603;
+  position: absolute;
+  text-align: center;
+  bottom: -15px;
+  padding: 10px;
+  transition: all 0.3s;
+  border-radius: 20px 0 20px 20px;
+  z-index: 99;
+}
+.hero .box_modal_serie .divModalSerie .btnSerieRedir:hover {
+  background: #226f54;
 }
 .hero #maison {
   width: 45vw;
@@ -1162,33 +1296,33 @@ header .modal_container .modal .box_modal .divModalRecette .btnRecetteRedir:hove
 }
 .cd_cometes .comets i:nth-of-type(1) {
   width: 5px;
-  left: 56vw;
-  height: 49px;
+  left: 36vw;
+  height: 69px;
 }
 .cd_cometes .comets i:nth-of-type(2) {
   width: 5px;
-  left: 51vw;
-  height: 67px;
+  left: 29vw;
+  height: 20px;
 }
 .cd_cometes .comets i:nth-of-type(3) {
   width: 5px;
-  left: 23vw;
-  height: 25px;
+  left: 55vw;
+  height: 28px;
 }
 .cd_cometes .comets i:nth-of-type(4) {
   width: 5px;
-  left: 12vw;
-  height: 68px;
+  left: 70vw;
+  height: 65px;
 }
 .cd_cometes .comets i:nth-of-type(5) {
   width: 5px;
-  left: 72vw;
-  height: 51px;
+  left: 20vw;
+  height: 32px;
 }
 .cd_cometes .comets i:nth-of-type(6) {
   width: 5px;
-  left: 4vw;
-  height: 28px;
+  left: 14vw;
+  height: 74px;
 }
 .cd_cometes .sun {
   width: 25vh;
@@ -2268,16 +2402,17 @@ header .modal_container .modal .box_modal .divModalRecette .btnRecetteRedir:hove
     display: flex;
   }
 }
-body {
-  background-color: #efdebe;
-}
 body #bg_catalogue .catalogue {
-  height: 100vh;
-  margin-top: 200px;
   display: flex;
-  justify-content: center;
+  background: url("../../assets/images/svg/BackgroundJouets.svg");
+  background-size: 100vw;
   align-items: center;
   flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  z-index: 9;
+  position: absolute;
+  margin-top: 30vh;
 }
 body #bg_catalogue .catalogue iframe {
   width: 90vw;
@@ -2286,14 +2421,14 @@ body #bg_catalogue .catalogue iframe {
   border: 10px solid #226f54;
 }
 body #bg_catalogue .catalogue a {
-  background: #226f54;
+  background: #bf0603;
   padding: 10px;
   margin: 10px;
   border-radius: 5px;
   color: #efdebe;
 }
 body #bg_catalogue .catalogue a:hover {
-  color: #bf0603;
+  color: #226f54;
 }
 
 body {
@@ -2307,6 +2442,41 @@ body #bg_trouver .trouver {
   flex-direction: column;
 }
 
+#bg_mentions {
+  background: #226f54;
+}
+#bg_mentions .mentions {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  z-index: 9;
+  position: absolute;
+  margin-top: 20vh;
+}
+#bg_mentions .mentions h1 {
+  color: #efdebe;
+  text-transform: uppercase;
+}
+#bg_mentions .mentions .texte_legales {
+  width: 90vw;
+  color: #efdebe;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 10vh;
+}
+#bg_mentions .mentions .texte_legales h2 {
+  padding-block: 20px;
+  text-transform: uppercase;
+  color: #efdebe;
+}
+#bg_mentions .mentions .texte_legales p {
+  font-size: 1rem;
+  text-align: justify;
+  padding-block: 5px;
+}
+
 .login h1 a {
   background-image: url("../../assets/images/png/Logo.png");
   background-size: 15vw;
@@ -2318,7 +2488,7 @@ body #bg_trouver .trouver {
   border: none;
   box-shadow: none;
   position: relative;
-  height: 50vh;
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: flex-start;

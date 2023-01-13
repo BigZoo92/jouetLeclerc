@@ -53,19 +53,14 @@ endif;
                 <div class="box_modal">
                     <div class="header_modal">
                         <span class="btnFermerRecette">&times;</span>
-                        <h1>Verrine mousse de jambon</h1>
+                        <h1><?php the_title() ?></h1>
                     </div>
                     <div class="corps_modal">
                         <img id="image_plat" src="<?= get_template_directory_uri() ?>./assets/images/jpg/pexels-tim-douglas-6210864.jpg" alt="Image plat">
                         <hr>
                         <div class="row">
                             <div class="column_gauche">
-                                <h2>Ingrédients</h2>
-                                <ul>
-                                    <li>Salade</li>
-                                    <li>Tomate</li>
-                                    <li>Oignon</li>
-                                </ul>
+                            <p class="desc_recette" data-ingredient="<?= $ingredients ?>"><?= $description ?></p>
                             </div>
                             <div class="column_droite">
                                 <h2>Temps de préparation</h2>
