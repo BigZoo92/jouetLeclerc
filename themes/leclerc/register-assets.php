@@ -10,6 +10,11 @@ function montheme_register_js()
     if(is_page(9)){ //15
         wp_enqueue_script('recette', get_stylesheet_directory_uri() . '/assets/js/recette.js');
     }
+    if(is_page(61)){ //15
+        wp_enqueue_script('phaser', get_stylesheet_directory_uri() . '/assets/js/phaser.min.js');
+        wp_enqueue_script('jeu', get_stylesheet_directory_uri() . '/assets/js/jeu.js');
+        
+    }
     if(is_page(44)){
         wp_enqueue_script('calendrier', get_stylesheet_directory_uri() . '/assets/js/calendrier.js');
     }
@@ -23,3 +28,5 @@ function montheme_register_css()
 }
 
 add_action('wp_enqueue_scripts', 'montheme_register_css');
+
+
