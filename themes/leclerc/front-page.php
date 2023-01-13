@@ -74,8 +74,26 @@
         </div>
 
         <div class="info_lutin">
-            <img id="lutin" src="<?= get_template_directory_uri() ?>./assets/images/png/lutin.png" alt="Lutin">
+            <img id="serie" src="<?= get_template_directory_uri() ?>./assets/images/png/serie.png" alt="Lutin">
+            <img id="lutin_serie" src="<?= get_template_directory_uri() ?>./assets/images/png/Lutin_Serie.png" alt="Lutin Serie">
             <span><i class="bi bi-youtube"></i> Voir les vidéos</span>
+        </div>
+
+        <div id="modal_serie" class="modal">
+            <div class="box_modal_serie">
+                <img id="lutin_catalogue" src="<?= get_template_directory_uri() ?>./assets/images/png/Lutin_Catalogue.png" alt="Lutin Catalogue">
+                <div class="corps_modal">
+                    <h1>Bienvenue dans la maison des Jouets Nöel Leclerc !</h1>
+                    <p>C'est encore moi Lutintin, le lutin ! Viens découvrir nos fabrications !</p>
+                    <p>Je t'amène visiter nos rayons, nous les avons préparés avec plein d'attention et d'amour. </p>
+                    <p>Viens trouver ce que le Père Noël a préparé pour toi !</p>
+                    <h2>Es-tu prêt ?</h2>
+                </div>
+                <div class="divModalSerie">
+                    <button class="btnSerieAfter">Fermer</button>
+                    <a href="serie" class="btnSerieRedir">Allons-y !</a>
+                </div>
+            </div>
         </div>
 
         <div class="info_maison">

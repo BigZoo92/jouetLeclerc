@@ -43,6 +43,10 @@ fermer.onclick = function () {
 window.onclick = function (event) {
   if (event.target == modal) {
     modal.style.display = "none";
+    modal2.style.display = "none";
+    modal3.style.display = "none";
+    modal4.style.display = "none";
+
   }
 };
 
@@ -62,12 +66,6 @@ fermer2.onclick = function () {
   modal2.style.display = "none";
 };
 
-window.onclick = function (event) {
-  if (event.target == modal2) {
-    modal2.style.display = "none";
-  }
-};
-
 // Modal Lettre
 
 var modal3 = document.getElementById("modal_lettre");
@@ -84,10 +82,20 @@ fermer3.onclick = function () {
   modal3.style.display = "none";
 };
 
-window.onclick = function (event) {
-  if (event.target == modal3) {
-    modal3.style.display = "none";
-  }
+// Modal Serie
+
+var modal4 = document.getElementById("modal_serie");
+
+var btn4 = document.getElementById("serie");
+
+var fermer4 = document.getElementsByClassName("btnSerieAfter")[0];
+
+btn4.onclick = function () {
+  modal4.style.display = "block";
+};
+
+fermer4.onclick = function () {
+  modal4.style.display = "none";
 };
 
 // Récupération de la date

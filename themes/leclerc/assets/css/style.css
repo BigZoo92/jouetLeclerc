@@ -577,8 +577,8 @@ header .modal_container nav ul li img {
   opacity: 1;
 }
 .hero #sapin {
-  width: 5vw;
-  top: 19vh;
+  width: 6vw;
+  top: 12vw;
   position: absolute;
   transition: all 0.3s;
   cursor: pointer;
@@ -1006,24 +1006,34 @@ header .modal_container nav ul li img {
 .hero .modal .box_modal_recette .divModalRecette .btnRecetteRedir:hover {
   background: #226f54;
 }
-.hero #lutin {
-  width: 4.5vw;
-  left: 30vw;
-  bottom: 20vh;
+.hero #serie {
+  width: 15vw;
+  left: 24vw;
+  bottom: 12vw;
   position: absolute;
-  transform: rotateY(180deg);
   transition: all 0.3s;
   cursor: pointer;
 }
-.hero #lutin:hover {
-  transform: scale(1.05) rotateY(180deg);
+.hero #serie:hover {
+  transform: scale(1.05);
+}
+.hero #lutin_serie {
+  width: 3.5vw;
+  left: 30vw;
+  bottom: 15vw;
+  position: absolute;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.hero #lutin_serie:hover {
+  transform: scale(1.05);
 }
 .hero .info_lutin span {
   opacity: 0;
   position: absolute;
   background: #226f54;
-  left: 25vw;
-  bottom: 52vh;
+  left: 26vw;
+  bottom: 35vw;
   padding: 10px;
   color: #efdebe;
   z-index: 5;
@@ -1036,6 +1046,120 @@ header .modal_container nav ul li img {
 }
 .hero .info_lutin:hover span {
   opacity: 1;
+}
+.hero .box_modal_serie {
+  position: relative;
+  z-index: 3;
+  background: #efdebe;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0;
+  border-radius: 20px;
+  width: 60vw;
+  height: 70vh;
+  filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.6));
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+}
+.hero .box_modal_serie #lutin_recette {
+  width: 9.5vw;
+  z-index: 3;
+  left: -100px;
+  bottom: 0;
+  position: absolute;
+  transform: rotateY(180deg);
+}
+.hero .box_modal_serie #modal_chocolat {
+  width: 83vw;
+  z-index: 2;
+  left: -50px;
+  top: -200px;
+  position: absolute;
+}
+.hero .box_modal_serie .corps_modal {
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 5px;
+}
+.hero .box_modal_serie .corps_modal h1 {
+  font-size: clamp(0.5rem, 0.7619rem + 1.1905vw, 2rem);
+  width: 75%;
+  text-align: center;
+  border-radius: 20px;
+  color: #43291f;
+  z-index: 99;
+  text-transform: uppercase;
+}
+.hero .box_modal_serie .corps_modal h2 {
+  font-size: clamp(0.5rem, 0.7619rem + 1.1905vw, 1.5rem);
+  width: 75%;
+  text-align: left;
+  padding-block: 10px;
+  border-radius: 20px;
+  color: #43291f;
+  z-index: 99;
+}
+.hero .box_modal_serie .corps_modal p {
+  width: 75%;
+  z-index: 3;
+  text-align: left;
+  line-height: 1.5;
+  color: #43291f;
+  font-size: 1rem;
+  font-family: "Lemonada";
+}
+.hero .box_modal_serie .divModalSerie {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+}
+.hero .box_modal_serie .divModalSerie .btnSerieAfter {
+  filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.6));
+  display: block;
+  color: #efdebe;
+  font-size: 1rem;
+  font-family: "Lemonada";
+  background: #43291f;
+  border: 1px solid #43291f;
+  position: absolute;
+  text-align: center;
+  right: 10vw;
+  cursor: pointer;
+  bottom: -15px;
+  transition: all 0.3s;
+  border-radius: 20px;
+  z-index: 99;
+}
+.hero .box_modal_serie .divModalSerie .btnSerieAfter:hover {
+  background: #226f54;
+  border: 1px solid #226f54;
+  color: #efdebe;
+}
+.hero .box_modal_serie .divModalSerie .btnSerieRedir {
+  filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.6));
+  display: block;
+  color: #efdebe;
+  font-size: 1rem;
+  background: #bf0603;
+  position: absolute;
+  text-align: center;
+  bottom: -15px;
+  padding: 10px;
+  transition: all 0.3s;
+  border-radius: 20px 0 20px 20px;
+  z-index: 99;
+}
+.hero .box_modal_serie .divModalSerie .btnSerieRedir:hover {
+  background: #226f54;
 }
 .hero #maison {
   width: 45vw;
@@ -1172,33 +1296,33 @@ header .modal_container nav ul li img {
 }
 .cd_cometes .comets i:nth-of-type(1) {
   width: 5px;
-  left: 40vw;
-  height: 10px;
+  left: 72vw;
+  height: 23px;
 }
 .cd_cometes .comets i:nth-of-type(2) {
   width: 5px;
-  left: 8vw;
-  height: 37px;
+  left: 51vw;
+  height: 35px;
 }
 .cd_cometes .comets i:nth-of-type(3) {
   width: 5px;
-  left: 48vw;
-  height: 78px;
+  left: 73vw;
+  height: 50px;
 }
 .cd_cometes .comets i:nth-of-type(4) {
   width: 5px;
-  left: 64vw;
-  height: 26px;
+  left: 12vw;
+  height: 72px;
 }
 .cd_cometes .comets i:nth-of-type(5) {
   width: 5px;
-  left: 39vw;
-  height: 29px;
+  left: 26vw;
+  height: 40px;
 }
 .cd_cometes .comets i:nth-of-type(6) {
   width: 5px;
-  left: 62vw;
-  height: 73px;
+  left: 3vw;
+  height: 32px;
 }
 .cd_cometes .sun {
   width: 25vh;
