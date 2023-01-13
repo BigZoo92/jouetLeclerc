@@ -13,10 +13,13 @@ function montheme_register_js()
     if(is_page(61)){ //15
         wp_enqueue_script('phaser', get_stylesheet_directory_uri() . '/assets/js/phaser.min.js');
         wp_enqueue_script('jeu', get_stylesheet_directory_uri() . '/assets/js/jeu.js');
+        $translation_array = array( 'templateUrl' => get_stylesheet_directory_uri() );
+        wp_localize_script( 'jeu', 'object_name', $translation_array );
         
     }
     if(is_page(44)){
         wp_enqueue_script('calendrier', get_stylesheet_directory_uri() . '/assets/js/calendrier.js');
+        
     }
 }
 

@@ -1162,33 +1162,33 @@ header .modal_container .modal .box_modal .divModalRecette .btnRecetteRedir:hove
 }
 .cd_cometes .comets i:nth-of-type(1) {
   width: 5px;
-  left: 61vw;
-  height: 18px;
+  left: 56vw;
+  height: 49px;
 }
 .cd_cometes .comets i:nth-of-type(2) {
   width: 5px;
-  left: 20vw;
-  height: 11px;
+  left: 51vw;
+  height: 67px;
 }
 .cd_cometes .comets i:nth-of-type(3) {
   width: 5px;
-  left: 17vw;
-  height: 7px;
+  left: 23vw;
+  height: 25px;
 }
 .cd_cometes .comets i:nth-of-type(4) {
   width: 5px;
-  left: 19vw;
-  height: 53px;
+  left: 12vw;
+  height: 68px;
 }
 .cd_cometes .comets i:nth-of-type(5) {
   width: 5px;
-  left: 22vw;
-  height: 19px;
+  left: 72vw;
+  height: 51px;
 }
 .cd_cometes .comets i:nth-of-type(6) {
   width: 5px;
-  left: 12vw;
-  height: 45px;
+  left: 4vw;
+  height: 28px;
 }
 .cd_cometes .sun {
   width: 25vh;
@@ -2325,6 +2325,41 @@ body #bg_trouver .trouver {
   flex-direction: column;
 }
 .login #backtoblog {
+  display: none;
+}
+
+.cd-jeu-all {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+.cd-jeu-all .cd-lvl {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 20px;
+  transition: opacity 0.3s ease;
+}
+.cd-jeu-all .cd-lvl .lvl {
+  cursor: pointer;
+  width: 15%;
+  opacity: 1;
+}
+.cd-jeu-all .cd-lvl .lvl img {
+  width: 100%;
+  outline: 5px solid #226f54;
+  outline-offset: -5px;
+}
+.cd-jeu-all .cd-lvl .lvl h3 {
+  padding-top: 7px;
+}
+.cd-jeu-all #container_jeu {
+  opacity: 0;
+  transition: opacity 0.3s ease;
   display: none;
 }
 
