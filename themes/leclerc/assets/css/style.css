@@ -1296,33 +1296,33 @@ header .modal_container nav ul li img {
 }
 .cd_cometes .comets i:nth-of-type(1) {
   width: 5px;
-  left: 36vw;
-  height: 69px;
+  left: 52vw;
+  height: 20px;
 }
 .cd_cometes .comets i:nth-of-type(2) {
   width: 5px;
-  left: 29vw;
-  height: 20px;
+  left: 61vw;
+  height: 56px;
 }
 .cd_cometes .comets i:nth-of-type(3) {
   width: 5px;
-  left: 55vw;
-  height: 28px;
+  left: 52vw;
+  height: 41px;
 }
 .cd_cometes .comets i:nth-of-type(4) {
   width: 5px;
-  left: 70vw;
-  height: 65px;
+  left: 39vw;
+  height: 23px;
 }
 .cd_cometes .comets i:nth-of-type(5) {
   width: 5px;
-  left: 20vw;
-  height: 32px;
+  left: 49vw;
+  height: 18px;
 }
 .cd_cometes .comets i:nth-of-type(6) {
   width: 5px;
-  left: 14vw;
-  height: 74px;
+  left: 73vw;
+  height: 50px;
 }
 .cd_cometes .sun {
   width: 25vh;
@@ -2477,25 +2477,143 @@ body #bg_trouver .trouver {
   padding-block: 5px;
 }
 
-.login h1 a {
+body {
+  background: #226f54;
+  background-image: url("../../assets/images/svg/BackgroundJouets.svg");
+  position: relative;
+}
+body #login h1 {
+  background: #f8f8f8;
+  border-radius: 5px;
+  width: 20vw;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+body #login h1 a {
   background-image: url("../../assets/images/png/Logo.png");
-  background-size: 15vw;
+  background-size: 60%;
   overflow: visible;
   width: 100%;
+  padding: 50px;
+  margin: 0;
 }
-.login form {
+body #login #loginform {
   border-radius: 5px;
   border: none;
   box-shadow: none;
+  color: black;
   position: relative;
   height: auto;
+  width: 20vw;
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
+  justify-content: space-between;
+  align-items: stretch;
   flex-direction: column;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  filter: drop-shadow(0 0 20px #091322);
 }
-.login #backtoblog {
+body #login #loginform input[type=text], body #login #loginform input[type=password] {
+  background: #f2f3f4;
+  margin-block: 2vh;
+  border: 1px solid #f8f8f8;
+  border: none;
+  color: #091322;
+  transition: all 0.3s;
+  font-size: 1rem;
+  height: 50px;
+}
+body #login #loginform .button.wp-hide-pw {
+  margin-block: 2vh;
+  height: 50px;
+  width: 50px;
+  color: #43291f;
+  transition: all 0.3s;
+}
+body #login #loginform .button.wp-hide-pw:focus {
+  box-shadow: 0 0 0 1px #43291f;
+  outline: 2px solid transparent;
+  border-color: #43291f;
+}
+body #login #loginform input[type=submit] {
+  background-color: #43291f;
+  border: none;
+  color: #efdebe;
+  font-size: 1rem;
+  text-transform: uppercase;
+  transition: all 0.3s;
+}
+body #login #loginform input[type=submit]:hover {
+  background: #bf0603;
+  transform: scale(0.9);
+}
+body #login #loginform p {
+  font-size: 2rem;
+}
+body #login #loginform #backtoblog {
   display: none;
+}
+body #login #nav {
+  position: absolute;
+  top: 15vh;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #f8f8f8;
+  padding: 20px;
+  color: #091322;
+  border-radius: 5px;
+  width: 20vw;
+  text-align: center;
+}
+body #login #nav a {
+  background: #efdebe;
+  border-radius: 5px;
+  padding: 10px;
+}
+body #login #backtoblog {
+  display: none;
+}
+body .language-switcher {
+  margin: 0;
+  padding: 0;
+  width: 20vw;
+  position: absolute;
+  background: #f8f8f8;
+  border-radius: 5px;
+  bottom: 20px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+}
+body .language-switcher form {
+  margin: 0;
+}
+body .language-switcher select {
+  background-color: #43291f;
+  border: none;
+  color: #efdebe;
+  font-size: 1rem;
+  text-transform: uppercase;
+  transition: all 0.3s;
+}
+body .language-switcher input[type=submit] {
+  background-color: #43291f;
+  border: none;
+  color: #efdebe;
+  font-size: 1rem;
+  text-transform: uppercase;
+  transition: all 0.3s;
+}
+body .language-switcher input[type=submit]:hover {
+  background: #bf0603;
+  transform: scale(0.9);
 }
 
 .cd-jeu-all {

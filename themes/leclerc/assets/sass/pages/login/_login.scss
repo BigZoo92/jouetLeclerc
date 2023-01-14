@@ -1,26 +1,140 @@
-.login{ 
-    h1{
-        a{
-            background-image: url("../../assets/images/png/Logo.png");
-            // transform: scale(3) translateY(3vh);
-            background-size: 15vw;
-            overflow: visible;
-            width: 100%;
+body {
+    background: $noel-vert;
+    background-image: url("../../assets/images/svg/BackgroundJouets.svg");
+    position: relative;
+    #login {
+        h1 {
+            background: $background;
+            border-radius: 5px;
+            width: 20vw;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            position: absolute;
+            a {
+                background-image: url("../../assets/images/png/Logo.png");
+                background-size: 60%;
+                overflow: visible;
+                width: 100%;
+                padding: 50px;
+                margin: 0;
+            }
+        }
+        #loginform {
+            border-radius: 5px;
+            border: none;
+            box-shadow: none;
+            color: black;
+            position: relative;
+            height: auto;
+            width: 20vw;
+            display: flex;
+            justify-content: space-between;
+            align-items: stretch;
+            flex-direction: column;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            filter: drop-shadow(0 0 20px $noel-noir);
+            input[type="text"], input[type="password"]{
+                background: #f2f3f4;
+                margin-block: 2vh;
+                border: 1px solid $background;
+                border: none;
+                color: $noel-noir;
+                transition: all 0.3s;
+                font-size: 1rem;
+                height: 50px;
+            }
+            .button.wp-hide-pw{
+                margin-block: 2vh;
+                height: 50px;
+                width: 50px;
+                color: $noel-marron;
+                transition: all 0.3s;
+                &:focus{
+                    box-shadow: 0 0 0 1px $noel-marron;
+                    outline: 2px solid transparent;
+                    border-color: $noel-marron;
+                }
+            }
+            input[type="submit"]{
+                background-color: $noel-marron;
+                border: none;
+                color: $noel-beige;
+                font-size: 1rem;
+                text-transform: uppercase;
+                transition: all 0.3s;
+                &:hover{
+                    background: $noel-rouge;
+                    transform: scale(0.9);
+                }
+            }
+            p{
+                font-size: 2rem;
+            }
+            #backtoblog {
+                display: none;
+            }
+        }
+        #nav{
+            position: absolute;
+            top: 15vh;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: $background;
+            padding: 20px;
+            color: $noel-noir;
+            border-radius: 5px;
+            width: 20vw;
+            text-align: center;
+            a{
+                background: $noel-beige;
+                border-radius: 5px;
+                padding: 10px;
+            }
+        }
+        #backtoblog{
+            display: none;
         }
     }
-    form{
+    .language-switcher {
+        margin: 0;
+        padding: 0;
+        width: 20vw;
+        position: absolute;
+        background: $background;
         border-radius: 5px;
-        border: none;
-        box-shadow: none;
-        position: relative;
-        height: auto;
+        bottom: 20px;
+        left: 50%;
+        transform: translate(-50%, -50%);
         display: flex;
-        justify-content: center;
-        align-items: flex-start;
+        justify-content: space-between;
+        align-items: center;
         flex-direction: column;
-    }
-
-    #backtoblog{
-        display: none;
+        padding: 20px;
+        form{
+            margin: 0;
+        }
+        select{
+            background-color: $noel-marron;
+            border: none;
+            color: $noel-beige;
+            font-size: 1rem;
+            text-transform: uppercase;
+            transition: all 0.3s;
+        }
+        input[type="submit"]{
+            background-color: $noel-marron;
+            border: none;
+            color: $noel-beige;
+            font-size: 1rem;
+            text-transform: uppercase;
+            transition: all 0.3s;
+            &:hover{
+                background: $noel-rouge;
+                transform: scale(0.9);
+            }
+        }
     }
 }
