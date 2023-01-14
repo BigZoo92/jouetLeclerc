@@ -21,11 +21,11 @@
         <div class="overlay_header">
             <nav>
                 <ul>
-                    <li><a href="#">jeu </a></li>
-                    <li><a href="#">recette nöel</a></li>
-                    <li><a href="#">série lutintin</a></li>
-                    <li><a href="#">catalogue jouets</a></li>
-                    <li><a href="#">lettre au père noël</a></li>
+                    <li><a href="jeu">jeu </a></li>
+                    <li><a href="recette">recette nöel</a></li>
+                    <li><a href="serie">série lutintin</a></li>
+                    <li><a href="catalogue">catalogue jouets</a></li>
+                    <li><a href="lettre">lettre au père noël</a></li>
                 </ul>
             </nav>
             <div class="custom-shape-divider-bottom-1670590214">
@@ -36,7 +36,7 @@
                         class="shape-fill"></path>
                 </svg>
                 <div class="copyright_footer">
-                    <a href="mentions">Mentions Légales</a>
+                    <a href="mentions-legales">Mentions Légales</a>
                     <p>Copyright © <script>document.write(new Date().getFullYear())</script> Jouets Leclerc</p>
                 </div>
             </div>
@@ -67,32 +67,9 @@
             <nav>
                 <ul>
                     <li><a href="ou-nous-trouver"><img id="pdv" src="<?= get_template_directory_uri() ?>./assets/images/svg/Point-de-Vente.svg" alt="Point de vente" title="Point de vente Leclerc"></a></li>
-                    <li><a href=""><img id="connexion" src="<?= get_template_directory_uri() ?>./assets/images/svg/Connexion.svg" alt="Connexion"></a></li>
+                    <li><a href="http://jouets-leclerc.local/wp-login.php"><img id="connexion" src="<?= get_template_directory_uri() ?>./assets/images/svg/Connexion.svg" alt="Connexion"></a></li>
                 </ul>
             </nav>
-
-            <!-- <div id="modal_recette" class="modal">
-                <div class="box_modal">
-                    <img id="lutin_recette"
-                        src="<?= get_template_directory_uri() ?>./assets/images/png/Lutin_Recette.png" title="Afficher"
-                        alt="Lutin Recette">
-                    <img id="modal_chocolat"
-                        src="<?= get_template_directory_uri() ?>./assets/images/png/RecetteChocolat.png"
-                        alt="ModalChocolat">
-                    <div class="corps_modal">
-                        <span class="btnFermerRecette">Fermer</span>
-                        <h1>Bienvenue dans la maison des recettes de nöel !</h1>
-                        <p>C'est encore moi <b>Lutintin</b> ! Toi aussi tu aimes les recettes
-                            de Nöel ?</p>
-                        <p>Alors prépare tes meilleures recettes de Nöel avec moi !</p>
-                        <p>Invite tes amis à les préparer avec toi, et régalez-vous ensemble !</p>
-                        <p>N'oublie pas d'inviter ta maman et ton papounet !</p>
-                    </div>
-                    <div class="divModalRecette">
-                        <a href="recette" class="btnRecetteRedir">Allons-y !</a>
-                    </div>
-                </div>
-            </div> -->
 
         </div>
     </header>

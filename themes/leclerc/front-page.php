@@ -41,7 +41,7 @@
                     <h2>Es-tu prêt ?</h2>
                 </div>
                 <div class="divModalLettre">
-                    <a href="#" class="btnLettreAfter">Fermer</a>
+                    <button class="btnLettreAfter">Fermer</button>
                     <a href="formulaire" class="btnLettreRedir">Allons-y !</a>
                 </div>
             </div>
@@ -49,7 +49,7 @@
 
         <div class="info_sapin">
             <img id="sapin" src="<?= get_template_directory_uri() ?>./assets/images/png/Home_Sapin.png" alt="Sapin">
-            <span><i class="bi bi-gift-fill"></i> Accéder aux cadeaux de nöel</span>
+            <span><i class="bi bi-book-fill"></i> Voir le catalogue</span>
         </div>
 
         <div id="modal_catalogue" class="modal">
@@ -74,8 +74,26 @@
         </div>
 
         <div class="info_lutin">
-            <img id="lutin" src="<?= get_template_directory_uri() ?>./assets/images/png/lutin.png" alt="Lutin">
+            <img id="serie" src="<?= get_template_directory_uri() ?>./assets/images/png/serie.png" alt="Lutin">
+            <img id="lutin_serie" src="<?= get_template_directory_uri() ?>./assets/images/png/Lutin_Serie.png" alt="Lutin Serie">
             <span><i class="bi bi-youtube"></i> Voir les vidéos</span>
+        </div>
+
+        <div id="modal_serie" class="modal">
+            <div class="box_modal_serie">
+                <img id="lutin_catalogue" src="<?= get_template_directory_uri() ?>./assets/images/png/Lutin_Catalogue.png" alt="Lutin Catalogue">
+                <div class="corps_modal">
+                    <h1>Bienvenue dans la maison des Jouets Nöel Leclerc !</h1>
+                    <p>C'est encore moi Lutintin, le lutin ! Viens découvrir nos fabrications !</p>
+                    <p>Je t'amène visiter nos rayons, nous les avons préparés avec plein d'attention et d'amour. </p>
+                    <p>Viens trouver ce que le Père Noël a préparé pour toi !</p>
+                    <h2>Es-tu prêt ?</h2>
+                </div>
+                <div class="divModalSerie">
+                    <button class="btnSerieAfter">Fermer</button>
+                    <a href="serie" class="btnSerieRedir">Allons-y !</a>
+                </div>
+            </div>
         </div>
 
         <div class="info_maison">
@@ -83,6 +101,29 @@
                 alt="Maison">
             <span>Recette de nöel <i class="bi bi-book-fill"></i></span>
         </div>
+
+            <div id="modal_recette_front" class="modal">
+                <div class="box_modal_recette">
+                    <img id="lutin_recette"
+                        src="<?= get_template_directory_uri() ?>./assets/images/png/Lutin_Recette.png" title="Afficher"
+                        alt="Lutin Recette">
+                    <img id="modal_chocolat"
+                        src="<?= get_template_directory_uri() ?>./assets/images/png/RecetteChocolat.png"
+                        alt="ModalChocolat">
+                    <div class="corps_modal">
+                        <h1>Bienvenue dans la maison des recettes de nöel !</h1>
+                        <p>C'est encore moi <b>Lutintin</b> ! Toi aussi tu aimes les recettes
+                            de Nöel ?</p>
+                        <p>Alors prépare tes meilleures recettes de Nöel avec moi !</p>
+                        <p>Invite tes amis à les préparer avec toi, et régalez-vous ensemble !</p>
+                        <p>N'oublie pas d'inviter ta maman et ton papounet !</p>
+                    </div>
+                    <div class="divModalRecette">
+                        <button class="btnRecetteAfter">Fermer</button>
+                        <a href="recette" class="btnRecetteRedir">Allons-y !</a>
+                    </div>
+                </div>
+            </div>
 
         <img id="bonhomme" src="<?= get_template_directory_uri() ?>./assets/images/png/bonhomme.png"
             alt="Bonhomme de neige">

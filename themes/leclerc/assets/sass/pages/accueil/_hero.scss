@@ -11,7 +11,6 @@
     position: relative;
     align-self: flex-end;
     margin-top: 125px;
-
     #boite_lettre {
         width: 12vw;
         left: 7vw;
@@ -50,8 +49,8 @@
     }
 
     #sapin {
-        width: 5vw;
-        top: 19vh;
+        width: 6vw;
+        top: 12vw;
         position: absolute;
         transition: all 0.3s;
         cursor: pointer;
@@ -66,7 +65,7 @@
             opacity: 0;
             position: absolute;
             background: $noel-vert;
-            left: 40vw;
+            left: 44.5vw;
             bottom: 62vh;
             padding: 10px;
             color: $noel-beige;
@@ -109,8 +108,8 @@
             flex-direction: column;
             padding: 0;
             border-radius: 20px;
-            width: calc(90vw - 200px);
-            height: calc(100vh - 150px);
+            width: 60vw;
+            height: 70vh;
             filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.6));
             -webkit-animation-name: animatetop;
             -webkit-animation-duration: 0.4s;
@@ -177,7 +176,7 @@
                 h2 {
                     font-size: clamp(0.5rem, 0.7619rem + 1.1905vw, 1.5rem);
                     filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 1));
-                    width: 70%;
+                    width: 75%;
                     text-align: left;
                     padding-block: 10px;
                     border-radius: 20px;
@@ -202,7 +201,7 @@
                     }
                 }
                 p {
-                    width: 70%;
+                    width: 75%;
                     text-align: left;
                     line-height: 2;
                     color: $noel-beige;
@@ -218,29 +217,29 @@
                 .btnCatalogueAfter {
                     filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.6));
                     display: block;
-                    color: $background;
+                    color: $noel-beige;
                     font-size: 1rem;
                     font-family: $font-normal;
-                    background: #492d20;
-                    border: 2px solid rgb(39, 20, 20);
+                    background: $noel-marron;
+                    border: 1px solid $noel-marron;
                     position: absolute;
                     text-align: center;
                     right: 10vw;
+                    cursor: pointer;
                     bottom: -15px;
-                    padding: 8px;
                     transition: all 0.3s;
                     border-radius: 20px;
                     z-index: 99;
                     &:hover {
-                        background: $noel-beige;
-                        border: 2px solid $noel-beige;
-                        color: $noel-marron;
+                        background: $noel-vert;
+                        border: 1px solid $noel-vert;
+                        color: $noel-beige;
                     }
                 }
                 .btnCatalogueRedir {
                     filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.6));
                     display: block;
-                    color: $background;
+                    color: $noel-beige;
                     font-size: 1rem;
                     background: $noel-rouge;
                     position: absolute;
@@ -263,6 +262,8 @@
             background: url("../../assets/images/png/BackgroundLettreModal.png");
             background-size: cover;
             margin: auto;
+            outline: 10px dashed $noel-rouge;
+            outline-offset: -10px;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -288,9 +289,9 @@
 
             #lettre_timbre {
                 width: 22.5vw;
-                right: 2vw;
+                right: 1.5vw;
                 z-index: 2;
-                top: 2vh;
+                top: 1.5vh;
                 position: absolute;
             }
 
@@ -303,7 +304,7 @@
                 border-radius: 5px;
                 h1 {
                     font-size: clamp(0.5rem, 0.7619rem + 1.1905vw, 2rem);
-                    width: 80%;
+                    width: 75%;
                     text-align: center;
                     border-radius: 20px;
                     color: $noel-marron;
@@ -312,7 +313,7 @@
                 }
                 h2 {
                     font-size: clamp(0.5rem, 0.7619rem + 1.1905vw, 1.5rem);
-                    width: 80%;
+                    width: 75%;
                     text-align: left;
                     padding-block: 10px;
                     border-radius: 20px;
@@ -320,7 +321,7 @@
                     z-index: 99;
                 }
                 p {
-                    width: 80%;
+                    width: 75%;
                     z-index: 3;
                     text-align: left;
                     line-height: 1.5;
@@ -337,29 +338,147 @@
                 .btnLettreAfter {
                     filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.6));
                     display: block;
-                    color: $background;
+                    color: $noel-beige;
                     font-size: 1rem;
                     font-family: $font-normal;
-                    background: #492d20;
-                    border: 2px solid rgb(39, 20, 20);
+                    background: $noel-marron;
+                    border: 1px solid $noel-marron;
                     position: absolute;
                     text-align: center;
                     right: 10vw;
+                    cursor: pointer;
                     bottom: -15px;
-                    padding: 8px;
                     transition: all 0.3s;
                     border-radius: 20px;
                     z-index: 99;
                     &:hover {
-                        background: $noel-beige;
-                        border: 2px solid $noel-beige;
-                        color: $noel-marron;
+                        background: $noel-vert;
+                        border: 1px solid $noel-vert;
+                        color: $noel-beige;
                     }
                 }
                 .btnLettreRedir {
                     filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.6));
                     display: block;
-                    color: $background;
+                    color: $noel-beige;
+                    font-size: 1rem;
+                    background: $noel-rouge;
+                    position: absolute;
+                    text-align: center;
+                    bottom: -15px;
+                    padding: 10px;
+                    transition: all 0.3s;
+                    border-radius: 20px 0 20px 20px;
+                    z-index: 99;
+                    &:hover {
+                        background: $noel-vert;
+                    }
+                }
+            }
+        }
+
+        // Box Modal Recette
+
+        .box_modal_recette {
+            position: relative;
+            z-index: 3;
+            background: $noel-beige;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 0;
+            border-radius: 20px;
+            width: 60vw;
+            height: 70vh;
+            filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.6));
+            -webkit-animation-name: animatetop;
+            -webkit-animation-duration: 0.4s;
+            animation-name: animatetop;
+            animation-duration: 0.4s;
+            #lutin_recette {
+                width: 9.5vw;
+                z-index: 3;
+                left: -100px;
+                bottom: 0;
+                position: absolute;
+                transform: rotateY(180deg);
+            }
+            #modal_chocolat {
+                width: 83vw;
+                z-index: 2;
+                left: -50px;
+                top: -200px;
+                position: absolute;
+            }
+
+            .corps_modal {
+                height: auto;
+                display: flex;
+                justify-content: space-between;
+                flex-direction: column;
+                align-items: center;
+                border-radius: 5px;
+                h1 {
+                    font-size: clamp(0.5rem, 0.7619rem + 1.1905vw, 2rem);
+                    width: 75%;
+                    text-align: center;
+                    border-radius: 20px;
+                    color: $noel-marron;
+                    z-index: 99;
+                    text-transform: uppercase;
+                }
+                h2 {
+                    font-size: clamp(0.5rem, 0.7619rem + 1.1905vw, 1.5rem);
+                    width: 75%;
+                    text-align: left;
+                    padding-block: 10px;
+                    border-radius: 20px;
+                    color: $noel-marron;
+                    z-index: 99;
+                }
+                p {
+                    width: 75%;
+                    z-index: 3;
+                    text-align: left;
+                    line-height: 1.5;
+                    color: $noel-marron;
+                    font-size: 1rem;
+                    font-family: $font-normal;
+                }
+            }
+            .divModalRecette {
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                width: 100%;
+                .btnRecetteAfter {
+                    filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.6));
+                    display: block;
+                    color: $noel-beige;
+                    font-size: 1rem;
+                    font-family: $font-normal;
+                    background: $noel-marron;
+                    border: 1px solid $noel-marron;
+                    position: absolute;
+                    text-align: center;
+                    right: 10vw;
+                    cursor: pointer;
+                    bottom: -15px;
+                    transition: all 0.3s;
+                    border-radius: 20px;
+                    z-index: 99;
+                    &:hover {
+                        background: $noel-vert;
+                        border: 1px solid $noel-vert;
+                        color: $noel-beige;
+                    }
+                }
+                .btnRecetteRedir {
+                    filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.6));
+                    display: block;
+                    color: $noel-beige;
                     font-size: 1rem;
                     background: $noel-rouge;
                     position: absolute;
@@ -377,16 +496,27 @@
         }
     }
 
-    #lutin {
-        width: 4.5vw;
-        left: 30vw;
-        bottom: 20vh;
+    #serie {
+        width: 15vw;
+        left: 24vw;
+        bottom: 12vw;
         position: absolute;
-        transform: rotateY(180deg);
         transition: all 0.3s;
         cursor: pointer;
         &:hover {
-            transform: scale(1.05) rotateY(180deg);
+            transform: scale(1.05);
+        }
+    }
+
+    #lutin_serie {
+        width: 3.5vw;
+        left: 30vw;
+        bottom: 15vw;
+        position: absolute;
+        transition: all 0.3s;
+        cursor: pointer;
+        &:hover {
+            transform: scale(1.05);
         }
     }
 
@@ -395,8 +525,8 @@
             opacity: 0;
             position: absolute;
             background: $noel-vert;
-            left: 25vw;
-            bottom: 52vh;
+            left: 26vw;
+            bottom: 35vw;
             padding: 10px;
             color: $noel-beige;
             z-index: 5;
@@ -410,6 +540,124 @@
         &:hover {
             span {
                 opacity: 1;
+            }
+        }
+    }
+
+    // Box Modal Recette
+
+    .box_modal_serie {
+        position: relative;
+        z-index: 3;
+        background: $noel-beige;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 0;
+        border-radius: 20px;
+        width: 60vw;
+        height: 70vh;
+        filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.6));
+        -webkit-animation-name: animatetop;
+        -webkit-animation-duration: 0.4s;
+        animation-name: animatetop;
+        animation-duration: 0.4s;
+        #lutin_recette {
+            width: 9.5vw;
+            z-index: 3;
+            left: -100px;
+            bottom: 0;
+            position: absolute;
+            transform: rotateY(180deg);
+        }
+        #modal_chocolat {
+            width: 83vw;
+            z-index: 2;
+            left: -50px;
+            top: -200px;
+            position: absolute;
+        }
+
+        .corps_modal {
+            height: auto;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 5px;
+            h1 {
+                font-size: clamp(0.5rem, 0.7619rem + 1.1905vw, 2rem);
+                width: 75%;
+                text-align: center;
+                border-radius: 20px;
+                color: $noel-marron;
+                z-index: 99;
+                text-transform: uppercase;
+            }
+            h2 {
+                font-size: clamp(0.5rem, 0.7619rem + 1.1905vw, 1.5rem);
+                width: 75%;
+                text-align: left;
+                padding-block: 10px;
+                border-radius: 20px;
+                color: $noel-marron;
+                z-index: 99;
+            }
+            p {
+                width: 75%;
+                z-index: 3;
+                text-align: left;
+                line-height: 1.5;
+                color: $noel-marron;
+                font-size: 1rem;
+                font-family: $font-normal;
+            }
+        }
+        .divModalSerie {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            width: 100%;
+            .btnSerieAfter {
+                filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.6));
+                display: block;
+                color: $noel-beige;
+                font-size: 1rem;
+                font-family: $font-normal;
+                background: $noel-marron;
+                border: 1px solid $noel-marron;
+                position: absolute;
+                text-align: center;
+                right: 10vw;
+                cursor: pointer;
+                bottom: -15px;
+                transition: all 0.3s;
+                border-radius: 20px;
+                z-index: 99;
+                &:hover {
+                    background: $noel-vert;
+                    border: 1px solid $noel-vert;
+                    color: $noel-beige;
+                }
+            }
+            .btnSerieRedir {
+                filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.6));
+                display: block;
+                color: $noel-beige;
+                font-size: 1rem;
+                background: $noel-rouge;
+                position: absolute;
+                text-align: center;
+                bottom: -15px;
+                padding: 10px;
+                transition: all 0.3s;
+                border-radius: 20px 0 20px 20px;
+                z-index: 99;
+                &:hover {
+                    background: $noel-vert;
+                }
             }
         }
     }
