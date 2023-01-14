@@ -61,7 +61,7 @@ function game(urlMap) {
             this.load.tilemapTiledJSON('map', urlMap);
         }
         function create() {
-            background = this.add.image(0, 0, 'background');
+            background = this.add.image(600, 750, 'background');
             lutin = this.physics.add.image(70, 100, 'lutin_saut1');
             palette = this.physics.add.image(70, 1425, 'palette');
             const map = this.make.tilemap({key: "map", tileWidth: 30, tileHeight: 30});

@@ -6,7 +6,7 @@
 get_header()
 ?>
 
-<main class="tonperetang">
+<main>
 
     <section class="wrap_sapin_calendrier">
         <h1>Calendrier</h1>
