@@ -112,9 +112,22 @@ get_header()
                 <div class="num"></div>
             </div>
         </div>
-
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/pCFxMf5J-6s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </section>
-
+    <section class="cd-jouets">
+        <div class="wrap_jouets">
+        <div>
+            <h3>title</h3>
+            <p class="prix_jouet">33.90</p>
+            <p>Avec la carte leclerc : <i>29.90</i></p>
+            <button>En savoir plus</button>
+        </div>
+            <div>
+                <img src="">
+            </div>
+        </div>
+        
+    </section>
 </main>
 
 

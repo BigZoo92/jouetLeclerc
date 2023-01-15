@@ -1296,33 +1296,33 @@ header .modal_container nav ul li img {
 }
 .cd_cometes .comets i:nth-of-type(1) {
   width: 5px;
-  left: 36vw;
-  height: 69px;
+  left: 29vw;
+  height: 29px;
 }
 .cd_cometes .comets i:nth-of-type(2) {
   width: 5px;
-  left: 61vw;
-  height: 56px;
+  left: 47vw;
+  height: 31px;
 }
 .cd_cometes .comets i:nth-of-type(3) {
   width: 5px;
-  left: 52vw;
-  height: 41px;
+  left: 15vw;
+  height: 59px;
 }
 .cd_cometes .comets i:nth-of-type(4) {
   width: 5px;
-  left: 39vw;
-  height: 23px;
+  left: 60vw;
+  height: 37px;
 }
 .cd_cometes .comets i:nth-of-type(5) {
   width: 5px;
-  left: 49vw;
-  height: 18px;
+  left: 54vw;
+  height: 45px;
 }
 .cd_cometes .comets i:nth-of-type(6) {
   width: 5px;
-  left: 14vw;
-  height: 74px;
+  left: 25vw;
+  height: 36px;
 }
 .cd_cometes .sun {
   width: 25vh;
@@ -1746,16 +1746,27 @@ header .modal_container nav ul li img {
 
 .wrap_sapin_calendrier {
   width: 100%;
-  height: calc(100vh - 200px);
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 100px;
-  margin-top: 250px;
+  padding-top: 250px;
+}
+.wrap_sapin_calendrier iframe {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
 .wrap_sapin_calendrier h1 {
   font-size: 4em;
+  color: #bf0603;
+  -webkit-text-stroke: 1px #efdebe;
 }
 .wrap_sapin_calendrier .sapin_calendrier {
   display: flex;
@@ -1768,6 +1779,9 @@ header .modal_container nav ul li img {
 }
 .wrap_sapin_calendrier .sapin_calendrier .c1 {
   position: relative;
+  filter: grayscale(1);
+  -webkit-filter: grayscale(1);
+  pointer-events: none;
 }
 .wrap_sapin_calendrier .sapin_calendrier .c1 .num {
   position: absolute;
@@ -1791,6 +1805,9 @@ header .modal_container nav ul li img {
 }
 .wrap_sapin_calendrier .sapin_calendrier .c2 {
   position: relative;
+  filter: grayscale(1);
+  -webkit-filter: grayscale(1);
+  pointer-events: none;
 }
 .wrap_sapin_calendrier .sapin_calendrier .c2 .num {
   position: absolute;
@@ -1814,6 +1831,9 @@ header .modal_container nav ul li img {
 }
 .wrap_sapin_calendrier .sapin_calendrier .c3 {
   position: relative;
+  filter: grayscale(1);
+  -webkit-filter: grayscale(1);
+  pointer-events: none;
 }
 .wrap_sapin_calendrier .sapin_calendrier .c3 .num {
   position: absolute;
@@ -1837,6 +1857,9 @@ header .modal_container nav ul li img {
 }
 .wrap_sapin_calendrier .sapin_calendrier .c4 {
   position: relative;
+  filter: grayscale(1);
+  -webkit-filter: grayscale(1);
+  pointer-events: none;
 }
 .wrap_sapin_calendrier .sapin_calendrier .c4 .num {
   position: absolute;
@@ -1860,6 +1883,9 @@ header .modal_container nav ul li img {
 }
 .wrap_sapin_calendrier .sapin_calendrier .c5 {
   position: relative;
+  filter: grayscale(1);
+  -webkit-filter: grayscale(1);
+  pointer-events: none;
 }
 .wrap_sapin_calendrier .sapin_calendrier .c5 .num {
   position: absolute;
@@ -1883,6 +1909,9 @@ header .modal_container nav ul li img {
 }
 .wrap_sapin_calendrier .sapin_calendrier .c6 {
   position: relative;
+  filter: grayscale(1);
+  -webkit-filter: grayscale(1);
+  pointer-events: none;
 }
 .wrap_sapin_calendrier .sapin_calendrier .c6 .num {
   position: absolute;
@@ -1906,6 +1935,9 @@ header .modal_container nav ul li img {
 }
 .wrap_sapin_calendrier .sapin_calendrier .c7 {
   position: relative;
+  filter: grayscale(1);
+  -webkit-filter: grayscale(1);
+  pointer-events: none;
 }
 .wrap_sapin_calendrier .sapin_calendrier .c7 .num {
   position: absolute;
@@ -1929,6 +1961,9 @@ header .modal_container nav ul li img {
 }
 .wrap_sapin_calendrier .sapin_calendrier .c8 {
   position: relative;
+  filter: grayscale(1);
+  -webkit-filter: grayscale(1);
+  pointer-events: none;
 }
 .wrap_sapin_calendrier .sapin_calendrier .c8 .num {
   position: absolute;
@@ -1952,6 +1987,9 @@ header .modal_container nav ul li img {
 }
 .wrap_sapin_calendrier .sapin_calendrier .c9 {
   position: relative;
+  filter: grayscale(1);
+  -webkit-filter: grayscale(1);
+  pointer-events: none;
 }
 .wrap_sapin_calendrier .sapin_calendrier .c9 .num {
   position: absolute;
@@ -1975,6 +2013,9 @@ header .modal_container nav ul li img {
 }
 .wrap_sapin_calendrier .sapin_calendrier .c10 {
   position: relative;
+  filter: grayscale(1);
+  -webkit-filter: grayscale(1);
+  pointer-events: none;
 }
 .wrap_sapin_calendrier .sapin_calendrier .c10 .num {
   position: absolute;
@@ -1998,6 +2039,9 @@ header .modal_container nav ul li img {
 }
 .wrap_sapin_calendrier .sapin_calendrier .c11 {
   position: relative;
+  filter: grayscale(1);
+  -webkit-filter: grayscale(1);
+  pointer-events: none;
 }
 .wrap_sapin_calendrier .sapin_calendrier .c11 .num {
   position: absolute;
@@ -2021,6 +2065,9 @@ header .modal_container nav ul li img {
 }
 .wrap_sapin_calendrier .sapin_calendrier .c12 {
   position: relative;
+  filter: grayscale(1);
+  -webkit-filter: grayscale(1);
+  pointer-events: none;
 }
 .wrap_sapin_calendrier .sapin_calendrier .c12 .num {
   position: absolute;
@@ -2044,6 +2091,9 @@ header .modal_container nav ul li img {
 }
 .wrap_sapin_calendrier .sapin_calendrier .c13 {
   position: relative;
+  filter: grayscale(1);
+  -webkit-filter: grayscale(1);
+  pointer-events: none;
 }
 .wrap_sapin_calendrier .sapin_calendrier .c13 .num {
   position: absolute;
@@ -2067,6 +2117,9 @@ header .modal_container nav ul li img {
 }
 .wrap_sapin_calendrier .sapin_calendrier .c14 {
   position: relative;
+  filter: grayscale(1);
+  -webkit-filter: grayscale(1);
+  pointer-events: none;
 }
 .wrap_sapin_calendrier .sapin_calendrier .c14 .num {
   position: absolute;
@@ -2090,6 +2143,9 @@ header .modal_container nav ul li img {
 }
 .wrap_sapin_calendrier .sapin_calendrier .c15 {
   position: relative;
+  filter: grayscale(1);
+  -webkit-filter: grayscale(1);
+  pointer-events: none;
 }
 .wrap_sapin_calendrier .sapin_calendrier .c15 .num {
   position: absolute;
@@ -2113,6 +2169,9 @@ header .modal_container nav ul li img {
 }
 .wrap_sapin_calendrier .sapin_calendrier .c16 {
   position: relative;
+  filter: grayscale(1);
+  -webkit-filter: grayscale(1);
+  pointer-events: none;
 }
 .wrap_sapin_calendrier .sapin_calendrier .c16 .num {
   position: absolute;
@@ -2136,6 +2195,9 @@ header .modal_container nav ul li img {
 }
 .wrap_sapin_calendrier .sapin_calendrier .c17 {
   position: relative;
+  filter: grayscale(1);
+  -webkit-filter: grayscale(1);
+  pointer-events: none;
 }
 .wrap_sapin_calendrier .sapin_calendrier .c17 .num {
   position: absolute;
@@ -2159,6 +2221,9 @@ header .modal_container nav ul li img {
 }
 .wrap_sapin_calendrier .sapin_calendrier .c18 {
   position: relative;
+  filter: grayscale(1);
+  -webkit-filter: grayscale(1);
+  pointer-events: none;
 }
 .wrap_sapin_calendrier .sapin_calendrier .c18 .num {
   position: absolute;
@@ -2182,6 +2247,9 @@ header .modal_container nav ul li img {
 }
 .wrap_sapin_calendrier .sapin_calendrier .c19 {
   position: relative;
+  filter: grayscale(1);
+  -webkit-filter: grayscale(1);
+  pointer-events: none;
 }
 .wrap_sapin_calendrier .sapin_calendrier .c19 .num {
   position: absolute;
@@ -2205,6 +2273,9 @@ header .modal_container nav ul li img {
 }
 .wrap_sapin_calendrier .sapin_calendrier .c20 {
   position: relative;
+  filter: grayscale(1);
+  -webkit-filter: grayscale(1);
+  pointer-events: none;
 }
 .wrap_sapin_calendrier .sapin_calendrier .c20 .num {
   position: absolute;
@@ -2228,6 +2299,9 @@ header .modal_container nav ul li img {
 }
 .wrap_sapin_calendrier .sapin_calendrier .c21 {
   position: relative;
+  filter: grayscale(1);
+  -webkit-filter: grayscale(1);
+  pointer-events: none;
 }
 .wrap_sapin_calendrier .sapin_calendrier .c21 .num {
   position: absolute;
@@ -2251,6 +2325,9 @@ header .modal_container nav ul li img {
 }
 .wrap_sapin_calendrier .sapin_calendrier .c22 {
   position: relative;
+  filter: grayscale(1);
+  -webkit-filter: grayscale(1);
+  pointer-events: none;
 }
 .wrap_sapin_calendrier .sapin_calendrier .c22 .num {
   position: absolute;
@@ -2274,6 +2351,9 @@ header .modal_container nav ul li img {
 }
 .wrap_sapin_calendrier .sapin_calendrier .c23 {
   position: relative;
+  filter: grayscale(1);
+  -webkit-filter: grayscale(1);
+  pointer-events: none;
 }
 .wrap_sapin_calendrier .sapin_calendrier .c23 .num {
   position: absolute;
@@ -2297,6 +2377,9 @@ header .modal_container nav ul li img {
 }
 .wrap_sapin_calendrier .sapin_calendrier .c24 {
   position: relative;
+  filter: grayscale(1);
+  -webkit-filter: grayscale(1);
+  pointer-events: none;
 }
 .wrap_sapin_calendrier .sapin_calendrier .c24 .num {
   position: absolute;
@@ -2328,9 +2411,6 @@ header .modal_container nav ul li img {
   position: relative;
   margin-inline: -11.75px;
   transition: all ease-in-out 1s;
-}
-.wrap_sapin_calendrier .sapin_calendrier .cadeau:nth-child(1) {
-  filter: grayscale(1);
 }
 .wrap_sapin_calendrier .sapin_calendrier .cadeau::before {
   content: "";
@@ -2391,8 +2471,58 @@ header .modal_container nav ul li img {
   transition: all ease-in-out 1s;
 }
 
-.tonperetang {
+.cd-jouets {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  display: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.cd-jouets .wrap_jouets {
   background-color: #efdebe;
+  padding: 5vw;
+  width: 60%;
+  aspect-ratio: 3/2;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cd-jouets .wrap_jouets div {
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 3vw;
+}
+.cd-jouets .wrap_jouets div h3 {
+  font-size: 2em;
+  text-transform: uppercase;
+  color: #226f54;
+  text-align: left;
+}
+.cd-jouets .wrap_jouets div p {
+  color: #43291f;
+}
+.cd-jouets .wrap_jouets div p i {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #bf0603;
+}
+.cd-jouets .wrap_jouets div img {
+  width: 100%;
+}
+.cd-jouets .wrap_jouets div button {
+  border-radius: 10px;
+  background-color: #226f54;
+  color: #efdebe;
+  padding: 7px 15px;
+  border: #87c38f;
+  cursor: pointer;
 }
 
 .overlay_portrait {
@@ -2462,8 +2592,6 @@ body #bg_trouver .trouver {
   flex-direction: column;
 }
 
-<<<<<<< HEAD
-=======
 #bg_mentions {
   background: #226f54;
 }
@@ -2638,14 +2766,12 @@ body .language-switcher input[type=submit]:hover {
   transform: scale(0.9);
 }
 
->>>>>>> 7f9cb401264b86f649acc8a5d8ee9221680ec2cb
 .cd-jeu-all {
   width: 100%;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 30px;
 }
 .cd-jeu-all .cd-lvl {
   width: 80%;
@@ -2672,6 +2798,42 @@ body .language-switcher input[type=submit]:hover {
   opacity: 0;
   transition: opacity 0.3s ease;
   display: none;
+}
+
+.modal_jeu {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.584);
+  display: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.modal_jeu form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5vw 15vw;
+  aspect-ratio: 3/1;
+  background-color: #efdebe;
+  border-radius: 10px;
+}
+.modal_jeu form input {
+  border-radius: 20px;
+  background-color: #226f54;
+  color: #efdebe;
+  padding: 10px 25px;
+  border: #87c38f;
+  cursor: pointer;
+  font-family: "Adigiana Toybox";
+  font-size: 1.2em;
+  text-transform: capitalize;
 }
 
 /*# sourceMappingURL=style.css.map */

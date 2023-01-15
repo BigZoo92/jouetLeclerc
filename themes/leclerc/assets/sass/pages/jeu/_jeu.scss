@@ -4,7 +4,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 30px;
     .cd-lvl{
         width: 80%;
         display: flex;
@@ -31,5 +30,42 @@
         opacity: 0;
         transition: opacity 0.3s ease;
         display: none;
+    }
+}
+
+.modal_jeu{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.584);
+    display: none;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    form{
+        display: flex;
+    justify-content: center;
+    align-items: center;
+        padding: 5vw 15vw;
+        aspect-ratio: 3/1;
+        background-color: $noel-beige;
+        border-radius: 10px;
+        
+        input{
+            border-radius: 20px;
+                background-color: $noel-vert;
+                color: $noel-beige;
+                padding: 10px 25px;
+                border: $noel-vert-pastel;
+                cursor: pointer;
+                font-family: $font-title;
+                font-size: 1.2em;
+                text-transform: capitalize;
+        }
     }
 }

@@ -10,7 +10,7 @@ function montheme_register_js()
     if(is_page(15)){ //15
         wp_enqueue_script('recette', get_stylesheet_directory_uri() . '/assets/js/recette.js');
     }
-    if(is_page(49)){ //61
+    if(is_page(61)){ //49
         wp_enqueue_script('phaser', get_stylesheet_directory_uri() . '/assets/js/phaser.min.js');
         wp_enqueue_script('jeu', get_stylesheet_directory_uri() . '/assets/js/jeu.js');
         $translation_array = array( 'templateUrl' => get_stylesheet_directory_uri() );

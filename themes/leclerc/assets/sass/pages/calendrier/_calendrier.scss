@@ -1,14 +1,25 @@
 .wrap_sapin_calendrier{
     width: 100%;
-    height: calc(100vh - 200px);
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 100px;
-    margin-top: 250px;
+    padding-top: 250px;
+    iframe {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: none;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
     h1{
         font-size: 4em;
+        color: $noel-rouge;
+        -webkit-text-stroke: 1px $noel-beige;
     }
     .sapin_calendrier {  
         display: flex;
@@ -21,6 +32,9 @@
         @for $i from 1 through 24 {
             .c#{$i} {
                 position: relative;
+                filter: grayscale(1);
+                -webkit-filter: grayscale(1);
+                pointer-events: none;
                 .num{
                     position: absolute;
                     border-radius: 50%;
@@ -54,9 +68,6 @@
             position: relative;
             margin-inline: -11.75px;
             transition: all ease-in-out 1s;
-            &:nth-child(1){
-                filter: grayscale(1);
-            }
             &::before{
                 content: "";
                 position: absolute;
@@ -120,10 +131,60 @@
     }
 }
 
-.tonperetang{
-    background-color: $noel-beige;
-}
 
+.cd-jouets{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    .wrap_jouets{
+        background-color: $noel-beige;
+        padding: 5vw;
+        width: 60%;
+        aspect-ratio: 3/2;
+        text-align: left;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        div{
+            width: 45%;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: column;
+            gap: 3vw;
+            h3{
+                font-size: 2em;
+                text-transform: uppercase;
+                color: $noel-vert;
+                text-align: left;
+            }
+            p{
+                color: $noel-marron;
+                i{
+                    font-size: 1.2em;
+                    font-weight: bold;
+                    color: $noel-rouge;
+                }
+            }
+            img{
+                width: 100%;
+            }
+            button{
+                border-radius: 10px;
+                background-color: $noel-vert;
+                color: $noel-beige;
+                padding: 7px 15px;
+                border: $noel-vert-pastel;
+                cursor: pointer;
+            }
+        }
+    }
+}
 
       
 

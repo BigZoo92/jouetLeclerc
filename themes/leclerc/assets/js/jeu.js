@@ -1,10 +1,19 @@
 const templateUrl = object_name.templateUrl;
-
+const today = new Date()
+const day = today.getDate()
 const lvl = document.querySelectorAll('.lvl')
+let index = 0;
+
  
 lvl.forEach((e) => {
+    index += 1
+    if (index >= day+1){
+        e.style.webkitFilter = 'grayscale(1)'
+        e.style.pointerEvents = 'none'
+    }
   e.addEventListener('click', () => {
     const lvlData = e.getAttribute('data-lvl')
+    lvlCredit = parseInt(e.childNodes[3].innerHTML.split(" ")[1]);
     const urlMap = templateUrl+'/assets/jeu_assets/map/map'+lvlData+'.json'
     document.querySelector('.cd-lvl').style.opacity = 0;
     document.getElementById('container_jeu').style.opacity = '1'
@@ -80,7 +89,9 @@ function game(urlMap) {
                 lutin.x + lutin.width > palette.x &&
                 lutin.y < palette.y + palette.height &&
                 lutin.height + lutin.y > palette.y) {
-                    alert('gagné')
+                    this.scene.stop()  
+                    endGame()                     
+                
              }
             if (lutin.body.blocked.right){
                 if (lutin.body.blocked.right){
@@ -129,3 +140,9 @@ function game(urlMap) {
 
 
 
+function endGame() {
+    document.getElementById('container_jeu').style.display = "none"
+    document.querySelector('.modal_jeu').style.display = 'flex';
+    document.querySelector('.modal_jeu').style.opacity = '1';
+    document.getElementById('credit').value = lvlCredit;
+}

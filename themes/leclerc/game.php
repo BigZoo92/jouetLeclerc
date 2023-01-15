@@ -106,9 +106,30 @@ get_header()
             </div>
         </div>
         <div id="container_jeu"></div>
+        <div class="modal_jeu">
+            <form action="#" method="post">
+            <input type="hidden" name="credit" value="0" id="credit">
+            <input type="submit" value="débloquer votre case du calendrier" name="envoyer">
+        </form>
+        </div>
     </section>
     
 </main>
 
 
 <?php get_footer() ?>
+<?php
+        $result = $wpdb->get_results( "SELECT user_value, user_id FROM `wp_prflxtrflds_user_field_data`");
+        $credit = $result[0]->user_value;
+        $user_id = $result[0]->user_id;
+        if (isset($_POST['envoyer'])) {
+            $credit_lvl = $_POST['credit'];
+            if ($credit < $credit_lvl) {
+                $table = 'wp_prflxtrflds_user_field_data';
+                $data = array('user_value'=>$credit_lvl);
+                $where = array('user_id'=>$user_id);
+                $wpdb->update( $table, $data, $where);
+            }
+            echo '<script>', 'window.location.href = "http://localhost:10004/calendrier/"', '</script>';
+        }
+    ?>
