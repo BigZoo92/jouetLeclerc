@@ -65,7 +65,8 @@
             opacity: 0;
             position: absolute;
             background: $noel-vert;
-            left: 44.5vw;
+            left: 52.5vw;
+            transform: translate(-50%, -50%);
             bottom: 62vh;
             padding: 10px;
             color: $noel-beige;
@@ -87,7 +88,7 @@
     .modal {
         display: none;
         position: fixed;
-        padding-top: 100px;
+        padding-top: 200px;
         left: 0;
         top: 0;
         width: 100%;
@@ -95,6 +96,251 @@
         background-color: rgba(0, 0, 0, 0.4);
         overflow: hidden;
         z-index: 99;
+        p {
+            font-size: 1.125rem;
+            font-weight: bold;
+        }
+
+        // Box Modal Jeu
+
+        .box_modal_accueil {
+            position: relative;
+            z-index: 3;
+            // background: $noel-rouge;
+            background-image: url("../../assets/images/png/BackgroundAccueil.png");
+            background-size: cover;
+            margin: auto;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            flex-direction: column;
+            padding: 0;
+            border-radius: 20px;
+            width: 55vw;
+            height: 30vw;
+            filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.6));
+            -webkit-animation-name: animatetop;
+            -webkit-animation-duration: 0.4s;
+            animation-name: animatetop;
+            animation-duration: 0.4s;
+
+            #lutin_modale_jeu {
+                width: 10vw;
+                z-index: 3;
+                left: -5vw;
+                bottom: -5vw;
+                position: absolute;
+                filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.6));
+                transform: rotateY(180deg);
+            }
+
+            #deco_accueil {
+                width: 75vw;
+                z-index: 2;
+                left: -10vw;
+                top: -8vw;
+                position: absolute;
+                filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.6));
+            }
+
+            #sucre_dorge_accueil {
+                width: 1.5vw;
+                z-index: 1;
+                right: 7.5vw;
+                bottom: 6.5vw;
+                position: absolute;
+            }
+
+            #element_cone2 {
+                width: 2vw;
+                z-index: 1;
+                right: 7vw;
+                bottom: 2.5vw;
+                position: absolute;
+                transform: rotate(15deg);
+            }
+
+            #element_cone3 {
+                width: 2vw;
+                z-index: 1;
+                right: 3.5vw;
+                bottom: 0.5vw;
+                position: absolute;
+                transform: rotate(-60deg);
+            }
+
+            #element_cadeaux1 {
+                width: 1vw;
+                z-index: 1;
+                right: 5vw;
+                bottom: 5vw;
+                position: absolute;
+                transform: rotate(-15deg);
+            }
+
+            #element_cadeaux2 {
+                width: 1vw;
+                z-index: 1;
+                right: 10vw;
+                bottom: 5vw;
+                position: absolute;
+                transform: rotate(15deg);
+            }
+
+            #bouton_magie_accueil {
+                width: 5vw;
+                z-index: 3;
+                right: -3vw;
+                bottom: -2.5vw;
+                position: absolute;
+                transform: rotate(15deg);
+            }
+
+            #lutingif_accueil{
+                width: 9.5vw;
+                z-index: 1;
+                right: 7vw;
+                top: -10.5vw;
+                position: absolute;
+            }
+
+            #cadeauAccueil_1{
+                width: 7vw;
+                z-index: 2;
+                left: -6vw;
+                bottom: 0;
+                position: absolute;
+            }
+
+            #cadeauAccueil_2{
+                width: 9.5vw;
+                z-index: 1;
+                left: -7vw;
+                bottom: -3.5vw;
+                position: absolute;
+            }
+
+            #cadeauAccueil_3{
+                width: 7vw;
+                z-index: 2;
+                left: 10vw;
+                bottom: -7vw;
+                position: absolute;
+            }
+
+            #cadeauAccueil_4{
+                width: 5vw;
+                z-index: 1;
+                left: 7vw;
+                bottom: -4vw;
+                position: absolute;
+            }
+
+            #cadeauAccueil_5{
+                width: 5vw;
+                z-index: 2;
+                right: -6.5vw;
+                bottom: -6vw;
+                position: absolute;
+            }
+
+            #cadeauAccueil_6{
+                width: 7vw;
+                z-index: 1;
+                right: -9vw;
+                bottom: -5vw;
+                position: absolute;
+            }
+
+            .corps_modal {
+                height: auto;
+                display: flex;
+                justify-content: space-between;
+                flex-direction: column;
+                align-items: center;
+                border-radius: 5px;
+                h1 {
+                    font-size: clamp(0.5rem, 0.7619rem + 1.1905vw, 2rem);
+                    width: 50%;
+                    text-shadow: 0 0 10px $noel-beige;
+                    text-align: center;
+                    border-radius: 20px;
+                    color: $noel-beige;
+                    line-height: 1.5;
+                    z-index: 99;
+                    text-transform: uppercase;
+                    margin-block-start: 5vw;
+                    margin-block-end: 2vw;
+                }
+                h2 {
+                    font-size: clamp(0.5rem, 0.7619rem + 1.1905vw, 1.5rem);
+                    width: 100%;
+                    text-align: left;
+                    padding-block: 10px;
+                    border-radius: 20px;
+                    color: $noel-beige;
+                    margin-block-start: 2vw;
+                }
+                p {
+                    width: 100%;
+                    z-index: 3;
+                    text-align: left;
+                    line-height: 1.5;
+                    color: $noel-beige;
+                    font-family: $font-normal;
+                }
+            }
+            .divModalAccueil {
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                width: 100%;
+                .btnAccueilAfter {
+                    filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.6));
+                    display: block;
+                    color: $noel-beige;
+                    font-size: 1rem;
+                    font-family: $font-normal;
+                    background: $noel-rouge;
+                    border: 2px solid $noel-beige;
+                    text-shadow: #d4af37;
+                    position: absolute;
+                    text-align: center;
+                    cursor: pointer;
+                    right: -1vw;
+                    bottom: -25px;
+                    width: 10vw;
+                    height: 3vw;
+                    transition: all 0.3s;
+                    border-radius: 10px;
+                    z-index: 2;
+                    &:hover {
+                        background: $noel-vert;
+                        border: 2px solid $noel-vert;
+                    }
+                }
+                .btnAccueilRedir {
+                    filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.6));
+                    display: block;
+                    color: $noel-beige;
+                    font-weight: bold;
+                    font-size: 1rem;
+                    background: $noel-rouge;
+                    position: absolute;
+                    text-align: center;
+                    right: -1vw;
+                    bottom: -25px;
+                    padding: 20px 35px;
+                    transition: all 0.3s;
+                    border-radius: 10px;
+                    z-index: 1;
+                    &:hover {
+                        background: $noel-vert;
+                    }
+                }
+            }
+        }
+
         .box_modal_catalogue {
             position: relative;
             z-index: 3;
@@ -108,8 +354,8 @@
             flex-direction: column;
             padding: 0;
             border-radius: 20px;
-            width: 60vw;
-            height: 70vh;
+            width: 55vw;
+            height: 30vw;
             filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.6));
             -webkit-animation-name: animatetop;
             -webkit-animation-duration: 0.4s;
@@ -118,15 +364,25 @@
             #lutin_catalogue {
                 width: 14vw;
                 z-index: 3;
-                left: -90px;
+                left: -5vw;
                 bottom: 0;
                 position: absolute;
                 transform: rotateY(180deg);
             }
+
+            #lutin_siege_catalogue {
+                width: 20vw;
+                z-index: 2;
+                left: -7.5vw;
+                bottom: -2vw;
+                position: absolute;
+                transform: rotateY(45deg);
+            }
+
             #couronne_catalogue {
                 width: 15vw;
                 z-index: 2;
-                top: -70px;
+                top: -5vw;
                 position: absolute;
             }
 
@@ -156,6 +412,41 @@
                 transform: rotate(120deg);
             }
 
+            #boulerouge {
+                width: 1.5vw;
+                z-index: 2;
+                top: 1vw;
+                left: 5vw;
+                position: absolute;
+                transform: rotate(15deg);
+            }
+
+            #boulerouge2 {
+                width: 1.5vw;
+                z-index: 2;
+                top: 2vw;
+                right: 19vw;
+                position: absolute;
+                transform: rotate(15deg);
+            }
+
+            #bouleorange {
+                width: 1.5vw;
+                z-index: 2;
+                top: 1vw;
+                left: 15vw;
+                position: absolute;
+            }
+
+            #feuillevert {
+                width: 1.5vw;
+                z-index: 2;
+                top: 10vh;
+                right: 12vw;
+                position: absolute;
+                transform: rotate(120deg);
+            }
+
             .corps_modal {
                 height: auto;
                 display: flex;
@@ -165,43 +456,28 @@
                 border-radius: 5px;
                 h1 {
                     font-size: clamp(0.5rem, 0.7619rem + 1.1905vw, 2rem);
-                    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 1));
-                    width: 70%;
+                    width: 50%;
+                    text-shadow: 0 0 10px $noel-beige;
                     text-align: center;
                     border-radius: 20px;
                     color: $noel-beige;
+                    line-height: 1.5;
                     z-index: 99;
                     text-transform: uppercase;
+                    margin-block-end: 2vw;
                 }
                 h2 {
                     font-size: clamp(0.5rem, 0.7619rem + 1.1905vw, 1.5rem);
                     filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 1));
-                    width: 75%;
+                    width: 60%;
                     text-align: left;
                     padding-block: 10px;
                     border-radius: 20px;
                     color: $noel-beige;
                     z-index: 99;
                 }
-                .btnFermerCatalogue {
-                    color: $noel-beige;
-                    font-weight: bold;
-                    transition: all 0.3s;
-                    background: $noel-vert;
-                    filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.6));
-                    border-radius: 20px;
-                    padding: 10px;
-                    margin-inline: 40px;
-                    margin-block: 10px;
-                    z-index: 99;
-                    cursor: pointer;
-                    &:hover {
-                        color: $noel-rouge;
-                        text-decoration: none;
-                    }
-                }
                 p {
-                    width: 75%;
+                    width: 60%;
                     text-align: left;
                     line-height: 2;
                     color: $noel-beige;
@@ -220,37 +496,39 @@
                     color: $noel-beige;
                     font-size: 1rem;
                     font-family: $font-normal;
-                    background: $noel-marron;
-                    border: 1px solid $noel-marron;
+                    background: $noel-vert;
+                    border: 2px solid $noel-vert;
                     position: absolute;
                     text-align: center;
-                    right: 10vw;
+                    right: 8vw;
                     cursor: pointer;
-                    bottom: -15px;
+                    bottom: -25px;
+                    padding: 10px;
                     transition: all 0.3s;
-                    border-radius: 20px;
+                    border-radius: 10px;
                     z-index: 99;
                     &:hover {
-                        background: $noel-vert;
-                        border: 1px solid $noel-vert;
-                        color: $noel-beige;
+                        background: $noel-marron;
+                        border: 2px solid $noel-marron;
                     }
                 }
                 .btnCatalogueRedir {
                     filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.6));
                     display: block;
                     color: $noel-beige;
+                    font-weight: bold;
                     font-size: 1rem;
                     background: $noel-rouge;
                     position: absolute;
                     text-align: center;
-                    bottom: -15px;
-                    padding: 10px;
+                    right: -1vw;
+                    bottom: -25px;
+                    padding: 20px 35px;
                     transition: all 0.3s;
-                    border-radius: 20px 0 20px 20px;
-                    z-index: 99;
+                    border-radius: 10px;
+                    z-index: 1;
                     &:hover {
-                        background: $noel-vert;
+                        background: $noel-marron;
                     }
                 }
             }
@@ -259,39 +537,140 @@
         .box_modal_lettre {
             position: relative;
             z-index: 3;
-            background: url("../../assets/images/png/BackgroundLettreModal.png");
+            background: url("../../assets/images/png/BackgroundModaleLettre.png");
             background-size: cover;
             margin: auto;
-            outline: 10px dashed $noel-rouge;
-            outline-offset: -10px;
             display: flex;
-            justify-content: center;
+            justify-content: flex-start;
             align-items: center;
             flex-direction: column;
             padding: 0;
             border-radius: 20px;
-            width: 60vw;
-            height: 70vh;
+            width: 55vw;
+            height: 30vw;
             filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.6));
             -webkit-animation-name: animatetop;
             -webkit-animation-duration: 0.4s;
             animation-name: animatetop;
             animation-duration: 0.4s;
             #lutin_lettre {
-                width: 15vw;
+                width: 12vw;
                 z-index: 3;
-                left: -90px;
-                bottom: 0;
+                left: -6vw;
+                bottom: -2vw;
                 position: absolute;
                 transform: rotateY(180deg);
                 filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.6));
             }
 
+            #lutin_siege {
+                width: 12vw;
+                z-index: 2;
+                left: -6vw;
+                bottom: -2vw;
+                position: absolute;
+                filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.6));
+            }
+
             #lettre_timbre {
-                width: 22.5vw;
+                width: 20vw;
                 right: 1.5vw;
                 z-index: 2;
-                top: 1.5vh;
+                top: 1.5vw;
+                position: absolute;
+            }
+
+            #lettre_avion_1 {
+                width: 5vw;
+                right: 8vw;
+                z-index: 2;
+                bottom: -6vw;
+                position: absolute;
+            }
+
+            #lettre_avion_2 {
+                width: 5vw;
+                left: 40%;
+                z-index: 2;
+                top: -3vw;
+                position: absolute;
+            }
+
+            #lettre_avion_3 {
+                width: 3vw;
+                right: 30%;
+                z-index: 2;
+                top: -4vw;
+                position: absolute;
+                transform: rotateY(180deg);
+            }
+
+            #papier_seul_lettre {
+                width: 10vw;
+                z-index: 2;
+                left: 7vw;
+                bottom: -4.5vw;
+                position: absolute;
+            }
+
+
+            #sucre_dorge_lettre {
+                width: 1.5vw;
+                z-index: 1;
+                right: 7.5vw;
+                bottom: 6.5vw;
+                position: absolute;
+            }
+
+            #element_cone1 {
+                width: 2vw;
+                z-index: 1;
+                right: 9vw;
+                bottom: -0.5vw;
+                position: absolute;
+            }
+
+            #element_cone2 {
+                width: 2vw;
+                z-index: 1;
+                right: 7vw;
+                bottom: 2.5vw;
+                position: absolute;
+                transform: rotate(15deg);
+            }
+
+            #element_cone3 {
+                width: 2vw;
+                z-index: 1;
+                right: 3.5vw;
+                bottom: 0.5vw;
+                position: absolute;
+                transform: rotate(-60deg);
+            }
+
+            #element_cadeaux1 {
+                width: 1vw;
+                z-index: 1;
+                right: 5vw;
+                bottom: 5vw;
+                position: absolute;
+                transform: rotate(-15deg);
+            }
+
+            #element_cadeaux2 {
+                width: 1vw;
+                z-index: 1;
+                right: 10vw;
+                bottom: 5vw;
+                position: absolute;
+                transform: rotate(15deg);
+            }
+
+            #renne_modale_lettre {
+                width: 30vw;
+                z-index: -1;
+                right: -3.5vw;
+                bottom: -3.5vw;
                 position: absolute;
             }
 
@@ -304,29 +683,32 @@
                 border-radius: 5px;
                 h1 {
                     font-size: clamp(0.5rem, 0.7619rem + 1.1905vw, 2rem);
-                    width: 75%;
+                    width: 60%;
+                    text-shadow: 0 0 10px $noel-marron;
                     text-align: center;
                     border-radius: 20px;
                     color: $noel-marron;
+                    line-height: 1.5;
                     z-index: 99;
                     text-transform: uppercase;
+                    margin-block-start: 5vw;
+                    margin-block-end: 2vw;
                 }
                 h2 {
                     font-size: clamp(0.5rem, 0.7619rem + 1.1905vw, 1.5rem);
-                    width: 75%;
+                    width: 100%;
                     text-align: left;
-                    padding-block: 10px;
+                    padding-block: 2vw;
                     border-radius: 20px;
                     color: $noel-marron;
                     z-index: 99;
                 }
                 p {
-                    width: 75%;
+                    width: 100%;
                     z-index: 3;
                     text-align: left;
                     line-height: 1.5;
                     color: $noel-marron;
-                    font-size: 1rem;
                     font-family: $font-normal;
                 }
             }
@@ -341,37 +723,39 @@
                     color: $noel-beige;
                     font-size: 1rem;
                     font-family: $font-normal;
-                    background: $noel-marron;
-                    border: 1px solid $noel-marron;
+                    background: $noel-vert;
+                    border: 2px solid $noel-vert;
                     position: absolute;
                     text-align: center;
-                    right: 10vw;
+                    right: 8vw;
                     cursor: pointer;
-                    bottom: -15px;
+                    bottom: -25px;
+                    padding: 10px;
                     transition: all 0.3s;
-                    border-radius: 20px;
+                    border-radius: 10px;
                     z-index: 99;
                     &:hover {
-                        background: $noel-vert;
-                        border: 1px solid $noel-vert;
-                        color: $noel-beige;
+                        background: $noel-marron;
+                        border: 2px solid $noel-marron;
                     }
                 }
                 .btnLettreRedir {
                     filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.6));
                     display: block;
                     color: $noel-beige;
+                    font-weight: bold;
                     font-size: 1rem;
                     background: $noel-rouge;
                     position: absolute;
                     text-align: center;
-                    bottom: -15px;
-                    padding: 10px;
+                    right: -1vw;
+                    bottom: -25px;
+                    padding: 20px 35px;
                     transition: all 0.3s;
-                    border-radius: 20px 0 20px 20px;
-                    z-index: 99;
+                    border-radius: 10px;
+                    z-index: 1;
                     &:hover {
-                        background: $noel-vert;
+                        background: $noel-marron;
                     }
                 }
             }
@@ -382,35 +766,96 @@
         .box_modal_recette {
             position: relative;
             z-index: 3;
-            background: $noel-beige;
+            background-image: url("../../assets/images/png/BackgroundRecetteModal.png");
+            background-size: cover;
             margin: auto;
             display: flex;
-            justify-content: center;
+            justify-content: flex-start;
             align-items: center;
             flex-direction: column;
             padding: 0;
             border-radius: 20px;
-            width: 60vw;
-            height: 70vh;
+            width: 55vw;
+            height: 30vw;
             filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.6));
             -webkit-animation-name: animatetop;
             -webkit-animation-duration: 0.4s;
             animation-name: animatetop;
             animation-duration: 0.4s;
             #lutin_recette {
-                width: 9.5vw;
+                width: 11vw;
                 z-index: 3;
-                left: -100px;
-                bottom: 0;
+                left: -5vw;
+                bottom: -5vw;
                 position: absolute;
                 transform: rotateY(180deg);
             }
             #modal_chocolat {
-                width: 83vw;
+                width: 65vw;
                 z-index: 2;
                 left: -50px;
-                top: -200px;
+                top: -12vw;
                 position: absolute;
+            }
+
+            #lutingif {
+                width: 9.5vw;
+                z-index: 1;
+                left: 50%;
+                top: -10.5vw;
+                position: absolute;
+            }
+
+            #sucre_dorge_recette {
+                width: 1.5vw;
+                z-index: 1;
+                right: 7.5vw;
+                bottom: 6.5vw;
+                position: absolute;
+            }
+
+            #element_cone1 {
+                width: 2vw;
+                z-index: 1;
+                right: 9vw;
+                bottom: -0.5vw;
+                position: absolute;
+            }
+
+            #element_cone2 {
+                width: 2vw;
+                z-index: 1;
+                right: 7vw;
+                bottom: 2.5vw;
+                position: absolute;
+                transform: rotate(15deg);
+            }
+
+            #element_cone3 {
+                width: 2vw;
+                z-index: 1;
+                right: 3.5vw;
+                bottom: 0.5vw;
+                position: absolute;
+                transform: rotate(-60deg);
+            }
+
+            #element_cadeaux1 {
+                width: 1vw;
+                z-index: 1;
+                right: 5vw;
+                bottom: 5vw;
+                position: absolute;
+                transform: rotate(-15deg);
+            }
+
+            #element_cadeaux2 {
+                width: 1vw;
+                z-index: 1;
+                right: 10vw;
+                bottom: 5vw;
+                position: absolute;
+                transform: rotate(15deg);
             }
 
             .corps_modal {
@@ -422,29 +867,31 @@
                 border-radius: 5px;
                 h1 {
                     font-size: clamp(0.5rem, 0.7619rem + 1.1905vw, 2rem);
-                    width: 75%;
+                    width: 60%;
+                    text-shadow: 0 0 10px $noel-beige;
                     text-align: center;
                     border-radius: 20px;
                     color: $noel-marron;
                     z-index: 99;
                     text-transform: uppercase;
+                    margin-block-start: 2vw;
+                    margin-block-end: 2vw;
                 }
                 h2 {
                     font-size: clamp(0.5rem, 0.7619rem + 1.1905vw, 1.5rem);
-                    width: 75%;
+                    width: 80%;
                     text-align: left;
                     padding-block: 10px;
                     border-radius: 20px;
                     color: $noel-marron;
-                    z-index: 99;
+                    margin-block-start: 6vw;
                 }
                 p {
-                    width: 75%;
+                    width: 80%;
                     z-index: 3;
                     text-align: left;
-                    line-height: 1.5;
+                    line-height: 2;
                     color: $noel-marron;
-                    font-size: 1rem;
                     font-family: $font-normal;
                 }
             }
@@ -459,37 +906,39 @@
                     color: $noel-beige;
                     font-size: 1rem;
                     font-family: $font-normal;
-                    background: $noel-marron;
-                    border: 1px solid $noel-marron;
+                    background: $noel-vert;
+                    border: 2px solid $noel-vert;
                     position: absolute;
                     text-align: center;
-                    right: 10vw;
+                    right: 8vw;
                     cursor: pointer;
-                    bottom: -15px;
+                    bottom: -25px;
+                    padding: 10px;
                     transition: all 0.3s;
-                    border-radius: 20px;
+                    border-radius: 10px;
                     z-index: 99;
                     &:hover {
-                        background: $noel-vert;
-                        border: 1px solid $noel-vert;
-                        color: $noel-beige;
+                        background: $noel-marron;
+                        border: 2px solid $noel-marron;
                     }
                 }
                 .btnRecetteRedir {
                     filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.6));
                     display: block;
                     color: $noel-beige;
+                    font-weight: bold;
                     font-size: 1rem;
                     background: $noel-rouge;
                     position: absolute;
                     text-align: center;
-                    bottom: -15px;
-                    padding: 10px;
+                    right: -1vw;
+                    bottom: -25px;
+                    padding: 20px 35px;
                     transition: all 0.3s;
-                    border-radius: 20px 0 20px 20px;
-                    z-index: 99;
+                    border-radius: 10px;
+                    z-index: 1;
                     &:hover {
-                        background: $noel-vert;
+                        background: $noel-marron;
                     }
                 }
             }
@@ -514,10 +963,6 @@
         bottom: 15vw;
         position: absolute;
         transition: all 0.3s;
-        cursor: pointer;
-        &:hover {
-            transform: scale(1.05);
-        }
     }
 
     .info_lutin {
@@ -526,7 +971,7 @@
             position: absolute;
             background: $noel-vert;
             left: 26vw;
-            bottom: 35vw;
+            bottom: 33vw;
             padding: 10px;
             color: $noel-beige;
             z-index: 5;
@@ -544,40 +989,154 @@
         }
     }
 
-    // Box Modal Recette
+    // Box Modal Série
 
     .box_modal_serie {
         position: relative;
         z-index: 3;
-        background: $noel-beige;
+        background-image: url("../../assets/images/png/BackgroundSerieModal.png");
+        background-size: cover;
         margin: auto;
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
         flex-direction: column;
         padding: 0;
         border-radius: 20px;
-        width: 60vw;
-        height: 70vh;
+        width: 55vw;
+        height: 30vw;
         filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.6));
         -webkit-animation-name: animatetop;
         -webkit-animation-duration: 0.4s;
         animation-name: animatetop;
         animation-duration: 0.4s;
-        #lutin_recette {
-            width: 9.5vw;
+
+        #lutin_serie_modale {
+            width: 9vw;
             z-index: 3;
-            left: -100px;
-            bottom: 0;
+            left: -5vw;
+            bottom: -5vw;
+            position: absolute;
+        }
+
+        #background_sapin_serie {
+            width: 15vw;
+            z-index: 0;
+            left: 0vw;
+            top: -8vw;
+            position: absolute;
+            transform: translateZ(-1px);
+        }
+
+        #portrait_serie {
+            width: 13vw;
+            z-index: 1;
+            right: -3vw;
+            top: -2vw;
+            position: absolute;
+            transform: rotate(15deg);
+        }
+
+        #pere_fouettard {
+            width: 12vw;
+            z-index: 2;
+            right: -12vw;
+            top: 0;
             position: absolute;
             transform: rotateY(180deg);
         }
-        #modal_chocolat {
-            width: 83vw;
+
+        #chaussette_serie1 {
+            width: 5vw;
             z-index: 2;
-            left: -50px;
-            top: -200px;
+            left: 5%;
+            bottom: -5vw;
             position: absolute;
+        }
+
+        #chaussette_serie2 {
+            width: 5vw;
+            z-index: 2;
+            left: 15%;
+            bottom: -5vw;
+            position: absolute;
+        }
+
+        #chaussette_serie3 {
+            width: 5vw;
+            z-index: 2;
+            left: 25%;
+            bottom: -5vw;
+            position: absolute;
+        }
+
+        #cadeau_serie {
+            width: 5vw;
+            z-index: 3;
+            right: -2vw;
+            bottom: 0.5vw;
+            position: absolute;
+        }
+
+        #sucre_dorge_serie {
+            width: 1.5vw;
+            z-index: 1;
+            right: 7.5vw;
+            bottom: 6.5vw;
+            position: absolute;
+        }
+
+        #element_cone1 {
+            width: 2vw;
+            z-index: 1;
+            right: 9vw;
+            bottom: -0.5vw;
+            position: absolute;
+        }
+
+        #element_cone2 {
+            width: 2vw;
+            z-index: 1;
+            right: 7vw;
+            bottom: 2.5vw;
+            position: absolute;
+            transform: rotate(15deg);
+        }
+
+        #element_cone3 {
+            width: 2vw;
+            z-index: 1;
+            right: 3.5vw;
+            bottom: 0.5vw;
+            position: absolute;
+            transform: rotate(-60deg);
+        }
+
+        #element_cadeaux1 {
+            width: 1vw;
+            z-index: 1;
+            right: 5vw;
+            bottom: 5vw;
+            position: absolute;
+            transform: rotate(-15deg);
+        }
+
+        #element_cadeaux2 {
+            width: 1vw;
+            z-index: 1;
+            right: 10vw;
+            bottom: 5vw;
+            position: absolute;
+            transform: rotate(15deg);
+        }
+
+        #element_neige {
+            width: 10vw;
+            z-index: 1;
+            right: -2vw;
+            bottom: -5vw;
+            position: absolute;
+            transform: rotate(145deg);
         }
 
         .corps_modal {
@@ -589,29 +1148,31 @@
             border-radius: 5px;
             h1 {
                 font-size: clamp(0.5rem, 0.7619rem + 1.1905vw, 2rem);
-                width: 75%;
+                width: 60%;
+                text-shadow: 0 0 10px $noel-beige;
                 text-align: center;
                 border-radius: 20px;
                 color: $noel-marron;
                 z-index: 99;
                 text-transform: uppercase;
+                margin-block-start: 2vw;
+                margin-block-end: 2vw;
             }
             h2 {
                 font-size: clamp(0.5rem, 0.7619rem + 1.1905vw, 1.5rem);
-                width: 75%;
+                width: 100%;
                 text-align: left;
                 padding-block: 10px;
                 border-radius: 20px;
                 color: $noel-marron;
-                z-index: 99;
+                margin-block-start: 6vw;
             }
             p {
-                width: 75%;
+                width: 100%;
                 z-index: 3;
                 text-align: left;
                 line-height: 1.5;
                 color: $noel-marron;
-                font-size: 1rem;
                 font-family: $font-normal;
             }
         }
@@ -626,37 +1187,39 @@
                 color: $noel-beige;
                 font-size: 1rem;
                 font-family: $font-normal;
-                background: $noel-marron;
-                border: 1px solid $noel-marron;
+                background: $noel-vert;
+                border: 2px solid $noel-vert;
                 position: absolute;
                 text-align: center;
-                right: 10vw;
+                right: 8vw;
                 cursor: pointer;
-                bottom: -15px;
+                bottom: -25px;
+                padding: 10px;
                 transition: all 0.3s;
-                border-radius: 20px;
+                border-radius: 10px;
                 z-index: 99;
                 &:hover {
-                    background: $noel-vert;
-                    border: 1px solid $noel-vert;
-                    color: $noel-beige;
+                    background: $noel-marron;
+                    border: 2px solid $noel-marron;
                 }
             }
             .btnSerieRedir {
                 filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.6));
                 display: block;
                 color: $noel-beige;
+                font-weight: bold;
                 font-size: 1rem;
                 background: $noel-rouge;
                 position: absolute;
                 text-align: center;
-                bottom: -15px;
-                padding: 10px;
+                right: -1vw;
+                bottom: -25px;
+                padding: 20px 35px;
                 transition: all 0.3s;
-                border-radius: 20px 0 20px 20px;
-                z-index: 99;
+                border-radius: 10px;
+                z-index: 1;
                 &:hover {
-                    background: $noel-vert;
+                    background: $noel-marron;
                 }
             }
         }
@@ -679,15 +1242,14 @@
             opacity: 0;
             position: absolute;
             background: $noel-vert;
-            right: 7vw;
-            bottom: 15vh;
+            right: 25vw;
+            bottom: 33vw;
             padding: 10px;
             color: $noel-beige;
             z-index: 5;
             border-radius: 10px;
             font-size: 1rem;
             transition: all 0.5s;
-            transform: rotate(-11deg);
             i {
                 padding-inline: 5px;
             }
@@ -699,13 +1261,297 @@
         }
     }
 
-    #bonhomme {
+    #bonhomme_accueil {
         width: 3vw;
         right: 37vw;
         bottom: 40vh;
         position: absolute;
         transition: all 0.3s;
         transform: rotateY(180deg);
+    }
+
+    #maison {
+        width: 40vw;
+        right: -3.5vw;
+        bottom: 9vw;
+        position: absolute;
+        transition: all 0.3s;
+        cursor: pointer;
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+
+    .info_jeu {
+        span {
+            opacity: 0;
+            position: absolute;
+            background: $noel-vert;
+            right: 3.5vw;
+            bottom: 15vh;
+            padding: 10px;
+            color: $noel-beige;
+            z-index: 5;
+            border-radius: 10px;
+            font-size: 1rem;
+            transition: all 0.5s;
+            i {
+                padding-inline: 5px;
+            }
+        }
+        &:hover {
+            span {
+                opacity: 1;
+            }
+        }
+    }
+
+    #jeu {
+        width: 25vw;
+        right: 0;
+        bottom: 0;
+        position: absolute;
+        transition: all 0.3s;
+        cursor: pointer;
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+
+    // Box Modal Jeu
+
+    .box_modal_jeu {
+        position: relative;
+        z-index: 3;
+        background-image: url("../../assets/images/png/BackgroundJeuModal.png");
+        background-size: cover;
+        margin: auto;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+        padding: 0;
+        border-radius: 20px;
+        width: 55vw;
+        height: 30vw;
+        filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.6));
+        -webkit-animation-name: animatetop;
+        -webkit-animation-duration: 0.4s;
+        animation-name: animatetop;
+        animation-duration: 0.4s;
+
+        #lutin_modale_jeu {
+            width: 22vw;
+            z-index: 3;
+            left: -15vw;
+            bottom: 0;
+            position: absolute;
+            filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.6));
+        }
+
+        #element_neige {
+            width: 10vw;
+            z-index: 1;
+            right: -2vw;
+            bottom: -5vw;
+            position: absolute;
+            transform: rotate(145deg);
+        }
+
+        #flocon_modale_jeu1 {
+            width: 20vw;
+            z-index: 2;
+            left: -24vw;
+            bottom: -9.5vw;
+            position: absolute;
+        }
+
+        #flocon_modale_jeu2 {
+            width: 10vw;
+            z-index: 2;
+            left: -4vw;
+            top: -4vw;
+            position: absolute;
+        }
+
+        #flocon_modale_jeu3 {
+            width: 25vw;
+            z-index: 2;
+            right: -10vw;
+            top: 3vw;
+            position: absolute;
+        }
+
+        #sucre_dorge_jeu {
+            width: 1.5vw;
+            z-index: 1;
+            right: 7.5vw;
+            bottom: 6.5vw;
+            position: absolute;
+        }
+
+        #element_cone1 {
+            width: 2vw;
+            z-index: 1;
+            right: 9vw;
+            bottom: -0.5vw;
+            position: absolute;
+        }
+
+        #element_cone2 {
+            width: 2vw;
+            z-index: 1;
+            right: 7vw;
+            bottom: 2.5vw;
+            position: absolute;
+            transform: rotate(15deg);
+        }
+
+        #element_cone3 {
+            width: 2vw;
+            z-index: 1;
+            right: 3.5vw;
+            bottom: 0.5vw;
+            position: absolute;
+            transform: rotate(-60deg);
+        }
+
+        #element_cadeaux1 {
+            width: 1vw;
+            z-index: 1;
+            right: 5vw;
+            bottom: 5vw;
+            position: absolute;
+            transform: rotate(-15deg);
+        }
+
+        #element_cadeaux2 {
+            width: 1vw;
+            z-index: 1;
+            right: 10vw;
+            bottom: 5vw;
+            position: absolute;
+            transform: rotate(15deg);
+        }
+
+        #element_neige {
+            width: 10vw;
+            z-index: 1;
+            right: -2vw;
+            bottom: -5vw;
+            position: absolute;
+            transform: rotate(145deg);
+        }
+
+        #renne_modale_jeu {
+            width: 10vw;
+            z-index: 2;
+            left: 11vw;
+            top: -8vw;
+            position: absolute;
+        }
+
+        #bonhomme_modale_jeu {
+            width: 5vw;
+            z-index: 1;
+            right: 4vw;
+            top: -4vw;
+            position: absolute;
+            transform: rotateY(180deg);
+        }
+
+        #glace_modale_jeu {
+            width: 17.5vw;
+            z-index: 1;
+            right: 35%;
+            top: -3vw;
+            position: absolute;
+        }
+
+        .corps_modal {
+            height: auto;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 5px;
+            h1 {
+                font-size: clamp(0.5rem, 0.7619rem + 1.1905vw, 2rem);
+                width: 60%;
+                text-shadow: 0 0 10px $noel-beige;
+                text-align: center;
+                border-radius: 20px;
+                color: $background;
+                z-index: 99;
+                text-transform: uppercase;
+                margin-block-start: 2vw;
+                margin-block-end: 2vw;
+            }
+            h2 {
+                font-size: clamp(0.5rem, 0.7619rem + 1.1905vw, 1.5rem);
+                width: 80%;
+                text-align: left;
+                padding-block: 10px;
+                border-radius: 20px;
+                color: $background;
+                margin-block-start: 6vw;
+            }
+            p {
+                width: 80%;
+                z-index: 3;
+                text-align: left;
+                line-height: 2;
+                color: $background;
+                font-family: $font-normal;
+            }
+        }
+        .divModalJeu {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            width: 100%;
+            .btnJeuAfter {
+                filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.6));
+                display: block;
+                color: $noel-beige;
+                font-size: 1rem;
+                font-family: $font-normal;
+                background: $noel-marron;
+                border: 2px solid $noel-marron;
+                position: absolute;
+                text-align: center;
+                right: 8vw;
+                cursor: pointer;
+                bottom: -25px;
+                padding: 10px;
+                transition: all 0.3s;
+                border-radius: 10px;
+                z-index: 99;
+                &:hover {
+                    background: $leclerc-bleu;
+                    border: 2px solid $leclerc-bleu;
+                }
+            }
+            .btnJeuRedir {
+                filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.6));
+                display: block;
+                color: $noel-beige;
+                font-weight: bold;
+                font-size: 1rem;
+                background: $leclerc-bleu;
+                position: absolute;
+                text-align: center;
+                right: -1vw;
+                bottom: -25px;
+                padding: 20px 35px;
+                transition: all 0.3s;
+                border-radius: 10px;
+                z-index: 1;
+                &:hover {
+                    background: $noel-marron;
+                }
+            }
+        }
     }
 }
 

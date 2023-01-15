@@ -66,8 +66,8 @@
         <div class="modal_container">
             <nav>
                 <ul>
-                    <li><a href="ou-nous-trouver"><img id="pdv" src="<?= get_template_directory_uri() ?>./assets/images/svg/Point-de-Vente.svg" alt="Point de vente" title="Point de vente Leclerc"></a></li>
-                    <li><a href="http://jouets-leclerc.local/wp-login.php"><img id="connexion" src="<?= get_template_directory_uri() ?>./assets/images/svg/Connexion.svg" alt="Connexion"></a></li>
+                    <li><a href="https://www.au-magasin.fr/enseigne/7-eleclerc" target="_blank"><img id="pdv" src="<?= get_template_directory_uri() ?>./assets/images/svg/Point-de-Vente.svg" alt="Point de vente" title="Point de vente Leclerc"></a></li>
+                    <li><a href="wp-login.php"><img id="connexion" src="<?= get_template_directory_uri() ?>./assets/images/svg/Connexion.svg" alt="Connexion"></a></li>
                 </ul>
             </nav>
 
