@@ -3,23 +3,22 @@
   scroll-behavior: smooth;
 }
 
-body{
+body {
   width: 100%;
   height: 100vh;
   background-color: rgb(140, 209, 243);
 }
 
-
-#bg_hero{
+#bg_hero {
   background-image: url("../../assets/images/png/bg2.png");
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-#bg_recette{
+#bg_recette {
   background-image: url("../../assets/images/jpg/pattern.jpg");
-  background-repeat: repeat;
-  background-size: 50vw;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 a {
@@ -35,7 +34,6 @@ h1 {
   text-align: center;
   padding: 20px;
 }
-
 h3 {
   text-align: center;
 }
@@ -48,6 +46,3 @@ h5 {
 h6 {
   text-align: center;
 }
-
-
-

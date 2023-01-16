@@ -21,6 +21,11 @@ function montheme_register_js()
         wp_enqueue_script('calendrier', get_stylesheet_directory_uri() . '/assets/js/calendrier.js');
         
     }
+
+    if(is_page(63)){
+        wp_enqueue_script('compteur', get_stylesheet_directory_uri() . '/assets/js/compteur.js');
+        
+    }
 }
 
 add_action('wp_footer', 'montheme_register_js');

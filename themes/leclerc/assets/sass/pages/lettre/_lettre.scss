@@ -1,0 +1,48 @@
+.lettre {
+    position: absolute;
+    height: calc(100vh - 125px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin-block-start: 20vh;
+    .form{
+        background: $noel-beige;
+        width: 50vw;
+        padding: 20px;
+        border-radius: 10px;
+        position: relative;
+        h1{
+            text-transform: uppercase;
+            color: $noel-marron;
+            width: 100%;
+            text-align: left;
+            padding-inline: 0;
+        }
+
+        #lettre_timbre {
+            width: 5vw;
+            right: 1.5vw;
+            top: 1.5vw;
+            position: absolute;
+        }
+        
+        input[type="text"], #wpforms-67-field_2{
+            border-radius: 10px !important;
+            padding-inline: 10px;
+        }
+
+        button[type="submit"]{
+            background: $noel-marron !important;
+            border-radius: 10px;
+            color: $noel-beige !important;
+            font-family: $font-normal;
+            width: 100%;
+            transition: all 0.3s;
+            &:hover{
+                background: $noel-vert !important;
+            }
+        }
+    }
+}

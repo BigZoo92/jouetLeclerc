@@ -155,7 +155,7 @@
                 </div>
                 <div class="divModalLettre">
                     <button class="btnLettreAfter">Plus tard</button>
-                    <a href="formulaire" class="btnLettreRedir">Allons-y !</a>
+                    <a href="lettre" class="btnLettreRedir">Allons-y !</a>
                 </div>
             </div>
         </div>
@@ -331,6 +331,7 @@
 
         <div class="info_jeu">
             <img id="jeu" src="<?= get_template_directory_uri() ?>/assets/images/png/Home_Grotte.png" alt="Grotte Jeu">
+            <img id="lutintin_grotte" src="<?= get_template_directory_uri() ?>/assets/images/png/Lutintin_Grotte.png" alt="Lutintin Grotte">
             <span>Accéder au Royaume des Glaces <i class="bi bi-joystick"></i></span>
         </div>
 

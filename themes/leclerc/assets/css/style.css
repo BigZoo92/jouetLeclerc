@@ -277,8 +277,8 @@ body {
 
 #bg_recette {
   background-image: url("../../assets/images/jpg/pattern.jpg");
-  background-repeat: repeat;
-  background-size: 50vw;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 a {
@@ -1741,6 +1741,13 @@ header .modal_container nav ul li img {
 .hero #jeu:hover {
   transform: scale(1.05);
 }
+.hero #lutintin_grotte {
+  width: 3vw;
+  right: 15vw;
+  bottom: 3vw;
+  position: absolute;
+  transition: all 0.3s;
+}
 .hero .box_modal_jeu {
   position: relative;
   z-index: 3;
@@ -2054,33 +2061,33 @@ header .modal_container nav ul li img {
 }
 .cd_cometes .comets i:nth-of-type(1) {
   width: 5px;
-  left: 59vw;
-  height: 8px;
+  left: 65vw;
+  height: 3px;
 }
 .cd_cometes .comets i:nth-of-type(2) {
   width: 5px;
-  left: 23vw;
-  height: 22px;
+  left: 54vw;
+  height: 4px;
 }
 .cd_cometes .comets i:nth-of-type(3) {
   width: 5px;
-  left: 39vw;
-  height: 52px;
+  left: 56vw;
+  height: 38px;
 }
 .cd_cometes .comets i:nth-of-type(4) {
   width: 5px;
-  left: 36vw;
-  height: 48px;
+  left: 5vw;
+  height: 37px;
 }
 .cd_cometes .comets i:nth-of-type(5) {
   width: 5px;
-  left: 51vw;
-  height: 69px;
+  left: 25vw;
+  height: 75px;
 }
 .cd_cometes .comets i:nth-of-type(6) {
   width: 5px;
-  left: 10vw;
-  height: 79px;
+  left: 30vw;
+  height: 26px;
 }
 .cd_cometes .sun {
   width: 25vh;
@@ -2374,132 +2381,50 @@ header .modal_container nav ul li img {
     opacity: 1;
   }
 }
-#bg_formulaire {
-  overflow: hidden;
-}
-#bg_formulaire .formulaire {
+.lettre {
+  position: absolute;
+  height: calc(100vh - 125px);
   display: flex;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
   width: 100%;
-  margin-top: 20vh;
-  height: 100vh;
+  margin-block-start: 20vh;
 }
-#bg_formulaire .formulaire form {
-  width: 60vw;
-  padding: 20px;
-  height: calc(90vh - 100px);
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  position: relative;
-  border: 5px solid;
-  border-style: dotted;
-  border-color: #226f54;
+.lettre .form {
   background: #efdebe;
-  flex-direction: column;
+  width: 50vw;
+  padding: 20px;
   border-radius: 10px;
-}
-#bg_formulaire .formulaire form small {
-  color: #bf0603;
-  font-family: "Adigiana Toybox";
-  font-size: 0.8rem;
-}
-#bg_formulaire .formulaire form #houx {
-  width: 10vw;
-  right: -60px;
-  top: -60px;
-  position: absolute;
-  transition: all 0.3s;
-  cursor: pointer;
-  transform: rotate(90deg);
-}
-#bg_formulaire .formulaire form input[type=submit] {
-  background: #bf0603;
-  width: fit-content;
-  border: none;
-  font-family: "Adigiana Toybox";
-  color: #efdebe;
-  border-radius: 20px 0 10px 0;
-  padding: 1vh 2vh;
-  cursor: pointer;
-  font-size: 1rem;
-  position: absolute;
-  bottom: -15px;
-  right: -5px;
-  transition: all 0.3s;
-}
-#bg_formulaire .formulaire form input[type=submit]:hover {
-  background: #226f54;
-}
-#bg_formulaire .formulaire form .header_form {
-  background: #bf0603;
-  height: auto;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  top: -5px;
-  border-radius: 5px 0 0 0;
-  left: -5px;
-  position: absolute;
-}
-#bg_formulaire .formulaire form .header_form h1 {
-  color: #f8f8f8;
-  font-size: 1rem;
-}
-#bg_formulaire .formulaire form .corps_form label {
-  color: #bf0603;
-  font-family: "Adigiana Toybox";
-  padding-block: 10px;
-}
-#bg_formulaire .formulaire form .corps_form label i {
-  padding-inline-end: 10px;
-}
-#bg_formulaire .formulaire form .corps_form input:not([type=checkbox]) {
-  width: 100%;
-  font-family: "Adigiana Toybox";
-  border: none;
-  border-bottom: 1px solid #226f54;
-  background: transparent;
-  font-size: 1rem;
-  margin-block: 10px;
-  color: #226f54;
-}
-#bg_formulaire .formulaire form .corps_form input:not([type=checkbox]):focus {
-  outline: none;
-}
-#bg_formulaire .formulaire form .corps_form input:not([type=checkbox]) input[type=checkbox] {
-  vertical-align: bottom;
   position: relative;
 }
-#bg_formulaire .formulaire form .corps_form .checkbox_form {
-  padding-block: 10px;
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: row;
+.lettre .form h1 {
+  text-transform: uppercase;
+  color: #43291f;
+  width: 100%;
+  text-align: left;
+  padding-inline: 0;
 }
-#bg_formulaire .formulaire form .corps_form .checkbox_form label {
+.lettre .form #lettre_timbre {
+  width: 5vw;
+  right: 1.5vw;
+  top: 1.5vw;
+  position: absolute;
+}
+.lettre .form input[type=text], .lettre .form #wpforms-67-field_2 {
+  border-radius: 10px !important;
   padding-inline: 10px;
 }
-
-.cd_form {
+.lettre .form button[type=submit] {
+  background: #43291f !important;
+  border-radius: 10px;
+  color: #efdebe !important;
+  font-family: "Lemonada";
   width: 100%;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  transition: all 0.3s;
 }
-.cd_form form {
-  display: flex;
-  flex-direction: column;
-}
-
-.test {
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.lettre .form button[type=submit]:hover {
+  background: #226f54 !important;
 }
 
 .wrap_sapin_calendrier {
