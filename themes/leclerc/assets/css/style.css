@@ -585,7 +585,8 @@ header .modal_container nav ul li img {
   opacity: 0;
   position: absolute;
   background: #226f54;
-  left: 44.5vw;
+  left: 52.5vw;
+  transform: translate(-50%, -50%);
   bottom: 62vh;
   padding: 10px;
   color: #efdebe;
@@ -603,7 +604,7 @@ header .modal_container nav ul li img {
 .hero .modal {
   display: none;
   position: fixed;
-  padding-top: 100px;
+  padding-top: 200px;
   left: 0;
   top: 0;
   width: 100%;
@@ -611,6 +612,230 @@ header .modal_container nav ul li img {
   background-color: rgba(0, 0, 0, 0.4);
   overflow: hidden;
   z-index: 99;
+}
+.hero .modal p {
+  font-size: 1.125rem;
+  font-weight: bold;
+}
+.hero .modal .box_modal_accueil {
+  position: relative;
+  z-index: 3;
+  background-image: url("../../assets/images/png/BackgroundAccueil.png");
+  background-size: cover;
+  margin: auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  padding: 0;
+  border-radius: 20px;
+  width: 55vw;
+  height: 30vw;
+  filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.6));
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+}
+.hero .modal .box_modal_accueil #lutin_modale_jeu {
+  width: 10vw;
+  z-index: 3;
+  left: -5vw;
+  bottom: -5vw;
+  position: absolute;
+  filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.6));
+  transform: rotateY(180deg);
+}
+.hero .modal .box_modal_accueil #deco_accueil {
+  width: 75vw;
+  z-index: 2;
+  left: -10vw;
+  top: -8vw;
+  position: absolute;
+  filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.6));
+}
+.hero .modal .box_modal_accueil #sucre_dorge_accueil {
+  width: 1.5vw;
+  z-index: 1;
+  right: 7.5vw;
+  bottom: 6.5vw;
+  position: absolute;
+}
+.hero .modal .box_modal_accueil #element_cone2 {
+  width: 2vw;
+  z-index: 1;
+  right: 7vw;
+  bottom: 2.5vw;
+  position: absolute;
+  transform: rotate(15deg);
+}
+.hero .modal .box_modal_accueil #element_cone3 {
+  width: 2vw;
+  z-index: 1;
+  right: 3.5vw;
+  bottom: 0.5vw;
+  position: absolute;
+  transform: rotate(-60deg);
+}
+.hero .modal .box_modal_accueil #element_cadeaux1 {
+  width: 1vw;
+  z-index: 1;
+  right: 5vw;
+  bottom: 5vw;
+  position: absolute;
+  transform: rotate(-15deg);
+}
+.hero .modal .box_modal_accueil #element_cadeaux2 {
+  width: 1vw;
+  z-index: 1;
+  right: 10vw;
+  bottom: 5vw;
+  position: absolute;
+  transform: rotate(15deg);
+}
+.hero .modal .box_modal_accueil #bouton_magie_accueil {
+  width: 5vw;
+  z-index: 3;
+  right: -3vw;
+  bottom: -2.5vw;
+  position: absolute;
+  transform: rotate(15deg);
+}
+.hero .modal .box_modal_accueil #lutingif_accueil {
+  width: 9.5vw;
+  z-index: 1;
+  right: 7vw;
+  top: -10.5vw;
+  position: absolute;
+}
+.hero .modal .box_modal_accueil #cadeauAccueil_1 {
+  width: 7vw;
+  z-index: 2;
+  left: -6vw;
+  bottom: 0;
+  position: absolute;
+}
+.hero .modal .box_modal_accueil #cadeauAccueil_2 {
+  width: 9.5vw;
+  z-index: 1;
+  left: -7vw;
+  bottom: -3.5vw;
+  position: absolute;
+}
+.hero .modal .box_modal_accueil #cadeauAccueil_3 {
+  width: 7vw;
+  z-index: 2;
+  left: 10vw;
+  bottom: -7vw;
+  position: absolute;
+}
+.hero .modal .box_modal_accueil #cadeauAccueil_4 {
+  width: 5vw;
+  z-index: 1;
+  left: 7vw;
+  bottom: -4vw;
+  position: absolute;
+}
+.hero .modal .box_modal_accueil #cadeauAccueil_5 {
+  width: 5vw;
+  z-index: 2;
+  right: -6.5vw;
+  bottom: -6vw;
+  position: absolute;
+}
+.hero .modal .box_modal_accueil #cadeauAccueil_6 {
+  width: 7vw;
+  z-index: 1;
+  right: -9vw;
+  bottom: -5vw;
+  position: absolute;
+}
+.hero .modal .box_modal_accueil .corps_modal {
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 5px;
+}
+.hero .modal .box_modal_accueil .corps_modal h1 {
+  font-size: clamp(0.5rem, 0.7619rem + 1.1905vw, 2rem);
+  width: 50%;
+  text-shadow: 0 0 10px #efdebe;
+  text-align: center;
+  border-radius: 20px;
+  color: #efdebe;
+  line-height: 1.5;
+  z-index: 99;
+  text-transform: uppercase;
+  margin-block-start: 5vw;
+  margin-block-end: 2vw;
+}
+.hero .modal .box_modal_accueil .corps_modal h2 {
+  font-size: clamp(0.5rem, 0.7619rem + 1.1905vw, 1.5rem);
+  width: 100%;
+  text-align: left;
+  padding-block: 10px;
+  border-radius: 20px;
+  color: #efdebe;
+  margin-block-start: 2vw;
+}
+.hero .modal .box_modal_accueil .corps_modal p {
+  width: 100%;
+  z-index: 3;
+  text-align: left;
+  line-height: 1.5;
+  color: #efdebe;
+  font-family: "Lemonada";
+}
+.hero .modal .box_modal_accueil .divModalAccueil {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+}
+.hero .modal .box_modal_accueil .divModalAccueil .btnAccueilAfter {
+  filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.6));
+  display: block;
+  color: #efdebe;
+  font-size: 1rem;
+  font-family: "Lemonada";
+  background: #bf0603;
+  border: 2px solid #efdebe;
+  text-shadow: #d4af37;
+  position: absolute;
+  text-align: center;
+  cursor: pointer;
+  right: -1vw;
+  bottom: -25px;
+  width: 10vw;
+  height: 3vw;
+  transition: all 0.3s;
+  border-radius: 10px;
+  z-index: 2;
+}
+.hero .modal .box_modal_accueil .divModalAccueil .btnAccueilAfter:hover {
+  background: #226f54;
+  border: 2px solid #226f54;
+}
+.hero .modal .box_modal_accueil .divModalAccueil .btnAccueilRedir {
+  filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.6));
+  display: block;
+  color: #efdebe;
+  font-weight: bold;
+  font-size: 1rem;
+  background: #bf0603;
+  position: absolute;
+  text-align: center;
+  right: -1vw;
+  bottom: -25px;
+  padding: 20px 35px;
+  transition: all 0.3s;
+  border-radius: 10px;
+  z-index: 1;
+}
+.hero .modal .box_modal_accueil .divModalAccueil .btnAccueilRedir:hover {
+  background: #226f54;
 }
 .hero .modal .box_modal_catalogue {
   position: relative;
@@ -625,8 +850,8 @@ header .modal_container nav ul li img {
   flex-direction: column;
   padding: 0;
   border-radius: 20px;
-  width: 60vw;
-  height: 70vh;
+  width: 55vw;
+  height: 30vw;
   filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.6));
   -webkit-animation-name: animatetop;
   -webkit-animation-duration: 0.4s;
@@ -636,15 +861,23 @@ header .modal_container nav ul li img {
 .hero .modal .box_modal_catalogue #lutin_catalogue {
   width: 14vw;
   z-index: 3;
-  left: -90px;
+  left: -5vw;
   bottom: 0;
   position: absolute;
   transform: rotateY(180deg);
 }
+.hero .modal .box_modal_catalogue #lutin_siege_catalogue {
+  width: 20vw;
+  z-index: 2;
+  left: -7.5vw;
+  bottom: -2vw;
+  position: absolute;
+  transform: rotateY(45deg);
+}
 .hero .modal .box_modal_catalogue #couronne_catalogue {
   width: 15vw;
   z-index: 2;
-  top: -70px;
+  top: -5vw;
   position: absolute;
 }
 .hero .modal .box_modal_catalogue #pin {
@@ -670,6 +903,37 @@ header .modal_container nav ul li img {
   position: absolute;
   transform: rotate(120deg);
 }
+.hero .modal .box_modal_catalogue #boulerouge {
+  width: 1.5vw;
+  z-index: 2;
+  top: 1vw;
+  left: 5vw;
+  position: absolute;
+  transform: rotate(15deg);
+}
+.hero .modal .box_modal_catalogue #boulerouge2 {
+  width: 1.5vw;
+  z-index: 2;
+  top: 2vw;
+  right: 19vw;
+  position: absolute;
+  transform: rotate(15deg);
+}
+.hero .modal .box_modal_catalogue #bouleorange {
+  width: 1.5vw;
+  z-index: 2;
+  top: 1vw;
+  left: 15vw;
+  position: absolute;
+}
+.hero .modal .box_modal_catalogue #feuillevert {
+  width: 1.5vw;
+  z-index: 2;
+  top: 10vh;
+  right: 12vw;
+  position: absolute;
+  transform: rotate(120deg);
+}
 .hero .modal .box_modal_catalogue .corps_modal {
   height: auto;
   display: flex;
@@ -680,43 +944,28 @@ header .modal_container nav ul li img {
 }
 .hero .modal .box_modal_catalogue .corps_modal h1 {
   font-size: clamp(0.5rem, 0.7619rem + 1.1905vw, 2rem);
-  filter: drop-shadow(0px 0px 10px rgb(0, 0, 0));
-  width: 70%;
+  width: 50%;
+  text-shadow: 0 0 10px #efdebe;
   text-align: center;
   border-radius: 20px;
   color: #efdebe;
+  line-height: 1.5;
   z-index: 99;
   text-transform: uppercase;
+  margin-block-end: 2vw;
 }
 .hero .modal .box_modal_catalogue .corps_modal h2 {
   font-size: clamp(0.5rem, 0.7619rem + 1.1905vw, 1.5rem);
   filter: drop-shadow(0px 0px 10px rgb(0, 0, 0));
-  width: 75%;
+  width: 60%;
   text-align: left;
   padding-block: 10px;
   border-radius: 20px;
   color: #efdebe;
   z-index: 99;
 }
-.hero .modal .box_modal_catalogue .corps_modal .btnFermerCatalogue {
-  color: #efdebe;
-  font-weight: bold;
-  transition: all 0.3s;
-  background: #226f54;
-  filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.6));
-  border-radius: 20px;
-  padding: 10px;
-  margin-inline: 40px;
-  margin-block: 10px;
-  z-index: 99;
-  cursor: pointer;
-}
-.hero .modal .box_modal_catalogue .corps_modal .btnFermerCatalogue:hover {
-  color: #bf0603;
-  text-decoration: none;
-}
 .hero .modal .box_modal_catalogue .corps_modal p {
-  width: 75%;
+  width: 60%;
   text-align: left;
   line-height: 2;
   color: #efdebe;
@@ -735,55 +984,55 @@ header .modal_container nav ul li img {
   color: #efdebe;
   font-size: 1rem;
   font-family: "Lemonada";
-  background: #43291f;
-  border: 1px solid #43291f;
+  background: #226f54;
+  border: 2px solid #226f54;
   position: absolute;
   text-align: center;
-  right: 10vw;
+  right: 8vw;
   cursor: pointer;
-  bottom: -15px;
+  bottom: -25px;
+  padding: 10px;
   transition: all 0.3s;
-  border-radius: 20px;
+  border-radius: 10px;
   z-index: 99;
 }
 .hero .modal .box_modal_catalogue .divModalCatalogue .btnCatalogueAfter:hover {
-  background: #226f54;
-  border: 1px solid #226f54;
-  color: #efdebe;
+  background: #43291f;
+  border: 2px solid #43291f;
 }
 .hero .modal .box_modal_catalogue .divModalCatalogue .btnCatalogueRedir {
   filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.6));
   display: block;
   color: #efdebe;
+  font-weight: bold;
   font-size: 1rem;
   background: #bf0603;
   position: absolute;
   text-align: center;
-  bottom: -15px;
-  padding: 10px;
+  right: -1vw;
+  bottom: -25px;
+  padding: 20px 35px;
   transition: all 0.3s;
-  border-radius: 20px 0 20px 20px;
-  z-index: 99;
+  border-radius: 10px;
+  z-index: 1;
 }
 .hero .modal .box_modal_catalogue .divModalCatalogue .btnCatalogueRedir:hover {
-  background: #226f54;
+  background: #43291f;
 }
 .hero .modal .box_modal_lettre {
   position: relative;
   z-index: 3;
-  background: url("../../assets/images/png/BackgroundLettreModal.png");
+  background: url("../../assets/images/png/BackgroundModaleLettre.png");
   background-size: cover;
   margin: auto;
-  outline: 10px dashed #bf0603;
-  outline-offset: -10px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   flex-direction: column;
   padding: 0;
   border-radius: 20px;
-  width: 60vw;
-  height: 70vh;
+  width: 55vw;
+  height: 30vw;
   filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.6));
   -webkit-animation-name: animatetop;
   -webkit-animation-duration: 0.4s;
@@ -791,19 +1040,109 @@ header .modal_container nav ul li img {
   animation-duration: 0.4s;
 }
 .hero .modal .box_modal_lettre #lutin_lettre {
-  width: 15vw;
+  width: 12vw;
   z-index: 3;
-  left: -90px;
-  bottom: 0;
+  left: -6vw;
+  bottom: -2vw;
   position: absolute;
   transform: rotateY(180deg);
   filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.6));
 }
+.hero .modal .box_modal_lettre #lutin_siege {
+  width: 12vw;
+  z-index: 2;
+  left: -6vw;
+  bottom: -2vw;
+  position: absolute;
+  filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.6));
+}
 .hero .modal .box_modal_lettre #lettre_timbre {
-  width: 22.5vw;
+  width: 20vw;
   right: 1.5vw;
   z-index: 2;
-  top: 1.5vh;
+  top: 1.5vw;
+  position: absolute;
+}
+.hero .modal .box_modal_lettre #lettre_avion_1 {
+  width: 5vw;
+  right: 8vw;
+  z-index: 2;
+  bottom: -6vw;
+  position: absolute;
+}
+.hero .modal .box_modal_lettre #lettre_avion_2 {
+  width: 5vw;
+  left: 40%;
+  z-index: 2;
+  top: -3vw;
+  position: absolute;
+}
+.hero .modal .box_modal_lettre #lettre_avion_3 {
+  width: 3vw;
+  right: 30%;
+  z-index: 2;
+  top: -4vw;
+  position: absolute;
+  transform: rotateY(180deg);
+}
+.hero .modal .box_modal_lettre #papier_seul_lettre {
+  width: 10vw;
+  z-index: 2;
+  left: 7vw;
+  bottom: -4.5vw;
+  position: absolute;
+}
+.hero .modal .box_modal_lettre #sucre_dorge_lettre {
+  width: 1.5vw;
+  z-index: 1;
+  right: 7.5vw;
+  bottom: 6.5vw;
+  position: absolute;
+}
+.hero .modal .box_modal_lettre #element_cone1 {
+  width: 2vw;
+  z-index: 1;
+  right: 9vw;
+  bottom: -0.5vw;
+  position: absolute;
+}
+.hero .modal .box_modal_lettre #element_cone2 {
+  width: 2vw;
+  z-index: 1;
+  right: 7vw;
+  bottom: 2.5vw;
+  position: absolute;
+  transform: rotate(15deg);
+}
+.hero .modal .box_modal_lettre #element_cone3 {
+  width: 2vw;
+  z-index: 1;
+  right: 3.5vw;
+  bottom: 0.5vw;
+  position: absolute;
+  transform: rotate(-60deg);
+}
+.hero .modal .box_modal_lettre #element_cadeaux1 {
+  width: 1vw;
+  z-index: 1;
+  right: 5vw;
+  bottom: 5vw;
+  position: absolute;
+  transform: rotate(-15deg);
+}
+.hero .modal .box_modal_lettre #element_cadeaux2 {
+  width: 1vw;
+  z-index: 1;
+  right: 10vw;
+  bottom: 5vw;
+  position: absolute;
+  transform: rotate(15deg);
+}
+.hero .modal .box_modal_lettre #renne_modale_lettre {
+  width: 30vw;
+  z-index: -1;
+  right: -3.5vw;
+  bottom: -3.5vw;
   position: absolute;
 }
 .hero .modal .box_modal_lettre .corps_modal {
@@ -816,29 +1155,32 @@ header .modal_container nav ul li img {
 }
 .hero .modal .box_modal_lettre .corps_modal h1 {
   font-size: clamp(0.5rem, 0.7619rem + 1.1905vw, 2rem);
-  width: 75%;
+  width: 60%;
+  text-shadow: 0 0 10px #43291f;
   text-align: center;
   border-radius: 20px;
   color: #43291f;
+  line-height: 1.5;
   z-index: 99;
   text-transform: uppercase;
+  margin-block-start: 5vw;
+  margin-block-end: 2vw;
 }
 .hero .modal .box_modal_lettre .corps_modal h2 {
   font-size: clamp(0.5rem, 0.7619rem + 1.1905vw, 1.5rem);
-  width: 75%;
+  width: 100%;
   text-align: left;
-  padding-block: 10px;
+  padding-block: 2vw;
   border-radius: 20px;
   color: #43291f;
   z-index: 99;
 }
 .hero .modal .box_modal_lettre .corps_modal p {
-  width: 75%;
+  width: 100%;
   z-index: 3;
   text-align: left;
   line-height: 1.5;
   color: #43291f;
-  font-size: 1rem;
   font-family: "Lemonada";
 }
 .hero .modal .box_modal_lettre .divModalLettre {
@@ -853,52 +1195,55 @@ header .modal_container nav ul li img {
   color: #efdebe;
   font-size: 1rem;
   font-family: "Lemonada";
-  background: #43291f;
-  border: 1px solid #43291f;
+  background: #226f54;
+  border: 2px solid #226f54;
   position: absolute;
   text-align: center;
-  right: 10vw;
+  right: 8vw;
   cursor: pointer;
-  bottom: -15px;
+  bottom: -25px;
+  padding: 10px;
   transition: all 0.3s;
-  border-radius: 20px;
+  border-radius: 10px;
   z-index: 99;
 }
 .hero .modal .box_modal_lettre .divModalLettre .btnLettreAfter:hover {
-  background: #226f54;
-  border: 1px solid #226f54;
-  color: #efdebe;
+  background: #43291f;
+  border: 2px solid #43291f;
 }
 .hero .modal .box_modal_lettre .divModalLettre .btnLettreRedir {
   filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.6));
   display: block;
   color: #efdebe;
+  font-weight: bold;
   font-size: 1rem;
   background: #bf0603;
   position: absolute;
   text-align: center;
-  bottom: -15px;
-  padding: 10px;
+  right: -1vw;
+  bottom: -25px;
+  padding: 20px 35px;
   transition: all 0.3s;
-  border-radius: 20px 0 20px 20px;
-  z-index: 99;
+  border-radius: 10px;
+  z-index: 1;
 }
 .hero .modal .box_modal_lettre .divModalLettre .btnLettreRedir:hover {
-  background: #226f54;
+  background: #43291f;
 }
 .hero .modal .box_modal_recette {
   position: relative;
   z-index: 3;
-  background: #efdebe;
+  background-image: url("../../assets/images/png/BackgroundRecetteModal.png");
+  background-size: cover;
   margin: auto;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   flex-direction: column;
   padding: 0;
   border-radius: 20px;
-  width: 60vw;
-  height: 70vh;
+  width: 55vw;
+  height: 30vw;
   filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.6));
   -webkit-animation-name: animatetop;
   -webkit-animation-duration: 0.4s;
@@ -906,19 +1251,72 @@ header .modal_container nav ul li img {
   animation-duration: 0.4s;
 }
 .hero .modal .box_modal_recette #lutin_recette {
-  width: 9.5vw;
+  width: 11vw;
   z-index: 3;
-  left: -100px;
-  bottom: 0;
+  left: -5vw;
+  bottom: -5vw;
   position: absolute;
   transform: rotateY(180deg);
 }
 .hero .modal .box_modal_recette #modal_chocolat {
-  width: 83vw;
+  width: 65vw;
   z-index: 2;
   left: -50px;
-  top: -200px;
+  top: -12vw;
   position: absolute;
+}
+.hero .modal .box_modal_recette #lutingif {
+  width: 9.5vw;
+  z-index: 1;
+  left: 50%;
+  top: -10.5vw;
+  position: absolute;
+}
+.hero .modal .box_modal_recette #sucre_dorge_recette {
+  width: 1.5vw;
+  z-index: 1;
+  right: 7.5vw;
+  bottom: 6.5vw;
+  position: absolute;
+}
+.hero .modal .box_modal_recette #element_cone1 {
+  width: 2vw;
+  z-index: 1;
+  right: 9vw;
+  bottom: -0.5vw;
+  position: absolute;
+}
+.hero .modal .box_modal_recette #element_cone2 {
+  width: 2vw;
+  z-index: 1;
+  right: 7vw;
+  bottom: 2.5vw;
+  position: absolute;
+  transform: rotate(15deg);
+}
+.hero .modal .box_modal_recette #element_cone3 {
+  width: 2vw;
+  z-index: 1;
+  right: 3.5vw;
+  bottom: 0.5vw;
+  position: absolute;
+  transform: rotate(-60deg);
+}
+.hero .modal .box_modal_recette #element_cadeaux1 {
+  width: 1vw;
+  z-index: 1;
+  right: 5vw;
+  bottom: 5vw;
+  position: absolute;
+  transform: rotate(-15deg);
+}
+.hero .modal .box_modal_recette #element_cadeaux2 {
+  width: 1vw;
+  z-index: 1;
+  right: 10vw;
+  bottom: 5vw;
+  position: absolute;
+  transform: rotate(15deg);
 }
 .hero .modal .box_modal_recette .corps_modal {
   height: auto;
@@ -930,29 +1328,31 @@ header .modal_container nav ul li img {
 }
 .hero .modal .box_modal_recette .corps_modal h1 {
   font-size: clamp(0.5rem, 0.7619rem + 1.1905vw, 2rem);
-  width: 75%;
+  width: 60%;
+  text-shadow: 0 0 10px #efdebe;
   text-align: center;
   border-radius: 20px;
   color: #43291f;
   z-index: 99;
   text-transform: uppercase;
+  margin-block-start: 2vw;
+  margin-block-end: 2vw;
 }
 .hero .modal .box_modal_recette .corps_modal h2 {
   font-size: clamp(0.5rem, 0.7619rem + 1.1905vw, 1.5rem);
-  width: 75%;
+  width: 80%;
   text-align: left;
   padding-block: 10px;
   border-radius: 20px;
   color: #43291f;
-  z-index: 99;
+  margin-block-start: 6vw;
 }
 .hero .modal .box_modal_recette .corps_modal p {
-  width: 75%;
+  width: 80%;
   z-index: 3;
   text-align: left;
-  line-height: 1.5;
+  line-height: 2;
   color: #43291f;
-  font-size: 1rem;
   font-family: "Lemonada";
 }
 .hero .modal .box_modal_recette .divModalRecette {
@@ -967,38 +1367,40 @@ header .modal_container nav ul li img {
   color: #efdebe;
   font-size: 1rem;
   font-family: "Lemonada";
-  background: #43291f;
-  border: 1px solid #43291f;
+  background: #226f54;
+  border: 2px solid #226f54;
   position: absolute;
   text-align: center;
-  right: 10vw;
+  right: 8vw;
   cursor: pointer;
-  bottom: -15px;
+  bottom: -25px;
+  padding: 10px;
   transition: all 0.3s;
-  border-radius: 20px;
+  border-radius: 10px;
   z-index: 99;
 }
 .hero .modal .box_modal_recette .divModalRecette .btnRecetteAfter:hover {
-  background: #226f54;
-  border: 1px solid #226f54;
-  color: #efdebe;
+  background: #43291f;
+  border: 2px solid #43291f;
 }
 .hero .modal .box_modal_recette .divModalRecette .btnRecetteRedir {
   filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.6));
   display: block;
   color: #efdebe;
+  font-weight: bold;
   font-size: 1rem;
   background: #bf0603;
   position: absolute;
   text-align: center;
-  bottom: -15px;
-  padding: 10px;
+  right: -1vw;
+  bottom: -25px;
+  padding: 20px 35px;
   transition: all 0.3s;
-  border-radius: 20px 0 20px 20px;
-  z-index: 99;
+  border-radius: 10px;
+  z-index: 1;
 }
 .hero .modal .box_modal_recette .divModalRecette .btnRecetteRedir:hover {
-  background: #226f54;
+  background: #43291f;
 }
 .hero #serie {
   width: 15vw;
@@ -1017,17 +1419,13 @@ header .modal_container nav ul li img {
   bottom: 15vw;
   position: absolute;
   transition: all 0.3s;
-  cursor: pointer;
-}
-.hero #lutin_serie:hover {
-  transform: scale(1.05);
 }
 .hero .info_lutin span {
   opacity: 0;
   position: absolute;
   background: #226f54;
   left: 26vw;
-  bottom: 35vw;
+  bottom: 33vw;
   padding: 10px;
   color: #efdebe;
   z-index: 5;
@@ -1044,36 +1442,135 @@ header .modal_container nav ul li img {
 .hero .box_modal_serie {
   position: relative;
   z-index: 3;
-  background: #efdebe;
+  background-image: url("../../assets/images/png/BackgroundSerieModal.png");
+  background-size: cover;
   margin: auto;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   flex-direction: column;
   padding: 0;
   border-radius: 20px;
-  width: 60vw;
-  height: 70vh;
+  width: 55vw;
+  height: 30vw;
   filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.6));
   -webkit-animation-name: animatetop;
   -webkit-animation-duration: 0.4s;
   animation-name: animatetop;
   animation-duration: 0.4s;
 }
-.hero .box_modal_serie #lutin_recette {
-  width: 9.5vw;
+.hero .box_modal_serie #lutin_serie_modale {
+  width: 9vw;
   z-index: 3;
-  left: -100px;
-  bottom: 0;
+  left: -5vw;
+  bottom: -5vw;
+  position: absolute;
+}
+.hero .box_modal_serie #background_sapin_serie {
+  width: 15vw;
+  z-index: 0;
+  left: 0vw;
+  top: -8vw;
+  position: absolute;
+  transform: translateZ(-1px);
+}
+.hero .box_modal_serie #portrait_serie {
+  width: 13vw;
+  z-index: 1;
+  right: -3vw;
+  top: -2vw;
+  position: absolute;
+  transform: rotate(15deg);
+}
+.hero .box_modal_serie #pere_fouettard {
+  width: 12vw;
+  z-index: 2;
+  right: -12vw;
+  top: 0;
   position: absolute;
   transform: rotateY(180deg);
 }
-.hero .box_modal_serie #modal_chocolat {
-  width: 83vw;
+.hero .box_modal_serie #chaussette_serie1 {
+  width: 5vw;
   z-index: 2;
-  left: -50px;
-  top: -200px;
+  left: 5%;
+  bottom: -5vw;
   position: absolute;
+}
+.hero .box_modal_serie #chaussette_serie2 {
+  width: 5vw;
+  z-index: 2;
+  left: 15%;
+  bottom: -5vw;
+  position: absolute;
+}
+.hero .box_modal_serie #chaussette_serie3 {
+  width: 5vw;
+  z-index: 2;
+  left: 25%;
+  bottom: -5vw;
+  position: absolute;
+}
+.hero .box_modal_serie #cadeau_serie {
+  width: 5vw;
+  z-index: 3;
+  right: -2vw;
+  bottom: 0.5vw;
+  position: absolute;
+}
+.hero .box_modal_serie #sucre_dorge_serie {
+  width: 1.5vw;
+  z-index: 1;
+  right: 7.5vw;
+  bottom: 6.5vw;
+  position: absolute;
+}
+.hero .box_modal_serie #element_cone1 {
+  width: 2vw;
+  z-index: 1;
+  right: 9vw;
+  bottom: -0.5vw;
+  position: absolute;
+}
+.hero .box_modal_serie #element_cone2 {
+  width: 2vw;
+  z-index: 1;
+  right: 7vw;
+  bottom: 2.5vw;
+  position: absolute;
+  transform: rotate(15deg);
+}
+.hero .box_modal_serie #element_cone3 {
+  width: 2vw;
+  z-index: 1;
+  right: 3.5vw;
+  bottom: 0.5vw;
+  position: absolute;
+  transform: rotate(-60deg);
+}
+.hero .box_modal_serie #element_cadeaux1 {
+  width: 1vw;
+  z-index: 1;
+  right: 5vw;
+  bottom: 5vw;
+  position: absolute;
+  transform: rotate(-15deg);
+}
+.hero .box_modal_serie #element_cadeaux2 {
+  width: 1vw;
+  z-index: 1;
+  right: 10vw;
+  bottom: 5vw;
+  position: absolute;
+  transform: rotate(15deg);
+}
+.hero .box_modal_serie #element_neige {
+  width: 10vw;
+  z-index: 1;
+  right: -2vw;
+  bottom: -5vw;
+  position: absolute;
+  transform: rotate(145deg);
 }
 .hero .box_modal_serie .corps_modal {
   height: auto;
@@ -1085,29 +1582,31 @@ header .modal_container nav ul li img {
 }
 .hero .box_modal_serie .corps_modal h1 {
   font-size: clamp(0.5rem, 0.7619rem + 1.1905vw, 2rem);
-  width: 75%;
+  width: 60%;
+  text-shadow: 0 0 10px #efdebe;
   text-align: center;
   border-radius: 20px;
   color: #43291f;
   z-index: 99;
   text-transform: uppercase;
+  margin-block-start: 2vw;
+  margin-block-end: 2vw;
 }
 .hero .box_modal_serie .corps_modal h2 {
   font-size: clamp(0.5rem, 0.7619rem + 1.1905vw, 1.5rem);
-  width: 75%;
+  width: 100%;
   text-align: left;
   padding-block: 10px;
   border-radius: 20px;
   color: #43291f;
-  z-index: 99;
+  margin-block-start: 6vw;
 }
 .hero .box_modal_serie .corps_modal p {
-  width: 75%;
+  width: 100%;
   z-index: 3;
   text-align: left;
   line-height: 1.5;
   color: #43291f;
-  font-size: 1rem;
   font-family: "Lemonada";
 }
 .hero .box_modal_serie .divModalSerie {
@@ -1122,38 +1621,40 @@ header .modal_container nav ul li img {
   color: #efdebe;
   font-size: 1rem;
   font-family: "Lemonada";
-  background: #43291f;
-  border: 1px solid #43291f;
+  background: #226f54;
+  border: 2px solid #226f54;
   position: absolute;
   text-align: center;
-  right: 10vw;
+  right: 8vw;
   cursor: pointer;
-  bottom: -15px;
+  bottom: -25px;
+  padding: 10px;
   transition: all 0.3s;
-  border-radius: 20px;
+  border-radius: 10px;
   z-index: 99;
 }
 .hero .box_modal_serie .divModalSerie .btnSerieAfter:hover {
-  background: #226f54;
-  border: 1px solid #226f54;
-  color: #efdebe;
+  background: #43291f;
+  border: 2px solid #43291f;
 }
 .hero .box_modal_serie .divModalSerie .btnSerieRedir {
   filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.6));
   display: block;
   color: #efdebe;
+  font-weight: bold;
   font-size: 1rem;
   background: #bf0603;
   position: absolute;
   text-align: center;
-  bottom: -15px;
-  padding: 10px;
+  right: -1vw;
+  bottom: -25px;
+  padding: 20px 35px;
   transition: all 0.3s;
-  border-radius: 20px 0 20px 20px;
-  z-index: 99;
+  border-radius: 10px;
+  z-index: 1;
 }
 .hero .box_modal_serie .divModalSerie .btnSerieRedir:hover {
-  background: #226f54;
+  background: #43291f;
 }
 .hero #maison {
   width: 45vw;
@@ -1170,15 +1671,14 @@ header .modal_container nav ul li img {
   opacity: 0;
   position: absolute;
   background: #226f54;
-  right: 7vw;
-  bottom: 15vh;
+  right: 25vw;
+  bottom: 33vw;
   padding: 10px;
   color: #efdebe;
   z-index: 5;
   border-radius: 10px;
   font-size: 1rem;
   transition: all 0.5s;
-  transform: rotate(-11deg);
 }
 .hero .info_maison span i {
   padding-inline: 5px;
@@ -1186,13 +1686,278 @@ header .modal_container nav ul li img {
 .hero .info_maison:hover span {
   opacity: 1;
 }
-.hero #bonhomme {
+.hero #bonhomme_accueil {
   width: 3vw;
   right: 37vw;
   bottom: 40vh;
   position: absolute;
   transition: all 0.3s;
   transform: rotateY(180deg);
+}
+.hero #maison {
+  width: 40vw;
+  right: -3.5vw;
+  bottom: 9vw;
+  position: absolute;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.hero #maison:hover {
+  transform: scale(1.05);
+}
+.hero .info_jeu span {
+  opacity: 0;
+  position: absolute;
+  background: #226f54;
+  right: 3.5vw;
+  bottom: 15vh;
+  padding: 10px;
+  color: #efdebe;
+  z-index: 5;
+  border-radius: 10px;
+  font-size: 1rem;
+  transition: all 0.5s;
+}
+.hero .info_jeu span i {
+  padding-inline: 5px;
+}
+.hero .info_jeu:hover span {
+  opacity: 1;
+}
+.hero #jeu {
+  width: 25vw;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.hero #jeu:hover {
+  transform: scale(1.05);
+}
+.hero #lutintin_grotte {
+  width: 3vw;
+  right: 15vw;
+  bottom: 3vw;
+  position: absolute;
+  transition: all 0.3s;
+}
+.hero .box_modal_jeu {
+  position: relative;
+  z-index: 3;
+  background-image: url("../../assets/images/png/BackgroundJeuModal.png");
+  background-size: cover;
+  margin: auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  padding: 0;
+  border-radius: 20px;
+  width: 55vw;
+  height: 30vw;
+  filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.6));
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+}
+.hero .box_modal_jeu #lutin_modale_jeu {
+  width: 22vw;
+  z-index: 3;
+  left: -15vw;
+  bottom: 0;
+  position: absolute;
+  filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.6));
+}
+.hero .box_modal_jeu #element_neige {
+  width: 10vw;
+  z-index: 1;
+  right: -2vw;
+  bottom: -5vw;
+  position: absolute;
+  transform: rotate(145deg);
+}
+.hero .box_modal_jeu #flocon_modale_jeu1 {
+  width: 20vw;
+  z-index: 2;
+  left: -24vw;
+  bottom: -9.5vw;
+  position: absolute;
+}
+.hero .box_modal_jeu #flocon_modale_jeu2 {
+  width: 10vw;
+  z-index: 2;
+  left: -4vw;
+  top: -4vw;
+  position: absolute;
+}
+.hero .box_modal_jeu #flocon_modale_jeu3 {
+  width: 25vw;
+  z-index: 2;
+  right: -10vw;
+  top: 3vw;
+  position: absolute;
+}
+.hero .box_modal_jeu #sucre_dorge_jeu {
+  width: 1.5vw;
+  z-index: 1;
+  right: 7.5vw;
+  bottom: 6.5vw;
+  position: absolute;
+}
+.hero .box_modal_jeu #element_cone1 {
+  width: 2vw;
+  z-index: 1;
+  right: 9vw;
+  bottom: -0.5vw;
+  position: absolute;
+}
+.hero .box_modal_jeu #element_cone2 {
+  width: 2vw;
+  z-index: 1;
+  right: 7vw;
+  bottom: 2.5vw;
+  position: absolute;
+  transform: rotate(15deg);
+}
+.hero .box_modal_jeu #element_cone3 {
+  width: 2vw;
+  z-index: 1;
+  right: 3.5vw;
+  bottom: 0.5vw;
+  position: absolute;
+  transform: rotate(-60deg);
+}
+.hero .box_modal_jeu #element_cadeaux1 {
+  width: 1vw;
+  z-index: 1;
+  right: 5vw;
+  bottom: 5vw;
+  position: absolute;
+  transform: rotate(-15deg);
+}
+.hero .box_modal_jeu #element_cadeaux2 {
+  width: 1vw;
+  z-index: 1;
+  right: 10vw;
+  bottom: 5vw;
+  position: absolute;
+  transform: rotate(15deg);
+}
+.hero .box_modal_jeu #element_neige {
+  width: 10vw;
+  z-index: 1;
+  right: -2vw;
+  bottom: -5vw;
+  position: absolute;
+  transform: rotate(145deg);
+}
+.hero .box_modal_jeu #renne_modale_jeu {
+  width: 10vw;
+  z-index: 2;
+  left: 11vw;
+  top: -8vw;
+  position: absolute;
+}
+.hero .box_modal_jeu #bonhomme_modale_jeu {
+  width: 5vw;
+  z-index: 1;
+  right: 4vw;
+  top: -4vw;
+  position: absolute;
+  transform: rotateY(180deg);
+}
+.hero .box_modal_jeu #glace_modale_jeu {
+  width: 17.5vw;
+  z-index: 1;
+  right: 35%;
+  top: -3vw;
+  position: absolute;
+}
+.hero .box_modal_jeu .corps_modal {
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 5px;
+}
+.hero .box_modal_jeu .corps_modal h1 {
+  font-size: clamp(0.5rem, 0.7619rem + 1.1905vw, 2rem);
+  width: 60%;
+  text-shadow: 0 0 10px #efdebe;
+  text-align: center;
+  border-radius: 20px;
+  color: #f8f8f8;
+  z-index: 99;
+  text-transform: uppercase;
+  margin-block-start: 2vw;
+  margin-block-end: 2vw;
+}
+.hero .box_modal_jeu .corps_modal h2 {
+  font-size: clamp(0.5rem, 0.7619rem + 1.1905vw, 1.5rem);
+  width: 80%;
+  text-align: left;
+  padding-block: 10px;
+  border-radius: 20px;
+  color: #f8f8f8;
+  margin-block-start: 6vw;
+}
+.hero .box_modal_jeu .corps_modal p {
+  width: 80%;
+  z-index: 3;
+  text-align: left;
+  line-height: 2;
+  color: #f8f8f8;
+  font-family: "Lemonada";
+}
+.hero .box_modal_jeu .divModalJeu {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+}
+.hero .box_modal_jeu .divModalJeu .btnJeuAfter {
+  filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.6));
+  display: block;
+  color: #efdebe;
+  font-size: 1rem;
+  font-family: "Lemonada";
+  background: #43291f;
+  border: 2px solid #43291f;
+  position: absolute;
+  text-align: center;
+  right: 8vw;
+  cursor: pointer;
+  bottom: -25px;
+  padding: 10px;
+  transition: all 0.3s;
+  border-radius: 10px;
+  z-index: 99;
+}
+.hero .box_modal_jeu .divModalJeu .btnJeuAfter:hover {
+  background: #0066cc;
+  border: 2px solid #0066cc;
+}
+.hero .box_modal_jeu .divModalJeu .btnJeuRedir {
+  filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.6));
+  display: block;
+  color: #efdebe;
+  font-weight: bold;
+  font-size: 1rem;
+  background: #0066cc;
+  position: absolute;
+  text-align: center;
+  right: -1vw;
+  bottom: -25px;
+  padding: 20px 35px;
+  transition: all 0.3s;
+  border-radius: 10px;
+  z-index: 1;
+}
+.hero .box_modal_jeu .divModalJeu .btnJeuRedir:hover {
+  background: #43291f;
 }
 
 @media (orientation: landscape) {
@@ -1290,33 +2055,33 @@ header .modal_container nav ul li img {
 }
 .cd_cometes .comets i:nth-of-type(1) {
   width: 5px;
-  left: 45vw;
-  height: 46px;
+  left: 75vw;
+  height: 71px;
 }
 .cd_cometes .comets i:nth-of-type(2) {
   width: 5px;
-  left: 62vw;
-  height: 47px;
+  left: 48vw;
+  height: 37px;
 }
 .cd_cometes .comets i:nth-of-type(3) {
   width: 5px;
-  left: 25vw;
-  height: 52px;
+  left: 3vw;
+  height: 58px;
 }
 .cd_cometes .comets i:nth-of-type(4) {
   width: 5px;
-  left: 22vw;
-  height: 38px;
+  left: 58vw;
+  height: 26px;
 }
 .cd_cometes .comets i:nth-of-type(5) {
   width: 5px;
-  left: 34vw;
-  height: 35px;
+  left: 68vw;
+  height: 3px;
 }
 .cd_cometes .comets i:nth-of-type(6) {
   width: 5px;
-  left: 9vw;
-  height: 80px;
+  left: 60vw;
+  height: 1px;
 }
 .cd_cometes .sun {
   width: 25vh;
@@ -1471,132 +2236,50 @@ header .modal_container nav ul li img {
   margin-top: -200px;
 }
 
-#bg_formulaire {
-  overflow: hidden;
-}
-#bg_formulaire .formulaire {
+.lettre {
+  position: absolute;
+  height: calc(100vh - 125px);
   display: flex;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
   width: 100%;
-  margin-top: 20vh;
-  height: 100vh;
+  margin-block-start: 20vh;
 }
-#bg_formulaire .formulaire form {
-  width: 60vw;
-  padding: 20px;
-  height: calc(90vh - 100px);
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  position: relative;
-  border: 5px solid;
-  border-style: dotted;
-  border-color: #226f54;
+.lettre .form {
   background: #efdebe;
-  flex-direction: column;
+  width: 50vw;
+  padding: 20px;
   border-radius: 10px;
-}
-#bg_formulaire .formulaire form small {
-  color: #bf0603;
-  font-family: "Adigiana Toybox";
-  font-size: 0.8rem;
-}
-#bg_formulaire .formulaire form #houx {
-  width: 10vw;
-  right: -60px;
-  top: -60px;
-  position: absolute;
-  transition: all 0.3s;
-  cursor: pointer;
-  transform: rotate(90deg);
-}
-#bg_formulaire .formulaire form input[type=submit] {
-  background: #bf0603;
-  width: fit-content;
-  border: none;
-  font-family: "Adigiana Toybox";
-  color: #efdebe;
-  border-radius: 20px 0 10px 0;
-  padding: 1vh 2vh;
-  cursor: pointer;
-  font-size: 1rem;
-  position: absolute;
-  bottom: -15px;
-  right: -5px;
-  transition: all 0.3s;
-}
-#bg_formulaire .formulaire form input[type=submit]:hover {
-  background: #226f54;
-}
-#bg_formulaire .formulaire form .header_form {
-  background: #bf0603;
-  height: auto;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  top: -5px;
-  border-radius: 5px 0 0 0;
-  left: -5px;
-  position: absolute;
-}
-#bg_formulaire .formulaire form .header_form h1 {
-  color: #f8f8f8;
-  font-size: 1rem;
-}
-#bg_formulaire .formulaire form .corps_form label {
-  color: #bf0603;
-  font-family: "Adigiana Toybox";
-  padding-block: 10px;
-}
-#bg_formulaire .formulaire form .corps_form label i {
-  padding-inline-end: 10px;
-}
-#bg_formulaire .formulaire form .corps_form input:not([type=checkbox]) {
-  width: 100%;
-  font-family: "Adigiana Toybox";
-  border: none;
-  border-bottom: 1px solid #226f54;
-  background: transparent;
-  font-size: 1rem;
-  margin-block: 10px;
-  color: #226f54;
-}
-#bg_formulaire .formulaire form .corps_form input:not([type=checkbox]):focus {
-  outline: none;
-}
-#bg_formulaire .formulaire form .corps_form input:not([type=checkbox]) input[type=checkbox] {
-  vertical-align: bottom;
   position: relative;
 }
-#bg_formulaire .formulaire form .corps_form .checkbox_form {
-  padding-block: 10px;
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: row;
+.lettre .form h1 {
+  text-transform: uppercase;
+  color: #43291f;
+  width: 100%;
+  text-align: left;
+  padding-inline: 0;
 }
-#bg_formulaire .formulaire form .corps_form .checkbox_form label {
+.lettre .form #lettre_timbre {
+  width: 5vw;
+  right: 1.5vw;
+  top: 1.5vw;
+  position: absolute;
+}
+.lettre .form input[type=text], .lettre .form #wpforms-67-field_2 {
+  border-radius: 10px !important;
   padding-inline: 10px;
 }
-
-.cd_form {
+.lettre .form button[type=submit] {
+  background: #43291f !important;
+  border-radius: 10px;
+  color: #efdebe !important;
+  font-family: "Lemonada";
   width: 100%;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  transition: all 0.3s;
 }
-.cd_form form {
-  display: flex;
-  flex-direction: column;
-}
-
-.test {
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.lettre .form button[type=submit]:hover {
+  background: #226f54 !important;
 }
 
 .wrap_sapin_calendrier {

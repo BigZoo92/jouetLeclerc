@@ -1,28 +1,44 @@
-
 // HEADER
 
 let toggle = true;
-document.querySelector('.sapin_toggle').addEventListener('click', toggleSapin);
-let tlToggleSapin = gsap.timeline({ paused: true, duration: 0.1, ease: "expo" })
+document.querySelector(".sapin_toggle").addEventListener("click", toggleSapin);
+let tlToggleSapin = gsap
+  .timeline({ paused: true, duration: 0.1, ease: "expo" })
   .to(".menu_sapin", { y: -33 }, "<0.1")
-  .to(".overlay_header", { "display": "flex" }, "<")
-  .to('.branches', { 'clip-path': 'inset(0 0 100% 0)' }, "<")
-  .to('.menu_sapin p:nth-of-type(2)', { 'clip-path': 'inset(0 0 0 0)' }, "<0.1")
-  .to('.overlay_header', { 'top': '0' }, "<0.1")
-  .to('.overlay_header nav ul li', { 'clip-path': 'inset(0 0 0 0)', stagger: 0.05 }, "<0.1")
+  .to(".overlay_header", { display: "flex" }, "<")
+  .to(".branches", { "clip-path": "inset(0 0 100% 0)" }, "<")
+  .to(".menu_sapin p:nth-of-type(2)", { "clip-path": "inset(0 0 0 0)" }, "<0.1")
+  .to(".overlay_header", { top: "0" }, "<0.1")
+  .to(
+    ".overlay_header nav ul li",
+    { "clip-path": "inset(0 0 0 0)", stagger: 0.05 },
+    "<0.1"
+  );
 function toggleSapin() {
-  toggle ? toggleSapinOpen() : toggleSapinClose()
+  toggle ? toggleSapinOpen() : toggleSapinClose();
 }
 function toggleSapinOpen() {
-  tlToggleSapin.play()
-  document.querySelector('.menu_sapin p:nth-of-type(2)').style.backgroundColor = '#efdebe'
+  tlToggleSapin.play();
+  document.querySelector(".menu_sapin p:nth-of-type(2)").style.backgroundColor =
+    "#efdebe";
   toggle = false;
 }
 function toggleSapinClose() {
-  tlToggleSapin.reverse()
-  document.querySelector('.menu_sapin p:nth-of-type(2)').style.backgroundColor = '#A3DEF4'
+  tlToggleSapin.reverse();
+  document.querySelector(".menu_sapin p:nth-of-type(2)").style.backgroundColor =
+    "#A3DEF4";
   toggle = true;
 }
+
+window.onclick = function (event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+    modal2.style.display = "none";
+    modal3.style.display = "none";
+    modal4.style.display = "none";
+    modal5.style.display = "none";
+  }
+};
 
 // Modal recette accueil
 
@@ -38,16 +54,6 @@ btn.onclick = function () {
 
 fermer.onclick = function () {
   modal.style.display = "none";
-};
-
-window.onclick = function (event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-    modal2.style.display = "none";
-    modal3.style.display = "none";
-    modal4.style.display = "none";
-
-  }
 };
 
 // Modal catalogue
@@ -96,6 +102,36 @@ btn4.onclick = function () {
 
 fermer4.onclick = function () {
   modal4.style.display = "none";
+};
+
+// Modal Jeu
+
+var modal5 = document.getElementById("modal_jeu");
+
+var btn5 = document.getElementById("jeu");
+
+var fermer5 = document.getElementsByClassName("btnJeuAfter")[0];
+
+btn5.onclick = function () {
+  modal5.style.display = "block";
+};
+
+fermer5.onclick = function () {
+  modal5.style.display = "none";
+};
+
+// Modal Accueil
+
+var modal6 = document.getElementById("modal_accueil");
+
+var fermer6 = document.getElementsByClassName("btnAccueilAfter")[0];
+
+window.onload = function () {
+  modal6.style.display = "block";
+};
+
+fermer6.onclick = function () {
+  modal6.style.display = "none";
 };
 
 // Récupération de la date
