@@ -3,7 +3,12 @@
 /**
  * Template Name: Calendrier
  */
-get_header()
+get_header();
+
+$current_user = wp_get_current_user();
+if ($current_user->ID === 0) {
+    echo '<script>', 'window.location.href = "http://localhost:10004/wp-login.php/"', '</script>';
+}
 ?>
 
 <main>
@@ -131,4 +136,6 @@ get_header()
 </main>
 
 
-<?php get_footer() ?>
+<?php 
+get_footer(); 
+?>

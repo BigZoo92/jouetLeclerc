@@ -11,7 +11,6 @@ function montheme_supports()
 add_action('after_setup_theme', 'montheme_supports');
 
 include_once 'custom-post-type.php';
-include_once 'taxonomy.php';
 include_once 'remove-menu.php';
 include_once 'register-assets.php';
 

@@ -146,3 +146,24 @@ function endGame() {
     document.querySelector('.modal_jeu').style.opacity = '1';
     document.getElementById('credit').value = lvlCredit;
 }
+
+fetch('../calendrier-url',{
+    headers: {
+        Accept: 'application/json'
+    }
+})
+.then(r => {
+    if (r.ok) {
+        return r.json()
+    } else {
+        throw new Error('Erreur serveur', {cause: r})
+    }
+})
+.then(creditData => {
+    const pourcentageClip = parseInt(creditData[0].credit) * 4.16
+    document.querySelector('.pere_noel_gris').style.clipPath = 'inset(0 0 '+pourcentageClip+'% 0)'
+    console.log(pourcentageClip);
+    if(parseInt(creditData[0].credit) === 24){
+        alert('MERCI GRÂCE A TOI NOËL EST SAUVE')
+    }
+});

@@ -16,7 +16,7 @@ function recettes_register_post_types() {
         'public' => true,
         'show_in_rest' => true,
         'has_archive' => true,
-        'supports' => array( 'title','thumbnail' ),
+        'supports' => array('title'),
         'menu_position' => 5, 
         'menu_icon' => get_template_directory_uri() . '/assets/images/png/recipe_icon.png',
 	);

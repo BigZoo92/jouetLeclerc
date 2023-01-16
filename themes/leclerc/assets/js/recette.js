@@ -1,21 +1,36 @@
 
-const box = document.querySelectorAll('.box_recette')
-
-box.forEach((item) => {
-  item.addEventListener('click', () => {
-    const temps = '.' + item.className.split(" ")[1] + ' .difficulte_recette i';
-    const difficulte = '.' + item.className.split(" ")[1] + ' .difficulte_recette';
-    const description = '.' + item.className.split(" ")[1] + ' .desc_recette';
-    document.getElementById('modal_recette').style.display = "block";
-    document.querySelector('#modal_recette .column_droite i').innerHTML = document.querySelector(temps).innerHTML;
-    document.querySelector('#modal_recette .column_droite p').innerHTML = document.querySelector(description).innerHTML;
-    const diffStar = parseInt(document.querySelector(difficulte).getAttribute('data-difficulte'))
-    console.log(diffStar);
-    for (let i = 0; i < diffStar; i++) {
-      const star = document.createElement('i');
-      console.log(star);
-      star.className = "bi bi-star-fill";
-      document.querySelector('.modal_difficulte').appendChild(star);
+const btnRecette = document.querySelectorAll('.btn_recette')
+ 
+btnRecette.forEach((e) => {
+  e.addEventListener('click', () => {
+    document.querySelector('.cd_modale_recette').style.display = "flex"
+    document.querySelector('.cd_modale_recette').style.opacity = "1"
+    document.querySelector('.cd-recettes').style.display = "none"
+    document.querySelector('.cd-recettes').style.opacity = "0"
+    document.querySelector('.cd_modale_recette iframe').src = e.getAttribute('data-value')
+    if (e.getAttribute('data-value') === 'http://localhost:10004/wp-content/uploads/2023/01/rct_buche_1.pdf#toolbar=0') {
+      document.querySelector('.cd_modale_recette iframe').style.paddingBottom = "45%"
+      console.log('wesh1');
+    }else{
+      if (e.getAttribute('data-value') === 'http://localhost:10004/wp-content/uploads/2023/01/rct_chocolat-chaud.pdf#toolbar=0') {
+        document.querySelector('.cd_modale_recette iframe').style.paddingBottom = "25%"
+        console.log('wesh2');
+      }else{
+        document.querySelector('.cd_modale_recette iframe').style.paddingBottom = "0"
+        console.log('wesh3');
+      }
     }
+  })
+})
+
+
+const btnRecetteModale = document.querySelectorAll('.btn_modale_recette')
+ 
+btnRecetteModale.forEach((e) => {
+  e.addEventListener('click', () => {
+    document.querySelector('.cd_modale_recette').style.display = "none"
+    document.querySelector('.cd_modale_recette').style.opacity = "0"
+    document.querySelector('.cd-recettes').style.display = "flex"
+    document.querySelector('.cd-recettes').style.opacity = "1"
   })
 })

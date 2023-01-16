@@ -8,7 +8,7 @@ body {
             border-radius: 5px;
             width: 20vw;
             left: 50%;
-            transform: translate(-50%, -50%);
+            transform: translateX(-50%);
             position: absolute;
             a {
                 background-image: url("../../assets/images/png/Logo.png");
@@ -26,7 +26,7 @@ body {
             color: black;
             position: relative;
             height: auto;
-            width: 20vw;
+            width: 50vw;
             display: flex;
             justify-content: space-between;
             align-items: stretch;
@@ -35,7 +35,6 @@ body {
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            filter: drop-shadow(0 0 20px $noel-noir);
             input[type="text"], input[type="password"]{
                 background: #f2f3f4;
                 margin-block: 2vh;
@@ -81,13 +80,17 @@ body {
             position: absolute;
             top: 15vh;
             left: 50%;
-            transform: translate(-50%, -50%);
+            transform: translate(-50%, 10%);
             background: $background;
-            padding: 20px;
             color: $noel-noir;
             border-radius: 5px;
-            width: 20vw;
+            width: 50vw;
+            aspect-ratio: 10/1;
             text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
             a{
                 background: $noel-beige;
                 border-radius: 5px;
@@ -99,42 +102,6 @@ body {
         }
     }
     .language-switcher {
-        margin: 0;
-        padding: 0;
-        width: 20vw;
-        position: absolute;
-        background: $background;
-        border-radius: 5px;
-        bottom: 20px;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-direction: column;
-        padding: 20px;
-        form{
-            margin: 0;
-        }
-        select{
-            background-color: $noel-marron;
-            border: none;
-            color: $noel-beige;
-            font-size: 1rem;
-            text-transform: uppercase;
-            transition: all 0.3s;
-        }
-        input[type="submit"]{
-            background-color: $noel-marron;
-            border: none;
-            color: $noel-beige;
-            font-size: 1rem;
-            text-transform: uppercase;
-            transition: all 0.3s;
-            &:hover{
-                background: $noel-rouge;
-                transform: scale(0.9);
-            }
-        }
+       display: none;
     }
 }

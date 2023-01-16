@@ -19,6 +19,9 @@ fetch('../calendrier-url',{
         document.querySelector(gift).style.webkitFilter = 'grayscale(0)'
         document.querySelector(gift).style.pointerEvents = 'all';
     }
+    if(parseInt(creditData[0].credit) === 24){
+        alert('MERCI GRÂCE A TOI NOËL EST SAUVE')
+    }
 });
 
 
@@ -75,7 +78,7 @@ e.addEventListener('click', () => {
                             document.querySelector('.wrap_jouets div h3').innerHTML = posts[0].titre
                             document.querySelector('.prix_jouet').innerHTML = posts[0].prix + ' €'
                             document.querySelector('.wrap_jouets div p i').innerHTML = posts[0].reduction + ' €'
-                            document.querySelector('.wrap_jouets div img').src = posts[0].image 
+                            document.querySelector('.wrap_jouets div img').src = posts[0].image.replace('-150x150', '') 
                         }
                         if (numeroPost === 3 ) {
                             document.querySelector('iframe').style.display = 'block';
@@ -89,7 +92,7 @@ e.addEventListener('click', () => {
                             document.querySelector('.wrap_jouets div h3').innerHTML = posts[1].titre
                             document.querySelector('.prix_jouet').innerHTML = posts[1].prix + ' €'
                             document.querySelector('.wrap_jouets div p i').innerHTML = posts[1].reduction + ' €'
-                            document.querySelector('.wrap_jouets div img').src = posts[1].image 
+                            document.querySelector('.wrap_jouets div img').src = posts[1].image.replace('-150x150', '')  
                         }
                         if (numeroPost === 5 ) {
                             document.querySelector('iframe').style.display = 'block';
@@ -103,7 +106,7 @@ e.addEventListener('click', () => {
                             document.querySelector('.wrap_jouets div h3').innerHTML = posts[2].titre
                             document.querySelector('.prix_jouet').innerHTML = posts[2].prix + ' €'
                             document.querySelector('.wrap_jouets div p i').innerHTML = posts[2].reduction + ' €'
-                            document.querySelector('.wrap_jouets div img').src = posts[2].image 
+                            document.querySelector('.wrap_jouets div img').src = posts[2].image.replace('-150x150', '')  
                         }
                         if (numeroPost === 7 ) {
                             document.querySelector('iframe').style.display = 'block';
@@ -117,7 +120,7 @@ e.addEventListener('click', () => {
                             document.querySelector('.wrap_jouets div h3').innerHTML = posts[3].titre
                             document.querySelector('.prix_jouet').innerHTML = posts[3].prix + ' €'
                             document.querySelector('.wrap_jouets div p i').innerHTML = posts[3].reduction + ' €'
-                            document.querySelector('.wrap_jouets div img').src = posts[3].image 
+                            document.querySelector('.wrap_jouets div img').src = posts[3].image.replace('-150x150', '')  
                         }
                         if (numeroPost === 9 ) {
                             document.querySelector('iframe').style.display = 'block';
@@ -131,7 +134,7 @@ e.addEventListener('click', () => {
                             document.querySelector('.wrap_jouets div h3').innerHTML = posts[4].titre
                             document.querySelector('.prix_jouet').innerHTML = posts[4].prix + ' €'
                             document.querySelector('.wrap_jouets div p i').innerHTML = posts[4].reduction + ' €'
-                            document.querySelector('.wrap_jouets div img').src = posts[4].image 
+                            document.querySelector('.wrap_jouets div img').src = posts[4].image.replace('-150x150', '')  
                         }
                         if (numeroPost === 11 ) {
                             document.querySelector('iframe').style.display = 'block';
@@ -145,7 +148,7 @@ e.addEventListener('click', () => {
                             document.querySelector('.wrap_jouets div h3').innerHTML = posts[5].titre
                             document.querySelector('.prix_jouet').innerHTML = posts[5].prix + ' €'
                             document.querySelector('.wrap_jouets div p i').innerHTML = posts[5].reduction + ' €'
-                            document.querySelector('.wrap_jouets div img').src = posts[5].image 
+                            document.querySelector('.wrap_jouets div img').src = posts[5].image.replace('-150x150', '')  
                         }
                         if (numeroPost === 13 ) {
                             document.querySelector('iframe').style.display = 'block';
@@ -159,7 +162,7 @@ e.addEventListener('click', () => {
                             document.querySelector('.wrap_jouets div h3').innerHTML = posts[6].titre
                             document.querySelector('.prix_jouet').innerHTML = posts[6].prix + ' €'
                             document.querySelector('.wrap_jouets div p i').innerHTML = posts[6].reduction + ' €'
-                            document.querySelector('.wrap_jouets div img').src = posts[6].image 
+                            document.querySelector('.wrap_jouets div img').src = posts[6].image.replace('-150x150', '')  
                         }
                         if (numeroPost === 15 ) {
                             document.querySelector('iframe').style.display = 'block';
@@ -173,7 +176,7 @@ e.addEventListener('click', () => {
                             document.querySelector('.wrap_jouets div h3').innerHTML = posts[7].titre
                             document.querySelector('.prix_jouet').innerHTML = posts[7].prix + ' €'
                             document.querySelector('.wrap_jouets div p i').innerHTML = posts[7].reduction + ' €'
-                            document.querySelector('.wrap_jouets div img').src = posts[7].image 
+                            document.querySelector('.wrap_jouets div img').src = posts[7].image.replace('-150x150', '')  
                         }
                         if (numeroPost === 17 ) {
                             document.querySelector('iframe').style.display = 'block';
@@ -187,7 +190,7 @@ e.addEventListener('click', () => {
                             document.querySelector('.wrap_jouets div h3').innerHTML = posts[8].titre
                             document.querySelector('.prix_jouet').innerHTML = posts[8].prix + ' €'
                             document.querySelector('.wrap_jouets div p i').innerHTML = posts[8].reduction + ' €'
-                            document.querySelector('.wrap_jouets div img').src = posts[8].image 
+                            document.querySelector('.wrap_jouets div img').src = posts[8].image.replace('-150x150', '')  
                         }
                         if (numeroPost === 19 ) {
                             document.querySelector('iframe').style.display = 'block';
@@ -201,7 +204,7 @@ e.addEventListener('click', () => {
                             document.querySelector('.wrap_jouets div h3').innerHTML = posts[9].titre
                             document.querySelector('.prix_jouet').innerHTML = posts[9].prix + ' €'
                             document.querySelector('.wrap_jouets div p i').innerHTML = posts[9].reduction + ' €'
-                            document.querySelector('.wrap_jouets div img').src = posts[9].image 
+                            document.querySelector('.wrap_jouets div img').src = posts[9].image.replace('-150x150', '')  
                         }
                         if (numeroPost === 21 ) {
                             document.querySelector('iframe').style.display = 'block';
@@ -215,7 +218,7 @@ e.addEventListener('click', () => {
                             document.querySelector('.wrap_jouets div h3').innerHTML = posts[10].titre
                             document.querySelector('.prix_jouet').innerHTML = posts[10].prix + ' €'
                             document.querySelector('.wrap_jouets div p i').innerHTML = posts[10].reduction + ' €'
-                            document.querySelector('.wrap_jouets div img').src = posts[10].image 
+                            document.querySelector('.wrap_jouets div img').src = posts[10].image.replace('-150x150', '')  
                         }
                         if (numeroPost === 23 ) {
                             document.querySelector('iframe').style.display = 'block';
@@ -229,7 +232,7 @@ e.addEventListener('click', () => {
                             document.querySelector('.wrap_jouets div h3').innerHTML = posts[11].titre
                             document.querySelector('.prix_jouet').innerHTML = posts[11].prix + ' €'
                             document.querySelector('.wrap_jouets div p i').innerHTML = posts[11].reduction + ' €'
-                            document.querySelector('.wrap_jouets div img').src = posts[11].image 
+                            document.querySelector('.wrap_jouets div img').src = posts[11].image.replace('-150x150', '')  
                         }
                     })
                     .catch(e => {
