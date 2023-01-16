@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="<?= get_template_directory_uri() ?>./assets/images/ico/favicon.ico"
+    <link rel="shortcut icon" href="<?= get_template_directory_uri() ?>/assets/images/ico/favicon.ico"
         type="image/x-icon">
     <?php wp_head(); ?>
 </head>
@@ -21,11 +21,11 @@
         <div class="overlay_header">
             <nav>
                 <ul>
-                    <li><a href="jeu">jeu </a></li>
-                    <li><a href="recette">recette nöel</a></li>
-                    <li><a href="serie">série lutintin</a></li>
-                    <li><a href="catalogue">catalogue jouets</a></li>
-                    <li><a href="lettre">lettre au père noël</a></li>
+                    <li><a href="<?= get_home_url() ?>/game">jeu </a></li>
+                    <li><a href="<?= get_home_url() ?>/recette">recette nöel</a></li>
+                    <li><a href="<?= get_home_url() ?>/calendrier">calendrier</a></li>
+                    <li><a href="<?= get_home_url() ?>/catalogue">catalogue jouets</a></li>
+                    <li><a href="<?= get_home_url() ?>/lettre">lettre au père noël</a></li>
                 </ul>
             </nav>
             <div class="custom-shape-divider-bottom-1670590214">
@@ -36,13 +36,13 @@
                         class="shape-fill"></path>
                 </svg>
                 <div class="copyright_footer">
-                    <a href="mentions-legales">Mentions Légales</a>
+                    <a href="<?= get_home_url() ?>/mentions-legales">Mentions Légales</a>
                     <p>Copyright © <script>document.write(new Date().getFullYear())</script> Jouets Leclerc</p>
                 </div>
             </div>
         </div>
         <div class="sapin_toggle">
-            <img src="<?= get_template_directory_uri() ?>./assets/images/svg/star.svg" alt="Etoile sapin">
+            <img src="<?= get_template_directory_uri() ?>/assets/images/svg/star.svg" alt="Etoile sapin">
             <div class="branches">
                 <div class="branche arm1"></div>
                 <div class="branche arm2"></div>
@@ -56,18 +56,18 @@
         </div>
 
         <!-- <div class="logo_leclerc">
-            <img src="<?= get_template_directory_uri() ?>./assets/images/png/leclerc.png" alt="Logo Leclerc">
+            <img src="<?= get_template_directory_uri() ?>/assets/images/png/leclerc.png" alt="Logo Leclerc">
         </div> -->
         <a href="<?= get_home_url() ?>" class="leclerc_link"><img
                 src="<?= get_template_directory_uri()?>./assets/images/png/Logo.png" alt="Logo Leclerc"></a>
-        <img id="flocon_header" src="<?= get_template_directory_uri() ?>./assets/images/png/flocon4.png" alt="Flocon Header">
+        <img id="flocon_header" src="<?= get_template_directory_uri() ?>/assets/images/png/flocon4.png" alt="Flocon Header">
 
-        <img id="flocon_header_2" src="<?= get_template_directory_uri() ?>./assets/images/png/flocon1.png" alt="Flocon Header 2">
+        <img id="flocon_header_2" src="<?= get_template_directory_uri() ?>/assets/images/png/flocon1.png" alt="Flocon Header 2">
         <div class="modal_container">
             <nav>
                 <ul>
-                    <li><a href="https://www.au-magasin.fr/enseigne/7-eleclerc" target="_blank"><img id="pdv" src="<?= get_template_directory_uri() ?>./assets/images/svg/Point-de-Vente.svg" alt="Point de vente" title="Point de vente Leclerc"></a></li>
-                    <li><a href="wp-login.php"><img id="connexion" src="<?= get_template_directory_uri() ?>./assets/images/svg/Connexion.svg" alt="Connexion"></a></li>
+                    <li><a href="https://www.au-magasin.fr/enseigne/7-eleclerc" target="_blank"><img id="pdv" src="<?= get_template_directory_uri() ?>/assets/images/svg/Point-de-Vente.svg" alt="Point de vente" title="Point de vente Leclerc"></a></li>
+                    <li><a href="<?= get_home_url() ?>/wp-login.php"><img id="connexion" src="<?= get_template_directory_uri() ?>/assets/images/svg/Connexion.svg" alt="Connexion"></a></li>
                 </ul>
             </nav>
 

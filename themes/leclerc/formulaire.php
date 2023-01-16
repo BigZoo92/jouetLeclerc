@@ -8,7 +8,7 @@ get_header()
 <main id="bg_formulaire">
     <section class="formulaire">
         <form action="">
-            <img id="houx" src="<?= get_template_directory_uri() ?>./assets/images/png/holly-g5e5b9bd79_1280.png"
+            <img id="houx" src="<?= get_template_directory_uri() ?>/assets/images/png/holly-g5e5b9bd79_1280.png"
                 title="Afficher" alt="Sapin">
             <div class="header_form">
                 <h1>Envoie ta lettre au père noël</h1>
